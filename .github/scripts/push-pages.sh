@@ -75,6 +75,9 @@ LIVE_PATHS=(
   data/breakdown_race_atp.json
   data/breakdown_race_wta.js
   data/breakdown_race_wta.json
+  data/event_scores
+  data/event_draws
+  data/event_day_rounds
   assets
 )
 

@@ -107,6 +107,8 @@ python main.py --daily   # 每日：上述 + H2H / 杀手 / 生涯统计 / 全�
 | `update-live.yml` | 每 15 分钟 | `--live` 选人相关页 |
 | `update-daily.yml` | 每天 23:00（北京时间） | `--daily` 其余页 |
 
+赛历得分/签表为**增量**：完赛赛事读 `data/event_scores`（及 draws）缓存不再抓；进行中赛事与刚完赛一站会刷新。CI 会从 `pages` 分支与 Actions cache 恢复这些缓存。
+
 **测试仓库启用：**
 
 1. 代码在 `main`；首次可在 Actions 里手动跑 `Update live`

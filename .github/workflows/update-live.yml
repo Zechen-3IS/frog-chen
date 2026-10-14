@@ -28,6 +28,26 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Restore event caches
+        uses: actions/cache@v4
+        with:
+          path: |
+            data/event_scores
+            data/event_draws
+            data/event_day_rounds
+          key: event-cache-${{ github.run_id }}
+          restore-keys: |
+            event-cache-
+
+      - name: Restore caches from pages branch
+        env:
+          PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN || github.token }}
+          PUBLISH_REPOSITORY: ${{ vars.PUBLISH_REPOSITORY || github.repository }}
+          PUBLISH_BRANCH: ${{ vars.PUBLISH_BRANCH || 'pages' }}
+        run: |
+          chmod +x .github/scripts/restore-event-cache.sh
+          .github/scripts/restore-event-cache.sh
+
       - name: Connectivity check
         run: |
           python - <<'PY'

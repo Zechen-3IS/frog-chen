@@ -693,14 +693,34 @@ def sync_event_scores(
         path = score_cache_path(ev["tour"], ev["event_id"], ev["year"], cache_dir)
         cached = load_score_cache(path)
         page_type = str(ev.get("page_type") or "").lower()
+        completed = page_type == "score"
         force = force_all
+        # Ongoing events in the active season: keep refreshing.
         if (
             not force
             and refresh_current_year is not None
             and int(ev["year"]) == int(refresh_current_year)
-            and page_type != "score"
+            and not completed
         ):
             force = True
+        # Event just finished (my → score): one final fetch to freeze the board.
+        if (
+            not force
+            and completed
+            and cached
+            and cached.get("rows") is not None
+            and not cached.get("completed")
+        ):
+            force = True
+        # Completed + already frozen cache: never refetch.
+        if (
+            cached
+            and cached.get("rows") is not None
+            and (cached.get("completed") or completed)
+            and not force
+        ):
+            counts["cached"] += 1
+            continue
         if cached and cached.get("rows") is not None and not force:
             counts["cached"] += 1
             continue
