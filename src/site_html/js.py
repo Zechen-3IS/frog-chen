@@ -467,7 +467,8 @@ document.addEventListener('DOMContentLoaded',function(){
             var cells = row.querySelectorAll('td');
             if (statusIdx < 0 || nameIdx < 0 || !cells[statusIdx] || !cells[nameIdx]) return;
             var status = cells[statusIdx].textContent.trim();
-            if (status !== '存活' && status !== '未完赛') return;
+            if (status !== '存活' && status !== '未完赛'
+                && status !== '未选' && status !== '轮空') return;
 
             var detail = [];
             try { detail = JSON.parse(row.dataset.detail || '[]'); } catch (err) { detail = []; }

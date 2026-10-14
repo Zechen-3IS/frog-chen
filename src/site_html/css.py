@@ -301,7 +301,7 @@ th.sort-desc::after{content:" ▼";font-size:9px;}
 .rank.down{color:#c04830;}.rank.down::before{content:"▼";font-size:9px;}
 .rank.same{color:var(--faint);}.rank.same::before{content:"▶";font-size:9px;}
 
-/* user status: 存活 / 未完赛 / 淘汰(含自杀·球员输球) */
+/* user status: 存活 / 未完赛·未选 / 淘汰(含自杀·球员输球) */
 .st-badge{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;
     border-radius:10px;font-size:11px;font-weight:500;line-height:1.35;
     white-space:nowrap;border:0.5px solid transparent;}

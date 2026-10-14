@@ -57,6 +57,9 @@ def prepare_rank_change(df):
     return df
 
 
+_KEEP_TODAY_PICK_STATUS = frozenset({"存活", "未完赛", "未选", "轮空"})
+
+
 def hide_today_picks_for_eliminated(df: pd.DataFrame) -> pd.DataFrame:
     """
     For display: settled losers keep 杀手球员, but clear 今日主选/备选/状态.
@@ -66,10 +69,11 @@ def hide_today_picks_for_eliminated(df: pd.DataFrame) -> pd.DataFrame:
     if df is None or df.empty or "当前状态" not in df.columns:
         return df
     out = df.copy()
-    alive = out["当前状态"].astype("string").fillna("").str.strip().eq("存活")
+    status = out["当前状态"].astype("string").fillna("").str.strip()
+    keep = status.isin(_KEEP_TODAY_PICK_STATUS)
     for col in ("今日主选", "今日备选", "今日状态"):
         if col in out.columns:
-            out.loc[~alive, col] = ""
+            out.loc[~keep, col] = ""
     return out
 
 
@@ -108,6 +112,37 @@ def mark_unfinished_status(
         unfinished = unfinished | _uid_series(out).isin(pending)
     out.loc[status.eq("存活") & unfinished, "当前状态"] = "未完赛"
     return out
+
+
+def mark_unpicked_status(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Display-only: still-alive users with no today's pick → 未选 (or 轮空).
+
+    Surfaces former 今日状态 labels into 当前状态 so that column can be dropped.
+    """
+    if df is None or df.empty or "当前状态" not in df.columns:
+        return df
+    out = df.copy()
+    status = out["当前状态"].astype("string").fillna("").str.strip()
+    alive = status.eq("存活")
+    if not alive.any():
+        return out
+    if "今日状态" in out.columns:
+        today = out["今日状态"].astype("string").fillna("").str.strip()
+        out.loc[alive & today.eq("未选"), "当前状态"] = "未选"
+        out.loc[alive & today.eq("轮空"), "当前状态"] = "轮空"
+        return out
+    if "今日主选" in out.columns:
+        pick = out["今日主选"].astype("string").fillna("").str.strip()
+        out.loc[alive & pick.eq(""), "当前状态"] = "未选"
+    return out
+
+
+def drop_today_status_column(df: pd.DataFrame) -> pd.DataFrame:
+    """Remove 今日状态 from ranking views (info folded into 当前状态)."""
+    if df is None or df.empty or "今日状态" not in df.columns:
+        return df
+    return df.drop(columns=["今日状态"])
 
 
 def _uid_series(df: pd.DataFrame) -> pd.Series:
@@ -152,12 +187,15 @@ def generate_summary(df: pd.DataFrame, day1: bool = False, bye: bool = False):
     df["今日主选"] = df["今日主选"].astype("string").fillna("").str.strip()
 
     # Board is already limited to users alive at open (see build_table).
-    # Include still-alive + anyone who still has today's pick (settled today).
+    # Include still-in-pool (存活/未完赛/未选/轮空) + anyone with today's pick.
     if day1 or "当前状态" not in df.columns:
         summary_src = df
     else:
         has_pick = df["今日主选"].astype("string").fillna("").str.strip().ne("")
-        summary_src = df.loc[(df["当前状态"] == "存活") | has_pick, :]
+        in_pool = df["当前状态"].astype("string").fillna("").str.strip().isin(
+            _KEEP_TODAY_PICK_STATUS
+        )
+        summary_src = df.loc[in_pool | has_pick, :]
 
     stats_df = pd.pivot_table(
         summary_src,

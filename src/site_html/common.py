@@ -28,7 +28,7 @@ def _rank_change_cell(value) -> str:
 
 
 def _status_badge_html(val) -> str:
-    """Color badge for 当前状态 (存活 / 未完赛 / 淘汰)."""
+    """Color badge for 当前状态 (存活 / 未完赛·未选 / 淘汰)."""
     try:
         if pd.isna(val):
             return ""
@@ -39,7 +39,7 @@ def _status_badge_html(val) -> str:
         return ""
     if text == "存活":
         cls = "st-alive"
-    elif text == "未完赛":
+    elif text in {"未完赛", "未选", "轮空"}:
         cls = "st-live"
     elif text in {"球员输球", "未参赛"} or text.startswith("自杀"):
         # 自杀 / 球员输球 share one淘汰色
@@ -58,7 +58,7 @@ def _row_status_class(val) -> str:
     text = str(val).strip()
     if text == "存活":
         return "row-alive"
-    if text == "未完赛":
+    if text in {"未完赛", "未选", "轮空"}:
         return "row-live"
     if text in {"球员输球", "未参赛"} or text.startswith("自杀"):
         return "row-out"
@@ -97,8 +97,6 @@ def _df_to_html_table(
         for c in render_cols
         if c == "当前状态" or str(c).endswith("状态")
     }
-    # 今日状态 is pick-submission state, not survivor outcome
-    status_cols.discard("今日状态")
     status_col = "当前状态" if "当前状态" in status_cols else (
         next(iter(status_cols), None)
     )

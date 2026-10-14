@@ -16,9 +16,11 @@ from h2h import (
 from write_config import build_tour_config, ConfigManager, validate_event
 from logger import get_logger
 from output_format import (
+    drop_today_status_column,
     generate_summary,
     hide_today_picks_for_eliminated,
     mark_unfinished_status,
+    mark_unpicked_status,
     prepare_rank_change,
 )
 import pandas as pd
@@ -440,21 +442,27 @@ def update_rank_pages(
     atp_race_raw: pd.DataFrame = None,
     wta_race_raw: pd.DataFrame = None,
 ):
-    # Mark 未完赛 on full frames (still have user_id / 今日主选), then trim columns.
-    atp_base = mark_unfinished_status(
-        hide_today_picks_for_eliminated(atp_table),
-        atp_live_players,
-        atp_pending_uids,
+    # Mark 未完赛/未选 on full frames (still have user_id / 今日主选), then trim.
+    atp_base = mark_unpicked_status(
+        mark_unfinished_status(
+            hide_today_picks_for_eliminated(atp_table),
+            atp_live_players,
+            atp_pending_uids,
+        )
     )
     atp = prepare_rank_change(atp_base)
     atp_stats = generate_summary(atp, atp_day1, atp_bye)
     atp_killers = daily_killer_stats(atp)
-    atp_view = atp
-    atp_race_view = prepare_rank_change(
-        mark_unfinished_status(
-            hide_today_picks_for_eliminated(atp_race),
-            atp_live_players,
-            atp_pending_uids,
+    atp_view = drop_today_status_column(atp)
+    atp_race_view = drop_today_status_column(
+        prepare_rank_change(
+            mark_unpicked_status(
+                mark_unfinished_status(
+                    hide_today_picks_for_eliminated(atp_race),
+                    atp_live_players,
+                    atp_pending_uids,
+                )
+            )
         )
     )
     render_ranking_page(
@@ -483,20 +491,26 @@ def update_rank_pages(
         output_path="../atp_race_ranking.html",
     )
 
-    wta_base = mark_unfinished_status(
-        hide_today_picks_for_eliminated(wta_table),
-        wta_live_players,
-        wta_pending_uids,
+    wta_base = mark_unpicked_status(
+        mark_unfinished_status(
+            hide_today_picks_for_eliminated(wta_table),
+            wta_live_players,
+            wta_pending_uids,
+        )
     )
     wta = prepare_rank_change(wta_base)
     wta_stats = generate_summary(wta, wta_day1, wta_bye)
     wta_killers = daily_killer_stats(wta)
-    wta_view = wta
-    wta_race_view = prepare_rank_change(
-        mark_unfinished_status(
-            hide_today_picks_for_eliminated(wta_race),
-            wta_live_players,
-            wta_pending_uids,
+    wta_view = drop_today_status_column(wta)
+    wta_race_view = drop_today_status_column(
+        prepare_rank_change(
+            mark_unpicked_status(
+                mark_unfinished_status(
+                    hide_today_picks_for_eliminated(wta_race),
+                    wta_live_players,
+                    wta_pending_uids,
+                )
+            )
         )
     )
     render_ranking_page(
@@ -530,17 +544,25 @@ def update_rank_pages(
         atp_cfg_local = (cfg or {}).get("atp") or {}
         wta_cfg_local = (cfg or {}).get("wta") or {}
         update_combined_pages(
-            mark_unfinished_status(
-                atp_table, atp_live_players, atp_pending_uids
+            mark_unpicked_status(
+                mark_unfinished_status(
+                    atp_table, atp_live_players, atp_pending_uids
+                )
             ),
-            mark_unfinished_status(
-                wta_table, wta_live_players, wta_pending_uids
+            mark_unpicked_status(
+                mark_unfinished_status(
+                    wta_table, wta_live_players, wta_pending_uids
+                )
             ),
-            mark_unfinished_status(
-                atp_race, atp_live_players, atp_pending_uids
+            mark_unpicked_status(
+                mark_unfinished_status(
+                    atp_race, atp_live_players, atp_pending_uids
+                )
             ),
-            mark_unfinished_status(
-                wta_race, wta_live_players, wta_pending_uids
+            mark_unpicked_status(
+                mark_unfinished_status(
+                    wta_race, wta_live_players, wta_pending_uids
+                )
             ),
             atp_event=atp_cfg_local.get("name"),
             wta_event=wta_cfg_local.get("name"),
