@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATP冠军榜</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Space+Mono:wght@400;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+    /* surfaces — icy pale blue, AO arena daylight */
+    --bg:#f0f7fb; --bg2:#e0eef6; --surface:#ffffff; --surface2:#f4fafd;
+ 
+    /* primary: AO cyan #0088bb */
+    --primary:#0088bb; --primary-dark:#005f85;
+    --primary-dim:rgba(0,136,187,.10); --primary-rim:rgba(0,136,187,.28);
+ 
+    /* secondary: US Open gold #c49800 */
+    --secondary:#c49800;
+    --secondary-dim:rgba(196,152,0,.10); --secondary-rim:rgba(196,152,0,.26);
+ 
+    /* typography */
+    --ink:#051420; --ink2:#0e2a3c; --muted:#4a6878; --faint:#90aabf;
+ 
+    /* borders */
+    --border:rgba(5,20,32,.10); --border2:rgba(5,20,32,.06);
+ 
+    /* table chrome — deep navy header, bright AO cyan accent */
+    --th-bg:#002d44; --th-text:#00aaee;
+    --row-hover:rgba(0,136,187,.05); --row-even:rgba(5,20,32,.02);
+    --filter-bg:#e6f3fa; --drop-bg:#ffffff; --track-bg:#cce6f4;
+ 
+    /* podium medals */
+    --rank1:#005f85; --rank2:#5a6e80; --rank3:#a07800;
+}
+body.dark {
+    /* surfaces — US Open night: deep navy stadium */
+    --bg:#030c14; --bg2:#071422; --surface:#0a1d30; --surface2:#102840;
+ 
+    /* primary: bright AO cyan for night */
+    --primary:#00b8f0; --primary-dark:#40d0ff;
+    --primary-dim:rgba(0,184,240,.13); --primary-rim:rgba(0,184,240,.30);
+ 
+    /* secondary: US Open gold at full brightness */
+    --secondary:#f0c000;
+    --secondary-dim:rgba(240,192,0,.12); --secondary-rim:rgba(240,192,0,.28);
+ 
+    /* typography */
+    --ink:#ddeef8; --ink2:#a8c8de; --muted:#5a84a0; --faint:#1e3850;
+ 
+    /* borders */
+    --border:rgba(221,238,248,.10); --border2:rgba(221,238,248,.06);
+ 
+    /* table chrome */
+    --th-bg:#010810; --th-text:#00b8f0;
+    --row-hover:rgba(0,184,240,.07); --row-even:rgba(255,255,255,.025);
+    --filter-bg:#071422; --drop-bg:#102840; --track-bg:#102840;
+ 
+    /* podium medals */
+    --rank1:#40d0ff; --rank2:#6a88a8; --rank3:#f0c000;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+    font-family:'Noto Sans SC',sans-serif;
+    background:var(--bg);color:var(--ink);min-height:100vh;
+    transition:background .3s,color .3s;
+}
+body::before{
+    content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+    background:
+        radial-gradient(ellipse 80% 50% at 10% 0%,rgba(224,96,64,.05) 0%,transparent 60%),
+        radial-gradient(ellipse 60% 40% at 90% 100%,rgba(26,58,112,.04) 0%,transparent 55%);
+}
+body{padding:24px 20px 60px;}
+.page{position:relative;z-index:1;max-width:1280px;margin:0 auto;}
+
+/* topbar */
+.topbar{display:flex;align-items:center;justify-content:space-between;
+    margin-bottom:28px;padding-bottom:18px;border-bottom:1px solid var(--border2);
+    flex-wrap:wrap;gap:12px;}
+.back-link{display:inline-flex;align-items:center;gap:10px;text-decoration:none;
+    color:var(--muted);font-family:'Space Mono',monospace;font-size:11px;
+    letter-spacing:.14em;text-transform:uppercase;transition:color .2s;}
+.back-link:hover{color:var(--primary);}
+.topbar-right{display:flex;align-items:center;gap:12px;}
+.updated{font-family:'Space Mono',monospace;font-size:10px;color:var(--faint);
+    letter-spacing:.08em;padding:5px 10px;border:1px solid var(--border2);border-radius:3px;}
+.theme-btn{background:var(--surface);border:1px solid var(--border);color:var(--muted);
+    padding:7px 16px;border-radius:20px;cursor:pointer;font-size:12px;
+    font-family:'Noto Sans SC',sans-serif;transition:all .2s;}
+.theme-btn:hover{border-color:var(--primary);color:var(--primary);}
+
+/* page header */
+.page-header{margin-bottom:24px;}
+.page-eye{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.28em;
+    color:var(--primary);text-transform:uppercase;margin-bottom:10px;}
+.page-title{font-family:'Noto Serif SC',serif;font-size:clamp(22px,3vw,32px);
+    font-weight:700;color:var(--ink);line-height:1.2;
+    display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.ttag{font-family:'Space Mono',monospace;font-size:10px;padding:4px 10px;
+    border-radius:3px;font-weight:400;letter-spacing:.1em;text-transform:uppercase;}
+.ttag-atp{background:var(--secondary-dim);color:var(--secondary);border:1px solid rgba(26,58,112,.2);}
+.ttag-wta{background:var(--primary-dim);color:var(--primary-dark);border:1px solid rgba(224,96,64,.2);}
+.ttag-all{background:rgba(26,26,26,.05);color:var(--muted);border:1px solid var(--border);}
+body.dark .ttag-atp{border-color:rgba(111,160,224,.25);}
+body.dark .ttag-wta{border-color:rgba(232,96,60,.25);}
+
+/* ── summary bar panel ── */
+.sum-box{margin-bottom:18px;background:var(--surface);border:1px solid var(--border);
+    border-radius:10px;overflow:hidden;max-width:700px;margin-left:auto;margin-right:auto;}
+.sum-header{padding:10px 14px 9px;border-bottom:1px solid var(--border2);}
+.sum-title{font-family:'Space Mono',monospace;font-size:10px;font-weight:500;
+    letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:7px;}
+.sum-meta{display:flex;flex-wrap:wrap;align-items:center;gap:5px;}
+.meta-chip{display:inline-flex;align-items:center;gap:3px;padding:2px 8px;
+    border-radius:20px;font-size:11px;font-weight:500;white-space:nowrap;}
+.chip-valid  {background:var(--primary-dim);color:var(--primary-dark);border:0.5px solid rgba(224,96,64,.25);}
+.chip-bye    {background:var(--secondary-dim);color:var(--secondary);border:0.5px solid rgba(26,58,112,.25);}
+.chip-nosel  {background:var(--surface2);color:var(--muted);border:0.5px solid var(--border);}
+.chip-suicide{background:rgba(192,72,48,.10);color:var(--primary-dark);border:0.5px solid rgba(192,72,48,.22);}
+.chip-live   {background:rgba(184,122,42,.10);color:#8a5a18;border:0.5px solid rgba(184,122,42,.24);}
+.chip-alive  {background:rgba(46,125,92,.10);color:#2a6b4f;border:0.5px solid rgba(46,125,92,.22);}
+.chip-out    {background:rgba(120,124,132,.10);color:#6a7078;border:0.5px solid rgba(120,124,132,.22);}
+.chip-live .sdot,.chip-alive .sdot,.chip-out .sdot{
+    width:6px;height:6px;border-radius:50%;display:inline-block;flex-shrink:0;}
+.chip-live .sdot{background:#c4892e;}
+.chip-alive .sdot{background:#2f8a62;}
+.chip-out .sdot{background:#8a9098;}
+body.dark .chip-valid  {border-color:rgba(232,96,60,.32);}
+body.dark .chip-bye    {color:var(--secondary);border-color:rgba(111,160,224,.28);}
+body.dark .chip-suicide{color:var(--primary-dark);}
+body.dark .chip-live   {background:rgba(212,160,72,.14);color:#e0b56a;border-color:rgba(212,160,72,.28);}
+body.dark .chip-alive  {background:rgba(72,168,120,.14);color:#7dcea0;border-color:rgba(72,168,120,.28);}
+body.dark .chip-out    {background:rgba(150,156,164,.12);color:#a8adb4;border-color:rgba(150,156,164,.24);}
+body.dark .chip-live .sdot{background:#e0b56a;}
+body.dark .chip-alive .sdot{background:#7dcea0;}
+body.dark .chip-out .sdot{background:#a8adb4;}
+.meta-sep  {font-size:11px;color:var(--faint);}
+.meta-total{font-size:12px;color:var(--ink);font-weight:500;}
+/* col header */
+.sum-col-hd{display:flex;align-items:center;gap:8px;padding:5px 14px 3px;}
+.sch-rank{width:16px;flex-shrink:0;}
+.sch-name{width:168px;flex-shrink:0;}
+.sch-bar{flex:1;}
+.sch-right{display:flex;align-items:center;gap:3px;flex-shrink:0;}
+.sch-tag{font-size:10px;font-weight:500;padding:1px 6px;border-radius:10px;white-space:nowrap;}
+.sch-tag-v{background:var(--primary-dim);color:var(--primary-dark);border:0.5px solid rgba(224,96,64,.25);}
+.sch-tag-b{background:var(--secondary-dim);color:var(--secondary);border:0.5px solid rgba(26,58,112,.25);}
+body.dark .sch-tag-v{border-color:rgba(232,96,60,.32);}
+body.dark .sch-tag-b{color:var(--secondary);border-color:rgba(111,160,224,.28);}
+.sch-sep  {font-size:11px;color:var(--faint);}
+.sch-count{font-size:11px;color:var(--faint);width:30px;text-align:right;}
+.sch-pct  {font-size:11px;color:var(--faint);width:42px;text-align:right;}
+/* bar rows */
+.sum-list{padding:4px 0;}
+.sbar-row{display:flex;align-items:center;gap:8px;padding:5px 14px;transition:background .12s;}
+.sbar-row:hover{background:var(--surface2);}
+.sbar-rank{font-size:11px;color:var(--faint);width:16px;text-align:right;
+    flex-shrink:0;font-variant-numeric:tabular-nums;}
+.sbar-name{font-size:13px;color:var(--ink);width:168px;flex-shrink:0;
+    display:inline-flex;align-items:center;gap:5px;min-width:0;}
+.sbar-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;
+    background:var(--faint);opacity:.55;}
+.sbar-label{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0;}
+.sbar-tag{font-size:9px;font-weight:500;letter-spacing:.04em;padding:1px 5px;
+    border-radius:8px;flex-shrink:0;line-height:1.35;white-space:nowrap;}
+.tag-live{background:rgba(184,122,42,.10);color:#8a5a18;border:0.5px solid rgba(184,122,42,.22);}
+.tag-alive{background:rgba(46,125,92,.10);color:#2a6b4f;border:0.5px solid rgba(46,125,92,.20);}
+.tag-out{background:rgba(120,124,132,.10);color:#6a7078;border:0.5px solid rgba(120,124,132,.20);}
+.sbar-row.is-live .sbar-dot{background:#c4892e;opacity:1;box-shadow:0 0 0 2px rgba(196,137,46,.16);}
+.sbar-row.is-live .sbar-label{color:#7a4e14;font-weight:500;}
+.sbar-row.is-alive .sbar-dot{background:#2f8a62;opacity:1;box-shadow:0 0 0 2px rgba(47,138,98,.14);}
+.sbar-row.is-alive .sbar-label{color:#1f4f3a;font-weight:500;}
+.sbar-row.is-out{opacity:.92;}
+.sbar-row.is-out .sbar-dot{background:#9aa0a8;opacity:1;}
+.sbar-row.is-out .sbar-label{color:var(--muted);}
+.sbar-row.is-out .sbar-count,.sbar-row.is-out .sbar-pct{color:var(--muted);}
+body.dark .tag-live{background:rgba(212,160,72,.14);color:#e0b56a;border-color:rgba(212,160,72,.28);}
+body.dark .tag-alive{background:rgba(72,168,120,.14);color:#7dcea0;border-color:rgba(72,168,120,.28);}
+body.dark .tag-out{background:rgba(150,156,164,.12);color:#a8adb4;border-color:rgba(150,156,164,.24);}
+body.dark .sbar-row.is-live .sbar-dot{background:#e0b56a;box-shadow:0 0 0 2px rgba(224,181,106,.16);}
+body.dark .sbar-row.is-live .sbar-label{color:#ead0a0;}
+body.dark .sbar-row.is-alive .sbar-dot{background:#7dcea0;box-shadow:0 0 0 2px rgba(125,206,160,.16);}
+body.dark .sbar-row.is-alive .sbar-label{color:#b7e0c8;}
+body.dark .sbar-row.is-out .sbar-dot{background:#8a9098;}
+.sbar-track{flex:1;background:var(--surface2);border-radius:20px;height:8px;
+    display:flex;overflow:hidden;}
+body.dark .sbar-track{background:var(--bg2);}
+.sbar-seg{height:100%;transition:width .38s cubic-bezier(.4,0,.2,1);}
+.seg-v{background:var(--primary);}
+.seg-b{background:var(--secondary);}
+.seg-live{background:linear-gradient(90deg,#d4a04a,#c4892e);}
+.seg-alive{background:linear-gradient(90deg,#3fa873,#2f8a62);}
+.seg-out{background:linear-gradient(90deg,rgba(140,146,154,.55),rgba(140,146,154,.38));}
+body.dark .seg-b{background:var(--secondary);}
+body.dark .seg-live{background:linear-gradient(90deg,#e0b56a,#c4892e);}
+body.dark .seg-alive{background:linear-gradient(90deg,#5fbf8a,#3fa873);}
+body.dark .seg-out{background:linear-gradient(90deg,rgba(130,136,144,.45),rgba(130,136,144,.28));}
+.sbar-track.solo-v .seg-v,
+.sbar-track.solo-live .seg-live,
+.sbar-track.solo-alive .seg-alive,
+.sbar-track.solo-out .seg-out{border-radius:20px;}
+.sbar-track.solo-b .seg-b{border-radius:20px;}
+.sbar-track.both   .seg-v{border-radius:20px 0 0 20px;}
+.sbar-track.both   .seg-b{border-radius:0 20px 20px 0;}
+.sbar-inline{display:flex;align-items:center;gap:2px;flex-shrink:0;
+    font-size:12px;font-variant-numeric:tabular-nums;width:60px;justify-content:flex-end;}
+.sbar-iv{color:var(--primary-dark);font-weight:500;}
+.sbar-ib{color:var(--secondary);font-weight:500;}
+body.dark .sbar-iv{color:var(--primary-dark);}
+body.dark .sbar-ib{color:var(--secondary);}
+.sbar-isep{font-size:11px;color:var(--faint);}
+.sbar-right{display:flex;align-items:center;flex-shrink:0;}
+.sbar-count{font-size:13px;font-weight:500;color:var(--ink);
+    width:28px;text-align:right;font-variant-numeric:tabular-nums;}
+.sbar-pct{font-size:12px;color:var(--faint);width:42px;text-align:right;
+    font-variant-numeric:tabular-nums;}
+/* totals row */
+.sbar-row.stotal{border-top:1px solid var(--border2);margin-top:2px;
+    padding-top:8px;padding-bottom:8px;}
+.sbar-row.stotal .sbar-name{font-size:12px;color:var(--muted);}
+.sbar-row.stotal .sbar-dot,.sbar-row.stotal .sbar-tag{display:none;}
+.sbar-row.stotal .sbar-count{color:var(--primary);}
+/* hidden / expanded rows */
+.sbar-row.s-hidden{display:none;}
+.sbar-row.s-hidden.s-exp{display:flex;}
+/* toggle */
+.sum-toggle{width:100%;padding:9px 14px;border:none;
+    border-top:1px solid var(--border2);background:var(--surface2);
+    color:var(--muted);font-size:12px;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;gap:6px;
+    transition:background .15s,color .15s;font-family:'Noto Sans SC',sans-serif;}
+.sum-toggle:hover{color:var(--primary);}
+.sum-ticon{font-size:10px;display:inline-block;transition:transform .25s;}
+.sum-toggle.open .sum-ticon{transform:rotate(180deg);}
+/* copy button */
+.sum-copy-btn{
+    display:inline-flex;align-items:center;gap:5px;
+    padding:3px 10px;border-radius:20px;cursor:pointer;
+    border:1px solid var(--border);background:var(--surface2);
+    color:var(--muted);font-size:11px;font-family:'Space Mono',monospace;
+    letter-spacing:.04em;transition:all .18s;flex-shrink:0;
+    white-space:nowrap;
+}
+.sum-copy-btn:hover{border-color:var(--primary-rim);color:var(--primary-dark);}
+.sum-copy-btn.copied{border-color:var(--primary-rim);color:var(--primary-dark);
+    background:var(--primary-dim);}
+body.dark .sum-copy-btn.copied{color:var(--primary);}
+.sum-title-row{display:flex;align-items:center;justify-content:space-between;
+    gap:8px;margin-bottom:7px;}
+
+/* daily killer panel (F7) */
+.dk-box{margin:0 auto 18px;max-width:700px;background:var(--surface);
+    border:1px solid var(--border);border-radius:10px;overflow:hidden;}
+.dk-toggle{width:100%;padding:10px 14px;border:none;background:var(--surface2);
+    color:var(--muted);font-size:12px;cursor:pointer;font-family:'Noto Sans SC',sans-serif;
+    display:flex;align-items:center;justify-content:center;gap:8px;
+    transition:color .15s,background .15s;}
+.dk-toggle:hover{color:var(--primary);}
+.dk-arrow{font-size:10px;display:inline-block;transition:transform .25s;}
+.dk-box.open .dk-arrow{transform:rotate(180deg);}
+.dk-body{display:none;border-top:1px solid var(--border2);padding:8px 0 10px;}
+.dk-box.open .dk-body{display:block;}
+.dk-hd{display:grid;grid-template-columns:56px 1fr 1fr;gap:8px;padding:4px 14px 6px;
+    font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--faint);}
+.dk-row{display:grid;grid-template-columns:56px 1fr 1fr;gap:8px;padding:7px 14px;
+    align-items:center;border-top:1px solid var(--border2);}
+.dk-row:hover{background:var(--surface2);}
+.dk-day{font-family:'Space Mono',monospace;font-size:11px;color:var(--faint);}
+.dk-killers{display:contents;}
+.dk-k{font-size:13px;color:var(--ink);display:flex;align-items:baseline;gap:6px;min-width:0;}
+.dk-k b{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.dk-k em{font-style:normal;font-family:'Space Mono',monospace;font-size:11px;
+    color:var(--primary-dark);font-weight:700;flex-shrink:0;}
+.dk-k.alt em{color:var(--secondary);}
+body.dark .dk-k em{color:var(--primary);}
+body.dark .dk-k.alt em{color:var(--secondary);}
+@media(max-width:640px){
+    .dk-hd,.dk-row{grid-template-columns:44px 1fr; }
+    .dk-hd-k:last-child,.dk-row .dk-k.alt{display:none;}
+}
+
+/* stats row */
+.stats-row{display:flex;align-items:center;justify-content:space-between;
+    margin-bottom:10px;flex-wrap:wrap;gap:8px;}
+.row-count{font-family:'Space Mono',monospace;font-size:11px;
+    color:var(--faint);letter-spacing:.08em;}
+.row-count b{color:var(--primary);font-weight:700;}
+
+/* table wrapper */
+.table-wrapper{max-height:72vh;overflow-y:auto;overflow-x:auto;
+    border:1px solid var(--border2);border-radius:6px;}
+.table-wrapper::-webkit-scrollbar{width:5px;height:5px;}
+.table-wrapper::-webkit-scrollbar-track{background:transparent;}
+.table-wrapper::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px;}
+
+/* filterable table */
+.filterable-table{width:100%;border-collapse:collapse;font-size:12px;}
+.filterable-table thead tr:first-child th{
+    background:var(--th-bg);color:var(--th-text);
+    padding:11px 10px;text-align:left;font-weight:500;
+    position:sticky;top:0;z-index:20;cursor:pointer;
+    user-select:none;white-space:nowrap;
+    font-family:'Space Mono',monospace;font-size:10px;
+    letter-spacing:.08em;text-transform:uppercase;
+    border-bottom:1px solid rgba(232,84,26,.3);transition:color .15s;}
+.filterable-table thead tr:first-child th:hover{color:#E8541A;}
+.filterable-table td{padding:8px 10px;border-bottom:1px solid var(--border2);
+    vertical-align:middle;color:var(--ink);font-size:12px;}
+.filterable-table tr:hover td{background:var(--row-hover);}
+.filterable-table tr:nth-child(even) td{background:var(--row-even);}
+.filterable-table tr:nth-child(even):hover td{background:var(--row-hover);}
+
+/* filter row */
+.filter-row{background:var(--filter-bg) !important;position:sticky;z-index:19;}
+.filter-row th{padding:3px 4px;background:var(--filter-bg) !important;
+    cursor:default;border-bottom:1px solid var(--border);}
+.filter-dropdown{position:relative;width:100%;}
+.filter-trigger{width:100%;padding:3px 5px;border:1px solid var(--border);
+    border-radius:3px;background:var(--drop-bg);color:var(--muted);font-size:10px;
+    cursor:pointer;display:flex;justify-content:space-between;align-items:center;
+    font-family:'Space Mono',monospace;letter-spacing:.04em;transition:border-color .15s;}
+.filter-trigger:hover{border-color:var(--primary);color:var(--ink2);}
+.dropdown-content{display:none;position:fixed;background:var(--drop-bg);
+    min-width:160px;max-height:240px;overflow-y:auto;
+    border:1px solid var(--border);border-radius:4px;
+    box-shadow:0 8px 24px rgba(26,26,26,.12);z-index:9999;}
+body.dark .dropdown-content{box-shadow:0 8px 24px rgba(0,0,0,.4);}
+.dropdown-content.show{display:block;}
+.option-item{padding:7px 10px;cursor:pointer;display:flex;align-items:center;
+    gap:8px;font-size:12px;border-bottom:1px solid var(--border2);
+    color:var(--ink2);transition:background .12s;}
+.option-item:last-child{border-bottom:none;}
+.option-item:hover{background:var(--row-hover);}
+.option-item input[type=checkbox]{margin:0;accent-color:var(--primary);}
+.dropdown-search{width:100%;padding:8px 10px;border:none;
+    border-bottom:1px solid var(--border2);background:var(--drop-bg);
+    color:var(--ink);font-size:12px;outline:none;}
+.dropdown-search::placeholder{color:var(--faint);}
+.dropdown-search:focus{border-bottom-color:var(--primary);}
+th.sort-asc::after{content:" ▲";font-size:9px;}
+th.sort-desc::after{content:" ▼";font-size:9px;}
+
+/* rank change badges */
+.rank{font-weight:600;display:inline-flex;align-items:center;gap:3px;font-size:11px;}
+.rank.up{color:#2a7a4a;}.rank.up::before{content:"▲";font-size:9px;}
+.rank.down{color:#c04830;}.rank.down::before{content:"▼";font-size:9px;}
+.rank.same{color:var(--faint);}.rank.same::before{content:"▶";font-size:9px;}
+
+/* user status: 存活 / 未完赛 / 淘汰(含自杀·球员输球) */
+.st-badge{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;
+    border-radius:10px;font-size:11px;font-weight:500;line-height:1.35;
+    white-space:nowrap;border:0.5px solid transparent;}
+.st-badge::before{content:'';width:6px;height:6px;border-radius:50%;flex-shrink:0;}
+.st-alive{background:rgba(46,125,92,.10);color:#2a6b4f;border-color:rgba(46,125,92,.22);}
+.st-alive::before{background:#2f8a62;}
+.st-live{background:rgba(184,122,42,.10);color:#8a5a18;border-color:rgba(184,122,42,.22);}
+.st-live::before{background:#c4892e;}
+.st-out{background:rgba(120,124,132,.10);color:#6a7078;border-color:rgba(120,124,132,.22);}
+.st-out::before{background:#9aa0a8;}
+.st-other{background:rgba(120,124,132,.10);color:#6a7078;border-color:rgba(120,124,132,.22);}
+.st-other::before{background:#9aa0a8;}
+body.dark .st-alive{background:rgba(72,168,120,.14);color:#7dcea0;border-color:rgba(72,168,120,.28);}
+body.dark .st-alive::before{background:#7dcea0;}
+body.dark .st-live{background:rgba(212,160,72,.14);color:#e0b56a;border-color:rgba(212,160,72,.28);}
+body.dark .st-live::before{background:#e0b56a;}
+body.dark .st-out{background:rgba(150,156,164,.12);color:#a8adb4;border-color:rgba(150,156,164,.24);}
+body.dark .st-out::before{background:#a8adb4;}
+body.dark .st-other{background:rgba(150,156,164,.12);color:#a8adb4;border-color:rgba(150,156,164,.24);}
+body.dark .st-other::before{background:#a8adb4;}
+.filterable-table tr.row-alive td:first-child{box-shadow:inset 3px 0 0 #2f8a62;}
+.filterable-table tr.row-live td:first-child{box-shadow:inset 3px 0 0 #c4892e;}
+.filterable-table tr.row-out td{color:var(--muted);}
+.filterable-table tr.row-out td:first-child{box-shadow:inset 3px 0 0 rgba(154,160,168,.55);}
+body.dark .filterable-table tr.row-alive td:first-child{box-shadow:inset 3px 0 0 #7dcea0;}
+body.dark .filterable-table tr.row-live td:first-child{box-shadow:inset 3px 0 0 #e0b56a;}
+
+/* podium (killer page) */
+.podium{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:24px;}
+.pod-card{background:var(--surface);border:1px solid var(--border2);border-radius:8px;
+    padding:18px 14px;text-align:center;transition:border-color .2s;}
+.pod-card:hover{border-color:var(--border);}
+.pod-card.p1{border-top:3px solid var(--rank1);}
+.pod-card.p2{border-top:3px solid var(--rank2);}
+.pod-card.p3{border-top:3px solid var(--rank3);}
+.pod-medal{font-family:'Space Mono',monospace;font-size:20px;font-weight:700;
+    line-height:1;margin-bottom:8px;}
+.p1 .pod-medal{color:var(--rank1);}
+.p2 .pod-medal{color:var(--rank2);}
+.p3 .pod-medal{color:var(--rank3);}
+.pod-name{font-family:'Noto Serif SC',serif;font-size:14px;font-weight:600;
+    color:var(--ink);margin-bottom:10px;}
+.pod-kills{font-family:'Space Mono',monospace;font-size:24px;font-weight:700;
+    color:var(--primary);line-height:1;margin-bottom:3px;}
+.pod-kills-lbl{font-size:10px;color:var(--faint);letter-spacing:.08em;}
+.pod-rate{margin-top:8px;font-size:11px;color:var(--muted);font-family:'Space Mono',monospace;}
+
+/* kill-count & rank cols */
+.filterable-table td:nth-child(3){font-family:'Space Mono',monospace;font-weight:600;color:var(--primary);}
+.filterable-table td:nth-child(4){font-family:'Space Mono',monospace;font-size:11px;}
+.filterable-table td:first-child{font-family:'Space Mono',monospace;color:var(--faint);font-size:11px;}
+
+/* ── numeric range-slider filter ── */
+.filter-slider{padding:10px 12px 12px;min-width:190px;}
+.filter-slider-readout{
+    display:flex;align-items:center;justify-content:center;gap:6px;
+    margin-bottom:10px;font-family:'Space Mono',monospace;font-size:11px;
+    color:var(--ink2);
+}
+.filter-slider-readout input[type=number]{
+    width:58px;padding:3px 5px;border:1px solid var(--border);border-radius:3px;
+    background:var(--drop-bg);color:var(--ink);font-size:11px;text-align:center;
+    font-family:'Space Mono',monospace;
+}
+.filter-slider-readout input[type=number]:focus{outline:none;border-color:var(--primary);}
+.filter-slider-sep{color:var(--faint);}
+.filter-slider-range{position:relative;height:28px;}
+.filter-slider-track{
+    position:absolute;top:12px;left:0;right:0;height:4px;
+    background:var(--border2);border-radius:2px;
+}
+.filter-slider-fill{
+    position:absolute;top:12px;height:4px;background:var(--primary);border-radius:2px;
+}
+.filter-slider-range input[type=range]{
+    position:absolute;top:0;left:0;width:100%;height:28px;margin:0;
+    background:transparent;-webkit-appearance:none;appearance:none;pointer-events:none;
+}
+.filter-slider-range input[type=range]::-webkit-slider-thumb{
+    pointer-events:auto;-webkit-appearance:none;width:14px;height:14px;
+    border-radius:50%;background:var(--primary);border:2px solid var(--surface);
+    cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,.35);margin-top:8px;
+}
+.filter-slider-range input[type=range]::-moz-range-thumb{
+    pointer-events:auto;width:14px;height:14px;border-radius:50%;
+    background:var(--primary);border:2px solid var(--surface);cursor:pointer;
+}
+.filter-slider-reset{
+    width:100%;margin-top:4px;padding:5px 0;border:1px solid var(--border);
+    border-radius:3px;background:var(--surface2);color:var(--muted);
+    font-size:10px;cursor:pointer;font-family:'Noto Sans SC',sans-serif;
+    transition:all .15s;
+}
+.filter-slider-reset:hover{border-color:var(--primary);color:var(--primary);}
+
+/* detail modal */
+.detail-modal{
+    position:fixed;inset:0;z-index:9999;
+    background:rgba(0,0,0,0);
+    display:none;align-items:center;justify-content:center;padding:18px;
+    transition:background .22s;
+}
+.detail-modal.show{display:flex;background:rgba(0,0,0,.52);}
+.detail-card{
+    width:min(560px,96vw);max-height:85vh;
+    background:var(--surface);
+    border:1px solid var(--border);border-radius:14px;
+    box-shadow:0 20px 60px rgba(0,0,0,.28),0 4px 12px rgba(0,0,0,.12);
+    display:flex;flex-direction:column;overflow:hidden;
+    transform:translateY(14px) scale(.97);opacity:0;
+    transition:transform .26s cubic-bezier(.22,.68,0,1.2),opacity .22s;
+}
+body.dark .detail-card{box-shadow:0 20px 60px rgba(0,0,0,.55),0 4px 12px rgba(0,0,0,.3);}
+.detail-modal.show .detail-card{transform:translateY(0) scale(1);opacity:1;}
+.detail-hd{
+    flex-shrink:0;
+    display:flex;align-items:center;justify-content:space-between;gap:10px;
+    padding:16px 18px 14px;
+    background:var(--th-bg);
+}
+.detail-title-wrap{display:flex;align-items:center;gap:10px;}
+.detail-icon{
+    width:30px;height:30px;border-radius:8px;
+    background:var(--primary-dim);
+    display:flex;align-items:center;justify-content:center;
+    font-size:15px;flex-shrink:0;
+}
+.detail-title{
+    font-family:'Noto Serif SC',serif;font-size:15px;font-weight:600;
+    color:var(--th-text);letter-spacing:.02em;
+}
+.detail-meta{font-family:'Space Mono',monospace;font-size:10px;color:var(--faint);margin-top:2px;}
+.detail-close{
+    border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);
+    color:rgba(255,255,255,.5);
+    border-radius:8px;padding:5px 11px;cursor:pointer;font-size:12px;
+    transition:all .18s;line-height:1.4;flex-shrink:0;
+}
+.detail-close:hover{border-color:var(--primary);color:var(--primary);background:var(--primary-dim);}
+.detail-scroll{overflow-y:auto;padding:10px 10px 14px;}
+.detail-scroll::-webkit-scrollbar{width:4px;}
+.detail-scroll::-webkit-scrollbar-track{background:transparent;}
+.detail-scroll::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px;}
+.detail-list{display:grid;gap:5px;padding:4px 2px;}
+.detail-empty{
+    padding:28px 0;text-align:center;
+    font-size:13px;color:var(--faint);font-family:'Space Mono',monospace;
+    letter-spacing:.06em;
+}
+.detail-item{
+    display:flex;align-items:center;gap:10px;
+    padding:8px 12px;border-radius:8px;
+    border:1px solid var(--border2);background:var(--surface2);
+    transition:background .12s,border-color .12s;
+}
+.detail-item:hover{background:var(--row-hover);border-color:var(--border);}
+.detail-day{
+    font-family:'Space Mono',monospace;font-size:10px;font-weight:700;
+    color:var(--primary);letter-spacing:.06em;
+    min-width:44px;flex-shrink:0;
+    padding:3px 7px;border-radius:5px;
+    background:var(--primary-dim);border:0.5px solid rgba(224,96,64,.22);
+    text-align:center;
+}
+body.dark .detail-day{border-color:rgba(232,96,60,.28);}
+.detail-val{font-size:13px;color:var(--ink);line-height:1.4;flex:1;}
+.detail-footer{
+    flex-shrink:0;
+    display:flex;align-items:center;justify-content:center;
+    padding:10px 18px 12px;
+    border-top:1px solid var(--border2);
+    font-family:'Space Mono',monospace;font-size:10px;color:var(--faint);
+    letter-spacing:.06em;
+}
+.filterable-table tbody tr{cursor:pointer;}
+.filterable-table tbody tr:hover td{background:var(--row-hover);}
+
+@media(max-width:640px){
+    body{padding:14px 12px 40px;}
+    .topbar{margin-bottom:18px;}
+    .page-title{font-size:20px;}
+    .filterable-table{font-size:11px;}
+    .filterable-table thead tr:first-child th,
+    .filterable-table td{padding:5px 6px;white-space:nowrap;}
+    .table-wrapper{max-height:62vh;}
+    .podium{grid-template-columns:1fr;}
+    .sch-name,.sbar-name{width:112px;}
+    .sbar-tag{display:none;}
+}
+/* ── champion page: filter bar ── */
+.filter-bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px;padding:14px;
+    background:var(--surface);border:1px solid var(--border2);border-radius:8px;
+    align-items:center;}
+.filter-group{display:flex;align-items:center;gap:6px;}
+.filter-lbl{font-family:'Space Mono',monospace;font-size:11px;color:var(--muted);
+    letter-spacing:.06em;white-space:nowrap;}
+.filter-chips{display:flex;gap:5px;flex-wrap:wrap;}
+.fchip{font-size:11px;padding:3px 10px;border-radius:20px;cursor:pointer;
+    border:1px solid var(--border);background:var(--surface2);color:var(--muted);
+    transition:all .15s;white-space:nowrap;font-family:'Noto Sans SC',sans-serif;}
+.fchip:hover{border-color:var(--primary-rim);color:var(--primary-dark);}
+.fchip.active{background:var(--primary-dim);color:var(--primary-dark);
+    border-color:var(--primary-rim);font-weight:500;}
+body.dark .fchip.active{color:var(--primary);}
+.filter-divider{width:1px;height:20px;background:var(--border2);flex-shrink:0;}
+.result-count{font-family:'Space Mono',monospace;font-size:11px;color:var(--faint);
+    margin-left:auto;}
+.result-count b{color:var(--primary);}
+ 
+/* ── champion page: tournament accordion ── */
+.tournament-list{display:flex;flex-direction:column;gap:10px;}
+ 
+.t-card{background:var(--surface);border:1px solid var(--border);
+    border-radius:8px;overflow:hidden;transition:border-color .15s;}
+.t-card:hover{border-color:rgba(26,26,26,.2);}
+body.dark .t-card:hover{border-color:rgba(240,236,230,.2);}
+.t-card.open{border-color:var(--primary-rim);}
+ 
+.t-header{display:flex;align-items:center;gap:12px;padding:14px 16px;
+    cursor:pointer;user-select:none;}
+.t-chevron{font-size:11px;color:var(--faint);transition:transform .2s;flex-shrink:0;}
+.t-card.open .t-chevron{transform:rotate(180deg);}
+ 
+.t-left{flex:1;display:flex;align-items:center;gap:8px;flex-wrap:wrap;min-width:0;}
+.t-name{font-size:14px;font-weight:600;color:var(--ink);}
+.t-season{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em;
+    color:var(--faint);padding:2px 7px;border:1px solid var(--border2);border-radius:3px;}
+.t-type{font-size:10px;padding:2px 8px;border-radius:10px;
+    font-weight:500;white-space:nowrap;}
+ 
+/* type pill colours — all 8 types in champions.csv */
+.t-type.gs     {background:rgba(138,96,48,.10); color:#7a5020;
+    border:.5px solid rgba(138,96,48,.28);}
+.t-type.finals {background:rgba(100,60,160,.10);color:#5a30a0;
+    border:.5px solid rgba(100,60,160,.28);}
+.t-type.m1000  {background:var(--secondary-dim);color:var(--secondary);
+    border:.5px solid var(--secondary-rim);}
+.t-type.w1000  {background:var(--primary-dim);  color:var(--primary-dark);
+    border:.5px solid var(--primary-rim);}
+.t-type.m500   {background:rgba(40,86,168,.08); color:#4a6aaa;
+    border:.5px solid rgba(40,86,168,.20);}
+.t-type.w500   {background:rgba(224,96,64,.08); color:#b84828;
+    border:.5px solid rgba(224,96,64,.20);}
+.t-type.m250   {background:rgba(40,86,168,.05); color:#6a8ab8;
+    border:.5px solid rgba(40,86,168,.14);}
+.t-type.w250   {background:rgba(224,96,64,.05); color:#c86048;
+    border:.5px solid rgba(224,96,64,.14);}
+.t-type.other  {background:rgba(26,26,26,.05);  color:var(--muted);
+    border:.5px solid var(--border);}
+ 
+body.dark .t-type.gs     {color:#c8a060;}
+body.dark .t-type.finals {color:#b090f0;}
+body.dark .t-type.m500   {color:#90b8f4;}
+body.dark .t-type.w500   {color:#e8806a;}
+body.dark .t-type.m250   {color:#7898c8;}
+body.dark .t-type.w250   {color:#d87060;}
+body.dark .t-type.m1000  {color:var(--secondary);}
+body.dark .t-type.w1000  {color:var(--primary);}
+ 
+.t-right{display:flex;align-items:center;gap:6px;flex-shrink:0;}
+.t-count{font-family:'Space Mono',monospace;font-size:11px;color:var(--faint);}
+.t-count b{color:var(--primary);font-weight:700;}
+ 
+.t-body{display:none;border-top:1px solid var(--border2);padding:14px 16px;}
+.t-card.open .t-body{display:block;}
+ 
+.winners-grid{display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;}
+.winner-chip{display:flex;align-items:center;gap:8px;padding:8px 10px;
+    background:var(--surface2);border:1px solid var(--border2);border-radius:6px;
+    cursor:pointer;transition:border-color .15s,background .15s;}
+.winner-chip:hover{border-color:var(--primary-rim);background:var(--primary-dim);}
+.winner-num{font-family:'Space Mono',monospace;font-size:11px;
+    color:var(--faint);flex-shrink:0;width:18px;text-align:right;}
+.winner-name{font-size:12px;color:var(--ink2);
+    overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+ 
+@media(max-width:640px){
+    .filter-bar{gap:6px;padding:10px;}
+    .filter-divider{display:none;}
+    .filter-group{width:100%;}
+    .result-count{width:100%;margin-left:0;}
+    .winners-grid{grid-template-columns:repeat(auto-fill,minmax(120px,1fr));}
+}
+</style>
+</head>
+<body>
+<div class="page">
+ 
+<div class="topbar">
+  <a class="back-link" href="index.html">
+    <svg class="logo-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:28px;height:28px;flex-shrink:0;">
+  <ellipse cx="50" cy="43" rx="33" ry="37"
+    fill="rgba(0,0,0,0.03)" stroke="rgba(26,32,53,0.75)" stroke-width="2.5"/>
+  <line x1="43" y1="79" x2="57" y2="79"
+    stroke="rgba(26,32,53,0.75)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="50" y1="80" x2="50" y2="96"
+    stroke="rgba(26,32,53,0.75)" stroke-width="4" stroke-linecap="round"/>
+  <line x1="23" y1="28" x2="40" y2="28" stroke="#E8541A" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="23" y1="37" x2="40" y2="37" stroke="#E8541A" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="23" y1="51" x2="40" y2="51" stroke="#E8541A" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="23" y1="60" x2="40" y2="60" stroke="#E8541A" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="40" y1="28" x2="40" y2="37" stroke="#E8541A" stroke-width="1.8"/>
+  <line x1="40" y1="51" x2="40" y2="60" stroke="#E8541A" stroke-width="1.8"/>
+  <line x1="40" y1="32.5" x2="57" y2="32.5" stroke="#E8541A" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="40" y1="55.5" x2="57" y2="55.5" stroke="#E8541A" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="57" y1="32.5" x2="57" y2="55.5" stroke="#E8541A" stroke-width="1.8"/>
+  <line x1="57" y1="44"   x2="67" y2="44"   stroke="#E8541A" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="72" cy="44" r="5.5" fill="#E8541A"/>
+  <circle cx="72" cy="44" r="2.5" fill="#ffffff"/>
+</svg>
+<svg class="logo-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width:28px;height:28px;flex-shrink:0;display:none;">
+  <ellipse cx="50" cy="43" rx="33" ry="37"
+    fill="rgba(255,255,255,0.03)" stroke="rgba(240,244,255,0.82)" stroke-width="2.5"/>
+  <line x1="43" y1="79" x2="57" y2="79"
+    stroke="rgba(240,244,255,0.82)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="50" y1="80" x2="50" y2="96"
+    stroke="rgba(240,244,255,0.82)" stroke-width="4" stroke-linecap="round"/>
+  <line x1="23" y1="28" x2="40" y2="28" stroke="#E8541A" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="23" y1="37" x2="40" y2="37" stroke="#E8541A" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="23" y1="51" x2="40" y2="51" stroke="#E8541A" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="23" y1="60" x2="40" y2="60" stroke="#E8541A" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="40" y1="28" x2="40" y2="37" stroke="#E8541A" stroke-width="1.8"/>
+  <line x1="40" y1="51" x2="40" y2="60" stroke="#E8541A" stroke-width="1.8"/>
+  <line x1="40" y1="32.5" x2="57" y2="32.5" stroke="#E8541A" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="40" y1="55.5" x2="57" y2="55.5" stroke="#E8541A" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="57" y1="32.5" x2="57" y2="55.5" stroke="#E8541A" stroke-width="1.8"/>
+  <line x1="57" y1="44"   x2="67" y2="44"   stroke="#E8541A" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="72" cy="44" r="5.5" fill="#E8541A"/>
+  <circle cx="72" cy="44" r="2.5" fill="#ffffff"/>
+</svg>
+    ← 首页
+  </a>
+  <div class="topbar-right">
+    <span class="updated">⏱ 2026年10月15日 00:23:32</span>
+    <button class="theme-btn" id="themeBtn" onclick="toggleTheme()">🌙 暗色</button>
+  </div>
+</div>
+ 
+<div class="page-header">
+  <div class="page-eye">ATP · Hall of Champions · All Time</div>
+  <div class="page-title">
+    ATP冠军榜
+    <span class="ttag ttag-atp">ATP</span>
+      <span class="ttag ttag-all">历年总榜</span>
+  </div>
+</div>
+ 
+<div class="filter-bar">
+  <div class="filter-group">
+    <span class="filter-lbl">赛季</span>
+    <div class="filter-chips">
+      <span class="fchip active" onclick="championSetFilter(this,'season','all')">全部</span>
+      <span class="fchip" onclick="championSetFilter(this,'season','2026')">2026</span>
+      <span class="fchip" onclick="championSetFilter(this,'season','2025')">2025</span>
+      <span class="fchip" onclick="championSetFilter(this,'season','2024')">2024</span>
+    </div>
+  </div>
+  <div class="filter-divider"></div>
+  <div class="filter-group">
+    <span class="filter-lbl">赛事类型</span>
+    <div class="filter-chips">
+      <span class="fchip active" onclick="championSetFilter(this,'type','all')">全部</span>
+      <span class="fchip" onclick="championSetFilter(this,'type','大满贯')">大满贯</span>
+      <span class="fchip" onclick="championSetFilter(this,'type','ATP1000')">ATP1000</span>
+      <span class="fchip" onclick="championSetFilter(this,'type','ATP500')">ATP500</span>
+      <span class="fchip" onclick="championSetFilter(this,'type','ATP250')">ATP250</span>
+    </div>
+  </div>
+  <span class="result-count" id="resultCount">
+    显示 <b>37</b> / <b>37</b> 场赛事
+  </span>
+</div>
+ 
+<div class="tournament-list">
+<div class="t-card open"
+     data-season="2026"
+     data-type="ATP500">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">北京</span>
+      <span class="t-season">2026</span>
+      <span class="t-type m500">ATP500</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>4</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="锦暔" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 锦暔 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="锦暔">锦暔</span></div>
+      <div class="winner-chip" data-username="年终的W" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 年终的W 的冠军明细"><span class="winner-num">2.</span><span class="winner-name" title="年终的W">年终的W</span></div>
+      <div class="winner-chip" data-username="晨曦中的楷模Elroy" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 晨曦中的楷模Elroy 的冠军明细"><span class="winner-num">3.</span><span class="winner-name" title="晨曦中的楷模Elroy">晨曦中的楷模Elroy</span></div>
+      <div class="winner-chip" data-username="李杨科-RM" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 李杨科-RM 的冠军明细"><span class="winner-num">4.</span><span class="winner-name" title="李杨科-RM">李杨科-RM</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2026"
+     data-type="ATP250">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">杭州</span>
+      <span class="t-season">2026</span>
+      <span class="t-type m250">ATP250</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>5</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="马戏团冠军" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 马戏团冠军 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="马戏团冠军">马戏团冠军</span></div>
+      <div class="winner-chip" data-username="samsonyip" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 samsonyip 的冠军明细"><span class="winner-num">2.</span><span class="winner-name" title="samsonyip">samsonyip</span></div>
+      <div class="winner-chip" data-username="法网冠军丰塞卡" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 法网冠军丰塞卡 的冠军明细"><span class="winner-num">3.</span><span class="winner-name" title="法网冠军丰塞卡">法网冠军丰塞卡</span></div>
+      <div class="winner-chip" data-username="131*****034" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 131*****034 的冠军明细"><span class="winner-num">4.</span><span class="winner-name" title="131*****034">131*****034</span></div>
+      <div class="winner-chip" data-username="Zoey" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 Zoey 的冠军明细"><span class="winner-num">5.</span><span class="winner-name" title="Zoey">Zoey</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2026"
+     data-type="大满贯">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">美网</span>
+      <span class="t-season">2026</span>
+      <span class="t-type gs">大满贯</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>3</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="impum" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 impum 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="impum">impum</span></div>
+      <div class="winner-chip" data-username="逍遥笑叹红尘" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 逍遥笑叹红尘 的冠军明细"><span class="winner-num">2.</span><span class="winner-name" title="逍遥笑叹红尘">逍遥笑叹红尘</span></div>
+      <div class="winner-chip" data-username="海***y" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 海***y 的冠军明细"><span class="winner-num">3.</span><span class="winner-name" title="海***y">海***y</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2026"
+     data-type="ATP250">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">基茨比厄尔</span>
+      <span class="t-season">2026</span>
+      <span class="t-type m250">ATP250</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>2</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="卷毛Flis" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 卷毛Flis 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="卷毛Flis">卷毛Flis</span></div>
+      <div class="winner-chip" data-username="超级至尊芝心披萨" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 超级至尊芝心披萨 的冠军明细"><span class="winner-num">2.</span><span class="winner-name" title="超级至尊芝心披萨">超级至尊芝心披萨</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2026"
+     data-type="大满贯">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">温网</span>
+      <span class="t-season">2026</span>
+      <span class="t-type gs">大满贯</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>1</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="Dimitrov Go" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 Dimitrov Go 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="Dimitrov Go">Dimitrov Go</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2026"
+     data-type="ATP500">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">伦敦</span>
+      <span class="t-season">2026</span>
+      <span class="t-type m500">ATP500</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>1</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="苟***术" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 苟***术 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="苟***术">苟***术</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2026"
+     data-type="ATP250">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">斯海尔托亨博斯</span>
+      <span class="t-season">2026</span>
+      <span class="t-type m250">ATP250</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>1</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="大满贯的W" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 大满贯的W 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="大满贯的W">大满贯的W</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2026"
+     data-type="ATP1000">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">蒙特卡洛</span>
+      <span class="t-season">2026</span>
+      <span class="t-type m1000">ATP1000</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>4</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="流星穹宇crazy" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 流星穹宇crazy 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="流星穹宇crazy">流星穹宇crazy</span></div>
+      <div class="winner-chip" data-username="我叫LCW" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 我叫LCW 的冠军明细"><span class="winner-num">2.</span><span class="winner-name" title="我叫LCW">我叫LCW</span></div>
+      <div class="winner-chip" data-username="本命百香果柠檬" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 本命百香果柠檬 的冠军明细"><span class="winner-num">3.</span><span class="winner-name" title="本命百香果柠檬">本命百香果柠檬</span></div>
+      <div class="winner-chip" data-username="Dylan Bai" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 Dylan Bai 的冠军明细"><span class="winner-num">4.</span><span class="winner-name" title="Dylan Bai">Dylan Bai</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2026"
+     data-type="ATP250">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">休斯顿</span>
+      <span class="t-season">2026</span>
+      <span class="t-type m250">ATP250</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>6</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="荞麦皮" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 荞麦皮 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="荞麦皮">荞麦皮</span></div>
+      <div class="winner-chip" data-username="那不勒斯Jasper" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 那不勒斯Jasper 的冠军明细"><span class="winner-num">2.</span><span class="winner-name" title="那不勒斯Jasper">那不勒斯Jasper</span></div>
+      <div class="winner-chip" data-username="5默大叔" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 5默大叔 的冠军明细"><span class="winner-num">3.</span><span class="winner-name" title="5默大叔">5默大叔</span></div>
+      <div class="winner-chip" data-username="freedom_or_death" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 freedom_or_death 的冠军明细"><span class="winner-num">4.</span><span class="winner-name" title="freedom_or_death">freedom_or_death</span></div>
+      <div class="winner-chip" data-username="dhhdjfjdjdbcjjcnx" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 dhhdjfjdjdbcjjcnx 的冠军明细"><span class="winner-num">5.</span><span class="winner-name" title="dhhdjfjdjdbcjjcnx">dhhdjfjdjdbcjjcnx</span></div>
+      <div class="winner-chip" data-username="c***3" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 c***3 的冠军明细"><span class="winner-num">6.</span><span class="winner-name" title="c***3">c***3</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2026"
+     data-type="ATP500">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">阿卡普尔科</span>
+      <span class="t-season">2026</span>
+      <span class="t-type m500">ATP500</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>4</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="SamanStosur" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 SamanStosur 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="SamanStosur">SamanStosur</span></div>
+      <div class="winner-chip" data-username="精神故乡丝芙兰" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 精神故乡丝芙兰 的冠军明细"><span class="winner-num">2.</span><span class="winner-name" title="精神故乡丝芙兰">精神故乡丝芙兰</span></div>
+      <div class="winner-chip" data-username="Zoey" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 Zoey 的冠军明细"><span class="winner-num">3.</span><span class="winner-name" title="Zoey">Zoey</span></div>
+      <div class="winner-chip" data-username="Dimitrov Go" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 Dimitrov Go 的冠军明细"><span class="winner-num">4.</span><span class="winner-name" title="Dimitrov Go">Dimitrov Go</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2026"
+     data-type="ATP500">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">多哈</span>
+      <span class="t-season">2026</span>
+      <span class="t-type m500">ATP500</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>12</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="Poah优昙花_" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 Poah优昙花_ 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="Poah优昙花_">Poah优昙花_</span></div>
+      <div class="winner-chip" data-username="啦***拉" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 啦***拉 的冠军明细"><span class="winner-num">2.</span><span class="winner-name" title="啦***拉">啦***拉</span></div>
+      <div class="winner-chip" data-username="顶***家" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 顶***家 的冠军明细"><span class="winner-num">3.</span><span class="winner-name" title="顶***家">顶***家</span></div>
+      <div class="winner-chip" data-username="slay全场666" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 slay全场666 的冠军明细"><span class="winner-num">4.</span><span class="winner-name" title="slay全场666">slay全场666</span></div>
+      <div class="winner-chip" data-username="yh11yh22" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 yh11yh22 的冠军明细"><span class="winner-num">5.</span><span class="winner-name" title="yh11yh22">yh11yh22</span></div>
+      <div class="winner-chip" data-username="188******62" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 188******62 的冠军明细"><span class="winner-num">6.</span><span class="winner-name" title="188******62">188******62</span></div>
+      <div class="winner-chip" data-username="稀有气体hyk" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 稀有气体hyk 的冠军明细"><span class="winner-num">7.</span><span class="winner-name" title="稀有气体hyk">稀有气体hyk</span></div>
+      <div class="winner-chip" data-username="IggyAzaleaChina" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 IggyAzaleaChina 的冠军明细"><span class="winner-num">8.</span><span class="winner-name" title="IggyAzaleaChina">IggyAzaleaChina</span></div>
+      <div class="winner-chip" data-username="大***一" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 大***一 的冠军明细"><span class="winner-num">9.</span><span class="winner-name" title="大***一">大***一</span></div>
+      <div class="winner-chip" data-username="p***7" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 p***7 的冠军明细"><span class="winner-num">10.</span><span class="winner-name" title="p***7">p***7</span></div>
+      <div class="winner-chip" data-username="吴三饼" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 吴三饼 的冠军明细"><span class="winner-num">11.</span><span class="winner-name" title="吴三饼">吴三饼</span></div>
+      <div class="winner-chip" data-username="Cobolli Go" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 Cobolli Go 的冠军明细"><span class="winner-num">12.</span><span class="winner-name" title="Cobolli Go">Cobolli Go</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2026"
+     data-type="ATP500">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">鹿特丹</span>
+      <span class="t-season">2026</span>
+      <span class="t-type m500">ATP500</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>5</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="tenfoynis" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 tenfoynis 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="tenfoynis">tenfoynis</span></div>
+      <div class="winner-chip" data-username="用户7424117482" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 用户7424117482 的冠军明细"><span class="winner-num">2.</span><span class="winner-name" title="用户7424117482">用户7424117482</span></div>
+      <div class="winner-chip" data-username="西瓜太郎笑嘻嘻" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 西瓜太郎笑嘻嘻 的冠军明细"><span class="winner-num">3.</span><span class="winner-name" title="西瓜太郎笑嘻嘻">西瓜太郎笑嘻嘻</span></div>
+      <div class="winner-chip" data-username="Leo_T1nyFo2est_autor" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 Leo_T1nyFo2est_autor 的冠军明细"><span class="winner-num">4.</span><span class="winner-name" title="Leo_T1nyFo2est_autor">Leo_T1nyFo2est_autor</span></div>
+      <div class="winner-chip" data-username="Cobolli Go" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 Cobolli Go 的冠军明细"><span class="winner-num">5.</span><span class="winner-name" title="Cobolli Go">Cobolli Go</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2025"
+     data-type="ATP1000">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">巴黎</span>
+      <span class="t-season">2025</span>
+      <span class="t-type m1000">ATP1000</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>7</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="钱老奶奶" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 钱老奶奶 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="钱老奶奶">钱老奶奶</span></div>
+      <div class="winner-chip" data-username="贝西卜殿下" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 贝西卜殿下 的冠军明细"><span class="winner-num">2.</span><span class="winner-name" title="贝西卜殿下">贝西卜殿下</span></div>
+      <div class="winner-chip" data-username="198******80" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 198******80 的冠军明细"><span class="winner-num">3.</span><span class="winner-name" title="198******80">198******80</span></div>
+      <div class="winner-chip" data-username="Alcaraz Go" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 Alcaraz Go 的冠军明细"><span class="winner-num">4.</span><span class="winner-name" title="Alcaraz Go">Alcaraz Go</span></div>
+      <div class="winner-chip" data-username="199******06" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 199******06 的冠军明细"><span class="winner-num">5.</span><span class="winner-name" title="199******06">199******06</span></div>
+      <div class="winner-chip" data-username="我是我自己zyt" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 我是我自己zyt 的冠军明细"><span class="winner-num">6.</span><span class="winner-name" title="我是我自己zyt">我是我自己zyt</span></div>
+      <div class="winner-chip" data-username="降临Luka" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 降临Luka 的冠军明细"><span class="winner-num">7.</span><span class="winner-name" title="降临Luka">降临Luka</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2025"
+     data-type="ATP500">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">北京</span>
+      <span class="t-season">2025</span>
+      <span class="t-type m500">ATP500</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>7</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="Chris Ivanovic" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 Chris Ivanovic 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="Chris Ivanovic">Chris Ivanovic</span></div>
+      <div class="winner-chip" data-username="Patrick Ding" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 Patrick Ding 的冠军明细"><span class="winner-num">2.</span><span class="winner-name" title="Patrick Ding">Patrick Ding</span></div>
+      <div class="winner-chip" data-username="湫秋兮如风" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 湫秋兮如风 的冠军明细"><span class="winner-num">3.</span><span class="winner-name" title="湫秋兮如风">湫秋兮如风</span></div>
+      <div class="winner-chip" data-username="林强行长的小挎包" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 林强行长的小挎包 的冠军明细"><span class="winner-num">4.</span><span class="winner-name" title="林强行长的小挎包">林强行长的小挎包</span></div>
+      <div class="winner-chip" data-username="普普通通的成年人_" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 普普通通的成年人_ 的冠军明细"><span class="winner-num">5.</span><span class="winner-name" title="普普通通的成年人_">普普通通的成年人_</span></div>
+      <div class="winner-chip" data-username="交H于一点" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 交H于一点 的冠军明细"><span class="winner-num">6.</span><span class="winner-name" title="交H于一点">交H于一点</span></div>
+      <div class="winner-chip" data-username="Dylan Byron" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 Dylan Byron 的冠军明细"><span class="winner-num">7.</span><span class="winner-name" title="Dylan Byron">Dylan Byron</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2025"
+     data-type="ATP250">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">杭州</span>
+      <span class="t-season">2025</span>
+      <span class="t-type m250">ATP250</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>2</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="黑白_大山" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 黑白_大山 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="黑白_大山">黑白_大山</span></div>
+      <div class="winner-chip" data-username="h***t" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 h***t 的冠军明细"><span class="winner-num">2.</span><span class="winner-name" title="h***t">h***t</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2025"
+     data-type="大满贯">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">美网</span>
+      <span class="t-season">2025</span>
+      <span class="t-type gs">大满贯</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>10</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="用嘴倒立的乌鸦" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 用嘴倒立的乌鸦 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="用嘴倒立的乌鸦">用嘴倒立的乌鸦</span></div>
+      <div class="winner-chip" data-username="指纹Nongzw" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 指纹Nongzw 的冠军明细"><span class="winner-num">2.</span><span class="winner-name" title="指纹Nongzw">指纹Nongzw</span></div>
+      <div class="winner-chip" data-username="Ryan-Tennis" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 Ryan-Tennis 的冠军明细"><span class="winner-num">3.</span><span class="winner-name" title="Ryan-Tennis">Ryan-Tennis</span></div>
+      <div class="winner-chip" data-username="Antichristvon" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 Antichristvon 的冠军明细"><span class="winner-num">4.</span><span class="winner-name" title="Antichristvon">Antichristvon</span></div>
+      <div class="winner-chip" data-username="日***岸" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 日***岸 的冠军明细"><span class="winner-num">5.</span><span class="winner-name" title="日***岸">日***岸</span></div>
+      <div class="winner-chip" data-username="肥花太肥" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 肥花太肥 的冠军明细"><span class="winner-num">6.</span><span class="winner-name" title="肥花太肥">肥花太肥</span></div>
+      <div class="winner-chip" data-username="Dagenais" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 Dagenais 的冠军明细"><span class="winner-num">7.</span><span class="winner-name" title="Dagenais">Dagenais</span></div>
+      <div class="winner-chip" data-username="D***3" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 D***3 的冠军明细"><span class="winner-num">8.</span><span class="winner-name" title="D***3">D***3</span></div>
+      <div class="winner-chip" data-username="188******36" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 188******36 的冠军明细"><span class="winner-num">9.</span><span class="winner-name" title="188******36">188******36</span></div>
+      <div class="winner-chip" data-username="滑板2号" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 滑板2号 的冠军明细"><span class="winner-num">10.</span><span class="winner-name" title="滑板2号">滑板2号</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2025"
+     data-type="ATP500">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">华盛顿</span>
+      <span class="t-season">2025</span>
+      <span class="t-type m500">ATP500</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>2</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="octbt" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 octbt 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="octbt">octbt</span></div>
+      <div class="winner-chip" data-username="-Frictionless" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 -Frictionless 的冠军明细"><span class="winner-num">2.</span><span class="winner-name" title="-Frictionless">-Frictionless</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2025"
+     data-type="大满贯">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">温网</span>
+      <span class="t-season">2025</span>
+      <span class="t-type gs">大满贯</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>3</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="和楼盘规模破破" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 和楼盘规模破破 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="和楼盘规模破破">和楼盘规模破破</span></div>
+      <div class="winner-chip" data-username="yygq专家" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 yygq专家 的冠军明细"><span class="winner-num">2.</span><span class="winner-name" title="yygq专家">yygq专家</span></div>
+      <div class="winner-chip" data-username="弗外外茨" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 弗外外茨 的冠军明细"><span class="winner-num">3.</span><span class="winner-name" title="弗外外茨">弗外外茨</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2025"
+     data-type="ATP250">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">马洛卡</span>
+      <span class="t-season">2025</span>
+      <span class="t-type m250">ATP250</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>7</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="木的讷" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 木的讷 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="木的讷">木的讷</span></div>
+      <div class="winner-chip" data-username="黑***友" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 黑***友 的冠军明细"><span class="winner-num">2.</span><span class="winner-name" title="黑***友">黑***友</span></div>
+      <div class="winner-chip" data-username="顶***家" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 顶***家 的冠军明细"><span class="winner-num">3.</span><span class="winner-name" title="顶***家">顶***家</span></div>
+      <div class="winner-chip" data-username="浙江土特产" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 浙江土特产 的冠军明细"><span class="winner-num">4.</span><span class="winner-name" title="浙江土特产">浙江土特产</span></div>
+      <div class="winner-chip" data-username="林强行长的小挎包" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 林强行长的小挎包 的冠军明细"><span class="winner-num">5.</span><span class="winner-name" title="林强行长的小挎包">林强行长的小挎包</span></div>
+      <div class="winner-chip" data-username="500赛的W" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 500赛的W 的冠军明细"><span class="winner-num">6.</span><span class="winner-name" title="500赛的W">500赛的W</span></div>
+      <div class="winner-chip" data-username="Dagenais" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 Dagenais 的冠军明细"><span class="winner-num">7.</span><span class="winner-name" title="Dagenais">Dagenais</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2025"
+     data-type="大满贯">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">法网</span>
+      <span class="t-season">2025</span>
+      <span class="t-type gs">大满贯</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>1</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="嘚嘚啵咿" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 嘚嘚啵咿 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="嘚嘚啵咿">嘚嘚啵咿</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2025"
+     data-type="ATP500">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">汉堡</span>
+      <span class="t-season">2025</span>
+      <span class="t-type m500">ATP500</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>1</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="弗外外茨" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 弗外外茨 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="弗外外茨">弗外外茨</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2025"
+     data-type="ATP1000">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">罗马</span>
+      <span class="t-season">2025</span>
+      <span class="t-type m1000">ATP1000</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>7</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="橙色熊猫" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 橙色熊猫 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="橙色熊猫">橙色熊猫</span></div>
+      <div class="winner-chip" data-username="ilove33" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 ilove33 的冠军明细"><span class="winner-num">2.</span><span class="winner-name" title="ilove33">ilove33</span></div>
+      <div class="winner-chip" data-username="samsonyip" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 samsonyip 的冠军明细"><span class="winner-num">3.</span><span class="winner-name" title="samsonyip">samsonyip</span></div>
+      <div class="winner-chip" data-username="青花比目" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 青花比目 的冠军明细"><span class="winner-num">4.</span><span class="winner-name" title="青花比目">青花比目</span></div>
+      <div class="winner-chip" data-username="萨卡外" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 萨卡外 的冠军明细"><span class="winner-num">5.</span><span class="winner-name" title="萨卡外">萨卡外</span></div>
+      <div class="winner-chip" data-username="A***4" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 A***4 的冠军明细"><span class="winner-num">6.</span><span class="winner-name" title="A***4">A***4</span></div>
+      <div class="winner-chip" data-username="零***澄" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 零***澄 的冠军明细"><span class="winner-num">7.</span><span class="winner-name" title="零***澄">零***澄</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2025"
+     data-type="ATP500">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">迪拜</span>
+      <span class="t-season">2025</span>
+      <span class="t-type m500">ATP500</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>12</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="白云静水" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 白云静水 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="白云静水">白云静水</span></div>
+      <div class="winner-chip" data-username="RV--RV" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 RV--RV 的冠军明细"><span class="winner-num">2.</span><span class="winner-name" title="RV--RV">RV--RV</span></div>
+      <div class="winner-chip" data-username="浙江土特产" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 浙江土特产 的冠军明细"><span class="winner-num">3.</span><span class="winner-name" title="浙江土特产">浙江土特产</span></div>
+      <div class="winner-chip" data-username="xxxjusAng" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 xxxjusAng 的冠军明细"><span class="winner-num">4.</span><span class="winner-name" title="xxxjusAng">xxxjusAng</span></div>
+      <div class="winner-chip" data-username="卡尼TT" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 卡尼TT 的冠军明细"><span class="winner-num">5.</span><span class="winner-name" title="卡尼TT">卡尼TT</span></div>
+      <div class="winner-chip" data-username="一***酒" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 一***酒 的冠军明细"><span class="winner-num">6.</span><span class="winner-name" title="一***酒">一***酒</span></div>
+      <div class="winner-chip" data-username="liangZxx" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 liangZxx 的冠军明细"><span class="winner-num">7.</span><span class="winner-name" title="liangZxx">liangZxx</span></div>
+      <div class="winner-chip" data-username="WillKrisKai" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 WillKrisKai 的冠军明细"><span class="winner-num">8.</span><span class="winner-name" title="WillKrisKai">WillKrisKai</span></div>
+      <div class="winner-chip" data-username="爱歪歪的坏宝贝" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 爱歪歪的坏宝贝 的冠军明细"><span class="winner-num">9.</span><span class="winner-name" title="爱歪歪的坏宝贝">爱歪歪的坏宝贝</span></div>
+      <div class="winner-chip" data-username="H***n" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 H***n 的冠军明细"><span class="winner-num">10.</span><span class="winner-name" title="H***n">H***n</span></div>
+      <div class="winner-chip" data-username="吴二饼" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 吴二饼 的冠军明细"><span class="winner-num">11.</span><span class="winner-name" title="吴二饼">吴二饼</span></div>
+      <div class="winner-chip" data-username="BOHEYE_" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 BOHEYE_ 的冠军明细"><span class="winner-num">12.</span><span class="winner-name" title="BOHEYE_">BOHEYE_</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2025"
+     data-type="ATP500">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">多哈</span>
+      <span class="t-season">2025</span>
+      <span class="t-type m500">ATP500</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>1</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="用户7376159987" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 用户7376159987 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="用户7376159987">用户7376159987</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2025"
+     data-type="ATP500">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">达拉斯</span>
+      <span class="t-season">2025</span>
+      <span class="t-type m500">ATP500</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>1</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="天邪幻世" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 天邪幻世 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="天邪幻世">天邪幻世</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2025"
+     data-type="大满贯">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">澳网</span>
+      <span class="t-season">2025</span>
+      <span class="t-type gs">大满贯</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>1</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="旧纳琛" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 旧纳琛 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="旧纳琛">旧纳琛</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2025"
+     data-type="ATP250">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">阿德莱德</span>
+      <span class="t-season">2025</span>
+      <span class="t-type m250">ATP250</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>8</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="木的讷" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 木的讷 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="木的讷">木的讷</span></div>
+      <div class="winner-chip" data-username="张文静之歌" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 张文静之歌 的冠军明细"><span class="winner-num">2.</span><span class="winner-name" title="张文静之歌">张文静之歌</span></div>
+      <div class="winner-chip" data-username="Kwan-tennis" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 Kwan-tennis 的冠军明细"><span class="winner-num">3.</span><span class="winner-name" title="Kwan-tennis">Kwan-tennis</span></div>
+      <div class="winner-chip" data-username="马戏团冠军" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 马戏团冠军 的冠军明细"><span class="winner-num">4.</span><span class="winner-name" title="马戏团冠军">马戏团冠军</span></div>
+      <div class="winner-chip" data-username="蛊毒娃丶" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 蛊毒娃丶 的冠军明细"><span class="winner-num">5.</span><span class="winner-name" title="蛊毒娃丶">蛊毒娃丶</span></div>
+      <div class="winner-chip" data-username="jelennnnn" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 jelennnnn 的冠军明细"><span class="winner-num">6.</span><span class="winner-name" title="jelennnnn">jelennnnn</span></div>
+      <div class="winner-chip" data-username="许yunkai" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 许yunkai 的冠军明细"><span class="winner-num">7.</span><span class="winner-name" title="许yunkai">许yunkai</span></div>
+      <div class="winner-chip" data-username="旧纳琛" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 旧纳琛 的冠军明细"><span class="winner-num">8.</span><span class="winner-name" title="旧纳琛">旧纳琛</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2024"
+     data-type="ATP500">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">巴塞尔</span>
+      <span class="t-season">2024</span>
+      <span class="t-type m500">ATP500</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>1</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="victorgc" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 victorgc 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="victorgc">victorgc</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2024"
+     data-type="ATP500">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">北京</span>
+      <span class="t-season">2024</span>
+      <span class="t-type m500">ATP500</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>29</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="天邪幻世" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 天邪幻世 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="天邪幻世">天邪幻世</span></div>
+      <div class="winner-chip" data-username="a407102500" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 a407102500 的冠军明细"><span class="winner-num">2.</span><span class="winner-name" title="a407102500">a407102500</span></div>
+      <div class="winner-chip" data-username="__Novak__" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 __Novak__ 的冠军明细"><span class="winner-num">3.</span><span class="winner-name" title="__Novak__">__Novak__</span></div>
+      <div class="winner-chip" data-username="黑***友" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 黑***友 的冠军明细"><span class="winner-num">4.</span><span class="winner-name" title="黑***友">黑***友</span></div>
+      <div class="winner-chip" data-username="wennuan78" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 wennuan78 的冠军明细"><span class="winner-num">5.</span><span class="winner-name" title="wennuan78">wennuan78</span></div>
+      <div class="winner-chip" data-username="无聊-消遣" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 无聊-消遣 的冠军明细"><span class="winner-num">6.</span><span class="winner-name" title="无聊-消遣">无聊-消遣</span></div>
+      <div class="winner-chip" data-username="我来了你怕了嘛" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 我来了你怕了嘛 的冠军明细"><span class="winner-num">7.</span><span class="winner-name" title="我来了你怕了嘛">我来了你怕了嘛</span></div>
+      <div class="winner-chip" data-username="镇远神" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 镇远神 的冠军明细"><span class="winner-num">8.</span><span class="winner-name" title="镇远神">镇远神</span></div>
+      <div class="winner-chip" data-username="冰萌申煦" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 冰萌申煦 的冠军明细"><span class="winner-num">9.</span><span class="winner-name" title="冰萌申煦">冰萌申煦</span></div>
+      <div class="winner-chip" data-username="WillKris锴" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 WillKris锴 的冠军明细"><span class="winner-num">10.</span><span class="winner-name" title="WillKris锴">WillKris锴</span></div>
+      <div class="winner-chip" data-username="xxxjusAng" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 xxxjusAng 的冠军明细"><span class="winner-num">11.</span><span class="winner-name" title="xxxjusAng">xxxjusAng</span></div>
+      <div class="winner-chip" data-username="moommomoommo" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 moommomoommo 的冠军明细"><span class="winner-num">12.</span><span class="winner-name" title="moommomoommo">moommomoommo</span></div>
+      <div class="winner-chip" data-username="没有滑板的张某某" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 没有滑板的张某某 的冠军明细"><span class="winner-num">13.</span><span class="winner-name" title="没有滑板的张某某">没有滑板的张某某</span></div>
+      <div class="winner-chip" data-username="5默大叔" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 5默大叔 的冠军明细"><span class="winner-num">14.</span><span class="winner-name" title="5默大叔">5默大叔</span></div>
+      <div class="winner-chip" data-username="墨城锅铲" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 墨城锅铲 的冠军明细"><span class="winner-num">15.</span><span class="winner-name" title="墨城锅铲">墨城锅铲</span></div>
+      <div class="winner-chip" data-username="samsonyip" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 samsonyip 的冠军明细"><span class="winner-num">16.</span><span class="winner-name" title="samsonyip">samsonyip</span></div>
+      <div class="winner-chip" data-username="派派派崔克" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 派派派崔克 的冠军明细"><span class="winner-num">17.</span><span class="winner-name" title="派派派崔克">派派派崔克</span></div>
+      <div class="winner-chip" data-username="188******62" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 188******62 的冠军明细"><span class="winner-num">18.</span><span class="winner-name" title="188******62">188******62</span></div>
+      <div class="winner-chip" data-username="大满贯的W" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 大满贯的W 的冠军明细"><span class="winner-num">19.</span><span class="winner-name" title="大满贯的W">大满贯的W</span></div>
+      <div class="winner-chip" data-username="海狸先生的小翘臀" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 海狸先生的小翘臀 的冠军明细"><span class="winner-num">20.</span><span class="winner-name" title="海狸先生的小翘臀">海狸先生的小翘臀</span></div>
+      <div class="winner-chip" data-username="mj ouyang" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 mj ouyang 的冠军明细"><span class="winner-num">21.</span><span class="winner-name" title="mj ouyang">mj ouyang</span></div>
+      <div class="winner-chip" data-username="Elroy ZHANG" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 Elroy ZHANG 的冠军明细"><span class="winner-num">22.</span><span class="winner-name" title="Elroy ZHANG">Elroy ZHANG</span></div>
+      <div class="winner-chip" data-username="Oreache_TAO" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 Oreache_TAO 的冠军明细"><span class="winner-num">23.</span><span class="winner-name" title="Oreache_TAO">Oreache_TAO</span></div>
+      <div class="winner-chip" data-username="用户5638241188" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 用户5638241188 的冠军明细"><span class="winner-num">24.</span><span class="winner-name" title="用户5638241188">用户5638241188</span></div>
+      <div class="winner-chip" data-username="z***4" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 z***4 的冠军明细"><span class="winner-num">25.</span><span class="winner-name" title="z***4">z***4</span></div>
+      <div class="winner-chip" data-username="John大师兄" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 John大师兄 的冠军明细"><span class="winner-num">26.</span><span class="winner-name" title="John大师兄">John大师兄</span></div>
+      <div class="winner-chip" data-username="风儿007008" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 风儿007008 的冠军明细"><span class="winner-num">27.</span><span class="winner-name" title="风儿007008">风儿007008</span></div>
+      <div class="winner-chip" data-username="旧纳琛" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 旧纳琛 的冠军明细"><span class="winner-num">28.</span><span class="winner-name" title="旧纳琛">旧纳琛</span></div>
+      <div class="winner-chip" data-username="wb789005" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 wb789005 的冠军明细"><span class="winner-num">29.</span><span class="winner-name" title="wb789005">wb789005</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2024"
+     data-type="ATP250">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">杭州</span>
+      <span class="t-season">2024</span>
+      <span class="t-type m250">ATP250</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>3</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="日***岸" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 日***岸 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="日***岸">日***岸</span></div>
+      <div class="winner-chip" data-username="5默大叔" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 5默大叔 的冠军明细"><span class="winner-num">2.</span><span class="winner-name" title="5默大叔">5默大叔</span></div>
+      <div class="winner-chip" data-username="Elroy ZHANG" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 Elroy ZHANG 的冠军明细"><span class="winner-num">3.</span><span class="winner-name" title="Elroy ZHANG">Elroy ZHANG</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2024"
+     data-type="大满贯">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">美网</span>
+      <span class="t-season">2024</span>
+      <span class="t-type gs">大满贯</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>1</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="荞二皮" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 荞二皮 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="荞二皮">荞二皮</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2024"
+     data-type="ATP250">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">温斯顿塞勒姆</span>
+      <span class="t-season">2024</span>
+      <span class="t-type m250">ATP250</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>1</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="Oreache_TAO" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 Oreache_TAO 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="Oreache_TAO">Oreache_TAO</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2024"
+     data-type="ATP1000">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">辛辛那提</span>
+      <span class="t-season">2024</span>
+      <span class="t-type m1000">ATP1000</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>4</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="__Novak__" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 __Novak__ 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="__Novak__">__Novak__</span></div>
+      <div class="winner-chip" data-username="丨Salvation丨" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 丨Salvation丨 的冠军明细"><span class="winner-num">2.</span><span class="winner-name" title="丨Salvation丨">丨Salvation丨</span></div>
+      <div class="winner-chip" data-username="-Frictionless" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 -Frictionless 的冠军明细"><span class="winner-num">3.</span><span class="winner-name" title="-Frictionless">-Frictionless</span></div>
+      <div class="winner-chip" data-username="风儿007008" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 风儿007008 的冠军明细"><span class="winner-num">4.</span><span class="winner-name" title="风儿007008">风儿007008</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2024"
+     data-type="ATP1000">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">蒙特利尔</span>
+      <span class="t-season">2024</span>
+      <span class="t-type m1000">ATP1000</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>7</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="octbt" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 octbt 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="octbt">octbt</span></div>
+      <div class="winner-chip" data-username="Ryan-Tennis" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 Ryan-Tennis 的冠军明细"><span class="winner-num">2.</span><span class="winner-name" title="Ryan-Tennis">Ryan-Tennis</span></div>
+      <div class="winner-chip" data-username="1000赛的W" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 1000赛的W 的冠军明细"><span class="winner-num">3.</span><span class="winner-name" title="1000赛的W">1000赛的W</span></div>
+      <div class="winner-chip" data-username="duhao110101" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 duhao110101 的冠军明细"><span class="winner-num">4.</span><span class="winner-name" title="duhao110101">duhao110101</span></div>
+      <div class="winner-chip" data-username="唯爱张帅" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 唯爱张帅 的冠军明细"><span class="winner-num">5.</span><span class="winner-name" title="唯爱张帅">唯爱张帅</span></div>
+      <div class="winner-chip" data-username="逍遥笑叹红尘" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 逍遥笑叹红尘 的冠军明细"><span class="winner-num">6.</span><span class="winner-name" title="逍遥笑叹红尘">逍遥笑叹红尘</span></div>
+      <div class="winner-chip" data-username="年终的W" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 年终的W 的冠军明细"><span class="winner-num">7.</span><span class="winner-name" title="年终的W">年终的W</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2024"
+     data-type="ATP250">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">伊斯特本</span>
+      <span class="t-season">2024</span>
+      <span class="t-type m250">ATP250</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>3</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="只愿_漂浮" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 只愿_漂浮 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="只愿_漂浮">只愿_漂浮</span></div>
+      <div class="winner-chip" data-username="octbt" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 octbt 的冠军明细"><span class="winner-num">2.</span><span class="winner-name" title="octbt">octbt</span></div>
+      <div class="winner-chip" data-username="ForAI83373" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 ForAI83373 的冠军明细"><span class="winner-num">3.</span><span class="winner-name" title="ForAI83373">ForAI83373</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2024"
+     data-type="ATP1000">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">马德里</span>
+      <span class="t-season">2024</span>
+      <span class="t-type m1000">ATP1000</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>1</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="流星穹宇crazy" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 流星穹宇crazy 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="流星穹宇crazy">流星穹宇crazy</span></div>
+    </div>
+  </div>
+</div><div class="t-card "
+     data-season="2024"
+     data-type="ATP1000">
+  <div class="t-header" onclick="toggleTCard(this)">
+    <span class="t-chevron">▼</span>
+    <div class="t-left">
+      <span class="t-name">蒙特卡洛</span>
+      <span class="t-season">2024</span>
+      <span class="t-type m1000">ATP1000</span>
+    </div>
+    <div class="t-right">
+      <span class="t-count"><b>1</b> 位冠军</span>
+    </div>
+  </div>
+  <div class="t-body">
+    <div class="winners-grid">
+      <div class="winner-chip" data-username="麦迪还是洋葱" onclick="championShowWinnerDetail(this.dataset.username)" title="点击查看 麦迪还是洋葱 的冠军明细"><span class="winner-num">1.</span><span class="winner-name" title="麦迪还是洋葱">麦迪还是洋葱</span></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="champion-detail-modal" class="detail-modal">
+  <div class="detail-card">
+    <div class="detail-hd">
+      <div class="detail-title-wrap">
+        <div class="detail-icon">🏆</div>
+        <div>
+          <div class="detail-title">冠军明细</div>
+          <div class="detail-meta" id="champion-detail-meta-line"></div>
+        </div>
+      </div>
+      <button id="champion-detail-close" class="detail-close" type="button">✕ 关闭</button>
+    </div>
+    <div class="detail-scroll">
+      <div id="champion-detail-body" class="detail-list"></div>
+    </div>
+    <div class="detail-footer" id="champion-detail-footer"></div>
+  </div>
+</div>
+ 
+</div>
+<script>
+window.CHAMPION_USER_STATS = {"-Frictionless": {"total": 2, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2024辛辛那提"]}, {"type": "ATP500", "count": 1, "events": ["2025华盛顿"]}]}, "1000赛的W": {"total": 1, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2024蒙特利尔"]}]}, "131*****034": {"total": 1, "by_type": [{"type": "ATP250", "count": 1, "events": ["2026杭州"]}]}, "188******36": {"total": 1, "by_type": [{"type": "大满贯", "count": 1, "events": ["2025美网"]}]}, "188******62": {"total": 2, "by_type": [{"type": "ATP500", "count": 2, "events": ["2024北京", "2026多哈"]}]}, "198******80": {"total": 1, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2025巴黎"]}]}, "199******06": {"total": 1, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2025巴黎"]}]}, "500赛的W": {"total": 1, "by_type": [{"type": "ATP250", "count": 1, "events": ["2025马洛卡"]}]}, "5默大叔": {"total": 3, "by_type": [{"type": "ATP500", "count": 1, "events": ["2024北京"]}, {"type": "ATP250", "count": 2, "events": ["2024杭州", "2026休斯顿"]}]}, "A***4": {"total": 1, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2025罗马"]}]}, "Alcaraz Go": {"total": 1, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2025巴黎"]}]}, "Antichristvon": {"total": 1, "by_type": [{"type": "大满贯", "count": 1, "events": ["2025美网"]}]}, "BOHEYE_": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2025迪拜"]}]}, "Chris Ivanovic": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2025北京"]}]}, "Cobolli Go": {"total": 2, "by_type": [{"type": "ATP500", "count": 2, "events": ["2026鹿特丹", "2026多哈"]}]}, "D***3": {"total": 1, "by_type": [{"type": "大满贯", "count": 1, "events": ["2025美网"]}]}, "Dagenais": {"total": 2, "by_type": [{"type": "大满贯", "count": 1, "events": ["2025美网"]}, {"type": "ATP250", "count": 1, "events": ["2025马洛卡"]}]}, "Dimitrov Go": {"total": 2, "by_type": [{"type": "大满贯", "count": 1, "events": ["2026温网"]}, {"type": "ATP500", "count": 1, "events": ["2026阿卡普尔科"]}]}, "Dylan Bai": {"total": 1, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2026蒙特卡洛"]}]}, "Dylan Byron": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2025北京"]}]}, "Elroy ZHANG": {"total": 2, "by_type": [{"type": "ATP500", "count": 1, "events": ["2024北京"]}, {"type": "ATP250", "count": 1, "events": ["2024杭州"]}]}, "ForAI83373": {"total": 1, "by_type": [{"type": "ATP250", "count": 1, "events": ["2024伊斯特本"]}]}, "H***n": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2025迪拜"]}]}, "IggyAzaleaChina": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2026多哈"]}]}, "John大师兄": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2024北京"]}]}, "Kwan-tennis": {"total": 1, "by_type": [{"type": "ATP250", "count": 1, "events": ["2025阿德莱德"]}]}, "Leo_T1nyFo2est_autor": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2026鹿特丹"]}]}, "Oreache_TAO": {"total": 2, "by_type": [{"type": "ATP500", "count": 1, "events": ["2024北京"]}, {"type": "ATP250", "count": 1, "events": ["2024温斯顿塞勒姆"]}]}, "Patrick Ding": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2025北京"]}]}, "Poah优昙花_": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2026多哈"]}]}, "RV--RV": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2025迪拜"]}]}, "Ryan-Tennis": {"total": 2, "by_type": [{"type": "大满贯", "count": 1, "events": ["2025美网"]}, {"type": "ATP1000", "count": 1, "events": ["2024蒙特利尔"]}]}, "SamanStosur": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2026阿卡普尔科"]}]}, "WillKrisKai": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2025迪拜"]}]}, "WillKris锴": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2024北京"]}]}, "Zoey": {"total": 2, "by_type": [{"type": "ATP500", "count": 1, "events": ["2026阿卡普尔科"]}, {"type": "ATP250", "count": 1, "events": ["2026杭州"]}]}, "__Novak__": {"total": 2, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2024辛辛那提"]}, {"type": "ATP500", "count": 1, "events": ["2024北京"]}]}, "a407102500": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2024北京"]}]}, "c***3": {"total": 1, "by_type": [{"type": "ATP250", "count": 1, "events": ["2026休斯顿"]}]}, "dhhdjfjdjdbcjjcnx": {"total": 1, "by_type": [{"type": "ATP250", "count": 1, "events": ["2026休斯顿"]}]}, "duhao110101": {"total": 1, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2024蒙特利尔"]}]}, "freedom_or_death": {"total": 1, "by_type": [{"type": "ATP250", "count": 1, "events": ["2026休斯顿"]}]}, "h***t": {"total": 1, "by_type": [{"type": "ATP250", "count": 1, "events": ["2025杭州"]}]}, "ilove33": {"total": 1, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2025罗马"]}]}, "impum": {"total": 1, "by_type": [{"type": "大满贯", "count": 1, "events": ["2026美网"]}]}, "jelennnnn": {"total": 1, "by_type": [{"type": "ATP250", "count": 1, "events": ["2025阿德莱德"]}]}, "liangZxx": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2025迪拜"]}]}, "mj ouyang": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2024北京"]}]}, "moommomoommo": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2024北京"]}]}, "octbt": {"total": 3, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2024蒙特利尔"]}, {"type": "ATP500", "count": 1, "events": ["2025华盛顿"]}, {"type": "ATP250", "count": 1, "events": ["2024伊斯特本"]}]}, "p***7": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2026多哈"]}]}, "samsonyip": {"total": 3, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2025罗马"]}, {"type": "ATP500", "count": 1, "events": ["2024北京"]}, {"type": "ATP250", "count": 1, "events": ["2026杭州"]}]}, "slay全场666": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2026多哈"]}]}, "tenfoynis": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2026鹿特丹"]}]}, "victorgc": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2024巴塞尔"]}]}, "wb789005": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2024北京"]}]}, "wennuan78": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2024北京"]}]}, "xxxjusAng": {"total": 2, "by_type": [{"type": "ATP500", "count": 2, "events": ["2024北京", "2025迪拜"]}]}, "yh11yh22": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2026多哈"]}]}, "yygq专家": {"total": 1, "by_type": [{"type": "大满贯", "count": 1, "events": ["2025温网"]}]}, "z***4": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2024北京"]}]}, "一***酒": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2025迪拜"]}]}, "丨Salvation丨": {"total": 1, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2024辛辛那提"]}]}, "交H于一点": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2025北京"]}]}, "冰萌申煦": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2024北京"]}]}, "卡尼TT": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2025迪拜"]}]}, "卷毛Flis": {"total": 1, "by_type": [{"type": "ATP250", "count": 1, "events": ["2026基茨比厄尔"]}]}, "只愿_漂浮": {"total": 1, "by_type": [{"type": "ATP250", "count": 1, "events": ["2024伊斯特本"]}]}, "吴三饼": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2026多哈"]}]}, "吴二饼": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2025迪拜"]}]}, "和楼盘规模破破": {"total": 1, "by_type": [{"type": "大满贯", "count": 1, "events": ["2025温网"]}]}, "唯爱张帅": {"total": 1, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2024蒙特利尔"]}]}, "啦***拉": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2026多哈"]}]}, "嘚嘚啵咿": {"total": 1, "by_type": [{"type": "大满贯", "count": 1, "events": ["2025法网"]}]}, "墨城锅铲": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2024北京"]}]}, "大***一": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2026多哈"]}]}, "大满贯的W": {"total": 2, "by_type": [{"type": "ATP500", "count": 1, "events": ["2024北京"]}, {"type": "ATP250", "count": 1, "events": ["2026斯海尔托亨博斯"]}]}, "天邪幻世": {"total": 2, "by_type": [{"type": "ATP500", "count": 2, "events": ["2024北京", "2025达拉斯"]}]}, "年终的W": {"total": 2, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2024蒙特利尔"]}, {"type": "ATP500", "count": 1, "events": ["2026北京"]}]}, "弗外外茨": {"total": 2, "by_type": [{"type": "大满贯", "count": 1, "events": ["2025温网"]}, {"type": "ATP500", "count": 1, "events": ["2025汉堡"]}]}, "张文静之歌": {"total": 1, "by_type": [{"type": "ATP250", "count": 1, "events": ["2025阿德莱德"]}]}, "我叫LCW": {"total": 1, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2026蒙特卡洛"]}]}, "我是我自己zyt": {"total": 1, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2025巴黎"]}]}, "我来了你怕了嘛": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2024北京"]}]}, "指纹Nongzw": {"total": 1, "by_type": [{"type": "大满贯", "count": 1, "events": ["2025美网"]}]}, "无聊-消遣": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2024北京"]}]}, "日***岸": {"total": 2, "by_type": [{"type": "大满贯", "count": 1, "events": ["2025美网"]}, {"type": "ATP250", "count": 1, "events": ["2024杭州"]}]}, "旧纳琛": {"total": 3, "by_type": [{"type": "大满贯", "count": 1, "events": ["2025澳网"]}, {"type": "ATP500", "count": 1, "events": ["2024北京"]}, {"type": "ATP250", "count": 1, "events": ["2025阿德莱德"]}]}, "晨曦中的楷模Elroy": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2026北京"]}]}, "普普通通的成年人_": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2025北京"]}]}, "木的讷": {"total": 2, "by_type": [{"type": "ATP250", "count": 2, "events": ["2025阿德莱德", "2025马洛卡"]}]}, "本命百香果柠檬": {"total": 1, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2026蒙特卡洛"]}]}, "李杨科-RM": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2026北京"]}]}, "林强行长的小挎包": {"total": 2, "by_type": [{"type": "ATP500", "count": 1, "events": ["2025北京"]}, {"type": "ATP250", "count": 1, "events": ["2025马洛卡"]}]}, "橙色熊猫": {"total": 1, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2025罗马"]}]}, "没有滑板的张某某": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2024北京"]}]}, "法网冠军丰塞卡": {"total": 1, "by_type": [{"type": "ATP250", "count": 1, "events": ["2026杭州"]}]}, "派派派崔克": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2024北京"]}]}, "流星穹宇crazy": {"total": 2, "by_type": [{"type": "ATP1000", "count": 2, "events": ["2024马德里", "2026蒙特卡洛"]}]}, "浙江土特产": {"total": 2, "by_type": [{"type": "ATP500", "count": 1, "events": ["2025迪拜"]}, {"type": "ATP250", "count": 1, "events": ["2025马洛卡"]}]}, "海***y": {"total": 1, "by_type": [{"type": "大满贯", "count": 1, "events": ["2026美网"]}]}, "海狸先生的小翘臀": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2024北京"]}]}, "湫秋兮如风": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2025北京"]}]}, "滑板2号": {"total": 1, "by_type": [{"type": "大满贯", "count": 1, "events": ["2025美网"]}]}, "爱歪歪的坏宝贝": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2025迪拜"]}]}, "用嘴倒立的乌鸦": {"total": 1, "by_type": [{"type": "大满贯", "count": 1, "events": ["2025美网"]}]}, "用户5638241188": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2024北京"]}]}, "用户7376159987": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2025多哈"]}]}, "用户7424117482": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2026鹿特丹"]}]}, "白云静水": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2025迪拜"]}]}, "稀有气体hyk": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2026多哈"]}]}, "精神故乡丝芙兰": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2026阿卡普尔科"]}]}, "肥花太肥": {"total": 1, "by_type": [{"type": "大满贯", "count": 1, "events": ["2025美网"]}]}, "苟***术": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2026伦敦"]}]}, "荞二皮": {"total": 1, "by_type": [{"type": "大满贯", "count": 1, "events": ["2024美网"]}]}, "荞麦皮": {"total": 1, "by_type": [{"type": "ATP250", "count": 1, "events": ["2026休斯顿"]}]}, "萨卡外": {"total": 1, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2025罗马"]}]}, "蛊毒娃丶": {"total": 1, "by_type": [{"type": "ATP250", "count": 1, "events": ["2025阿德莱德"]}]}, "西瓜太郎笑嘻嘻": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2026鹿特丹"]}]}, "许yunkai": {"total": 1, "by_type": [{"type": "ATP250", "count": 1, "events": ["2025阿德莱德"]}]}, "贝西卜殿下": {"total": 1, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2025巴黎"]}]}, "超级至尊芝心披萨": {"total": 1, "by_type": [{"type": "ATP250", "count": 1, "events": ["2026基茨比厄尔"]}]}, "逍遥笑叹红尘": {"total": 2, "by_type": [{"type": "大满贯", "count": 1, "events": ["2026美网"]}, {"type": "ATP1000", "count": 1, "events": ["2024蒙特利尔"]}]}, "那不勒斯Jasper": {"total": 1, "by_type": [{"type": "ATP250", "count": 1, "events": ["2026休斯顿"]}]}, "钱老奶奶": {"total": 1, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2025巴黎"]}]}, "锦暔": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2026北京"]}]}, "镇远神": {"total": 1, "by_type": [{"type": "ATP500", "count": 1, "events": ["2024北京"]}]}, "降临Luka": {"total": 1, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2025巴黎"]}]}, "零***澄": {"total": 1, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2025罗马"]}]}, "青花比目": {"total": 1, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2025罗马"]}]}, "顶***家": {"total": 2, "by_type": [{"type": "ATP500", "count": 1, "events": ["2026多哈"]}, {"type": "ATP250", "count": 1, "events": ["2025马洛卡"]}]}, "风儿007008": {"total": 2, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2024辛辛那提"]}, {"type": "ATP500", "count": 1, "events": ["2024北京"]}]}, "马戏团冠军": {"total": 2, "by_type": [{"type": "ATP250", "count": 2, "events": ["2025阿德莱德", "2026杭州"]}]}, "麦迪还是洋葱": {"total": 1, "by_type": [{"type": "ATP1000", "count": 1, "events": ["2024蒙特卡洛"]}]}, "黑***友": {"total": 2, "by_type": [{"type": "ATP500", "count": 1, "events": ["2024北京"]}, {"type": "ATP250", "count": 1, "events": ["2025马洛卡"]}]}, "黑白_大山": {"total": 1, "by_type": [{"type": "ATP250", "count": 1, "events": ["2025杭州"]}]}};
+function toggleTheme(){
+    const going=!document.body.classList.contains('dark');
+    document.body.classList.toggle('dark',going);
+    document.getElementById('themeBtn').textContent=going?'☀ 亮色':'🌙 暗色';
+    document.querySelectorAll('.logo-light').forEach(e=>e.style.display=going?'none':'block');
+    document.querySelectorAll('.logo-dark').forEach(e=>e.style.display=going?'block':'none');
+    localStorage.setItem('theme',going?'dark':'light');
+}
+(function(){
+    const dark=localStorage.getItem('theme')==='dark';
+    document.body.classList.toggle('dark',dark);
+    document.querySelectorAll('.logo-light').forEach(e=>e.style.display=dark?'none':'block');
+    document.querySelectorAll('.logo-dark').forEach(e=>e.style.display=dark?'block':'none');
+    const btn=document.getElementById('themeBtn');
+    if(btn)btn.textContent=dark?'☀ 亮色':'🌙 暗色';
+})();
+(function(){
+    var seasonFilter = 'all';
+    var typeFilter   = 'all';
+ 
+    function applyFilters(){
+        var cards = document.querySelectorAll('.t-card[data-season]');
+        var shown = 0;
+        cards.forEach(function(card){
+            var ok = (seasonFilter === 'all' || card.dataset.season === seasonFilter)
+                  && (typeFilter   === 'all' || card.dataset.type   === typeFilter);
+            card.style.display = ok ? '' : 'none';
+            if (ok) shown++;
+        });
+        var rc = document.getElementById('resultCount');
+        if (rc) rc.innerHTML =
+            '显示 <b>' + shown + '</b> / <b>' + cards.length + '</b> 场赛事';
+    }
+ 
+    window.championSetFilter = function(el, kind, val) {
+        el.closest('.filter-chips')
+          .querySelectorAll('.fchip')
+          .forEach(function(c){ c.classList.remove('active'); });
+        el.classList.add('active');
+        if (kind === 'season') seasonFilter = val;
+        else                   typeFilter   = val;
+        applyFilters();
+    };
+ 
+    window.toggleTCard = function(header){
+        header.parentElement.classList.toggle('open');
+    };
+
+    window.championShowWinnerDetail = function(username){
+        var allStats = window.CHAMPION_USER_STATS || {};
+        var st = allStats[username];
+        var modal = document.getElementById('champion-detail-modal');
+        var closeBtn = document.getElementById('champion-detail-close');
+        var metaLine = document.getElementById('champion-detail-meta-line');
+        var body = document.getElementById('champion-detail-body');
+        var footer = document.getElementById('champion-detail-footer');
+        if (!modal || !closeBtn || !metaLine || !body || !footer) return;
+
+        function closeModal(){
+            var card = modal.querySelector('.detail-card');
+            if(card){ card.style.transform='translateY(10px) scale(.97)'; card.style.opacity='0'; }
+            setTimeout(function(){
+                modal.classList.remove('show');
+                if(card){ card.style.transform=''; card.style.opacity=''; }
+            },220);
+        }
+
+        if (!modal.dataset.bound){
+            closeBtn.addEventListener('click', closeModal);
+            modal.addEventListener('click', function(e){ if(e.target===modal) closeModal(); });
+            document.addEventListener('keydown', function(e){
+                if(e.key==='Escape' && modal.classList.contains('show')) closeModal();
+            });
+            modal.dataset.bound = '1';
+        }
+
+        metaLine.textContent = username || '';
+        if (!st){
+            body.innerHTML = '<div class="detail-empty">暂无冠军记录</div>';
+            footer.textContent = '';
+            modal.classList.add('show');
+            return;
+        }
+
+        var byType = Array.isArray(st.by_type) ? st.by_type : [];
+        var total = Number(st.total || 0);
+
+        var rows = [];
+        rows.push(
+            '<div class="detail-item">'
+          + '<span class="detail-day">总计</span>'
+          + '<span class="detail-val">' + total + '个冠军头衔</span>'
+          + '</div>'
+        );
+        byType.forEach(function(item){
+            var events = Array.isArray(item.events) ? item.events : [];
+            var eventText = events.length ? '（' + events.join('，') + '）' : '';
+            rows.push(
+                '<div class="detail-item">'
+              + '<span class="detail-day">' + item.type + '</span>'
+              + '<span class="detail-val">' + item.count + ' ' + eventText + '</span>'
+              + '</div>'
+            );
+        });
+        body.innerHTML = rows.join('');
+        footer.textContent = '共 ' + byType.length + ' 种赛事类型';
+        modal.classList.add('show');
+    };
+ 
+    applyFilters();
+})();
+</script>
+</body>
+</html>
