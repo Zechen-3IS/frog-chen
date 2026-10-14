@@ -280,6 +280,28 @@ def build_tour_tables(tour_cfg, tour_code, tour_label):
         race = race.merge(
             table.loc[:, ["user_id", "今日状态"]], how="left", on="user_id"
         )
+    # prepare_rank_change drops user_id; expose pending picks by player name so
+    # mark_unfinished_status can still flip 存活 → 未完赛 after that trim.
+    if pending_uids and "今日主选" in table.columns and "user_id" in table.columns:
+        uid_keys = table["user_id"].map(
+            lambda v: (
+                ""
+                if v is None or (isinstance(v, float) and pd.isna(v))
+                else str(v).strip()[:-2]
+                if str(v).strip().endswith(".0")
+                else str(v).strip()
+            )
+        )
+        pending_picks = {
+            str(p).strip()
+            for p in table.loc[uid_keys.isin(pending_uids), "今日主选"].tolist()
+            if p is not None and str(p).strip()
+        }
+        live_players = list(
+            dict.fromkeys(
+                [*(live_players or []), *sorted(pending_picks)]
+            )
+        )
     return table, race, r, s, re, day, live_players, ra, pending_uids
 
 
@@ -418,18 +440,22 @@ def update_rank_pages(
     atp_race_raw: pd.DataFrame = None,
     wta_race_raw: pd.DataFrame = None,
 ):
-    atp = prepare_rank_change(atp_table)
-    atp_stats = generate_summary(atp, atp_day1, atp_bye)
-    atp_killers = daily_killer_stats(atp)
-    atp_view = mark_unfinished_status(
-        hide_today_picks_for_eliminated(atp),
+    # Mark 未完赛 on full frames (still have user_id / 今日主选), then trim columns.
+    atp_base = mark_unfinished_status(
+        hide_today_picks_for_eliminated(atp_table),
         atp_live_players,
         atp_pending_uids,
     )
-    atp_race_view = mark_unfinished_status(
-        hide_today_picks_for_eliminated(prepare_rank_change(atp_race)),
-        atp_live_players,
-        atp_pending_uids,
+    atp = prepare_rank_change(atp_base)
+    atp_stats = generate_summary(atp, atp_day1, atp_bye)
+    atp_killers = daily_killer_stats(atp)
+    atp_view = atp
+    atp_race_view = prepare_rank_change(
+        mark_unfinished_status(
+            hide_today_picks_for_eliminated(atp_race),
+            atp_live_players,
+            atp_pending_uids,
+        )
     )
     render_ranking_page(
         atp_view,
@@ -457,18 +483,21 @@ def update_rank_pages(
         output_path="../atp_race_ranking.html",
     )
 
-    wta = prepare_rank_change(wta_table)
-    wta_stats = generate_summary(wta, wta_day1, wta_bye)
-    wta_killers = daily_killer_stats(wta)
-    wta_view = mark_unfinished_status(
-        hide_today_picks_for_eliminated(wta),
+    wta_base = mark_unfinished_status(
+        hide_today_picks_for_eliminated(wta_table),
         wta_live_players,
         wta_pending_uids,
     )
-    wta_race_view = mark_unfinished_status(
-        hide_today_picks_for_eliminated(prepare_rank_change(wta_race)),
-        wta_live_players,
-        wta_pending_uids,
+    wta = prepare_rank_change(wta_base)
+    wta_stats = generate_summary(wta, wta_day1, wta_bye)
+    wta_killers = daily_killer_stats(wta)
+    wta_view = wta
+    wta_race_view = prepare_rank_change(
+        mark_unfinished_status(
+            hide_today_picks_for_eliminated(wta_race),
+            wta_live_players,
+            wta_pending_uids,
+        )
     )
     render_ranking_page(
         wta_view,
