@@ -1,0 +1,582 @@
+{
+  "event_id": "31003",
+  "year": 2024,
+  "tour": "WS",
+  "city": "多哈",
+  "page_type": "score",
+  "completed": true,
+  "fetched_at": "2026-10-13 23:29:36",
+  "rows": [
+    {
+      "id": 1385,
+      "event_id": 4,
+      "user_id": 10037,
+      "status": 2,
+      "day": 7,
+      "score": 1000,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "亚历山德罗娃",
+        "诺斯科娃",
+        "奥斯塔彭科",
+        "阿扎伦卡",
+        "卡-普利斯科娃",
+        "雷巴金娜",
+        "希维昂泰克"
+      ],
+      "fill_status": "存活",
+      "username": "黑***友"
+    },
+    {
+      "id": 1386,
+      "event_id": 4,
+      "user_id": 34165,
+      "status": 2,
+      "day": 7,
+      "score": 1000,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "科斯秋克",
+        "梅尔滕斯",
+        "奥斯塔彭科",
+        "阿扎伦卡",
+        "帕芙柳琴科娃",
+        "雷巴金娜",
+        "希维昂泰克"
+      ],
+      "fill_status": "存活",
+      "username": "普利特利阿酷"
+    },
+    {
+      "id": 1387,
+      "event_id": 4,
+      "user_id": 272,
+      "status": -2,
+      "day": 5,
+      "score": 390,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "巴多萨",
+        "梅尔滕斯",
+        "奥斯塔彭科",
+        "科林斯",
+        "雷巴金娜",
+        "帕芙柳琴科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "tenfoynis"
+    },
+    {
+      "id": 1388,
+      "event_id": 4,
+      "user_id": 28916,
+      "status": -2,
+      "day": 5,
+      "score": 390,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "巴多萨",
+        "里纳特",
+        "郑钦文",
+        "雷巴金娜",
+        "卡-普利斯科娃",
+        "帕芙柳琴科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "经年旧梦_"
+    },
+    {
+      "id": 1389,
+      "event_id": 4,
+      "user_id": 4140,
+      "status": -2,
+      "day": 4,
+      "score": 215,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "朱琳",
+        "阿扎伦卡",
+        "郑钦文",
+        "雷巴金娜",
+        "科林斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "雅兰的诱惑"
+    },
+    {
+      "id": 1391,
+      "event_id": 4,
+      "user_id": 24736,
+      "status": -2,
+      "day": 3,
+      "score": 120,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "特苏伦科",
+        "马尔蒂奇",
+        "科林斯",
+        "郑钦文"
+      ],
+      "fill_status": "球员输球",
+      "username": "青辣椒G"
+    },
+    {
+      "id": 1392,
+      "event_id": 4,
+      "user_id": 26279,
+      "status": -2,
+      "day": 3,
+      "score": 120,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "特苏伦科",
+        "里纳特",
+        "奥斯塔彭科",
+        "郑钦文"
+      ],
+      "fill_status": "球员输球",
+      "username": "南北南南i"
+    },
+    {
+      "id": 1393,
+      "event_id": 4,
+      "user_id": 28991,
+      "status": -2,
+      "day": 3,
+      "score": 120,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "亚历山德罗娃",
+        "阿扎伦卡",
+        "奥斯塔彭科",
+        "郑钦文"
+      ],
+      "fill_status": "球员输球",
+      "username": "张文静之歌"
+    },
+    {
+      "id": 1394,
+      "event_id": 4,
+      "user_id": 29392,
+      "status": -2,
+      "day": 3,
+      "score": 120,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "特苏伦科",
+        "梅尔滕斯",
+        "亚历山德罗娃",
+        "诺斯科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "雨伞与蓑衣"
+    },
+    {
+      "id": 1395,
+      "event_id": 4,
+      "user_id": 34148,
+      "status": -2,
+      "day": 3,
+      "score": 120,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "特苏伦科",
+        "阿扎伦卡",
+        "郑钦文",
+        "万卓索娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "萨卡外"
+    },
+    {
+      "id": 1390,
+      "event_id": 4,
+      "user_id": 5471,
+      "status": -4,
+      "day": 3,
+      "score": 120,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "特苏伦科",
+        "阿扎伦卡",
+        "雷巴金娜"
+      ],
+      "fill_status": "自杀(主备冲突)",
+      "username": "姬州"
+    },
+    {
+      "id": 1396,
+      "event_id": 4,
+      "user_id": 2953,
+      "status": -2,
+      "day": 2,
+      "score": 65,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "朱琳",
+        "诺斯科娃",
+        "高芙"
+      ],
+      "fill_status": "球员输球",
+      "username": "啊啦个甚"
+    },
+    {
+      "id": 1397,
+      "event_id": 4,
+      "user_id": 30279,
+      "status": -2,
+      "day": 2,
+      "score": 65,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "朱琳",
+        "里纳特",
+        "巴多萨"
+      ],
+      "fill_status": "球员输球",
+      "username": "仅此呐"
+    },
+    {
+      "id": 1398,
+      "event_id": 4,
+      "user_id": 30480,
+      "status": -2,
+      "day": 2,
+      "score": 65,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "特苏伦科",
+        "梅尔滕斯",
+        "巴多萨"
+      ],
+      "fill_status": "球员输球",
+      "username": "yh11yh22"
+    },
+    {
+      "id": 1400,
+      "event_id": 4,
+      "user_id": 1985,
+      "status": 0,
+      "day": 1,
+      "score": 38,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "亚历山德罗娃"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "路人德go"
+    },
+    {
+      "id": 1412,
+      "event_id": 4,
+      "user_id": 29361,
+      "status": 0,
+      "day": 1,
+      "score": 38,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "特苏伦科"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "爱煮饭的老猫"
+    },
+    {
+      "id": 1418,
+      "event_id": 4,
+      "user_id": 34143,
+      "status": 0,
+      "day": 1,
+      "score": 38,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "特苏伦科"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "haohao901007"
+    },
+    {
+      "id": 1399,
+      "event_id": 4,
+      "user_id": 1453,
+      "status": -2,
+      "day": 1,
+      "score": 38,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "科斯秋克",
+        "玛雅"
+      ],
+      "fill_status": "球员输球",
+      "username": "糊涂逗逗"
+    },
+    {
+      "id": 1401,
+      "event_id": 4,
+      "user_id": 2340,
+      "status": -2,
+      "day": 1,
+      "score": 38,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "特苏伦科",
+        "玛雅"
+      ],
+      "fill_status": "球员输球",
+      "username": "四强张帅"
+    },
+    {
+      "id": 1402,
+      "event_id": 4,
+      "user_id": 2608,
+      "status": -2,
+      "day": 1,
+      "score": 38,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "特苏伦科",
+        "玛雅"
+      ],
+      "fill_status": "球员输球",
+      "username": "德约的粉丝"
+    },
+    {
+      "id": 1403,
+      "event_id": 4,
+      "user_id": 3700,
+      "status": -2,
+      "day": 1,
+      "score": 38,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "特苏伦科",
+        "玛雅"
+      ],
+      "fill_status": "球员输球",
+      "username": "市中心5"
+    },
+    {
+      "id": 1404,
+      "event_id": 4,
+      "user_id": 5513,
+      "status": -2,
+      "day": 1,
+      "score": 38,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "特苏伦科",
+        "拉杜卡努"
+      ],
+      "fill_status": "球员输球",
+      "username": "因你痴心不改"
+    },
+    {
+      "id": 1405,
+      "event_id": 4,
+      "user_id": 16570,
+      "status": -2,
+      "day": 1,
+      "score": 38,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "特苏伦科",
+        "玛雅"
+      ],
+      "fill_status": "球员输球",
+      "username": "黑白_大山"
+    },
+    {
+      "id": 1406,
+      "event_id": 4,
+      "user_id": 19532,
+      "status": -2,
+      "day": 1,
+      "score": 38,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "特苏伦科",
+        "拉杜卡努"
+      ],
+      "fill_status": "球员输球",
+      "username": "1324333堤穆"
+    },
+    {
+      "id": 1407,
+      "event_id": 4,
+      "user_id": 24543,
+      "status": -2,
+      "day": 1,
+      "score": 38,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "特苏伦科",
+        "玛雅"
+      ],
+      "fill_status": "球员输球",
+      "username": "aeonbert"
+    },
+    {
+      "id": 1408,
+      "event_id": 4,
+      "user_id": 27388,
+      "status": -2,
+      "day": 1,
+      "score": 38,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "特苏伦科",
+        "玛雅"
+      ],
+      "fill_status": "球员输球",
+      "username": "之后再喝咖啡我就是狗"
+    },
+    {
+      "id": 1409,
+      "event_id": 4,
+      "user_id": 28164,
+      "status": -2,
+      "day": 1,
+      "score": 38,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "特苏伦科",
+        "玛雅"
+      ],
+      "fill_status": "球员输球",
+      "username": "huangshiming99"
+    },
+    {
+      "id": 1410,
+      "event_id": 4,
+      "user_id": 28781,
+      "status": -2,
+      "day": 1,
+      "score": 38,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "特苏伦科",
+        "玛雅"
+      ],
+      "fill_status": "球员输球",
+      "username": "活宝哈u"
+    },
+    {
+      "id": 1411,
+      "event_id": 4,
+      "user_id": 28880,
+      "status": -2,
+      "day": 1,
+      "score": 38,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "特苏伦科",
+        "玛雅"
+      ],
+      "fill_status": "球员输球",
+      "username": "冰萌申煦"
+    },
+    {
+      "id": 1413,
+      "event_id": 4,
+      "user_id": 28881,
+      "status": -2,
+      "day": 1,
+      "score": 38,
+      "updated_at": "2024-04-16T02:28:50.000000Z",
+      "players": [
+        "特苏伦科",
+        "拉杜卡努"
+      ],
+      "fill_status": "球员输球",
+      "username": "明天你好431"
+    },
+    {
+      "id": 1414,
+      "event_id": 4,
+      "user_id": 32576,
+      "status": -2,
+      "day": 1,
+      "score": 38,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "特苏伦科",
+        "玛雅"
+      ],
+      "fill_status": "球员输球",
+      "username": "子郡_"
+    },
+    {
+      "id": 1415,
+      "event_id": 4,
+      "user_id": 32780,
+      "status": -2,
+      "day": 1,
+      "score": 38,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "亚历山德罗娃",
+        "玛雅"
+      ],
+      "fill_status": "球员输球",
+      "username": "风景考察"
+    },
+    {
+      "id": 1416,
+      "event_id": 4,
+      "user_id": 33095,
+      "status": -2,
+      "day": 1,
+      "score": 38,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "特苏伦科",
+        "玛雅"
+      ],
+      "fill_status": "球员输球",
+      "username": "Dxl20091"
+    },
+    {
+      "id": 2614,
+      "event_id": 4,
+      "user_id": 33276,
+      "status": -2,
+      "day": 1,
+      "score": 38,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "特苏伦科",
+        "拉杜卡努"
+      ],
+      "fill_status": "球员输球",
+      "username": "唯爱张帅"
+    },
+    {
+      "id": 1417,
+      "event_id": 4,
+      "user_id": 33814,
+      "status": -2,
+      "day": 1,
+      "score": 38,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "特苏伦科",
+        "卡林斯卡娅"
+      ],
+      "fill_status": "球员输球",
+      "username": "sjzb88"
+    },
+    {
+      "id": 1419,
+      "event_id": 4,
+      "user_id": 1848,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2024-04-07T04:53:07.000000Z",
+      "players": [
+        "施内德"
+      ],
+      "fill_status": "球员输球",
+      "username": "葱姜蒜瓣sky"
+    }
+  ]
+}

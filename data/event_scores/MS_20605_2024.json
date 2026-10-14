@@ -1,0 +1,155 @@
+{
+  "event_id": "20605",
+  "year": 2024,
+  "tour": "MS",
+  "city": "都灵",
+  "page_type": "score",
+  "completed": true,
+  "fetched_at": "2026-10-13 23:31:39",
+  "rows": [
+    {
+      "id": 144302,
+      "event_id": 54,
+      "user_id": 28625,
+      "status": -2,
+      "day": 5,
+      "score": 1000,
+      "updated_at": "2024-11-18T10:49:51.000000Z",
+      "players": [
+        "辛纳",
+        "亚-兹韦列夫",
+        "弗里茨",
+        "鲁德",
+        "辛纳",
+        "弗里茨"
+      ],
+      "fill_status": "球员输球",
+      "username": "octbt"
+    },
+    {
+      "id": 144307,
+      "event_id": 54,
+      "user_id": 34148,
+      "status": -2,
+      "day": 5,
+      "score": 1000,
+      "updated_at": "2024-11-18T10:49:51.000000Z",
+      "players": [
+        "辛纳",
+        "亚-兹韦列夫",
+        "弗里茨",
+        "鲁德",
+        "辛纳",
+        "弗里茨"
+      ],
+      "fill_status": "球员输球",
+      "username": "萨卡外"
+    },
+    {
+      "id": 144301,
+      "event_id": 54,
+      "user_id": 24258,
+      "status": -2,
+      "day": 4,
+      "score": 600,
+      "updated_at": "2024-11-18T10:49:51.000000Z",
+      "players": [
+        "辛纳",
+        "亚-兹韦列夫",
+        "弗里茨",
+        "鲁德",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "RV--RV"
+    },
+    {
+      "id": 144303,
+      "event_id": 54,
+      "user_id": 29351,
+      "status": -2,
+      "day": 4,
+      "score": 600,
+      "updated_at": "2024-11-18T10:49:51.000000Z",
+      "players": [
+        "辛纳",
+        "亚-兹韦列夫",
+        "弗里茨",
+        "鲁德",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "日***岸"
+    },
+    {
+      "id": 144304,
+      "event_id": 54,
+      "user_id": 29627,
+      "status": -2,
+      "day": 4,
+      "score": 600,
+      "updated_at": "2024-11-18T10:49:51.000000Z",
+      "players": [
+        "辛纳",
+        "亚-兹韦列夫",
+        "弗里茨",
+        "鲁德",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "没有滑板的张某某"
+    },
+    {
+      "id": 144306,
+      "event_id": 54,
+      "user_id": 32606,
+      "status": -2,
+      "day": 4,
+      "score": 600,
+      "updated_at": "2024-11-18T10:49:51.000000Z",
+      "players": [
+        "辛纳",
+        "亚-兹韦列夫",
+        "弗里茨",
+        "鲁德",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "mj ouyang"
+    },
+    {
+      "id": 144300,
+      "event_id": 54,
+      "user_id": 7042,
+      "status": -2,
+      "day": 3,
+      "score": 450,
+      "updated_at": "2024-11-18T10:49:51.000000Z",
+      "players": [
+        "辛纳",
+        "亚-兹韦列夫",
+        "弗里茨",
+        "阿尔卡拉斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "__Novak__"
+    },
+    {
+      "id": 144305,
+      "event_id": 54,
+      "user_id": 30932,
+      "status": -2,
+      "day": 3,
+      "score": 450,
+      "updated_at": "2024-11-18T10:49:51.000000Z",
+      "players": [
+        "辛纳",
+        "亚-兹韦列夫",
+        "弗里茨",
+        "阿尔卡拉斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "samsonyip"
+    }
+  ]
+}

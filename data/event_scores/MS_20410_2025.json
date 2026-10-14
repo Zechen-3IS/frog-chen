@@ -1,0 +1,3330 @@
+{
+  "event_id": "20410",
+  "year": 2025,
+  "tour": "MS",
+  "city": "蒙特卡洛",
+  "page_type": "score",
+  "completed": true,
+  "fetched_at": "2026-10-13 23:32:33",
+  "rows": [
+    {
+      "id": 221818,
+      "event_id": 78,
+      "user_id": 28625,
+      "status": 0,
+      "day": 7,
+      "score": 650,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "轮空",
+        "贝雷蒂尼",
+        "埃切韦里",
+        "达维多维奇",
+        "阿尔卡拉斯",
+        "德米纳尔",
+        "穆塞蒂"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "octbt"
+    },
+    {
+      "id": 221965,
+      "event_id": 78,
+      "user_id": 39368,
+      "status": 0,
+      "day": 7,
+      "score": 650,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "弗-塞伦多洛",
+        "德雷珀",
+        "迪米特洛夫",
+        "阿尔卡拉斯",
+        "德米纳尔",
+        "穆塞蒂"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "Elroy晨曦"
+    },
+    {
+      "id": 221852,
+      "event_id": 78,
+      "user_id": 30480,
+      "status": -2,
+      "day": 6,
+      "score": 400,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "穆塞蒂",
+        "蒂亚福",
+        "迪米特洛夫",
+        "阿尔卡拉斯",
+        "德米纳尔",
+        "达维多维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "yh11yh22"
+    },
+    {
+      "id": 221775,
+      "event_id": 78,
+      "user_id": 5471,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "弗-塞伦多洛",
+        "埃切韦里",
+        "迪米特洛夫",
+        "鲁德"
+      ],
+      "fill_status": "球员输球",
+      "username": "姬州"
+    },
+    {
+      "id": 221777,
+      "event_id": 78,
+      "user_id": 7042,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "轮空",
+        "弗-塞伦多洛",
+        "西西帕斯",
+        "迪米特洛夫",
+        "鲁德"
+      ],
+      "fill_status": "球员输球",
+      "username": "__Novak__"
+    },
+    {
+      "id": 221832,
+      "event_id": 78,
+      "user_id": 29268,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "弗-塞伦多洛",
+        "西西帕斯",
+        "迪米特洛夫",
+        "鲁德"
+      ],
+      "fill_status": "球员输球",
+      "username": "橙色熊猫"
+    },
+    {
+      "id": 221839,
+      "event_id": 78,
+      "user_id": 29351,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "轮空",
+        "弗-塞伦多洛",
+        "西西帕斯",
+        "迪米特洛夫",
+        "鲁德"
+      ],
+      "fill_status": "球员输球",
+      "username": "日***岸"
+    },
+    {
+      "id": 221842,
+      "event_id": 78,
+      "user_id": 29627,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "轮空",
+        "弗-塞伦多洛",
+        "西西帕斯",
+        "迪米特洛夫",
+        "鲁德"
+      ],
+      "fill_status": "球员输球",
+      "username": "没有滑板的张某某"
+    },
+    {
+      "id": 221853,
+      "event_id": 78,
+      "user_id": 30552,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "轮空",
+        "弗-塞伦多洛",
+        "西西帕斯",
+        "迪米特洛夫",
+        "鲁德"
+      ],
+      "fill_status": "球员输球",
+      "username": "卡尼TT"
+    },
+    {
+      "id": 221855,
+      "event_id": 78,
+      "user_id": 30932,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "轮空",
+        "贝雷蒂尼",
+        "西西帕斯",
+        "迪米特洛夫",
+        "鲁德"
+      ],
+      "fill_status": "球员输球",
+      "username": "samsonyip"
+    },
+    {
+      "id": 221875,
+      "event_id": 78,
+      "user_id": 32606,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "轮空",
+        "弗-塞伦多洛",
+        "西西帕斯",
+        "迪米特洛夫",
+        "鲁德"
+      ],
+      "fill_status": "球员输球",
+      "username": "mj ouyang"
+    },
+    {
+      "id": 221888,
+      "event_id": 78,
+      "user_id": 33422,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "弗-塞伦多洛",
+        "西西帕斯",
+        "迪米特洛夫",
+        "鲁德"
+      ],
+      "fill_status": "球员输球",
+      "username": "爱歪歪的坏宝贝"
+    },
+    {
+      "id": 221892,
+      "event_id": 78,
+      "user_id": 33657,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "弗-塞伦多洛",
+        "迪米特洛夫",
+        "阿尔特迈尔",
+        "德雷珀"
+      ],
+      "fill_status": "球员输球",
+      "username": "Schurink舒尔克"
+    },
+    {
+      "id": 221898,
+      "event_id": 78,
+      "user_id": 34148,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "轮空",
+        "弗-塞伦多洛",
+        "西西帕斯",
+        "迪米特洛夫",
+        "鲁德"
+      ],
+      "fill_status": "球员输球",
+      "username": "萨卡外"
+    },
+    {
+      "id": 221923,
+      "event_id": 78,
+      "user_id": 35132,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "孟菲尔斯",
+        "西西帕斯",
+        "卢布列夫",
+        "鲁德"
+      ],
+      "fill_status": "球员输球",
+      "username": "h***t"
+    },
+    {
+      "id": 221932,
+      "event_id": 78,
+      "user_id": 35974,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "弗-塞伦多洛",
+        "西西帕斯",
+        "迪米特洛夫",
+        "鲁德"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞四皮"
+    },
+    {
+      "id": 221966,
+      "event_id": 78,
+      "user_id": 39381,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "贝雷蒂尼",
+        "西西帕斯",
+        "迪米特洛夫",
+        "鲁德"
+      ],
+      "fill_status": "球员输球",
+      "username": "AlcarazTennis_bot"
+    },
+    {
+      "id": 221972,
+      "event_id": 78,
+      "user_id": 39565,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "梅德韦杰夫",
+        "西西帕斯",
+        "阿尔卡拉斯",
+        "德雷珀"
+      ],
+      "fill_status": "球员输球",
+      "username": "深***泪"
+    },
+    {
+      "id": 221993,
+      "event_id": 78,
+      "user_id": 40587,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "弗-塞伦多洛",
+        "西西帕斯",
+        "迪米特洛夫",
+        "鲁德"
+      ],
+      "fill_status": "球员输球",
+      "username": "一寺一壶酒尔乐"
+    },
+    {
+      "id": 221769,
+      "event_id": 78,
+      "user_id": 1956,
+      "status": -2,
+      "day": 3,
+      "score": 50,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "梅德韦杰夫",
+        "蒂亚福",
+        "莱赫奇卡"
+      ],
+      "fill_status": "球员输球",
+      "username": "芋y头h小m生"
+    },
+    {
+      "id": 221784,
+      "event_id": 78,
+      "user_id": 11228,
+      "status": -2,
+      "day": 2,
+      "score": 36,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "弗-塞伦多洛",
+        "鲁内"
+      ],
+      "fill_status": "球员输球",
+      "username": "第7路单车"
+    },
+    {
+      "id": 221816,
+      "event_id": 78,
+      "user_id": 28509,
+      "status": -2,
+      "day": 2,
+      "score": 36,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "穆塞蒂",
+        "鲁内"
+      ],
+      "fill_status": "球员输球",
+      "username": "夕***阳"
+    },
+    {
+      "id": 221820,
+      "event_id": 78,
+      "user_id": 28636,
+      "status": -2,
+      "day": 2,
+      "score": 36,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "贝雷蒂尼",
+        "鲁内"
+      ],
+      "fill_status": "球员输球",
+      "username": "啦***拉"
+    },
+    {
+      "id": 221894,
+      "event_id": 78,
+      "user_id": 33770,
+      "status": -2,
+      "day": 2,
+      "score": 36,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "弗-塞伦多洛",
+        "鲁内"
+      ],
+      "fill_status": "球员输球",
+      "username": "用户7376159987"
+    },
+    {
+      "id": 221902,
+      "event_id": 78,
+      "user_id": 34229,
+      "status": -2,
+      "day": 2,
+      "score": 36,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "弗-塞伦多洛",
+        "鲁内"
+      ],
+      "fill_status": "球员输球",
+      "username": "深***名"
+    },
+    {
+      "id": 221914,
+      "event_id": 78,
+      "user_id": 34662,
+      "status": -2,
+      "day": 2,
+      "score": 36,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "弗-塞伦多洛",
+        "索内戈"
+      ],
+      "fill_status": "球员输球",
+      "username": "189******99"
+    },
+    {
+      "id": 221922,
+      "event_id": 78,
+      "user_id": 35127,
+      "status": -2,
+      "day": 2,
+      "score": 36,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "梅德韦杰夫",
+        "鲁内"
+      ],
+      "fill_status": "球员输球",
+      "username": "崔***啊"
+    },
+    {
+      "id": 221937,
+      "event_id": 78,
+      "user_id": 37154,
+      "status": -2,
+      "day": 2,
+      "score": 36,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "弗-塞伦多洛",
+        "鲁内"
+      ],
+      "fill_status": "球员输球",
+      "username": "曙***裳"
+    },
+    {
+      "id": 221947,
+      "event_id": 78,
+      "user_id": 37564,
+      "status": -2,
+      "day": 2,
+      "score": 36,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "贝雷蒂尼",
+        "贾里"
+      ],
+      "fill_status": "球员输球",
+      "username": "精神故乡丝芙兰"
+    },
+    {
+      "id": 221954,
+      "event_id": 78,
+      "user_id": 37994,
+      "status": -2,
+      "day": 2,
+      "score": 36,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "弗-塞伦多洛",
+        "索内戈"
+      ],
+      "fill_status": "球员输球",
+      "username": "BOHEYE_"
+    },
+    {
+      "id": 221969,
+      "event_id": 78,
+      "user_id": 39459,
+      "status": -2,
+      "day": 2,
+      "score": 36,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "弗-塞伦多洛",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "vm10050134"
+    },
+    {
+      "id": 221978,
+      "event_id": 78,
+      "user_id": 39708,
+      "status": -2,
+      "day": 2,
+      "score": 36,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "梅德韦杰夫",
+        "鲁内"
+      ],
+      "fill_status": "球员输球",
+      "username": "猫崽孑丶"
+    },
+    {
+      "id": 221988,
+      "event_id": 78,
+      "user_id": 40395,
+      "status": -2,
+      "day": 2,
+      "score": 36,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "弗-塞伦多洛",
+        "鲁内"
+      ],
+      "fill_status": "球员输球",
+      "username": "香山一根筋小松鼠"
+    },
+    {
+      "id": 221989,
+      "event_id": 78,
+      "user_id": 40561,
+      "status": -2,
+      "day": 2,
+      "score": 36,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森",
+        "贝雷蒂尼",
+        "鲁内"
+      ],
+      "fill_status": "球员输球",
+      "username": "迪***9"
+    },
+    {
+      "id": 221953,
+      "event_id": 78,
+      "user_id": 37599,
+      "status": 0,
+      "day": 1,
+      "score": 23,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "漪***7"
+    },
+    {
+      "id": 221766,
+      "event_id": 78,
+      "user_id": 116,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "钱老奶奶"
+    },
+    {
+      "id": 221767,
+      "event_id": 78,
+      "user_id": 483,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "天邪幻世"
+    },
+    {
+      "id": 221768,
+      "event_id": 78,
+      "user_id": 1785,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "yangxiaqing2"
+    },
+    {
+      "id": 221770,
+      "event_id": 78,
+      "user_id": 2005,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞麦皮"
+    },
+    {
+      "id": 221771,
+      "event_id": 78,
+      "user_id": 2156,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "和楼盘规模破破"
+    },
+    {
+      "id": 221772,
+      "event_id": 78,
+      "user_id": 2608,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "德约的粉丝"
+    },
+    {
+      "id": 221773,
+      "event_id": 78,
+      "user_id": 4936,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "liu8322925"
+    },
+    {
+      "id": 221774,
+      "event_id": 78,
+      "user_id": 5369,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "剑剑康康-101dama怎么那么饿熏"
+    },
+    {
+      "id": 221776,
+      "event_id": 78,
+      "user_id": 6623,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞三皮"
+    },
+    {
+      "id": 221778,
+      "event_id": 78,
+      "user_id": 8320,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "jmlkkk"
+    },
+    {
+      "id": 221779,
+      "event_id": 78,
+      "user_id": 8895,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "木的讷"
+    },
+    {
+      "id": 221780,
+      "event_id": 78,
+      "user_id": 8952,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "小迈Tennis"
+    },
+    {
+      "id": 221781,
+      "event_id": 78,
+      "user_id": 10037,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "黑***友"
+    },
+    {
+      "id": 221782,
+      "event_id": 78,
+      "user_id": 10103,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "wennuan78"
+    },
+    {
+      "id": 221783,
+      "event_id": 78,
+      "user_id": 10322,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "ElvisD95"
+    },
+    {
+      "id": 221785,
+      "event_id": 78,
+      "user_id": 15424,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "Emppu99"
+    },
+    {
+      "id": 221786,
+      "event_id": 78,
+      "user_id": 15789,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "伦家是累了的土蜂"
+    },
+    {
+      "id": 221787,
+      "event_id": 78,
+      "user_id": 16570,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "黑白_大山"
+    },
+    {
+      "id": 221788,
+      "event_id": 78,
+      "user_id": 16670,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "你附加费的"
+    },
+    {
+      "id": 221789,
+      "event_id": 78,
+      "user_id": 17024,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "victorgc"
+    },
+    {
+      "id": 221790,
+      "event_id": 78,
+      "user_id": 17144,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "白云静水"
+    },
+    {
+      "id": 221791,
+      "event_id": 78,
+      "user_id": 17376,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "麦迪还是洋葱"
+    },
+    {
+      "id": 221792,
+      "event_id": 78,
+      "user_id": 21672,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "姆佩奇-佩里卡尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "158*****803"
+    },
+    {
+      "id": 221793,
+      "event_id": 78,
+      "user_id": 22773,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "Aeonbert"
+    },
+    {
+      "id": 221794,
+      "event_id": 78,
+      "user_id": 22854,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "不管小哈是我的"
+    },
+    {
+      "id": 221795,
+      "event_id": 78,
+      "user_id": 23015,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "lovehuiruoqi"
+    },
+    {
+      "id": 221796,
+      "event_id": 78,
+      "user_id": 24258,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "RV--RV"
+    },
+    {
+      "id": 221797,
+      "event_id": 78,
+      "user_id": 24543,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "aeonbert"
+    },
+    {
+      "id": 221798,
+      "event_id": 78,
+      "user_id": 24898,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "后曹操"
+    },
+    {
+      "id": 221799,
+      "event_id": 78,
+      "user_id": 25850,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "jellyddfish"
+    },
+    {
+      "id": 221800,
+      "event_id": 78,
+      "user_id": 25881,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "lwpsgj"
+    },
+    {
+      "id": 221801,
+      "event_id": 78,
+      "user_id": 26279,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "南北南南i"
+    },
+    {
+      "id": 221802,
+      "event_id": 78,
+      "user_id": 26595,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "Jiabei He"
+    },
+    {
+      "id": 221803,
+      "event_id": 78,
+      "user_id": 27308,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "S***8"
+    },
+    {
+      "id": 221804,
+      "event_id": 78,
+      "user_id": 27372,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "镇远神"
+    },
+    {
+      "id": 221805,
+      "event_id": 78,
+      "user_id": 27446,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "指纹Nongzw"
+    },
+    {
+      "id": 221806,
+      "event_id": 78,
+      "user_id": 27450,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "MobiusZH"
+    },
+    {
+      "id": 221807,
+      "event_id": 78,
+      "user_id": 27795,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "姆佩奇-佩里卡尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "流星穹宇crazy"
+    },
+    {
+      "id": 221808,
+      "event_id": 78,
+      "user_id": 27906,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "feifei-530"
+    },
+    {
+      "id": 221809,
+      "event_id": 78,
+      "user_id": 27921,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "uuyy小屋"
+    },
+    {
+      "id": 221810,
+      "event_id": 78,
+      "user_id": 27983,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "吃货大爱凯凯_982"
+    },
+    {
+      "id": 221811,
+      "event_id": 78,
+      "user_id": 27994,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "板尼哟"
+    },
+    {
+      "id": 221812,
+      "event_id": 78,
+      "user_id": 28021,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "AdonisZhang"
+    },
+    {
+      "id": 221813,
+      "event_id": 78,
+      "user_id": 28412,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "姆佩奇-佩里卡尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "jason大志志"
+    },
+    {
+      "id": 221814,
+      "event_id": 78,
+      "user_id": 28485,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "Jiakun Yi"
+    },
+    {
+      "id": 221815,
+      "event_id": 78,
+      "user_id": 28508,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "姆佩奇-佩里卡尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "一杯思s"
+    },
+    {
+      "id": 221817,
+      "event_id": 78,
+      "user_id": 28510,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "akane 11"
+    },
+    {
+      "id": 221819,
+      "event_id": 78,
+      "user_id": 28632,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "y***7"
+    },
+    {
+      "id": 221821,
+      "event_id": 78,
+      "user_id": 28673,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "神秘的药"
+    },
+    {
+      "id": 221822,
+      "event_id": 78,
+      "user_id": 28725,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "顶***家"
+    },
+    {
+      "id": 221823,
+      "event_id": 78,
+      "user_id": 28781,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "活宝哈u"
+    },
+    {
+      "id": 221824,
+      "event_id": 78,
+      "user_id": 28782,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "姆佩奇-佩里卡尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "荣拉法RaphaelCigar"
+    },
+    {
+      "id": 221825,
+      "event_id": 78,
+      "user_id": 28884,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "Ryan-Tennis"
+    },
+    {
+      "id": 221826,
+      "event_id": 78,
+      "user_id": 28991,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "张文静之歌"
+    },
+    {
+      "id": 221827,
+      "event_id": 78,
+      "user_id": 29026,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "德不驴"
+    },
+    {
+      "id": 221828,
+      "event_id": 78,
+      "user_id": 29045,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "Kwan-tennis"
+    },
+    {
+      "id": 221829,
+      "event_id": 78,
+      "user_id": 29057,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "WillKris锴"
+    },
+    {
+      "id": 221830,
+      "event_id": 78,
+      "user_id": 29130,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "Tony-Tennis"
+    },
+    {
+      "id": 221831,
+      "event_id": 78,
+      "user_id": 29258,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "J***o"
+    },
+    {
+      "id": 221833,
+      "event_id": 78,
+      "user_id": 29270,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "xxxjusAng"
+    },
+    {
+      "id": 221834,
+      "event_id": 78,
+      "user_id": 29294,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "刘宏阳manutdliu"
+    },
+    {
+      "id": 221835,
+      "event_id": 78,
+      "user_id": 29300,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "-Frictionless"
+    },
+    {
+      "id": 221836,
+      "event_id": 78,
+      "user_id": 29318,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "David726_"
+    },
+    {
+      "id": 221837,
+      "event_id": 78,
+      "user_id": 29320,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "寻感获叹"
+    },
+    {
+      "id": 221838,
+      "event_id": 78,
+      "user_id": 29335,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "moommomoommo"
+    },
+    {
+      "id": 221840,
+      "event_id": 78,
+      "user_id": 29406,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "A***y"
+    },
+    {
+      "id": 221841,
+      "event_id": 78,
+      "user_id": 29479,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "马戏团冠军"
+    },
+    {
+      "id": 221843,
+      "event_id": 78,
+      "user_id": 29703,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "那不勒斯Jasper"
+    },
+    {
+      "id": 221844,
+      "event_id": 78,
+      "user_id": 29954,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "姆佩奇-佩里卡尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "蛊毒娃丶"
+    },
+    {
+      "id": 221845,
+      "event_id": 78,
+      "user_id": 29978,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "外星驻地球代表"
+    },
+    {
+      "id": 221846,
+      "event_id": 78,
+      "user_id": 30128,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "5默大叔"
+    },
+    {
+      "id": 221847,
+      "event_id": 78,
+      "user_id": 30166,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "l***t"
+    },
+    {
+      "id": 221848,
+      "event_id": 78,
+      "user_id": 30209,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "_被窝哲学家_-"
+    },
+    {
+      "id": 221849,
+      "event_id": 78,
+      "user_id": 30231,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "姆佩奇-佩里卡尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "幸***额"
+    },
+    {
+      "id": 221850,
+      "event_id": 78,
+      "user_id": 30373,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "Rhine Luke"
+    },
+    {
+      "id": 221851,
+      "event_id": 78,
+      "user_id": 30456,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "S***d"
+    },
+    {
+      "id": 221854,
+      "event_id": 78,
+      "user_id": 30840,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "ilove33"
+    },
+    {
+      "id": 221856,
+      "event_id": 78,
+      "user_id": 30992,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "Ha-1234567"
+    },
+    {
+      "id": 221857,
+      "event_id": 78,
+      "user_id": 31103,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "我爱yangxiaqing2"
+    },
+    {
+      "id": 221858,
+      "event_id": 78,
+      "user_id": 31115,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "青花比目"
+    },
+    {
+      "id": 221859,
+      "event_id": 78,
+      "user_id": 31354,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "派派派崔克"
+    },
+    {
+      "id": 221860,
+      "event_id": 78,
+      "user_id": 31375,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "刘小闹小闹闹呀"
+    },
+    {
+      "id": 221861,
+      "event_id": 78,
+      "user_id": 31388,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "BORIS-_-i"
+    },
+    {
+      "id": 221862,
+      "event_id": 78,
+      "user_id": 31465,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "188******62"
+    },
+    {
+      "id": 221863,
+      "event_id": 78,
+      "user_id": 31549,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "强化型米斯prototype"
+    },
+    {
+      "id": 221864,
+      "event_id": 78,
+      "user_id": 31550,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "九_墨_"
+    },
+    {
+      "id": 221865,
+      "event_id": 78,
+      "user_id": 31557,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "一***酒"
+    },
+    {
+      "id": 221866,
+      "event_id": 78,
+      "user_id": 31683,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "liangZxx"
+    },
+    {
+      "id": 221867,
+      "event_id": 78,
+      "user_id": 31705,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "Pomelo琛"
+    },
+    {
+      "id": 221868,
+      "event_id": 78,
+      "user_id": 31768,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "WillKrisKai"
+    },
+    {
+      "id": 221869,
+      "event_id": 78,
+      "user_id": 31850,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "安妍与花"
+    },
+    {
+      "id": 221870,
+      "event_id": 78,
+      "user_id": 31855,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "yygq专家"
+    },
+    {
+      "id": 221871,
+      "event_id": 78,
+      "user_id": 32121,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "用户7856057992"
+    },
+    {
+      "id": 221872,
+      "event_id": 78,
+      "user_id": 32322,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "大满贯的W"
+    },
+    {
+      "id": 221873,
+      "event_id": 78,
+      "user_id": 32327,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "闲云无双鹤"
+    },
+    {
+      "id": 221874,
+      "event_id": 78,
+      "user_id": 32552,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "海狸先生的小翘臀"
+    },
+    {
+      "id": 221876,
+      "event_id": 78,
+      "user_id": 32763,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "1000赛的W"
+    },
+    {
+      "id": 221877,
+      "event_id": 78,
+      "user_id": 32796,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "紫之隐小屋"
+    },
+    {
+      "id": 221878,
+      "event_id": 78,
+      "user_id": 32944,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "KG5Benzema9Jokic15Luka77_Paul3"
+    },
+    {
+      "id": 221879,
+      "event_id": 78,
+      "user_id": 32980,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "Elroy ZHANG"
+    },
+    {
+      "id": 221880,
+      "event_id": 78,
+      "user_id": 33162,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "r***i"
+    },
+    {
+      "id": 221881,
+      "event_id": 78,
+      "user_id": 33193,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "姆佩奇-佩里卡尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "果金灵灵"
+    },
+    {
+      "id": 221882,
+      "event_id": 78,
+      "user_id": 33207,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "Samuel Bao"
+    },
+    {
+      "id": 221883,
+      "event_id": 78,
+      "user_id": 33233,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "精明姐姐的小秘"
+    },
+    {
+      "id": 221884,
+      "event_id": 78,
+      "user_id": 33262,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "Oreache_TAO"
+    },
+    {
+      "id": 221885,
+      "event_id": 78,
+      "user_id": 33264,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "林强行长的小挎包"
+    },
+    {
+      "id": 221886,
+      "event_id": 78,
+      "user_id": 33276,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "唯爱张帅"
+    },
+    {
+      "id": 221887,
+      "event_id": 78,
+      "user_id": 33308,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "西瓜太郎笑嘻嘻"
+    },
+    {
+      "id": 221889,
+      "event_id": 78,
+      "user_id": 33426,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "姆佩奇-佩里卡尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "麻雀热泪盈眶"
+    },
+    {
+      "id": 221890,
+      "event_id": 78,
+      "user_id": 33491,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "大肚腩老哥哥"
+    },
+    {
+      "id": 221891,
+      "event_id": 78,
+      "user_id": 33513,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "H***n"
+    },
+    {
+      "id": 221893,
+      "event_id": 78,
+      "user_id": 33712,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "沛县沛公ghj"
+    },
+    {
+      "id": 221895,
+      "event_id": 78,
+      "user_id": 33828,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "重生之我在幸存者十连冠"
+    },
+    {
+      "id": 221896,
+      "event_id": 78,
+      "user_id": 33869,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "z***4"
+    },
+    {
+      "id": 221897,
+      "event_id": 78,
+      "user_id": 33954,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "百香柠檬水666"
+    },
+    {
+      "id": 221899,
+      "event_id": 78,
+      "user_id": 34151,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "Yakamoz21"
+    },
+    {
+      "id": 221900,
+      "event_id": 78,
+      "user_id": 34161,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "历***4"
+    },
+    {
+      "id": 221901,
+      "event_id": 78,
+      "user_id": 34178,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "→→←←↑↑"
+    },
+    {
+      "id": 221903,
+      "event_id": 78,
+      "user_id": 34340,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "Ivejoy"
+    },
+    {
+      "id": 221904,
+      "event_id": 78,
+      "user_id": 34366,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "用户7766595336"
+    },
+    {
+      "id": 221905,
+      "event_id": 78,
+      "user_id": 34367,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "网球爱好者Schur"
+    },
+    {
+      "id": 221906,
+      "event_id": 78,
+      "user_id": 34368,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "回破"
+    },
+    {
+      "id": 221907,
+      "event_id": 78,
+      "user_id": 34369,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "稀有气体hyk"
+    },
+    {
+      "id": 221908,
+      "event_id": 78,
+      "user_id": 34382,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "姆佩奇-佩里卡尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "弗外外茨"
+    },
+    {
+      "id": 221909,
+      "event_id": 78,
+      "user_id": 34403,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "w***w"
+    },
+    {
+      "id": 221910,
+      "event_id": 78,
+      "user_id": 34454,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "Kellan Li"
+    },
+    {
+      "id": 221911,
+      "event_id": 78,
+      "user_id": 34500,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "陈***8"
+    },
+    {
+      "id": 221912,
+      "event_id": 78,
+      "user_id": 34627,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "一***客"
+    },
+    {
+      "id": 221913,
+      "event_id": 78,
+      "user_id": 34644,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "alexzverev12345"
+    },
+    {
+      "id": 221915,
+      "event_id": 78,
+      "user_id": 34710,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "懒觉鱼睡不醒"
+    },
+    {
+      "id": 221916,
+      "event_id": 78,
+      "user_id": 34717,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "A***4"
+    },
+    {
+      "id": 221917,
+      "event_id": 78,
+      "user_id": 35032,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "旧纳琛"
+    },
+    {
+      "id": 221918,
+      "event_id": 78,
+      "user_id": 35077,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "500赛的W"
+    },
+    {
+      "id": 221919,
+      "event_id": 78,
+      "user_id": 35082,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "年终的W"
+    },
+    {
+      "id": 221920,
+      "event_id": 78,
+      "user_id": 35099,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "苟***术"
+    },
+    {
+      "id": 221921,
+      "event_id": 78,
+      "user_id": 35126,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "M***y"
+    },
+    {
+      "id": 221924,
+      "event_id": 78,
+      "user_id": 35167,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "MrProstitute_song_z1996"
+    },
+    {
+      "id": 221925,
+      "event_id": 78,
+      "user_id": 35323,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "不羁灬的灵魂"
+    },
+    {
+      "id": 221926,
+      "event_id": 78,
+      "user_id": 35342,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "wb789005"
+    },
+    {
+      "id": 221927,
+      "event_id": 78,
+      "user_id": 35565,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "姆佩奇-佩里卡尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "D***l"
+    },
+    {
+      "id": 221928,
+      "event_id": 78,
+      "user_id": 35657,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "姆佩奇-佩里卡尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "小三花和小黑喵"
+    },
+    {
+      "id": 221929,
+      "event_id": 78,
+      "user_id": 35898,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "吴二饼"
+    },
+    {
+      "id": 221930,
+      "event_id": 78,
+      "user_id": 35948,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞二皮"
+    },
+    {
+      "id": 221931,
+      "event_id": 78,
+      "user_id": 35965,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "Schurkel Yeein"
+    },
+    {
+      "id": 221933,
+      "event_id": 78,
+      "user_id": 36253,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞麦皮真皮"
+    },
+    {
+      "id": 221934,
+      "event_id": 78,
+      "user_id": 36322,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "130rings"
+    },
+    {
+      "id": 221935,
+      "event_id": 78,
+      "user_id": 37043,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "法拉利策略组"
+    },
+    {
+      "id": 221936,
+      "event_id": 78,
+      "user_id": 37108,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "交H于一点"
+    },
+    {
+      "id": 221938,
+      "event_id": 78,
+      "user_id": 37184,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "爱***森"
+    },
+    {
+      "id": 221939,
+      "event_id": 78,
+      "user_id": 37256,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "Dagenais"
+    },
+    {
+      "id": 221940,
+      "event_id": 78,
+      "user_id": 37273,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "152*****282"
+    },
+    {
+      "id": 221941,
+      "event_id": 78,
+      "user_id": 37276,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "156******69"
+    },
+    {
+      "id": 221942,
+      "event_id": 78,
+      "user_id": 37317,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "零***澄"
+    },
+    {
+      "id": 221943,
+      "event_id": 78,
+      "user_id": 37337,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "IggyAzaleaChina"
+    },
+    {
+      "id": 221944,
+      "event_id": 78,
+      "user_id": 37556,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "irenelucky_117"
+    },
+    {
+      "id": 221945,
+      "event_id": 78,
+      "user_id": 37558,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "136******19"
+    },
+    {
+      "id": 221946,
+      "event_id": 78,
+      "user_id": 37559,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "网球联赛TennisLeague"
+    },
+    {
+      "id": 221948,
+      "event_id": 78,
+      "user_id": 37569,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "L***e"
+    },
+    {
+      "id": 221949,
+      "event_id": 78,
+      "user_id": 37582,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "D***3"
+    },
+    {
+      "id": 221950,
+      "event_id": 78,
+      "user_id": 37595,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "姆佩奇-佩里卡尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "类胡萝卜素a"
+    },
+    {
+      "id": 221951,
+      "event_id": 78,
+      "user_id": 37596,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "188*****355"
+    },
+    {
+      "id": 221952,
+      "event_id": 78,
+      "user_id": 37598,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "198******80"
+    },
+    {
+      "id": 221955,
+      "event_id": 78,
+      "user_id": 38686,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "福基纳夺冠就改名__哈卡卡可"
+    },
+    {
+      "id": 221956,
+      "event_id": 78,
+      "user_id": 38990,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "G***e"
+    },
+    {
+      "id": 221957,
+      "event_id": 78,
+      "user_id": 39088,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "勤***2"
+    },
+    {
+      "id": 221958,
+      "event_id": 78,
+      "user_id": 39126,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "晨曦中的楷模Elroy"
+    },
+    {
+      "id": 221959,
+      "event_id": 78,
+      "user_id": 39225,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "晚睡早起冲冲冲"
+    },
+    {
+      "id": 221960,
+      "event_id": 78,
+      "user_id": 39229,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "F-orestcold"
+    },
+    {
+      "id": 221961,
+      "event_id": 78,
+      "user_id": 39230,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "姆佩奇-佩里卡尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "子***寒"
+    },
+    {
+      "id": 221962,
+      "event_id": 78,
+      "user_id": 39231,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "taru wa"
+    },
+    {
+      "id": 221963,
+      "event_id": 78,
+      "user_id": 39268,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "姆佩奇-佩里卡尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "best_but_Eric"
+    },
+    {
+      "id": 221964,
+      "event_id": 78,
+      "user_id": 39367,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "强化型米斯alternate"
+    },
+    {
+      "id": 221967,
+      "event_id": 78,
+      "user_id": 39396,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "178******17"
+    },
+    {
+      "id": 221968,
+      "event_id": 78,
+      "user_id": 39438,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "Lak-s"
+    },
+    {
+      "id": 221970,
+      "event_id": 78,
+      "user_id": 39542,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "W***界"
+    },
+    {
+      "id": 221971,
+      "event_id": 78,
+      "user_id": 39561,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "luckybweh_"
+    },
+    {
+      "id": 221974,
+      "event_id": 78,
+      "user_id": 39648,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "羊哈奇"
+    },
+    {
+      "id": 221975,
+      "event_id": 78,
+      "user_id": 39649,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "贾云哲"
+    },
+    {
+      "id": 221976,
+      "event_id": 78,
+      "user_id": 39652,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "Xena"
+    },
+    {
+      "id": 221977,
+      "event_id": 78,
+      "user_id": 39703,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "用户7927633580"
+    },
+    {
+      "id": 221979,
+      "event_id": 78,
+      "user_id": 39717,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "198******83"
+    },
+    {
+      "id": 221980,
+      "event_id": 78,
+      "user_id": 39792,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "姆佩奇-佩里卡尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "香鱼不长大"
+    },
+    {
+      "id": 221981,
+      "event_id": 78,
+      "user_id": 39920,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "无***痕"
+    },
+    {
+      "id": 221982,
+      "event_id": 78,
+      "user_id": 39933,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "Oreache"
+    },
+    {
+      "id": 221983,
+      "event_id": 78,
+      "user_id": 39935,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "田纳西草莓干加工厂"
+    },
+    {
+      "id": 221984,
+      "event_id": 78,
+      "user_id": 39944,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "阿纳尔迪"
+      ],
+      "fill_status": "球员输球",
+      "username": "萌***尼"
+    },
+    {
+      "id": 221985,
+      "event_id": 78,
+      "user_id": 40054,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "姆佩奇-佩里卡尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "唐老鸭爱schur"
+    },
+    {
+      "id": 221986,
+      "event_id": 78,
+      "user_id": 40265,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "稀有的木臼犬"
+    },
+    {
+      "id": 221987,
+      "event_id": 78,
+      "user_id": 40286,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "薄荷奶绿不加冰_"
+    },
+    {
+      "id": 221990,
+      "event_id": 78,
+      "user_id": 40578,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "158******20"
+    },
+    {
+      "id": 221991,
+      "event_id": 78,
+      "user_id": 40580,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "Giannelli Simone"
+    },
+    {
+      "id": 221992,
+      "event_id": 78,
+      "user_id": 40583,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "181******28"
+    },
+    {
+      "id": 221994,
+      "event_id": 78,
+      "user_id": 40592,
+      "status": -2,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "姆佩奇-佩里卡尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "250赛的W"
+    },
+    {
+      "id": 221973,
+      "event_id": 78,
+      "user_id": 39587,
+      "status": -4,
+      "day": 0,
+      "score": 10,
+      "updated_at": "2025-04-12T16:30:49.000000Z",
+      "players": [
+        "汤普森"
+      ],
+      "fill_status": "自杀(主备冲突)",
+      "username": "a***鸿"
+    }
+  ]
+}

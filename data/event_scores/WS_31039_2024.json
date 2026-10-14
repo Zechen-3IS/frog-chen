@@ -1,0 +1,2888 @@
+{
+  "event_id": "31039",
+  "year": 2024,
+  "tour": "WS",
+  "city": "蒙特雷",
+  "page_type": "score",
+  "completed": true,
+  "fetched_at": "2026-10-13 23:30:59",
+  "rows": [
+    {
+      "id": 91888,
+      "event_id": 35,
+      "user_id": 28991,
+      "status": 0,
+      "day": 5,
+      "score": 325,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "扎拉祖哈",
+        "埃-纳瓦罗",
+        "亚历山德罗娃",
+        "诺斯科娃"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "张文静之歌"
+    },
+    {
+      "id": 91891,
+      "event_id": 35,
+      "user_id": 29279,
+      "status": 0,
+      "day": 5,
+      "score": 325,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "马尔蒂奇",
+        "弗雷希",
+        "亚历山德罗娃",
+        "诺斯科娃"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "远辰上的戏台"
+    },
+    {
+      "id": 91915,
+      "event_id": 35,
+      "user_id": 31750,
+      "status": 0,
+      "day": 5,
+      "score": 325,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "奥索里奥",
+        "扎拉祖哈",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "诺斯科娃"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "ForAI83373"
+    },
+    {
+      "id": 91917,
+      "event_id": 35,
+      "user_id": 31850,
+      "status": 0,
+      "day": 5,
+      "score": 325,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "马尔蒂奇",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "诺斯科娃"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "安妍与花"
+    },
+    {
+      "id": 91868,
+      "event_id": 35,
+      "user_id": 16570,
+      "status": -2,
+      "day": 5,
+      "score": 325,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "阿瓦涅相",
+        "王曦雨",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "诺斯科娃",
+        "孙璐璐"
+      ],
+      "fill_status": "球员输球",
+      "username": "黑白_大山"
+    },
+    {
+      "id": 91866,
+      "event_id": 35,
+      "user_id": 11064,
+      "status": -3,
+      "day": 5,
+      "score": 325,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "王曦雨",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "诺斯科娃",
+        "诺斯科娃"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "Poah优昙花_"
+    },
+    {
+      "id": 91903,
+      "event_id": 35,
+      "user_id": 30644,
+      "status": -3,
+      "day": 5,
+      "score": 325,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "奥索里奥",
+        "诺斯科娃",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "孙璐璐",
+        "诺斯科娃"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "肥花太肥"
+    },
+    {
+      "id": 91941,
+      "event_id": 35,
+      "user_id": 34283,
+      "status": -3,
+      "day": 5,
+      "score": 325,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "扎拉祖哈",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "诺斯科娃",
+        "诺斯科娃"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "John Z"
+    },
+    {
+      "id": 91946,
+      "event_id": 35,
+      "user_id": 34717,
+      "status": -3,
+      "day": 5,
+      "score": 325,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "王曦雨",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "诺斯科娃",
+        "孙璐璐"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "A***4"
+    },
+    {
+      "id": 91900,
+      "event_id": 35,
+      "user_id": 30317,
+      "status": 0,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "袁悦",
+        "斯维托丽娜",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "拾光miao"
+    },
+    {
+      "id": 91854,
+      "event_id": 35,
+      "user_id": 483,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "扎拉祖哈",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "天邪幻世"
+    },
+    {
+      "id": 91855,
+      "event_id": 35,
+      "user_id": 870,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "扎拉祖哈",
+        "袁悦",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "hr337"
+    },
+    {
+      "id": 91857,
+      "event_id": 35,
+      "user_id": 2005,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "诺斯科娃",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞麦皮"
+    },
+    {
+      "id": 91859,
+      "event_id": 35,
+      "user_id": 5245,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "阿瓦涅相",
+        "诺斯科娃",
+        "袁悦",
+        "孙璐璐",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "贝西卜殿下"
+    },
+    {
+      "id": 91861,
+      "event_id": 35,
+      "user_id": 8895,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "奥索里奥",
+        "诺斯科娃",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "木的讷"
+    },
+    {
+      "id": 91863,
+      "event_id": 35,
+      "user_id": 10103,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "诺斯科娃",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "wennuan78"
+    },
+    {
+      "id": 91864,
+      "event_id": 35,
+      "user_id": 10322,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "王曦雨",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "ElvisD95"
+    },
+    {
+      "id": 91870,
+      "event_id": 35,
+      "user_id": 17144,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "阿瓦涅相",
+        "马尔蒂奇",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "白云静水"
+    },
+    {
+      "id": 91871,
+      "event_id": 35,
+      "user_id": 17376,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "阿瓦涅相",
+        "扎拉祖哈",
+        "弗雷希",
+        "孙璐璐",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "麦迪还是洋葱"
+    },
+    {
+      "id": 91872,
+      "event_id": 35,
+      "user_id": 19581,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "马尔蒂奇",
+        "斯维托丽娜",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "homeboyliu"
+    },
+    {
+      "id": 91873,
+      "event_id": 35,
+      "user_id": 22199,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "王曦雨",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "无聊-消遣"
+    },
+    {
+      "id": 91874,
+      "event_id": 35,
+      "user_id": 22854,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "王曦雨",
+        "斯维托丽娜",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "不管小哈是我的"
+    },
+    {
+      "id": 91875,
+      "event_id": 35,
+      "user_id": 23015,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "阿瓦涅相",
+        "扎拉祖哈",
+        "孙璐璐",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "lovehuiruoqi"
+    },
+    {
+      "id": 91877,
+      "event_id": 35,
+      "user_id": 24258,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "扎拉祖哈",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "RV--RV"
+    },
+    {
+      "id": 91879,
+      "event_id": 35,
+      "user_id": 24988,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "奥索里奥",
+        "扎拉祖哈",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "餐帅吴承羲"
+    },
+    {
+      "id": 91881,
+      "event_id": 35,
+      "user_id": 27994,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "扎拉祖哈",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "板尼哟"
+    },
+    {
+      "id": 91883,
+      "event_id": 35,
+      "user_id": 28632,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "扎拉祖哈",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "y***7"
+    },
+    {
+      "id": 91886,
+      "event_id": 35,
+      "user_id": 28781,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "袁悦",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "活宝哈u"
+    },
+    {
+      "id": 91889,
+      "event_id": 35,
+      "user_id": 29045,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "扎拉祖哈",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "Kwan-tennis"
+    },
+    {
+      "id": 91892,
+      "event_id": 35,
+      "user_id": 29300,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "诺斯科娃",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "-Frictionless"
+    },
+    {
+      "id": 91894,
+      "event_id": 35,
+      "user_id": 29351,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "诺斯科娃",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "日***岸"
+    },
+    {
+      "id": 91896,
+      "event_id": 35,
+      "user_id": 29627,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "扎拉祖哈",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "没有滑板的张某某"
+    },
+    {
+      "id": 91898,
+      "event_id": 35,
+      "user_id": 29978,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "诺斯科娃",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "外星驻地球代表"
+    },
+    {
+      "id": 91901,
+      "event_id": 35,
+      "user_id": 30480,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "丽-格拉什科",
+        "扎拉祖哈",
+        "诺斯科娃",
+        "孙璐璐",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "yh11yh22"
+    },
+    {
+      "id": 91902,
+      "event_id": 35,
+      "user_id": 30552,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "扎拉祖哈",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "卡尼TT"
+    },
+    {
+      "id": 91904,
+      "event_id": 35,
+      "user_id": 30840,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "诺斯科娃",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "ilove33"
+    },
+    {
+      "id": 91907,
+      "event_id": 35,
+      "user_id": 31227,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "阿瓦涅相",
+        "王曦雨",
+        "弗雷希",
+        "孙璐璐",
+        "埃-纳瓦罗"
+      ],
+      "fill_status": "球员输球",
+      "username": "John-zhangsh"
+    },
+    {
+      "id": 91908,
+      "event_id": 35,
+      "user_id": 31354,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "扎拉祖哈",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "派派派崔克"
+    },
+    {
+      "id": 91909,
+      "event_id": 35,
+      "user_id": 31375,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "阿瓦涅相",
+        "诺斯科娃",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "刘小闹小闹闹呀"
+    },
+    {
+      "id": 91910,
+      "event_id": 35,
+      "user_id": 31388,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "诺斯科娃",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "BORIS-_-i"
+    },
+    {
+      "id": 91911,
+      "event_id": 35,
+      "user_id": 31497,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "阿瓦涅相",
+        "诺斯科娃",
+        "斯维托丽娜",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "过于简单0723"
+    },
+    {
+      "id": 91912,
+      "event_id": 35,
+      "user_id": 31557,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "诺斯科娃",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "一***酒"
+    },
+    {
+      "id": 91913,
+      "event_id": 35,
+      "user_id": 31634,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "阿瓦涅相",
+        "扎拉祖哈",
+        "弗雷希",
+        "孙璐璐",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "divisional"
+    },
+    {
+      "id": 91918,
+      "event_id": 35,
+      "user_id": 31960,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "王曦雨",
+        "斯维托丽娜",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "愿***l"
+    },
+    {
+      "id": 91919,
+      "event_id": 35,
+      "user_id": 32121,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "诺斯科娃",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "用户7856057992"
+    },
+    {
+      "id": 91920,
+      "event_id": 35,
+      "user_id": 32606,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "阿瓦涅相",
+        "诺斯科娃",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "mj ouyang"
+    },
+    {
+      "id": 91921,
+      "event_id": 35,
+      "user_id": 33008,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "阿瓦涅相",
+        "马尔蒂奇",
+        "斯维托丽娜",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "-Bellaisy-"
+    },
+    {
+      "id": 91925,
+      "event_id": 35,
+      "user_id": 33193,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "阿瓦涅相",
+        "诺斯科娃",
+        "孙璐璐",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "果金灵灵"
+    },
+    {
+      "id": 91926,
+      "event_id": 35,
+      "user_id": 33276,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "诺斯科娃",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "唯爱张帅"
+    },
+    {
+      "id": 91927,
+      "event_id": 35,
+      "user_id": 33389,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "扎拉祖哈",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "Don Li"
+    },
+    {
+      "id": 91930,
+      "event_id": 35,
+      "user_id": 33734,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "扎拉祖哈",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "sjy030603"
+    },
+    {
+      "id": 91932,
+      "event_id": 35,
+      "user_id": 33801,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "阿瓦涅相",
+        "诺斯科娃",
+        "弗雷希",
+        "孙璐璐",
+        "埃-纳瓦罗"
+      ],
+      "fill_status": "球员输球",
+      "username": "继续继续快下课"
+    },
+    {
+      "id": 91934,
+      "event_id": 35,
+      "user_id": 33869,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "袁悦",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "z***4"
+    },
+    {
+      "id": 91936,
+      "event_id": 35,
+      "user_id": 34151,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "阿瓦涅相",
+        "袁悦",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "Yakamoz21"
+    },
+    {
+      "id": 91937,
+      "event_id": 35,
+      "user_id": 34152,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "阿瓦涅相",
+        "诺斯科娃",
+        "弗雷希",
+        "孙璐璐",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "bai li"
+    },
+    {
+      "id": 91938,
+      "event_id": 35,
+      "user_id": 34166,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "扎拉祖哈",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "BucketIvanovic"
+    },
+    {
+      "id": 91939,
+      "event_id": 35,
+      "user_id": 34186,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "诺斯科娃",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "AllenXiangxy"
+    },
+    {
+      "id": 91940,
+      "event_id": 35,
+      "user_id": 34229,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "扎拉祖哈",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "深***名"
+    },
+    {
+      "id": 91942,
+      "event_id": 35,
+      "user_id": 34288,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "马尔蒂奇",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "John大师兄"
+    },
+    {
+      "id": 91947,
+      "event_id": 35,
+      "user_id": 34766,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "袁悦",
+        "斯维托丽娜",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "为你而来呀"
+    },
+    {
+      "id": 91952,
+      "event_id": 35,
+      "user_id": 35342,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "王曦雨",
+        "弗雷希",
+        "诺斯科娃",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "wb789005"
+    },
+    {
+      "id": 91953,
+      "event_id": 35,
+      "user_id": 35600,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "马尔蒂奇",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "TSKJAR"
+    },
+    {
+      "id": 91954,
+      "event_id": 35,
+      "user_id": 35898,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "埃-安德烈耶娃",
+        "马尔蒂奇",
+        "孙璐璐",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "吴二饼"
+    },
+    {
+      "id": 91955,
+      "event_id": 35,
+      "user_id": 35965,
+      "status": -2,
+      "day": 4,
+      "score": 195,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "诺斯科娃",
+        "弗雷希",
+        "埃-纳瓦罗",
+        "亚历山德罗娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "Schurkel Yeein"
+    },
+    {
+      "id": 91890,
+      "event_id": 35,
+      "user_id": 29163,
+      "status": 0,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "扎拉祖哈",
+        "弗雷希"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "Catsickcat_"
+    },
+    {
+      "id": 91935,
+      "event_id": 35,
+      "user_id": 34148,
+      "status": 0,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "诺斯科娃",
+        "弗雷希"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "萨卡外"
+    },
+    {
+      "id": 91856,
+      "event_id": 35,
+      "user_id": 1785,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "诺斯科娃",
+        "弗雷希",
+        "斯维托丽娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "yangxiaqing2"
+    },
+    {
+      "id": 91858,
+      "event_id": 35,
+      "user_id": 2608,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "马尔蒂奇",
+        "弗雷希",
+        "埃-安德烈耶娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "德约的粉丝"
+    },
+    {
+      "id": 91860,
+      "event_id": 35,
+      "user_id": 7042,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "马尔蒂奇",
+        "弗雷希",
+        "斯维托丽娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "__Novak__"
+    },
+    {
+      "id": 91862,
+      "event_id": 35,
+      "user_id": 10037,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "马尔蒂奇",
+        "弗雷希",
+        "埃-安德烈耶娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "黑***友"
+    },
+    {
+      "id": 91865,
+      "event_id": 35,
+      "user_id": 10421,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "阿瓦涅相",
+        "王曦雨",
+        "弗雷希",
+        "斯维托丽娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "頔頔赟赟"
+    },
+    {
+      "id": 91867,
+      "event_id": 35,
+      "user_id": 15816,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "扎拉祖哈",
+        "弗雷希",
+        "埃-安德烈耶娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "三满贯科贝尔"
+    },
+    {
+      "id": 91869,
+      "event_id": 35,
+      "user_id": 16670,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "王曦雨",
+        "弗雷希",
+        "袁悦"
+      ],
+      "fill_status": "球员输球",
+      "username": "你附加费的"
+    },
+    {
+      "id": 91876,
+      "event_id": 35,
+      "user_id": 24220,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "马尔蒂奇",
+        "弗雷希",
+        "斯维托丽娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "丨Salvation丨"
+    },
+    {
+      "id": 91880,
+      "event_id": 35,
+      "user_id": 27446,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "诺斯科娃",
+        "弗雷希",
+        "斯维托丽娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "指纹Nongzw"
+    },
+    {
+      "id": 91882,
+      "event_id": 35,
+      "user_id": 28509,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "阿瓦涅相",
+        "诺斯科娃",
+        "孙璐璐",
+        "斯维托丽娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "夕***阳"
+    },
+    {
+      "id": 91884,
+      "event_id": 35,
+      "user_id": 28673,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "丽-格拉什科",
+        "诺斯科娃",
+        "孙璐璐",
+        "埃-安德烈耶娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "神秘的药"
+    },
+    {
+      "id": 91885,
+      "event_id": 35,
+      "user_id": 28752,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "马尔蒂奇",
+        "弗雷希",
+        "埃-安德烈耶娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "A1_K"
+    },
+    {
+      "id": 91887,
+      "event_id": 35,
+      "user_id": 28884,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "阿瓦涅相",
+        "诺斯科娃",
+        "亚历山德罗娃",
+        "斯维托丽娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "Ryan-Tennis"
+    },
+    {
+      "id": 91893,
+      "event_id": 35,
+      "user_id": 29335,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "扎拉祖哈",
+        "弗雷希",
+        "斯维托丽娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "moommomoommo"
+    },
+    {
+      "id": 91895,
+      "event_id": 35,
+      "user_id": 29573,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "诺斯科娃",
+        "弗雷希",
+        "斯维托丽娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "09劉继"
+    },
+    {
+      "id": 91897,
+      "event_id": 35,
+      "user_id": 29703,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "诺斯科娃",
+        "弗雷希",
+        "埃-安德烈耶娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "那不勒斯Jasper"
+    },
+    {
+      "id": 91899,
+      "event_id": 35,
+      "user_id": 30209,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "扎拉祖哈",
+        "弗雷希",
+        "斯维托丽娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "_被窝哲学家_-"
+    },
+    {
+      "id": 91906,
+      "event_id": 35,
+      "user_id": 31092,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "扎拉祖哈",
+        "弗雷希",
+        "埃-安德烈耶娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "落叶是秋天的情人"
+    },
+    {
+      "id": 91914,
+      "event_id": 35,
+      "user_id": 31705,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "马尔蒂奇",
+        "弗雷希",
+        "斯维托丽娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "Pomelo琛"
+    },
+    {
+      "id": 91922,
+      "event_id": 35,
+      "user_id": 33099,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "奥索里奥",
+        "扎拉祖哈",
+        "弗雷希",
+        "斯维托丽娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "La_Mariposa_Azul"
+    },
+    {
+      "id": 91923,
+      "event_id": 35,
+      "user_id": 33147,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "诺斯科娃",
+        "弗雷希",
+        "斯维托丽娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "湫秋兮如风"
+    },
+    {
+      "id": 91924,
+      "event_id": 35,
+      "user_id": 33162,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "扎拉祖哈",
+        "弗雷希",
+        "斯维托丽娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "r***i"
+    },
+    {
+      "id": 91928,
+      "event_id": 35,
+      "user_id": 33613,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "马尔蒂奇",
+        "斯维托丽娜",
+        "弗雷希"
+      ],
+      "fill_status": "球员输球",
+      "username": "斛魈"
+    },
+    {
+      "id": 91933,
+      "event_id": 35,
+      "user_id": 33828,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "马尔蒂奇",
+        "埃-纳瓦罗",
+        "弗雷希"
+      ],
+      "fill_status": "球员输球",
+      "username": "重生之我在幸存者十连冠"
+    },
+    {
+      "id": 91944,
+      "event_id": 35,
+      "user_id": 34350,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "马尔蒂奇",
+        "弗雷希",
+        "斯维托丽娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "风儿007008"
+    },
+    {
+      "id": 91945,
+      "event_id": 35,
+      "user_id": 34368,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "阿瓦涅相",
+        "扎拉祖哈",
+        "亚历山德罗娃",
+        "斯维托丽娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "回破"
+    },
+    {
+      "id": 91948,
+      "event_id": 35,
+      "user_id": 34807,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "马尔蒂奇",
+        "弗雷希",
+        "埃-安德烈耶娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "许yunkai"
+    },
+    {
+      "id": 91949,
+      "event_id": 35,
+      "user_id": 35082,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "诺斯科娃",
+        "弗雷希",
+        "斯维托丽娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "年终的W"
+    },
+    {
+      "id": 91950,
+      "event_id": 35,
+      "user_id": 35126,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐",
+        "诺斯科娃",
+        "弗雷希",
+        "斯维托丽娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "M***y"
+    },
+    {
+      "id": 91951,
+      "event_id": 35,
+      "user_id": 35132,
+      "status": -2,
+      "day": 3,
+      "score": 108,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "阿瓦涅相",
+        "扎拉祖哈",
+        "弗雷希",
+        "埃-安德烈耶娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "h***t"
+    },
+    {
+      "id": 91943,
+      "event_id": 35,
+      "user_id": 34334,
+      "status": -2,
+      "day": 2,
+      "score": 60,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "阿瓦涅相",
+        "弗雷希",
+        "王曦雨"
+      ],
+      "fill_status": "球员输球",
+      "username": "Ariana Lin"
+    },
+    {
+      "id": 91878,
+      "event_id": 35,
+      "user_id": 24930,
+      "status": 0,
+      "day": 1,
+      "score": 30,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "黄翠桃"
+    },
+    {
+      "id": 91905,
+      "event_id": 35,
+      "user_id": 30895,
+      "status": 0,
+      "day": 1,
+      "score": 30,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "阿瓦涅相"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "仅仅是景"
+    },
+    {
+      "id": 91916,
+      "event_id": 35,
+      "user_id": 31768,
+      "status": 0,
+      "day": 1,
+      "score": 30,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "WillKrisKai"
+    },
+    {
+      "id": 91931,
+      "event_id": 35,
+      "user_id": 33783,
+      "status": 0,
+      "day": 1,
+      "score": 30,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "孙璐璐"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "l***7"
+    },
+    {
+      "id": 91929,
+      "event_id": 35,
+      "user_id": 33712,
+      "status": -2,
+      "day": 1,
+      "score": 30,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "阿瓦涅相",
+        "科林斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "沛县沛公ghj"
+    },
+    {
+      "id": 92000,
+      "event_id": 35,
+      "user_id": 116,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "钱老奶奶"
+    },
+    {
+      "id": 91962,
+      "event_id": 35,
+      "user_id": 272,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "tenfoynis"
+    },
+    {
+      "id": 92030,
+      "event_id": 35,
+      "user_id": 1956,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "科恰雷托"
+      ],
+      "fill_status": "球员输球",
+      "username": "芋y头h小m生"
+    },
+    {
+      "id": 91963,
+      "event_id": 35,
+      "user_id": 2156,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "和楼盘规模破破"
+    },
+    {
+      "id": 92031,
+      "event_id": 35,
+      "user_id": 4936,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "科恰雷托"
+      ],
+      "fill_status": "球员输球",
+      "username": "liu8322925"
+    },
+    {
+      "id": 91964,
+      "event_id": 35,
+      "user_id": 5369,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "剑剑康康-101dama怎么那么饿熏"
+    },
+    {
+      "id": 91965,
+      "event_id": 35,
+      "user_id": 6623,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞三皮"
+    },
+    {
+      "id": 91956,
+      "event_id": 35,
+      "user_id": 9316,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "沃洛季科"
+      ],
+      "fill_status": "球员输球",
+      "username": "DanielaXX"
+    },
+    {
+      "id": 91960,
+      "event_id": 35,
+      "user_id": 11007,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "只愿_漂浮"
+    },
+    {
+      "id": 91966,
+      "event_id": 35,
+      "user_id": 17024,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "victorgc"
+    },
+    {
+      "id": 92001,
+      "event_id": 35,
+      "user_id": 24600,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "我来了你怕了嘛"
+    },
+    {
+      "id": 92002,
+      "event_id": 35,
+      "user_id": 25850,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "jellyddfish"
+    },
+    {
+      "id": 92003,
+      "event_id": 35,
+      "user_id": 25881,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "lwpsgj"
+    },
+    {
+      "id": 92004,
+      "event_id": 35,
+      "user_id": 26279,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "南北南南i"
+    },
+    {
+      "id": 92005,
+      "event_id": 35,
+      "user_id": 26595,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "Jiabei He"
+    },
+    {
+      "id": 92006,
+      "event_id": 35,
+      "user_id": 27372,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "镇远神"
+    },
+    {
+      "id": 91967,
+      "event_id": 35,
+      "user_id": 27388,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "之后再喝咖啡我就是狗"
+    },
+    {
+      "id": 91968,
+      "event_id": 35,
+      "user_id": 27450,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "MobiusZH"
+    },
+    {
+      "id": 91969,
+      "event_id": 35,
+      "user_id": 28021,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "AdonisZhang"
+    },
+    {
+      "id": 91970,
+      "event_id": 35,
+      "user_id": 28026,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "小白BAILL"
+    },
+    {
+      "id": 91971,
+      "event_id": 35,
+      "user_id": 28027,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "樱***3"
+    },
+    {
+      "id": 91972,
+      "event_id": 35,
+      "user_id": 28412,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "jason大志志"
+    },
+    {
+      "id": 91973,
+      "event_id": 35,
+      "user_id": 28508,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "一杯思s"
+    },
+    {
+      "id": 92032,
+      "event_id": 35,
+      "user_id": 28510,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "科恰雷托"
+      ],
+      "fill_status": "球员输球",
+      "username": "akane 11"
+    },
+    {
+      "id": 92007,
+      "event_id": 35,
+      "user_id": 28625,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "octbt"
+    },
+    {
+      "id": 91974,
+      "event_id": 35,
+      "user_id": 28845,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "浙江土特产"
+    },
+    {
+      "id": 91975,
+      "event_id": 35,
+      "user_id": 28880,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "冰萌申煦"
+    },
+    {
+      "id": 91976,
+      "event_id": 35,
+      "user_id": 29026,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "德不驴"
+    },
+    {
+      "id": 92008,
+      "event_id": 35,
+      "user_id": 29057,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "WillKris锴"
+    },
+    {
+      "id": 92009,
+      "event_id": 35,
+      "user_id": 29130,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "Tony-Tennis"
+    },
+    {
+      "id": 91977,
+      "event_id": 35,
+      "user_id": 29134,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "IGAmandaSLAY"
+    },
+    {
+      "id": 92033,
+      "event_id": 35,
+      "user_id": 29258,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "科恰雷托"
+      ],
+      "fill_status": "球员输球",
+      "username": "J***o"
+    },
+    {
+      "id": 91978,
+      "event_id": 35,
+      "user_id": 29270,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "xxxjusAng"
+    },
+    {
+      "id": 91961,
+      "event_id": 35,
+      "user_id": 29363,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "张潮1986"
+    },
+    {
+      "id": 92010,
+      "event_id": 35,
+      "user_id": 29387,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "Charles236589"
+    },
+    {
+      "id": 91979,
+      "event_id": 35,
+      "user_id": 29479,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "马戏团冠军"
+    },
+    {
+      "id": 91980,
+      "event_id": 35,
+      "user_id": 29954,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "蛊毒娃丶"
+    },
+    {
+      "id": 91981,
+      "event_id": 35,
+      "user_id": 29966,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "BBBHYYY"
+    },
+    {
+      "id": 91982,
+      "event_id": 35,
+      "user_id": 30456,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "S***d"
+    },
+    {
+      "id": 91957,
+      "event_id": 35,
+      "user_id": 30566,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "沃洛季科"
+      ],
+      "fill_status": "球员输球",
+      "username": "变现狂魔_"
+    },
+    {
+      "id": 92011,
+      "event_id": 35,
+      "user_id": 30901,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "闲不住的饭饭"
+    },
+    {
+      "id": 91983,
+      "event_id": 35,
+      "user_id": 30932,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "samsonyip"
+    },
+    {
+      "id": 91984,
+      "event_id": 35,
+      "user_id": 31115,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "青花比目"
+    },
+    {
+      "id": 92012,
+      "event_id": 35,
+      "user_id": 31298,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "爱***宇"
+    },
+    {
+      "id": 91985,
+      "event_id": 35,
+      "user_id": 31365,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "椰椰椰子ty"
+    },
+    {
+      "id": 92013,
+      "event_id": 35,
+      "user_id": 31465,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "188******62"
+    },
+    {
+      "id": 92014,
+      "event_id": 35,
+      "user_id": 31550,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "九_墨_"
+    },
+    {
+      "id": 92015,
+      "event_id": 35,
+      "user_id": 32052,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "Harry Chen"
+    },
+    {
+      "id": 92016,
+      "event_id": 35,
+      "user_id": 32322,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "大满贯的W"
+    },
+    {
+      "id": 92017,
+      "event_id": 35,
+      "user_id": 32506,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "一缕清风-55"
+    },
+    {
+      "id": 91986,
+      "event_id": 35,
+      "user_id": 32552,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "海狸先生的小翘臀"
+    },
+    {
+      "id": 92018,
+      "event_id": 35,
+      "user_id": 32763,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "1000赛的W"
+    },
+    {
+      "id": 92019,
+      "event_id": 35,
+      "user_id": 32796,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "紫之隐小屋"
+    },
+    {
+      "id": 91987,
+      "event_id": 35,
+      "user_id": 32980,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "Elroy ZHANG"
+    },
+    {
+      "id": 92020,
+      "event_id": 35,
+      "user_id": 33026,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "底线老五"
+    },
+    {
+      "id": 91988,
+      "event_id": 35,
+      "user_id": 33074,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "duhao110101"
+    },
+    {
+      "id": 92021,
+      "event_id": 35,
+      "user_id": 33233,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "精明姐姐的小秘"
+    },
+    {
+      "id": 92022,
+      "event_id": 35,
+      "user_id": 33262,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "Oreache_TAO"
+    },
+    {
+      "id": 91989,
+      "event_id": 35,
+      "user_id": 33264,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "林强行长的小挎包"
+    },
+    {
+      "id": 92023,
+      "event_id": 35,
+      "user_id": 33308,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "西瓜太郎笑嘻嘻"
+    },
+    {
+      "id": 91990,
+      "event_id": 35,
+      "user_id": 33386,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "逍遥笑叹红尘"
+    },
+    {
+      "id": 92024,
+      "event_id": 35,
+      "user_id": 33491,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "大肚腩老哥哥"
+    },
+    {
+      "id": 91991,
+      "event_id": 35,
+      "user_id": 33812,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "用户5638241188"
+    },
+    {
+      "id": 91992,
+      "event_id": 35,
+      "user_id": 33832,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "豆***B"
+    },
+    {
+      "id": 91993,
+      "event_id": 35,
+      "user_id": 33954,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "百香柠檬水666"
+    },
+    {
+      "id": 91994,
+      "event_id": 35,
+      "user_id": 34212,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "落***手"
+    },
+    {
+      "id": 91958,
+      "event_id": 35,
+      "user_id": 34311,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "沃洛季科"
+      ],
+      "fill_status": "球员输球",
+      "username": "T***9"
+    },
+    {
+      "id": 91995,
+      "event_id": 35,
+      "user_id": 34367,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "网球爱好者Schur"
+    },
+    {
+      "id": 92025,
+      "event_id": 35,
+      "user_id": 34382,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "弗外外茨"
+    },
+    {
+      "id": 92026,
+      "event_id": 35,
+      "user_id": 34808,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "freedom_or_death"
+    },
+    {
+      "id": 91996,
+      "event_id": 35,
+      "user_id": 34977,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "目眸子"
+    },
+    {
+      "id": 92027,
+      "event_id": 35,
+      "user_id": 35032,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "旧纳琛"
+    },
+    {
+      "id": 91997,
+      "event_id": 35,
+      "user_id": 35099,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "苟***术"
+    },
+    {
+      "id": 91959,
+      "event_id": 35,
+      "user_id": 35127,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "沃洛季科"
+      ],
+      "fill_status": "球员输球",
+      "username": "崔***啊"
+    },
+    {
+      "id": 91998,
+      "event_id": 35,
+      "user_id": 35265,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "米***术"
+    },
+    {
+      "id": 92028,
+      "event_id": 35,
+      "user_id": 35565,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "D***l"
+    },
+    {
+      "id": 91999,
+      "event_id": 35,
+      "user_id": 35636,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "库德梅托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "188******86"
+    },
+    {
+      "id": 92029,
+      "event_id": 35,
+      "user_id": 35948,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-08-25T05:43:22.000000Z",
+      "players": [
+        "加里宁娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞二皮"
+    }
+  ]
+}

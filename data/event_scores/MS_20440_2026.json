@@ -1,0 +1,5773 @@
+{
+  "event_id": "20440",
+  "year": 2026,
+  "tour": "MS",
+  "city": "斯海尔托亨博斯",
+  "page_type": "score",
+  "completed": true,
+  "fetched_at": "2026-10-13 23:27:25",
+  "rows": [
+    {
+      "id": 552785,
+      "event_id": 154,
+      "user_id": 32322,
+      "status": 2,
+      "day": 7,
+      "score": 250,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "曼纳里诺",
+        "安贝尔",
+        "阿利亚西姆",
+        "梅德韦杰夫",
+        "德米纳尔",
+        "迈赫扎克"
+      ],
+      "fill_status": "存活",
+      "username": "大满贯的W"
+    },
+    {
+      "id": 552686,
+      "event_id": 154,
+      "user_id": 272,
+      "status": 0,
+      "day": 6,
+      "score": 165,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "德米纳尔",
+        "阿利亚西姆",
+        "梅德韦杰夫",
+        "迈赫扎克"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "tenfoynis"
+    },
+    {
+      "id": 552693,
+      "event_id": 154,
+      "user_id": 4936,
+      "status": 0,
+      "day": 6,
+      "score": 165,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "安贝尔",
+        "迈赫扎克",
+        "梅德韦杰夫",
+        "德米纳尔"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "liu8322925"
+    },
+    {
+      "id": 552718,
+      "event_id": 154,
+      "user_id": 24258,
+      "status": 0,
+      "day": 6,
+      "score": 165,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "德米纳尔",
+        "梅德韦杰夫",
+        "西里奇",
+        "迈赫扎克"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "RV--RV"
+    },
+    {
+      "id": 552740,
+      "event_id": 154,
+      "user_id": 28673,
+      "status": 0,
+      "day": 6,
+      "score": 165,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "邦齐",
+        "迈赫扎克",
+        "曼纳里诺",
+        "德米纳尔"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "神秘的药"
+    },
+    {
+      "id": 552744,
+      "event_id": 154,
+      "user_id": 28845,
+      "status": 0,
+      "day": 6,
+      "score": 165,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "安贝尔",
+        "阿利亚西姆",
+        "德米纳尔",
+        "迈赫扎克"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "浙江土特产"
+    },
+    {
+      "id": 552758,
+      "event_id": 154,
+      "user_id": 29654,
+      "status": 0,
+      "day": 6,
+      "score": 165,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "德米纳尔",
+        "西里奇",
+        "梅德韦杰夫",
+        "迈赫扎克"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "RiverFish_JHC"
+    },
+    {
+      "id": 552784,
+      "event_id": 154,
+      "user_id": 32121,
+      "status": 0,
+      "day": 6,
+      "score": 165,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "德米纳尔",
+        "梅德韦杰夫",
+        "曼纳里诺",
+        "迈赫扎克"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "用户7856057992"
+    },
+    {
+      "id": 552827,
+      "event_id": 154,
+      "user_id": 35082,
+      "status": 0,
+      "day": 6,
+      "score": 165,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "格里科斯普",
+        "德米纳尔",
+        "梅德韦杰夫",
+        "西里奇",
+        "迈赫扎克"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "年终的W"
+    },
+    {
+      "id": 552858,
+      "event_id": 154,
+      "user_id": 37641,
+      "status": 0,
+      "day": 6,
+      "score": 165,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "邦齐",
+        "梅德韦杰夫",
+        "德米纳尔",
+        "迈赫扎克"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "会***头"
+    },
+    {
+      "id": 552914,
+      "event_id": 154,
+      "user_id": 41074,
+      "status": 0,
+      "day": 6,
+      "score": 165,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "德米纳尔",
+        "阿利亚西姆",
+        "梅德韦杰夫",
+        "迈赫扎克"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "梦***e"
+    },
+    {
+      "id": 553002,
+      "event_id": 154,
+      "user_id": 46764,
+      "status": 0,
+      "day": 6,
+      "score": 165,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "德米纳尔",
+        "梅德韦杰夫",
+        "西里奇",
+        "迈赫扎克"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "马苏控控控"
+    },
+    {
+      "id": 553006,
+      "event_id": 154,
+      "user_id": 46825,
+      "status": 0,
+      "day": 6,
+      "score": 165,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "格里科斯普",
+        "安贝尔",
+        "梅德韦杰夫",
+        "德米纳尔",
+        "迈赫扎克"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "阿瓦达啃大瓜03"
+    },
+    {
+      "id": 552971,
+      "event_id": 154,
+      "user_id": 45878,
+      "status": -2,
+      "day": 6,
+      "score": 165,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "安贝尔",
+        "西里奇",
+        "曼纳里诺",
+        "迈赫扎克",
+        "德米纳尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "JuKKa_z"
+    },
+    {
+      "id": 552832,
+      "event_id": 154,
+      "user_id": 35132,
+      "status": -3,
+      "day": 6,
+      "score": 165,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "富乔维奇",
+        "德米纳尔",
+        "梅德韦杰夫",
+        "曼纳里诺",
+        "迈赫扎克",
+        "德米纳尔"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "h***t"
+    },
+    {
+      "id": 553009,
+      "event_id": 154,
+      "user_id": 47412,
+      "status": -3,
+      "day": 6,
+      "score": 165,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "安贝尔",
+        "迈赫扎克",
+        "梅德韦杰夫",
+        "德米纳尔",
+        "德米纳尔"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "Janevely想向乡巷"
+    },
+    {
+      "id": 552956,
+      "event_id": 154,
+      "user_id": 44684,
+      "status": -4,
+      "day": 6,
+      "score": 165,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "安贝尔",
+        "阿利亚西姆",
+        "德米纳尔",
+        "迈赫扎克",
+        "德米纳尔"
+      ],
+      "fill_status": "自杀(主备冲突)",
+      "username": "Dimitrov Go"
+    },
+    {
+      "id": 552996,
+      "event_id": 154,
+      "user_id": 46644,
+      "status": -4,
+      "day": 6,
+      "score": 165,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "胡尔卡奇",
+        "安贝尔",
+        "迈赫扎克",
+        "曼纳里诺",
+        "德米纳尔",
+        "迈赫扎克"
+      ],
+      "fill_status": "自杀(主备冲突)",
+      "username": "葡韬怂"
+    },
+    {
+      "id": 552688,
+      "event_id": 154,
+      "user_id": 1956,
+      "status": -2,
+      "day": 5,
+      "score": 100,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "富乔维奇",
+        "邦齐",
+        "阿利亚西姆",
+        "德米纳尔",
+        "梅德韦杰夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "芋y头h小m生"
+    },
+    {
+      "id": 552703,
+      "event_id": 154,
+      "user_id": 10103,
+      "status": -2,
+      "day": 5,
+      "score": 100,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "德米纳尔",
+        "迈赫扎克",
+        "梅德韦杰夫",
+        "曼纳里诺"
+      ],
+      "fill_status": "球员输球",
+      "username": "wennuan78"
+    },
+    {
+      "id": 552747,
+      "event_id": 154,
+      "user_id": 28991,
+      "status": -2,
+      "day": 5,
+      "score": 100,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "德米纳尔",
+        "迈赫扎克",
+        "梅德韦杰夫",
+        "曼纳里诺"
+      ],
+      "fill_status": "球员输球",
+      "username": "张文静之歌"
+    },
+    {
+      "id": 552788,
+      "event_id": 154,
+      "user_id": 32763,
+      "status": -2,
+      "day": 5,
+      "score": 100,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "格里科斯普",
+        "安贝尔",
+        "梅德韦杰夫",
+        "德米纳尔",
+        "曼纳里诺"
+      ],
+      "fill_status": "球员输球",
+      "username": "1000赛的W"
+    },
+    {
+      "id": 552795,
+      "event_id": 154,
+      "user_id": 33207,
+      "status": -2,
+      "day": 5,
+      "score": 100,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "安贝尔",
+        "阿利亚西姆",
+        "德米纳尔",
+        "梅德韦杰夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "Samuel Bao"
+    },
+    {
+      "id": 552819,
+      "event_id": 154,
+      "user_id": 34662,
+      "status": -2,
+      "day": 5,
+      "score": 100,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "德米纳尔",
+        "迈赫扎克",
+        "曼纳里诺",
+        "梅德韦杰夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "189******99"
+    },
+    {
+      "id": 552860,
+      "event_id": 154,
+      "user_id": 38583,
+      "status": -2,
+      "day": 5,
+      "score": 100,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "安贝尔",
+        "迈赫扎克",
+        "德米纳尔",
+        "梅德韦杰夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "云朵里遛弯指南"
+    },
+    {
+      "id": 552898,
+      "event_id": 154,
+      "user_id": 40561,
+      "status": -2,
+      "day": 5,
+      "score": 100,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "格里科斯普",
+        "迈赫扎克",
+        "德米纳尔",
+        "梅德韦杰夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "迪***9"
+    },
+    {
+      "id": 552945,
+      "event_id": 154,
+      "user_id": 44085,
+      "status": -2,
+      "day": 5,
+      "score": 100,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "德米纳尔",
+        "迈赫扎克",
+        "梅德韦杰夫",
+        "西里奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "FritzGo"
+    },
+    {
+      "id": 552962,
+      "event_id": 154,
+      "user_id": 44819,
+      "status": -2,
+      "day": 5,
+      "score": 100,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "邦齐",
+        "迈赫扎克",
+        "德米纳尔",
+        "梅德韦杰夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "德雨珀2"
+    },
+    {
+      "id": 552984,
+      "event_id": 154,
+      "user_id": 46278,
+      "status": -2,
+      "day": 5,
+      "score": 100,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "博尔热斯",
+        "吴易昺",
+        "格里科斯普",
+        "迈赫扎克",
+        "德米纳尔",
+        "西里奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "q***1"
+    },
+    {
+      "id": 553003,
+      "event_id": 154,
+      "user_id": 46775,
+      "status": -2,
+      "day": 5,
+      "score": 100,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "安贝尔",
+        "迈赫扎克",
+        "德米纳尔",
+        "梅德韦杰夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "会打逆风球的小米拉"
+    },
+    {
+      "id": 552811,
+      "event_id": 154,
+      "user_id": 34368,
+      "status": 0,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "德米纳尔",
+        "梅德韦杰夫"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "回破"
+    },
+    {
+      "id": 552942,
+      "event_id": 154,
+      "user_id": 43939,
+      "status": 0,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "胡尔卡奇",
+        "安贝尔",
+        "迈赫扎克"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "天***能"
+    },
+    {
+      "id": 552687,
+      "event_id": 154,
+      "user_id": 483,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "德米纳尔",
+        "梅德韦杰夫",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "天邪幻世"
+    },
+    {
+      "id": 552690,
+      "event_id": 154,
+      "user_id": 2156,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "贝尔赫斯",
+        "德米纳尔",
+        "迈赫扎克",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "和楼盘规模破破"
+    },
+    {
+      "id": 552694,
+      "event_id": 154,
+      "user_id": 4958,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "博尔热斯",
+        "吴易昺",
+        "安贝尔",
+        "梅德韦杰夫",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "仿生羊会梦见电子工程毕业生"
+    },
+    {
+      "id": 552699,
+      "event_id": 154,
+      "user_id": 6623,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "胡尔卡奇",
+        "安贝尔",
+        "梅德韦杰夫",
+        "张之臻"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞三皮"
+    },
+    {
+      "id": 552701,
+      "event_id": 154,
+      "user_id": 8895,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "贝尔赫斯",
+        "德米纳尔",
+        "迈赫扎克",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "木的讷"
+    },
+    {
+      "id": 552711,
+      "event_id": 154,
+      "user_id": 17144,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "德米纳尔",
+        "迈赫扎克",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "白云静水"
+    },
+    {
+      "id": 552712,
+      "event_id": 154,
+      "user_id": 21672,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "西里奇",
+        "吴易昺",
+        "安贝尔",
+        "梅德韦杰夫",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "158*****803"
+    },
+    {
+      "id": 552722,
+      "event_id": 154,
+      "user_id": 26589,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "德米纳尔",
+        "梅德韦杰夫",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "流星飞舞啦啦啦"
+    },
+    {
+      "id": 552723,
+      "event_id": 154,
+      "user_id": 27372,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "安贝尔",
+        "梅德韦杰夫",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "镇远神"
+    },
+    {
+      "id": 552729,
+      "event_id": 154,
+      "user_id": 27983,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "德米纳尔",
+        "梅德韦杰夫",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "吃货大爱凯凯_982"
+    },
+    {
+      "id": 552731,
+      "event_id": 154,
+      "user_id": 28021,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "安贝尔",
+        "迈赫扎克",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "AdonisZhang"
+    },
+    {
+      "id": 552733,
+      "event_id": 154,
+      "user_id": 28367,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "贝尔赫斯",
+        "德米纳尔",
+        "迈赫扎克",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "谁***控"
+    },
+    {
+      "id": 552736,
+      "event_id": 154,
+      "user_id": 28509,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "胡尔卡奇",
+        "德米纳尔",
+        "西里奇",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "夕***阳"
+    },
+    {
+      "id": 552749,
+      "event_id": 154,
+      "user_id": 29045,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "德米纳尔",
+        "迈赫扎克",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "Kwan-tennis"
+    },
+    {
+      "id": 552753,
+      "event_id": 154,
+      "user_id": 29300,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "安贝尔",
+        "迈赫扎克",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "-Frictionless"
+    },
+    {
+      "id": 552755,
+      "event_id": 154,
+      "user_id": 29351,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "德米纳尔",
+        "迈赫扎克",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "日***岸"
+    },
+    {
+      "id": 552761,
+      "event_id": 154,
+      "user_id": 29995,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "安贝尔",
+        "迈赫扎克",
+        "博尔热斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "锦暔"
+    },
+    {
+      "id": 552765,
+      "event_id": 154,
+      "user_id": 30552,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "德米纳尔",
+        "梅德韦杰夫",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "卡尼TT"
+    },
+    {
+      "id": 552768,
+      "event_id": 154,
+      "user_id": 30932,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "贝尔赫斯",
+        "德米纳尔",
+        "迈赫扎克",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "samsonyip"
+    },
+    {
+      "id": 552773,
+      "event_id": 154,
+      "user_id": 31388,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "德米纳尔",
+        "梅德韦杰夫",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "BORIS-_-i"
+    },
+    {
+      "id": 552775,
+      "event_id": 154,
+      "user_id": 31549,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "安贝尔",
+        "梅德韦杰夫",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "强化型米斯prototype"
+    },
+    {
+      "id": 552776,
+      "event_id": 154,
+      "user_id": 31550,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "安贝尔",
+        "迈赫扎克",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "九_墨_"
+    },
+    {
+      "id": 552813,
+      "event_id": 154,
+      "user_id": 34382,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "安贝尔",
+        "迈赫扎克",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "弗外外茨"
+    },
+    {
+      "id": 552817,
+      "event_id": 154,
+      "user_id": 34627,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "德米纳尔",
+        "梅德韦杰夫",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "一***客"
+    },
+    {
+      "id": 552822,
+      "event_id": 154,
+      "user_id": 34904,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "安贝尔",
+        "迈赫扎克",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "L***n"
+    },
+    {
+      "id": 552823,
+      "event_id": 154,
+      "user_id": 35009,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "安贝尔",
+        "梅德韦杰夫",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "杰***鞋"
+    },
+    {
+      "id": 552824,
+      "event_id": 154,
+      "user_id": 35032,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "安贝尔",
+        "迈赫扎克",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "旧纳琛"
+    },
+    {
+      "id": 552833,
+      "event_id": 154,
+      "user_id": 35138,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "德米纳尔",
+        "梅德韦杰夫",
+        "博尔热斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "s***3"
+    },
+    {
+      "id": 552855,
+      "event_id": 154,
+      "user_id": 37564,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "德米纳尔",
+        "梅德韦杰夫",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "精神故乡丝芙兰"
+    },
+    {
+      "id": 552867,
+      "event_id": 154,
+      "user_id": 39230,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "富乔维奇",
+        "安贝尔",
+        "迈赫扎克",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "子***寒"
+    },
+    {
+      "id": 552869,
+      "event_id": 154,
+      "user_id": 39232,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "德米纳尔",
+        "迈赫扎克",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "爱***d"
+    },
+    {
+      "id": 552880,
+      "event_id": 154,
+      "user_id": 39511,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "德米纳尔",
+        "梅德韦杰夫",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "我叫LCW"
+    },
+    {
+      "id": 552893,
+      "event_id": 154,
+      "user_id": 40035,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "邦齐",
+        "梅德韦杰夫",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "樊心所向是振东"
+    },
+    {
+      "id": 552895,
+      "event_id": 154,
+      "user_id": 40265,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "德米纳尔",
+        "迈赫扎克",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "稀有的木臼犬"
+    },
+    {
+      "id": 552900,
+      "event_id": 154,
+      "user_id": 40592,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "曼纳里诺",
+        "德米纳尔",
+        "迈赫扎克",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "250赛的W"
+    },
+    {
+      "id": 552908,
+      "event_id": 154,
+      "user_id": 40803,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "博尔热斯",
+        "吴易昺",
+        "安贝尔",
+        "梅德韦杰夫",
+        "张之臻"
+      ],
+      "fill_status": "球员输球",
+      "username": "Maya Wong"
+    },
+    {
+      "id": 552913,
+      "event_id": 154,
+      "user_id": 40992,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "德米纳尔",
+        "迈赫扎克",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "这位沈女士"
+    },
+    {
+      "id": 552941,
+      "event_id": 154,
+      "user_id": 43862,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "德米纳尔",
+        "迈赫扎克",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "1***e"
+    },
+    {
+      "id": 552944,
+      "event_id": 154,
+      "user_id": 44074,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "德米纳尔",
+        "迈赫扎克",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "Dylan Byron"
+    },
+    {
+      "id": 552946,
+      "event_id": 154,
+      "user_id": 44157,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "德米纳尔",
+        "迈赫扎克",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "High Dream"
+    },
+    {
+      "id": 552954,
+      "event_id": 154,
+      "user_id": 44640,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "安贝尔",
+        "博高",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "永远支持Queen文"
+    },
+    {
+      "id": 552955,
+      "event_id": 154,
+      "user_id": 44683,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "西里奇",
+        "胡尔卡奇",
+        "德米纳尔",
+        "梅德韦杰夫",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "Bublik Go"
+    },
+    {
+      "id": 552959,
+      "event_id": 154,
+      "user_id": 44797,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "德米纳尔",
+        "梅德韦杰夫",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "吴三饼"
+    },
+    {
+      "id": 552960,
+      "event_id": 154,
+      "user_id": 44801,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "安贝尔",
+        "梅德韦杰夫",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "na_go_h"
+    },
+    {
+      "id": 552976,
+      "event_id": 154,
+      "user_id": 46063,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "胡尔卡奇",
+        "安贝尔",
+        "迈赫扎克",
+        "张之臻"
+      ],
+      "fill_status": "球员输球",
+      "username": "壶之力"
+    },
+    {
+      "id": 552986,
+      "event_id": 154,
+      "user_id": 46415,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "格里科斯普",
+        "德米纳尔",
+        "迈赫扎克",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "Opalescent0"
+    },
+    {
+      "id": 552987,
+      "event_id": 154,
+      "user_id": 46418,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "安贝尔",
+        "迈赫扎克",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "E***s"
+    },
+    {
+      "id": 552995,
+      "event_id": 154,
+      "user_id": 46634,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "德米纳尔",
+        "梅德韦杰夫",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "唯爱斯瓦泰克"
+    },
+    {
+      "id": 553000,
+      "event_id": 154,
+      "user_id": 46697,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "安贝尔",
+        "迈赫扎克",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "C***_"
+    },
+    {
+      "id": 553004,
+      "event_id": 154,
+      "user_id": 46776,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "德米纳尔",
+        "梅德韦杰夫",
+        "张之臻"
+      ],
+      "fill_status": "球员输球",
+      "username": "状况ample"
+    },
+    {
+      "id": 553005,
+      "event_id": 154,
+      "user_id": 46824,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "胡尔卡奇",
+        "德米纳尔",
+        "迈赫扎克",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "lling tien"
+    },
+    {
+      "id": 553010,
+      "event_id": 154,
+      "user_id": 47492,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "西里奇",
+        "吴易昺",
+        "安贝尔",
+        "梅德韦杰夫",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "PoppyBagel"
+    },
+    {
+      "id": 553014,
+      "event_id": 154,
+      "user_id": 48064,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "曼纳里诺",
+        "德米纳尔",
+        "梅德韦杰夫",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "荔***u"
+    },
+    {
+      "id": 552685,
+      "event_id": 154,
+      "user_id": 116,
+      "status": -3,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "德米纳尔",
+        "梅德韦杰夫",
+        "邦齐"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "钱老奶奶"
+    },
+    {
+      "id": 552714,
+      "event_id": 154,
+      "user_id": 22199,
+      "status": 0,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "格里科斯普"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "无聊-消遣"
+    },
+    {
+      "id": 552793,
+      "event_id": 154,
+      "user_id": 33063,
+      "status": 0,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "德米纳尔"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "是月牙呦"
+    },
+    {
+      "id": 552853,
+      "event_id": 154,
+      "user_id": 37337,
+      "status": 0,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "格里科斯普"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "IggyAzaleaChina"
+    },
+    {
+      "id": 552876,
+      "event_id": 154,
+      "user_id": 39413,
+      "status": 0,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "贝尔赫斯",
+        "邦齐"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "吡***吩"
+    },
+    {
+      "id": 552953,
+      "event_id": 154,
+      "user_id": 44618,
+      "status": 0,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "德米纳尔"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "wenguang wu"
+    },
+    {
+      "id": 552692,
+      "event_id": 154,
+      "user_id": 2834,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "德米纳尔",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "未来之匙"
+    },
+    {
+      "id": 552697,
+      "event_id": 154,
+      "user_id": 5778,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "德米纳尔",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "用嘴倒立的乌鸦"
+    },
+    {
+      "id": 552741,
+      "event_id": 154,
+      "user_id": 28692,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "胡尔卡奇",
+        "德米纳尔",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "番薯阿瓜"
+    },
+    {
+      "id": 552745,
+      "event_id": 154,
+      "user_id": 28884,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "德米纳尔",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "Ryan-Tennis"
+    },
+    {
+      "id": 552750,
+      "event_id": 154,
+      "user_id": 29057,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "邦齐",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "WillKris锴"
+    },
+    {
+      "id": 552764,
+      "event_id": 154,
+      "user_id": 30480,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "邦齐",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "yh11yh22"
+    },
+    {
+      "id": 552790,
+      "event_id": 154,
+      "user_id": 32980,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "安贝尔",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "Elroy ZHANG"
+    },
+    {
+      "id": 552801,
+      "event_id": 154,
+      "user_id": 33386,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "安贝尔",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "逍遥笑叹红尘"
+    },
+    {
+      "id": 552836,
+      "event_id": 154,
+      "user_id": 35514,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "安贝尔",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "131*****034"
+    },
+    {
+      "id": 552840,
+      "event_id": 154,
+      "user_id": 35948,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "贝尔赫斯",
+        "德米纳尔",
+        "安贝尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞二皮"
+    },
+    {
+      "id": 552848,
+      "event_id": 154,
+      "user_id": 37108,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "德米纳尔",
+        "林德克内希"
+      ],
+      "fill_status": "球员输球",
+      "username": "交H于一点"
+    },
+    {
+      "id": 552849,
+      "event_id": 154,
+      "user_id": 37146,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "德米纳尔",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "Raymond Wong"
+    },
+    {
+      "id": 552862,
+      "event_id": 154,
+      "user_id": 39095,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "德米纳尔",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "极昼9920"
+    },
+    {
+      "id": 552879,
+      "event_id": 154,
+      "user_id": 39492,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "博尔热斯",
+        "贝尔赫斯",
+        "安贝尔",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "A-ries_15"
+    },
+    {
+      "id": 552883,
+      "event_id": 154,
+      "user_id": 39648,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "德米纳尔",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "羊哈奇"
+    },
+    {
+      "id": 552886,
+      "event_id": 154,
+      "user_id": 39883,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "安贝尔",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "说出吾名_吓汝一跳-"
+    },
+    {
+      "id": 552888,
+      "event_id": 154,
+      "user_id": 39920,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "安贝尔",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "无***痕"
+    },
+    {
+      "id": 552890,
+      "event_id": 154,
+      "user_id": 39935,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "迈赫扎克",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "田纳西草莓干加工厂"
+    },
+    {
+      "id": 552911,
+      "event_id": 154,
+      "user_id": 40905,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "博尔热斯",
+        "贝尔赫斯",
+        "迈赫扎克",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "追星打工人"
+    },
+    {
+      "id": 552919,
+      "event_id": 154,
+      "user_id": 41787,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "安贝尔",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "卷毛Flis"
+    },
+    {
+      "id": 552920,
+      "event_id": 154,
+      "user_id": 42094,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "西里奇",
+        "吴易昺",
+        "安贝尔",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "w***3"
+    },
+    {
+      "id": 552921,
+      "event_id": 154,
+      "user_id": 42128,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "德米纳尔",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "TowerZ"
+    },
+    {
+      "id": 552925,
+      "event_id": 154,
+      "user_id": 42391,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "德米纳尔",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "风***虚"
+    },
+    {
+      "id": 552927,
+      "event_id": 154,
+      "user_id": 42563,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "德米纳尔",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "沫小琦_259695"
+    },
+    {
+      "id": 552934,
+      "event_id": 154,
+      "user_id": 43197,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "迈赫扎克",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "南柯一梦-mx"
+    },
+    {
+      "id": 552950,
+      "event_id": 154,
+      "user_id": 44468,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "安贝尔",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "本宫暴脾气不背锅"
+    },
+    {
+      "id": 552952,
+      "event_id": 154,
+      "user_id": 44589,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "德米纳尔",
+        "林德克内希"
+      ],
+      "fill_status": "球员输球",
+      "username": "德雨珀1"
+    },
+    {
+      "id": 552957,
+      "event_id": 154,
+      "user_id": 44701,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "德米纳尔",
+        "安贝尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "Karen Go"
+    },
+    {
+      "id": 552979,
+      "event_id": 154,
+      "user_id": 46194,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "博尔热斯",
+        "胡尔卡奇",
+        "安贝尔",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "1***许"
+    },
+    {
+      "id": 552980,
+      "event_id": 154,
+      "user_id": 46197,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "德米纳尔",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "yichun shan"
+    },
+    {
+      "id": 552982,
+      "event_id": 154,
+      "user_id": 46209,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "德米纳尔",
+        "安贝尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "c***3"
+    },
+    {
+      "id": 552985,
+      "event_id": 154,
+      "user_id": 46288,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "德米纳尔",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "195******35"
+    },
+    {
+      "id": 552989,
+      "event_id": 154,
+      "user_id": 46509,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "西里奇",
+        "贝尔赫斯",
+        "安贝尔",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "y***7"
+    },
+    {
+      "id": 552992,
+      "event_id": 154,
+      "user_id": 46605,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "胡尔卡奇",
+        "安贝尔",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "樱***9"
+    },
+    {
+      "id": 552998,
+      "event_id": 154,
+      "user_id": 46667,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "邦齐",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "稳折kkl"
+    },
+    {
+      "id": 553013,
+      "event_id": 154,
+      "user_id": 48052,
+      "status": -2,
+      "day": 3,
+      "score": 38,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "德米纳尔",
+        "格里科斯普"
+      ],
+      "fill_status": "球员输球",
+      "username": "蔓陀蘿公主"
+    },
+    {
+      "id": 552766,
+      "event_id": 154,
+      "user_id": 30566,
+      "status": 0,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "变现狂魔_"
+    },
+    {
+      "id": 552767,
+      "event_id": 154,
+      "user_id": 30567,
+      "status": 0,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "N***_"
+    },
+    {
+      "id": 552787,
+      "event_id": 154,
+      "user_id": 32606,
+      "status": 0,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "mj ouyang"
+    },
+    {
+      "id": 552807,
+      "event_id": 154,
+      "user_id": 33869,
+      "status": 0,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "z***4"
+    },
+    {
+      "id": 552846,
+      "event_id": 154,
+      "user_id": 37027,
+      "status": 0,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "迈赫扎克"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "古木_鱼"
+    },
+    {
+      "id": 552854,
+      "event_id": 154,
+      "user_id": 37344,
+      "status": 0,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "用户5472180102"
+    },
+    {
+      "id": 552887,
+      "event_id": 154,
+      "user_id": 39918,
+      "status": 0,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "老***6"
+    },
+    {
+      "id": 552931,
+      "event_id": 154,
+      "user_id": 42977,
+      "status": 0,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "一口好牙高胖虎"
+    },
+    {
+      "id": 552689,
+      "event_id": 154,
+      "user_id": 2005,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞麦皮"
+    },
+    {
+      "id": 552691,
+      "event_id": 154,
+      "user_id": 2608,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "德约的粉丝"
+    },
+    {
+      "id": 552695,
+      "event_id": 154,
+      "user_id": 5053,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Earth球球"
+    },
+    {
+      "id": 552696,
+      "event_id": 154,
+      "user_id": 5369,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "剑剑康康-101dama怎么那么饿熏"
+    },
+    {
+      "id": 552698,
+      "event_id": 154,
+      "user_id": 6603,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "梦是无尽的荒野"
+    },
+    {
+      "id": 552702,
+      "event_id": 154,
+      "user_id": 10037,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "黑***友"
+    },
+    {
+      "id": 552704,
+      "event_id": 154,
+      "user_id": 10322,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "ElvisD95"
+    },
+    {
+      "id": 552706,
+      "event_id": 154,
+      "user_id": 11119,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "我宝儿子不露脸不改名"
+    },
+    {
+      "id": 552707,
+      "event_id": 154,
+      "user_id": 11228,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "第7路单车"
+    },
+    {
+      "id": 552708,
+      "event_id": 154,
+      "user_id": 11870,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "就是爱吃虾_"
+    },
+    {
+      "id": 552710,
+      "event_id": 154,
+      "user_id": 16670,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "你附加费的"
+    },
+    {
+      "id": 552713,
+      "event_id": 154,
+      "user_id": 21990,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "最爱KG的阿杰"
+    },
+    {
+      "id": 552715,
+      "event_id": 154,
+      "user_id": 22773,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "胡尔卡奇",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Aeonbert"
+    },
+    {
+      "id": 552716,
+      "event_id": 154,
+      "user_id": 22854,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "不管小哈是我的"
+    },
+    {
+      "id": 552717,
+      "event_id": 154,
+      "user_id": 23015,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "博尔热斯",
+        "吴易昺",
+        "维尔塔宁"
+      ],
+      "fill_status": "球员输球",
+      "username": "lovehuiruoqi"
+    },
+    {
+      "id": 552720,
+      "event_id": 154,
+      "user_id": 24543,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "aeonbert"
+    },
+    {
+      "id": 552721,
+      "event_id": 154,
+      "user_id": 24997,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "小早茶"
+    },
+    {
+      "id": 552724,
+      "event_id": 154,
+      "user_id": 27388,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "之后再喝咖啡我就是狗"
+    },
+    {
+      "id": 552726,
+      "event_id": 154,
+      "user_id": 27450,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "MobiusZH"
+    },
+    {
+      "id": 552728,
+      "event_id": 154,
+      "user_id": 27859,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "莫***卿"
+    },
+    {
+      "id": 552730,
+      "event_id": 154,
+      "user_id": 27994,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "板尼哟"
+    },
+    {
+      "id": 552732,
+      "event_id": 154,
+      "user_id": 28366,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "impum"
+    },
+    {
+      "id": 552734,
+      "event_id": 154,
+      "user_id": 28484,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "博尔热斯",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "YJkCarl"
+    },
+    {
+      "id": 552735,
+      "event_id": 154,
+      "user_id": 28485,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "Jiakun Yi"
+    },
+    {
+      "id": 552737,
+      "event_id": 154,
+      "user_id": 28510,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "博尔热斯",
+        "张之臻",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "akane 11"
+    },
+    {
+      "id": 552738,
+      "event_id": 154,
+      "user_id": 28625,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "西里奇",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "octbt"
+    },
+    {
+      "id": 552742,
+      "event_id": 154,
+      "user_id": 28725,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "顶***家"
+    },
+    {
+      "id": 552743,
+      "event_id": 154,
+      "user_id": 28801,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "胡尔卡奇",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "用户7424117482"
+    },
+    {
+      "id": 552746,
+      "event_id": 154,
+      "user_id": 28903,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "轮空",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "slay全场666"
+    },
+    {
+      "id": 552748,
+      "event_id": 154,
+      "user_id": 29026,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "德不驴"
+    },
+    {
+      "id": 552752,
+      "event_id": 154,
+      "user_id": 29163,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Catsickcat_"
+    },
+    {
+      "id": 552754,
+      "event_id": 154,
+      "user_id": 29335,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "moommomoommo"
+    },
+    {
+      "id": 552757,
+      "event_id": 154,
+      "user_id": 29627,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "没有滑板的张某某"
+    },
+    {
+      "id": 552760,
+      "event_id": 154,
+      "user_id": 29978,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "博尔热斯",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "外星驻地球代表"
+    },
+    {
+      "id": 552762,
+      "event_id": 154,
+      "user_id": 30209,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "_被窝哲学家_-"
+    },
+    {
+      "id": 552763,
+      "event_id": 154,
+      "user_id": 30321,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "信籁亮"
+    },
+    {
+      "id": 552769,
+      "event_id": 154,
+      "user_id": 31115,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "迈赫扎克",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "青花比目"
+    },
+    {
+      "id": 552770,
+      "event_id": 154,
+      "user_id": 31218,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "维尔塔宁"
+      ],
+      "fill_status": "球员输球",
+      "username": "奥索里奥科斯秋克阿瓦涅相我老婆"
+    },
+    {
+      "id": 552771,
+      "event_id": 154,
+      "user_id": 31342,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "胡尔卡奇",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "法网冠军丰塞卡"
+    },
+    {
+      "id": 552772,
+      "event_id": 154,
+      "user_id": 31375,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "刘小闹小闹闹呀"
+    },
+    {
+      "id": 552774,
+      "event_id": 154,
+      "user_id": 31433,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "胡尔卡奇",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Patrick Ding"
+    },
+    {
+      "id": 552777,
+      "event_id": 154,
+      "user_id": 31557,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "一***酒"
+    },
+    {
+      "id": 552778,
+      "event_id": 154,
+      "user_id": 31683,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "迈赫扎克",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "liangZxx"
+    },
+    {
+      "id": 552779,
+      "event_id": 154,
+      "user_id": 31705,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "博尔热斯",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "Pomelo琛"
+    },
+    {
+      "id": 552780,
+      "event_id": 154,
+      "user_id": 31768,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "WillKrisKai"
+    },
+    {
+      "id": 552781,
+      "event_id": 154,
+      "user_id": 31855,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "yygq专家"
+    },
+    {
+      "id": 552783,
+      "event_id": 154,
+      "user_id": 32088,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "浮空a倾城"
+    },
+    {
+      "id": 552786,
+      "event_id": 154,
+      "user_id": 32552,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "海狸先生的小翘臀"
+    },
+    {
+      "id": 552789,
+      "event_id": 154,
+      "user_id": 32944,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "KG5Benzema9Jokic15Luka77_Paul3"
+    },
+    {
+      "id": 552791,
+      "event_id": 154,
+      "user_id": 33015,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "西里奇",
+        "曼纳里诺",
+        "维尔塔宁"
+      ],
+      "fill_status": "球员输球",
+      "username": "一位神秘的来Ke"
+    },
+    {
+      "id": 552794,
+      "event_id": 154,
+      "user_id": 33162,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "轮空",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "r***i"
+    },
+    {
+      "id": 552796,
+      "event_id": 154,
+      "user_id": 33233,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "精明姐姐的小秘"
+    },
+    {
+      "id": 552797,
+      "event_id": 154,
+      "user_id": 33262,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "维尔塔宁",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "Oreache_TAO"
+    },
+    {
+      "id": 552798,
+      "event_id": 154,
+      "user_id": 33264,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "林强行长的小挎包"
+    },
+    {
+      "id": 552800,
+      "event_id": 154,
+      "user_id": 33313,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "博尔热斯",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "德星星星"
+    },
+    {
+      "id": 552802,
+      "event_id": 154,
+      "user_id": 33422,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "爱歪歪的坏宝贝"
+    },
+    {
+      "id": 552803,
+      "event_id": 154,
+      "user_id": 33637,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Rccc1888"
+    },
+    {
+      "id": 552804,
+      "event_id": 154,
+      "user_id": 33770,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "用户7376159987"
+    },
+    {
+      "id": 552808,
+      "event_id": 154,
+      "user_id": 34148,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "萨卡外"
+    },
+    {
+      "id": 552809,
+      "event_id": 154,
+      "user_id": 34229,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "深***名"
+    },
+    {
+      "id": 552810,
+      "event_id": 154,
+      "user_id": 34350,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "风儿007008"
+    },
+    {
+      "id": 552812,
+      "event_id": 154,
+      "user_id": 34369,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "稀有气体hyk"
+    },
+    {
+      "id": 552814,
+      "event_id": 154,
+      "user_id": 34403,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "胡尔卡奇",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "w***w"
+    },
+    {
+      "id": 552815,
+      "event_id": 154,
+      "user_id": 34454,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Kellan Li"
+    },
+    {
+      "id": 552816,
+      "event_id": 154,
+      "user_id": 34500,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "陈***8"
+    },
+    {
+      "id": 552818,
+      "event_id": 154,
+      "user_id": 34644,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "alexzverev12345"
+    },
+    {
+      "id": 552820,
+      "event_id": 154,
+      "user_id": 34766,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "为你而来呀"
+    },
+    {
+      "id": 552821,
+      "event_id": 154,
+      "user_id": 34808,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "freedom_or_death"
+    },
+    {
+      "id": 552825,
+      "event_id": 154,
+      "user_id": 35077,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "轮空",
+        "达姆",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "500赛的W"
+    },
+    {
+      "id": 552826,
+      "event_id": 154,
+      "user_id": 35081,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "胡尔卡奇",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "jian cui"
+    },
+    {
+      "id": 552828,
+      "event_id": 154,
+      "user_id": 35099,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "苟***术"
+    },
+    {
+      "id": 552829,
+      "event_id": 154,
+      "user_id": 35123,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "134******50"
+    },
+    {
+      "id": 552830,
+      "event_id": 154,
+      "user_id": 35126,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "M***y"
+    },
+    {
+      "id": 552835,
+      "event_id": 154,
+      "user_id": 35167,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "MrProstitute_song_z1996"
+    },
+    {
+      "id": 552837,
+      "event_id": 154,
+      "user_id": 35574,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "格里科斯普",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "远***咻"
+    },
+    {
+      "id": 552838,
+      "event_id": 154,
+      "user_id": 35661,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "只***e"
+    },
+    {
+      "id": 552839,
+      "event_id": 154,
+      "user_id": 35898,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "维尔塔宁",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "吴二饼"
+    },
+    {
+      "id": 552841,
+      "event_id": 154,
+      "user_id": 36171,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "相信科学是非明"
+    },
+    {
+      "id": 552842,
+      "event_id": 154,
+      "user_id": 36469,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "嗨嗨嗨改名字好难"
+    },
+    {
+      "id": 552843,
+      "event_id": 154,
+      "user_id": 36796,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "西里奇",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "蓝风清水"
+    },
+    {
+      "id": 552844,
+      "event_id": 154,
+      "user_id": 36844,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "文革"
+    },
+    {
+      "id": 552845,
+      "event_id": 154,
+      "user_id": 36847,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Leo_T1nyFo2est_autor"
+    },
+    {
+      "id": 552847,
+      "event_id": 154,
+      "user_id": 37043,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "法拉利策略组"
+    },
+    {
+      "id": 552850,
+      "event_id": 154,
+      "user_id": 37184,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "爱***森"
+    },
+    {
+      "id": 552851,
+      "event_id": 154,
+      "user_id": 37256,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "轮空",
+        "曼纳里诺",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "Dagenais"
+    },
+    {
+      "id": 552852,
+      "event_id": 154,
+      "user_id": 37273,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "轮空",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "152*****282"
+    },
+    {
+      "id": 552856,
+      "event_id": 154,
+      "user_id": 37582,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "轮空",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "D***3"
+    },
+    {
+      "id": 552857,
+      "event_id": 154,
+      "user_id": 37598,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "198******80"
+    },
+    {
+      "id": 552859,
+      "event_id": 154,
+      "user_id": 37994,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "博尔热斯",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "BOHEYE_"
+    },
+    {
+      "id": 552861,
+      "event_id": 154,
+      "user_id": 38725,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "小煜v0"
+    },
+    {
+      "id": 552864,
+      "event_id": 154,
+      "user_id": 39223,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "西里奇",
+        "迈赫扎克",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "巴***机"
+    },
+    {
+      "id": 552866,
+      "event_id": 154,
+      "user_id": 39229,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "F-orestcold"
+    },
+    {
+      "id": 552868,
+      "event_id": 154,
+      "user_id": 39231,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "taru wa"
+    },
+    {
+      "id": 552870,
+      "event_id": 154,
+      "user_id": 39268,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "best_but_Eric"
+    },
+    {
+      "id": 552871,
+      "event_id": 154,
+      "user_id": 39309,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Roudric"
+    },
+    {
+      "id": 552872,
+      "event_id": 154,
+      "user_id": 39367,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "博尔热斯",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "强化型米斯alternate"
+    },
+    {
+      "id": 552873,
+      "event_id": 154,
+      "user_id": 39368,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Elroy晨曦"
+    },
+    {
+      "id": 552874,
+      "event_id": 154,
+      "user_id": 39381,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "AlcarazTennis_bot"
+    },
+    {
+      "id": 552875,
+      "event_id": 154,
+      "user_id": 39396,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "178******17"
+    },
+    {
+      "id": 552877,
+      "event_id": 154,
+      "user_id": 39438,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "Lak-s"
+    },
+    {
+      "id": 552881,
+      "event_id": 154,
+      "user_id": 39514,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "WintheTiebreak"
+    },
+    {
+      "id": 552889,
+      "event_id": 154,
+      "user_id": 39933,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "Oreache"
+    },
+    {
+      "id": 552891,
+      "event_id": 154,
+      "user_id": 39943,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "_aYvonne"
+    },
+    {
+      "id": 552892,
+      "event_id": 154,
+      "user_id": 39944,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "轮空",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "萌***尼"
+    },
+    {
+      "id": 552894,
+      "event_id": 154,
+      "user_id": 40106,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "Alcaraz Go"
+    },
+    {
+      "id": 552896,
+      "event_id": 154,
+      "user_id": 40286,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "薄荷奶绿不加冰_"
+    },
+    {
+      "id": 552897,
+      "event_id": 154,
+      "user_id": 40457,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Verelzorro"
+    },
+    {
+      "id": 552901,
+      "event_id": 154,
+      "user_id": 40616,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "Ace_Moment"
+    },
+    {
+      "id": 552903,
+      "event_id": 154,
+      "user_id": 40718,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "洋葱葱葱葱葱葱葱啊"
+    },
+    {
+      "id": 552904,
+      "event_id": 154,
+      "user_id": 40785,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:58:56.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "松松松松松songsong"
+    },
+    {
+      "id": 552907,
+      "event_id": 154,
+      "user_id": 40800,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "宋承宪我老公"
+    },
+    {
+      "id": 552909,
+      "event_id": 154,
+      "user_id": 40868,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "胡尔卡奇",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "南半球的小狮子"
+    },
+    {
+      "id": 552910,
+      "event_id": 154,
+      "user_id": 40880,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "6ga-Swiatek"
+    },
+    {
+      "id": 552915,
+      "event_id": 154,
+      "user_id": 41409,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "188*****126"
+    },
+    {
+      "id": 552916,
+      "event_id": 154,
+      "user_id": 41679,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "爱网球的女孩子"
+    },
+    {
+      "id": 552917,
+      "event_id": 154,
+      "user_id": 41680,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "c***i"
+    },
+    {
+      "id": 552918,
+      "event_id": 154,
+      "user_id": 41718,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "爱网球的小女孩子"
+    },
+    {
+      "id": 552922,
+      "event_id": 154,
+      "user_id": 42235,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "我是我自己zyt"
+    },
+    {
+      "id": 552923,
+      "event_id": 154,
+      "user_id": 42274,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "我是霍小耳"
+    },
+    {
+      "id": 552924,
+      "event_id": 154,
+      "user_id": 42293,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "轮空",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "大***一"
+    },
+    {
+      "id": 552926,
+      "event_id": 154,
+      "user_id": 42460,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞***记"
+    },
+    {
+      "id": 552928,
+      "event_id": 154,
+      "user_id": 42564,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "超***间"
+    },
+    {
+      "id": 552929,
+      "event_id": 154,
+      "user_id": 42922,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "z***7"
+    },
+    {
+      "id": 552932,
+      "event_id": 154,
+      "user_id": 42997,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "135******08"
+    },
+    {
+      "id": 552935,
+      "event_id": 154,
+      "user_id": 43200,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Iridescent29"
+    },
+    {
+      "id": 552936,
+      "event_id": 154,
+      "user_id": 43652,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "曼纳里诺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Tennis-苟活者"
+    },
+    {
+      "id": 552937,
+      "event_id": 154,
+      "user_id": 43722,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "博尔热斯",
+        "胡尔卡奇",
+        "维尔塔宁"
+      ],
+      "fill_status": "球员输球",
+      "username": "l***5"
+    },
+    {
+      "id": 552938,
+      "event_id": 154,
+      "user_id": 43772,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "本命百香果柠檬"
+    },
+    {
+      "id": 552939,
+      "event_id": 154,
+      "user_id": 43775,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "刘***喽"
+    },
+    {
+      "id": 552940,
+      "event_id": 154,
+      "user_id": 43803,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "轮空",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "滑板2号"
+    },
+    {
+      "id": 552951,
+      "event_id": 154,
+      "user_id": 44548,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "p***7"
+    },
+    {
+      "id": 552958,
+      "event_id": 154,
+      "user_id": 44728,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "胡尔卡奇",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "bless-Selena"
+    },
+    {
+      "id": 552961,
+      "event_id": 154,
+      "user_id": 44802,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "公考小皮"
+    },
+    {
+      "id": 552963,
+      "event_id": 154,
+      "user_id": 44822,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "格里科斯普",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Cobolli Go"
+    },
+    {
+      "id": 552964,
+      "event_id": 154,
+      "user_id": 44823,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "西里奇",
+        "格里科斯普",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Tallon Go"
+    },
+    {
+      "id": 552965,
+      "event_id": 154,
+      "user_id": 44900,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "吾***叔"
+    },
+    {
+      "id": 552966,
+      "event_id": 154,
+      "user_id": 44938,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "网球评级update"
+    },
+    {
+      "id": 552967,
+      "event_id": 154,
+      "user_id": 44942,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "卑***高"
+    },
+    {
+      "id": 552968,
+      "event_id": 154,
+      "user_id": 45490,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "慷慨竹子投资房产"
+    },
+    {
+      "id": 552973,
+      "event_id": 154,
+      "user_id": 45998,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "Vegetable Chicken"
+    },
+    {
+      "id": 552974,
+      "event_id": 154,
+      "user_id": 46003,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "范德尚舒尔普",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "Paul Go"
+    },
+    {
+      "id": 552975,
+      "event_id": 154,
+      "user_id": 46004,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "胡尔卡奇",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "Ruud Go"
+    },
+    {
+      "id": 552977,
+      "event_id": 154,
+      "user_id": 46175,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "迈赫扎克",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "午夜伤感猛男_"
+    },
+    {
+      "id": 552981,
+      "event_id": 154,
+      "user_id": 46206,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "用户7817136916"
+    },
+    {
+      "id": 552988,
+      "event_id": 154,
+      "user_id": 46440,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "格里科斯普",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "超级至尊芝心披萨"
+    },
+    {
+      "id": 552990,
+      "event_id": 154,
+      "user_id": 46562,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "维尔塔宁"
+      ],
+      "fill_status": "球员输球",
+      "username": "tennis幸存者"
+    },
+    {
+      "id": 552991,
+      "event_id": 154,
+      "user_id": 46597,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "我是霍小脚"
+    },
+    {
+      "id": 552993,
+      "event_id": 154,
+      "user_id": 46622,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "塔姆科尔涅娃我老婆"
+    },
+    {
+      "id": 552994,
+      "event_id": 154,
+      "user_id": 46627,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "博尔热斯",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "紫葡萄126"
+    },
+    {
+      "id": 552997,
+      "event_id": 154,
+      "user_id": 46645,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "L***啊"
+    },
+    {
+      "id": 553007,
+      "event_id": 154,
+      "user_id": 46826,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "191******16"
+    },
+    {
+      "id": 553008,
+      "event_id": 154,
+      "user_id": 47041,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "西里奇",
+        "贝尔赫斯",
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "唯爱卡普利斯科娃"
+    },
+    {
+      "id": 553011,
+      "event_id": 154,
+      "user_id": 47972,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "维尔塔宁"
+      ],
+      "fill_status": "球员输球",
+      "username": "Tetrapod-0"
+    },
+    {
+      "id": 553015,
+      "event_id": 154,
+      "user_id": 48083,
+      "status": -2,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "吴易昺",
+        "贝尔赫斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "152******41"
+    },
+    {
+      "id": 552700,
+      "event_id": 154,
+      "user_id": 7042,
+      "status": -3,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "胡尔卡奇",
+        "安贝尔"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "__Novak__"
+    },
+    {
+      "id": 552725,
+      "event_id": 154,
+      "user_id": 27446,
+      "status": -3,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "安贝尔"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "指纹Nongzw"
+    },
+    {
+      "id": 552999,
+      "event_id": 154,
+      "user_id": 46690,
+      "status": -3,
+      "day": 2,
+      "score": 25,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "贝尔赫斯",
+        "安贝尔"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "用户7969887201"
+    },
+    {
+      "id": 552705,
+      "event_id": 154,
+      "user_id": 10421,
+      "status": 0,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "博尔热斯"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "頔頔赟赟"
+    },
+    {
+      "id": 552727,
+      "event_id": 154,
+      "user_id": 27545,
+      "status": 0,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "西蒙娃斯"
+    },
+    {
+      "id": 552806,
+      "event_id": 154,
+      "user_id": 33828,
+      "status": 0,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "重生之我在幸存者十连冠"
+    },
+    {
+      "id": 552878,
+      "event_id": 154,
+      "user_id": 39478,
+      "status": 0,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "_愉悦混乱_"
+    },
+    {
+      "id": 552902,
+      "event_id": 154,
+      "user_id": 40717,
+      "status": 0,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "Beautysofia"
+    },
+    {
+      "id": 552905,
+      "event_id": 154,
+      "user_id": 40798,
+      "status": 0,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "怀***蕴"
+    },
+    {
+      "id": 552947,
+      "event_id": 154,
+      "user_id": 44211,
+      "status": 0,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "西里奇"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "用户9062873867"
+    },
+    {
+      "id": 552948,
+      "event_id": 154,
+      "user_id": 44423,
+      "status": 0,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "F C"
+    },
+    {
+      "id": 552970,
+      "event_id": 154,
+      "user_id": 45600,
+      "status": 0,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "1***2"
+    },
+    {
+      "id": 552709,
+      "event_id": 154,
+      "user_id": 15424,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "Emppu99"
+    },
+    {
+      "id": 552719,
+      "event_id": 154,
+      "user_id": 24483,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "博尔热斯",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "Chris Ivanovic"
+    },
+    {
+      "id": 552739,
+      "event_id": 154,
+      "user_id": 28636,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "啦***拉"
+    },
+    {
+      "id": 552751,
+      "event_id": 154,
+      "user_id": 29130,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "Tony-Tennis"
+    },
+    {
+      "id": 552756,
+      "event_id": 154,
+      "user_id": 29479,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "马戏团冠军"
+    },
+    {
+      "id": 552759,
+      "event_id": 154,
+      "user_id": 29703,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "那不勒斯Jasper"
+    },
+    {
+      "id": 552782,
+      "event_id": 154,
+      "user_id": 31906,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "Alejazpppa"
+    },
+    {
+      "id": 552792,
+      "event_id": 154,
+      "user_id": 33026,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "底线老五"
+    },
+    {
+      "id": 552799,
+      "event_id": 154,
+      "user_id": 33276,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "唯爱张帅"
+    },
+    {
+      "id": 552805,
+      "event_id": 154,
+      "user_id": 33812,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "用户5638241188"
+    },
+    {
+      "id": 552831,
+      "event_id": 154,
+      "user_id": 35127,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "穆纳尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "崔***啊"
+    },
+    {
+      "id": 552834,
+      "event_id": 154,
+      "user_id": 35163,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "Rockylababy"
+    },
+    {
+      "id": 552863,
+      "event_id": 154,
+      "user_id": 39126,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "博尔热斯",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "晨曦中的楷模Elroy"
+    },
+    {
+      "id": 552865,
+      "event_id": 154,
+      "user_id": 39228,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "博尔热斯",
+        "穆纳尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "Genie201312"
+    },
+    {
+      "id": 552882,
+      "event_id": 154,
+      "user_id": 39567,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "田***妞"
+    },
+    {
+      "id": 552884,
+      "event_id": 154,
+      "user_id": 39708,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "猫崽孑丶"
+    },
+    {
+      "id": 552899,
+      "event_id": 154,
+      "user_id": 40587,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "一寺一壶酒尔乐"
+    },
+    {
+      "id": 552906,
+      "event_id": 154,
+      "user_id": 40799,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "Markwu0626"
+    },
+    {
+      "id": 552912,
+      "event_id": 154,
+      "user_id": 40950,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "萌兔戴上霍元甲"
+    },
+    {
+      "id": 552930,
+      "event_id": 154,
+      "user_id": 42970,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "穆纳尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "卡萨布兰卡9920"
+    },
+    {
+      "id": 552933,
+      "event_id": 154,
+      "user_id": 43087,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "做丞琳永远的歌迷ya"
+    },
+    {
+      "id": 552943,
+      "event_id": 154,
+      "user_id": 43992,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "博尔热斯",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "胡一统居士"
+    },
+    {
+      "id": 552949,
+      "event_id": 154,
+      "user_id": 44445,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "空中飞人入童话"
+    },
+    {
+      "id": 552969,
+      "event_id": 154,
+      "user_id": 45550,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "Dylan Bai"
+    },
+    {
+      "id": 552972,
+      "event_id": 154,
+      "user_id": 45995,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "Wild Chicken"
+    },
+    {
+      "id": 552978,
+      "event_id": 154,
+      "user_id": 46192,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "dhhdjfjdjdbcjjcnx"
+    },
+    {
+      "id": 552983,
+      "event_id": 154,
+      "user_id": 46273,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "邦齐",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "海***y"
+    },
+    {
+      "id": 553001,
+      "event_id": 154,
+      "user_id": 46699,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "邪恶纳米"
+    },
+    {
+      "id": 553012,
+      "event_id": 154,
+      "user_id": 48049,
+      "status": -2,
+      "day": 1,
+      "score": 13,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "博尔热斯",
+        "穆纳尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "肥荔榭公主"
+    },
+    {
+      "id": 553016,
+      "event_id": 154,
+      "user_id": 5245,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "阿特马纳"
+      ],
+      "fill_status": "球员输球",
+      "username": "贝西卜殿下"
+    },
+    {
+      "id": 553017,
+      "event_id": 154,
+      "user_id": 5735,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "阿特马纳"
+      ],
+      "fill_status": "球员输球",
+      "username": "SamanStosur"
+    },
+    {
+      "id": 553023,
+      "event_id": 154,
+      "user_id": 6435,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "沙波瓦洛夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "silver小小蓝"
+    },
+    {
+      "id": 553024,
+      "event_id": 154,
+      "user_id": 11064,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "沙波瓦洛夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "Poah优昙花_"
+    },
+    {
+      "id": 553025,
+      "event_id": 154,
+      "user_id": 17574,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "沙波瓦洛夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "此号已废16"
+    },
+    {
+      "id": 553018,
+      "event_id": 154,
+      "user_id": 28508,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "阿特马纳"
+      ],
+      "fill_status": "球员输球",
+      "username": "一杯思s"
+    },
+    {
+      "id": 553026,
+      "event_id": 154,
+      "user_id": 33712,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "沙波瓦洛夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "沛县沛公ghj"
+    },
+    {
+      "id": 553027,
+      "event_id": 154,
+      "user_id": 34807,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "沙波瓦洛夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "许yunkai"
+    },
+    {
+      "id": 553028,
+      "event_id": 154,
+      "user_id": 35164,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "沙波瓦洛夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "asjmrzw虎"
+    },
+    {
+      "id": 553029,
+      "event_id": 154,
+      "user_id": 35657,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "沙波瓦洛夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "小三花和小黑喵"
+    },
+    {
+      "id": 553030,
+      "event_id": 154,
+      "user_id": 36346,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "沙波瓦洛夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "普普通通的成年人_"
+    },
+    {
+      "id": 552885,
+      "event_id": 154,
+      "user_id": 39743,
+      "status": -2,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "轮空",
+        "布鲁克斯比"
+      ],
+      "fill_status": "球员输球",
+      "username": "Zoey"
+    },
+    {
+      "id": 553022,
+      "event_id": 154,
+      "user_id": 40564,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "勒特格林"
+      ],
+      "fill_status": "球员输球",
+      "username": "红***4"
+    },
+    {
+      "id": 553019,
+      "event_id": 154,
+      "user_id": 41076,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "阿特马纳"
+      ],
+      "fill_status": "球员输球",
+      "username": "w***酱"
+    },
+    {
+      "id": 553034,
+      "event_id": 154,
+      "user_id": 44733,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "伊梅尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "唯爱佩古拉"
+    },
+    {
+      "id": 553020,
+      "event_id": 154,
+      "user_id": 45154,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "阿特马纳"
+      ],
+      "fill_status": "球员输球",
+      "username": "德雨珀"
+    },
+    {
+      "id": 553021,
+      "event_id": 154,
+      "user_id": 46392,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "阿特马纳"
+      ],
+      "fill_status": "球员输球",
+      "username": "灞***年"
+    },
+    {
+      "id": 553031,
+      "event_id": 154,
+      "user_id": 46403,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "沙波瓦洛夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "唯爱保利尼"
+    },
+    {
+      "id": 553032,
+      "event_id": 154,
+      "user_id": 46416,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "沙波瓦洛夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "Pearlescent_69"
+    },
+    {
+      "id": 553033,
+      "event_id": 154,
+      "user_id": 46698,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "沙波瓦洛夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "持中文英文"
+    },
+    {
+      "id": 553035,
+      "event_id": 154,
+      "user_id": 7580,
+      "status": -4,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-06-14T23:59:05.000000Z",
+      "players": [
+        "安贝尔"
+      ],
+      "fill_status": "自杀(主备冲突)",
+      "username": "论道远"
+    }
+  ]
+}

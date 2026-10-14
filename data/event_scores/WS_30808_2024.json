@@ -1,0 +1,131 @@
+{
+  "event_id": "30808",
+  "year": 2024,
+  "tour": "WS",
+  "city": "利雅得",
+  "page_type": "score",
+  "completed": true,
+  "fetched_at": "2026-10-13 23:31:38",
+  "rows": [
+    {
+      "id": 143142,
+      "event_id": 52,
+      "user_id": 870,
+      "status": -2,
+      "day": 1,
+      "score": 150,
+      "updated_at": "2024-11-05T17:10:10.000000Z",
+      "players": [
+        "萨巴莲卡",
+        "佩古拉"
+      ],
+      "fill_status": "球员输球",
+      "username": "hr337"
+    },
+    {
+      "id": 143143,
+      "event_id": 52,
+      "user_id": 2005,
+      "status": -2,
+      "day": 1,
+      "score": 150,
+      "updated_at": "2024-11-05T17:10:10.000000Z",
+      "players": [
+        "萨巴莲卡",
+        "希维昂泰克"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞麦皮"
+    },
+    {
+      "id": 143144,
+      "event_id": 52,
+      "user_id": 2156,
+      "status": -2,
+      "day": 1,
+      "score": 150,
+      "updated_at": "2024-11-05T17:10:10.000000Z",
+      "players": [
+        "萨巴莲卡",
+        "希维昂泰克"
+      ],
+      "fill_status": "球员输球",
+      "username": "和楼盘规模破破"
+    },
+    {
+      "id": 143145,
+      "event_id": 52,
+      "user_id": 29627,
+      "status": -2,
+      "day": 1,
+      "score": 150,
+      "updated_at": "2024-11-05T17:10:10.000000Z",
+      "players": [
+        "萨巴莲卡",
+        "希维昂泰克"
+      ],
+      "fill_status": "球员输球",
+      "username": "没有滑板的张某某"
+    },
+    {
+      "id": 143146,
+      "event_id": 52,
+      "user_id": 30552,
+      "status": -2,
+      "day": 1,
+      "score": 150,
+      "updated_at": "2024-11-05T17:10:10.000000Z",
+      "players": [
+        "萨巴莲卡",
+        "希维昂泰克"
+      ],
+      "fill_status": "球员输球",
+      "username": "卡尼TT"
+    },
+    {
+      "id": 143147,
+      "event_id": 52,
+      "user_id": 32552,
+      "status": -2,
+      "day": 1,
+      "score": 150,
+      "updated_at": "2024-11-05T17:10:10.000000Z",
+      "players": [
+        "萨巴莲卡",
+        "希维昂泰克"
+      ],
+      "fill_status": "球员输球",
+      "username": "海狸先生的小翘臀"
+    },
+    {
+      "id": 143148,
+      "event_id": 52,
+      "user_id": 33162,
+      "status": -2,
+      "day": 1,
+      "score": 150,
+      "updated_at": "2024-11-05T17:10:10.000000Z",
+      "players": [
+        "萨巴莲卡",
+        "希维昂泰克"
+      ],
+      "fill_status": "球员输球",
+      "username": "r***i"
+    },
+    {
+      "id": 143149,
+      "event_id": 52,
+      "user_id": 34229,
+      "status": -2,
+      "day": 1,
+      "score": 150,
+      "updated_at": "2024-11-05T17:10:10.000000Z",
+      "players": [
+        "萨巴莲卡",
+        "希维昂泰克"
+      ],
+      "fill_status": "球员输球",
+      "username": "深***名"
+    }
+  ]
+}

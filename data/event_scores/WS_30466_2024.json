@@ -1,0 +1,3031 @@
+{
+  "event_id": "30466",
+  "year": 2024,
+  "tour": "WS",
+  "city": "帕勒莫",
+  "page_type": "score",
+  "completed": true,
+  "fetched_at": "2026-10-13 23:30:37",
+  "rows": [
+    {
+      "id": 74561,
+      "event_id": 25,
+      "user_id": 30932,
+      "status": 2,
+      "day": 7,
+      "score": 250,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "布龙泽蒂",
+        "埃-安德烈耶娃",
+        "克里斯蒂安",
+        "帕里",
+        "穆霍娃",
+        "郑钦文"
+      ],
+      "fill_status": "存活",
+      "username": "samsonyip"
+    },
+    {
+      "id": 74625,
+      "event_id": 25,
+      "user_id": 34382,
+      "status": 2,
+      "day": 7,
+      "score": 250,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "帕奎",
+        "埃-安德烈耶娃",
+        "李吉妮",
+        "贝古",
+        "穆霍娃",
+        "郑钦文"
+      ],
+      "fill_status": "存活",
+      "username": "弗外外茨"
+    },
+    {
+      "id": 74515,
+      "event_id": 25,
+      "user_id": 25881,
+      "status": 0,
+      "day": 6,
+      "score": 163,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "帕里",
+        "克里斯蒂安",
+        "穆霍娃",
+        "郑钦文"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "lwpsgj"
+    },
+    {
+      "id": 74540,
+      "event_id": 25,
+      "user_id": 29293,
+      "status": 0,
+      "day": 6,
+      "score": 163,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "帕奎",
+        "贝古",
+        "克里斯蒂安",
+        "帕里",
+        "郑钦文"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "喧嚣L阳光"
+    },
+    {
+      "id": 74543,
+      "event_id": 25,
+      "user_id": 29351,
+      "status": 0,
+      "day": 6,
+      "score": 163,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "穆霍娃",
+        "克里斯蒂安",
+        "帕里",
+        "郑钦文"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "日***岸"
+    },
+    {
+      "id": 74560,
+      "event_id": 25,
+      "user_id": 30840,
+      "status": 0,
+      "day": 6,
+      "score": 163,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "帕里",
+        "埃-安德烈耶娃",
+        "克里斯蒂安",
+        "贝古",
+        "郑钦文"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "ilove33"
+    },
+    {
+      "id": 74602,
+      "event_id": 25,
+      "user_id": 33276,
+      "status": 0,
+      "day": 6,
+      "score": 163,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "布龙泽蒂",
+        "穆霍娃",
+        "克里斯蒂安",
+        "帕里",
+        "郑钦文"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "唯爱张帅"
+    },
+    {
+      "id": 74609,
+      "event_id": 25,
+      "user_id": 33637,
+      "status": 0,
+      "day": 6,
+      "score": 163,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "帕里",
+        "埃-安德烈耶娃",
+        "克里斯蒂安",
+        "穆霍娃",
+        "郑钦文"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "Rccc1888"
+    },
+    {
+      "id": 74631,
+      "event_id": 25,
+      "user_id": 35099,
+      "status": 0,
+      "day": 6,
+      "score": 163,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "帕奎",
+        "埃-安德烈耶娃",
+        "克里斯蒂安",
+        "帕里",
+        "郑钦文"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "苟***术"
+    },
+    {
+      "id": 74603,
+      "event_id": 25,
+      "user_id": 33308,
+      "status": -2,
+      "day": 6,
+      "score": 163,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "布龙泽蒂",
+        "埃-安德烈耶娃",
+        "克里斯蒂安",
+        "帕里",
+        "郑钦文",
+        "穆霍娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "西瓜太郎笑嘻嘻"
+    },
+    {
+      "id": 74546,
+      "event_id": 25,
+      "user_id": 29573,
+      "status": -3,
+      "day": 6,
+      "score": 163,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "布龙泽蒂",
+        "帕里",
+        "克里斯蒂安",
+        "穆霍娃",
+        "郑钦文",
+        "郑钦文"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "09劉继"
+    },
+    {
+      "id": 74572,
+      "event_id": 25,
+      "user_id": 31634,
+      "status": -3,
+      "day": 6,
+      "score": 163,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "布龙泽蒂",
+        "埃-安德烈耶娃",
+        "克里斯蒂安",
+        "贝古",
+        "郑钦文",
+        "郑钦文"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "divisional"
+    },
+    {
+      "id": 74509,
+      "event_id": 25,
+      "user_id": 23015,
+      "status": 0,
+      "day": 5,
+      "score": 98,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "穆霍娃",
+        "郑钦文",
+        "帕里"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "lovehuiruoqi"
+    },
+    {
+      "id": 74518,
+      "event_id": 25,
+      "user_id": 27388,
+      "status": -2,
+      "day": 5,
+      "score": 98,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "帕奎",
+        "穆霍娃",
+        "郑钦文",
+        "帕里",
+        "贝古"
+      ],
+      "fill_status": "球员输球",
+      "username": "之后再喝咖啡我就是狗"
+    },
+    {
+      "id": 74527,
+      "event_id": 25,
+      "user_id": 28625,
+      "status": -2,
+      "day": 5,
+      "score": 98,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "帕奎",
+        "穆霍娃",
+        "克里斯蒂安",
+        "帕里",
+        "贝古"
+      ],
+      "fill_status": "球员输球",
+      "username": "octbt"
+    },
+    {
+      "id": 74598,
+      "event_id": 25,
+      "user_id": 33234,
+      "status": 0,
+      "day": 4,
+      "score": 54,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "埃-安德烈耶娃",
+        "克里斯蒂安"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "逆***8"
+    },
+    {
+      "id": 74593,
+      "event_id": 25,
+      "user_id": 33074,
+      "status": -2,
+      "day": 4,
+      "score": 54,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "郑钦文",
+        "帕里",
+        "克里斯蒂安",
+        "帕奎"
+      ],
+      "fill_status": "球员输球",
+      "username": "duhao110101"
+    },
+    {
+      "id": 74597,
+      "event_id": 25,
+      "user_id": 33193,
+      "status": -2,
+      "day": 4,
+      "score": 54,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "帕里",
+        "贝古",
+        "郑钦文",
+        "李吉妮"
+      ],
+      "fill_status": "球员输球",
+      "username": "果金灵灵"
+    },
+    {
+      "id": 74505,
+      "event_id": 25,
+      "user_id": 17144,
+      "status": 0,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "埃-安德烈耶娃"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "白云静水"
+    },
+    {
+      "id": 74513,
+      "event_id": 25,
+      "user_id": 24970,
+      "status": 0,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "帕里"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "随风poem"
+    },
+    {
+      "id": 74607,
+      "event_id": 25,
+      "user_id": 33523,
+      "status": 0,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "埃-安德烈耶娃",
+        "帕里"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "豪小郭"
+    },
+    {
+      "id": 74484,
+      "event_id": 25,
+      "user_id": 483,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "天邪幻世"
+    },
+    {
+      "id": 74485,
+      "event_id": 25,
+      "user_id": 870,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "穆霍娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "hr337"
+    },
+    {
+      "id": 74486,
+      "event_id": 25,
+      "user_id": 1848,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "帕奎",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "葱姜蒜瓣sky"
+    },
+    {
+      "id": 74489,
+      "event_id": 25,
+      "user_id": 2156,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕里",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "和楼盘规模破破"
+    },
+    {
+      "id": 74491,
+      "event_id": 25,
+      "user_id": 2999,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "布龙泽蒂",
+        "帕里",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "美网冠军丘里奇"
+    },
+    {
+      "id": 74492,
+      "event_id": 25,
+      "user_id": 3553,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "克里斯蒂安",
+        "夏尔玛",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "不会不可能"
+    },
+    {
+      "id": 74493,
+      "event_id": 25,
+      "user_id": 4517,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "克里斯蒂安",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "今天得早睡--"
+    },
+    {
+      "id": 74496,
+      "event_id": 25,
+      "user_id": 5471,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "姬州"
+    },
+    {
+      "id": 74498,
+      "event_id": 25,
+      "user_id": 7042,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "帕奎",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "__Novak__"
+    },
+    {
+      "id": 74499,
+      "event_id": 25,
+      "user_id": 8895,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "穆霍娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "木的讷"
+    },
+    {
+      "id": 74501,
+      "event_id": 25,
+      "user_id": 10103,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "帕奎",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "wennuan78"
+    },
+    {
+      "id": 74502,
+      "event_id": 25,
+      "user_id": 11007,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "只愿_漂浮"
+    },
+    {
+      "id": 74506,
+      "event_id": 25,
+      "user_id": 17376,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "马尔蒂奇",
+        "帕里",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "麦迪还是洋葱"
+    },
+    {
+      "id": 74510,
+      "event_id": 25,
+      "user_id": 24258,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "RV--RV"
+    },
+    {
+      "id": 74511,
+      "event_id": 25,
+      "user_id": 24543,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "穆霍娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "aeonbert"
+    },
+    {
+      "id": 74512,
+      "event_id": 25,
+      "user_id": 24930,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "布龙泽蒂",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "黄翠桃"
+    },
+    {
+      "id": 74516,
+      "event_id": 25,
+      "user_id": 26279,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "南北南南i"
+    },
+    {
+      "id": 74517,
+      "event_id": 25,
+      "user_id": 27372,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "埃-安德烈耶娃",
+        "帕里",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "镇远神"
+    },
+    {
+      "id": 74520,
+      "event_id": 25,
+      "user_id": 27450,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "MobiusZH"
+    },
+    {
+      "id": 74521,
+      "event_id": 25,
+      "user_id": 27908,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "帕奎",
+        "穆霍娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "黄***9"
+    },
+    {
+      "id": 74524,
+      "event_id": 25,
+      "user_id": 28412,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "布龙泽蒂",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "jason大志志"
+    },
+    {
+      "id": 74528,
+      "event_id": 25,
+      "user_id": 28632,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "布龙泽蒂",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "y***7"
+    },
+    {
+      "id": 74535,
+      "event_id": 25,
+      "user_id": 29130,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕里",
+        "夏尔玛",
+        "布龙泽蒂"
+      ],
+      "fill_status": "球员输球",
+      "username": "Tony-Tennis"
+    },
+    {
+      "id": 74538,
+      "event_id": 25,
+      "user_id": 29258,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "诺哈-阿库古",
+        "帕奎",
+        "夏尔玛",
+        "埃-安德烈耶娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "J***o"
+    },
+    {
+      "id": 74541,
+      "event_id": 25,
+      "user_id": 29300,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "-Frictionless"
+    },
+    {
+      "id": 74542,
+      "event_id": 25,
+      "user_id": 29335,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "布龙泽蒂",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "moommomoommo"
+    },
+    {
+      "id": 74544,
+      "event_id": 25,
+      "user_id": 29363,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "帕奎",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "张潮1986"
+    },
+    {
+      "id": 74545,
+      "event_id": 25,
+      "user_id": 29479,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "帕奎",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "马戏团冠军"
+    },
+    {
+      "id": 74548,
+      "event_id": 25,
+      "user_id": 29627,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "穆霍娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "没有滑板的张某某"
+    },
+    {
+      "id": 74549,
+      "event_id": 25,
+      "user_id": 29954,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "马尔蒂奇",
+        "穆霍娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "蛊毒娃丶"
+    },
+    {
+      "id": 74551,
+      "event_id": 25,
+      "user_id": 29978,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "帕里",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "外星驻地球代表"
+    },
+    {
+      "id": 74552,
+      "event_id": 25,
+      "user_id": 30128,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "布龙泽蒂",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "5默大叔"
+    },
+    {
+      "id": 74554,
+      "event_id": 25,
+      "user_id": 30209,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "帕奎",
+        "贝古",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "_被窝哲学家_-"
+    },
+    {
+      "id": 74556,
+      "event_id": 25,
+      "user_id": 30456,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "布龙泽蒂",
+        "帕里",
+        "埃-安德烈耶娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "S***d"
+    },
+    {
+      "id": 74557,
+      "event_id": 25,
+      "user_id": 30480,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "帕里",
+        "埃-安德烈耶娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "yh11yh22"
+    },
+    {
+      "id": 74558,
+      "event_id": 25,
+      "user_id": 30552,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "布龙泽蒂",
+        "帕里",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "卡尼TT"
+    },
+    {
+      "id": 74559,
+      "event_id": 25,
+      "user_id": 30566,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "布龙泽蒂",
+        "帕里",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "变现狂魔_"
+    },
+    {
+      "id": 74562,
+      "event_id": 25,
+      "user_id": 30975,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "克里斯蒂安",
+        "穆霍娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "Cheuk Ki Leung"
+    },
+    {
+      "id": 74564,
+      "event_id": 25,
+      "user_id": 31092,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "克里斯蒂安",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "落叶是秋天的情人"
+    },
+    {
+      "id": 74566,
+      "event_id": 25,
+      "user_id": 31354,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "帕里",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "派派派崔克"
+    },
+    {
+      "id": 74568,
+      "event_id": 25,
+      "user_id": 31388,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "布龙泽蒂",
+        "穆霍娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "BORIS-_-i"
+    },
+    {
+      "id": 74571,
+      "event_id": 25,
+      "user_id": 31557,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "帕奎",
+        "穆霍娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "一***酒"
+    },
+    {
+      "id": 74573,
+      "event_id": 25,
+      "user_id": 31705,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "帕奎",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "Pomelo琛"
+    },
+    {
+      "id": 74575,
+      "event_id": 25,
+      "user_id": 31768,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "WillKrisKai"
+    },
+    {
+      "id": 74577,
+      "event_id": 25,
+      "user_id": 31850,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "郑钦文",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "安妍与花"
+    },
+    {
+      "id": 74579,
+      "event_id": 25,
+      "user_id": 31960,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "郑钦文",
+        "穆霍娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "愿***l"
+    },
+    {
+      "id": 74582,
+      "event_id": 25,
+      "user_id": 32121,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "帕奎",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "用户7856057992"
+    },
+    {
+      "id": 74585,
+      "event_id": 25,
+      "user_id": 32506,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "帕奎",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "一缕清风-55"
+    },
+    {
+      "id": 74586,
+      "event_id": 25,
+      "user_id": 32552,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "帕奎",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "海狸先生的小翘臀"
+    },
+    {
+      "id": 74589,
+      "event_id": 25,
+      "user_id": 32763,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "穆霍娃",
+        "埃-安德烈耶娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "1000赛的W"
+    },
+    {
+      "id": 74591,
+      "event_id": 25,
+      "user_id": 33008,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "布龙泽蒂",
+        "穆霍娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "-Bellaisy-"
+    },
+    {
+      "id": 74596,
+      "event_id": 25,
+      "user_id": 33162,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "r***i"
+    },
+    {
+      "id": 74599,
+      "event_id": 25,
+      "user_id": 33262,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "布龙泽蒂",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "Oreache_TAO"
+    },
+    {
+      "id": 74601,
+      "event_id": 25,
+      "user_id": 33264,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "帕里",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "林强行长的小挎包"
+    },
+    {
+      "id": 74604,
+      "event_id": 25,
+      "user_id": 33389,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "穆霍娃",
+        "埃-安德烈耶娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "Don Li"
+    },
+    {
+      "id": 74605,
+      "event_id": 25,
+      "user_id": 33421,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "穆霍娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "CZ3203"
+    },
+    {
+      "id": 74606,
+      "event_id": 25,
+      "user_id": 33491,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "马尔蒂奇",
+        "帕里",
+        "埃-安德烈耶娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "大肚腩老哥哥"
+    },
+    {
+      "id": 74612,
+      "event_id": 25,
+      "user_id": 33869,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "z***4"
+    },
+    {
+      "id": 74613,
+      "event_id": 25,
+      "user_id": 33954,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "穆霍娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "百香柠檬水666"
+    },
+    {
+      "id": 74615,
+      "event_id": 25,
+      "user_id": 34152,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "帕奎",
+        "穆霍娃",
+        "埃-安德烈耶娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "bai li"
+    },
+    {
+      "id": 74616,
+      "event_id": 25,
+      "user_id": 34186,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "克里斯蒂安",
+        "埃-安德烈耶娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "AllenXiangxy"
+    },
+    {
+      "id": 74618,
+      "event_id": 25,
+      "user_id": 34212,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "郑钦文",
+        "帕里",
+        "埃-安德烈耶娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "落***手"
+    },
+    {
+      "id": 74619,
+      "event_id": 25,
+      "user_id": 34229,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "穆霍娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "深***名"
+    },
+    {
+      "id": 74630,
+      "event_id": 25,
+      "user_id": 35082,
+      "status": -2,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "穆霍娃",
+        "卡莱"
+      ],
+      "fill_status": "球员输球",
+      "username": "年终的W"
+    },
+    {
+      "id": 74626,
+      "event_id": 25,
+      "user_id": 34441,
+      "status": -3,
+      "day": 3,
+      "score": 42,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "郑钦文",
+        "穆霍娃",
+        "郑钦文"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "天河野光"
+    },
+    {
+      "id": 74553,
+      "event_id": 25,
+      "user_id": 30174,
+      "status": 0,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕里"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "墨城锅铲"
+    },
+    {
+      "id": 74581,
+      "event_id": 25,
+      "user_id": 32109,
+      "status": 0,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "帕奎"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "素***e"
+    },
+    {
+      "id": 74595,
+      "event_id": 25,
+      "user_id": 33099,
+      "status": 0,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "帕奎"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "La_Mariposa_Azul"
+    },
+    {
+      "id": 74608,
+      "event_id": 25,
+      "user_id": 33613,
+      "status": 0,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "马尔蒂奇"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "斛魈"
+    },
+    {
+      "id": 74628,
+      "event_id": 25,
+      "user_id": 35032,
+      "status": 0,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕里"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "旧纳琛"
+    },
+    {
+      "id": 74483,
+      "event_id": 25,
+      "user_id": 116,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "马尔蒂奇",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "钱老奶奶"
+    },
+    {
+      "id": 74488,
+      "event_id": 25,
+      "user_id": 2005,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "帕里",
+        "鲁斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞麦皮"
+    },
+    {
+      "id": 74490,
+      "event_id": 25,
+      "user_id": 2608,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "德约的粉丝"
+    },
+    {
+      "id": 74494,
+      "event_id": 25,
+      "user_id": 4936,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "liu8322925"
+    },
+    {
+      "id": 74495,
+      "event_id": 25,
+      "user_id": 5369,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "布龙泽蒂",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "剑剑康康-101dama怎么那么饿熏"
+    },
+    {
+      "id": 74500,
+      "event_id": 25,
+      "user_id": 10037,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "帕奎",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "黑***友"
+    },
+    {
+      "id": 74503,
+      "event_id": 25,
+      "user_id": 16570,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "帕奎",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "黑白_大山"
+    },
+    {
+      "id": 74507,
+      "event_id": 25,
+      "user_id": 19532,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "1324333堤穆"
+    },
+    {
+      "id": 74508,
+      "event_id": 25,
+      "user_id": 22773,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "布龙泽蒂",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "Aeonbert"
+    },
+    {
+      "id": 74514,
+      "event_id": 25,
+      "user_id": 25850,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "埃-安德烈耶娃",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "jellyddfish"
+    },
+    {
+      "id": 74519,
+      "event_id": 25,
+      "user_id": 27446,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "马尔蒂奇",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "指纹Nongzw"
+    },
+    {
+      "id": 74522,
+      "event_id": 25,
+      "user_id": 28021,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "帕奎",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "AdonisZhang"
+    },
+    {
+      "id": 74523,
+      "event_id": 25,
+      "user_id": 28026,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "布龙泽蒂",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "小白BAILL"
+    },
+    {
+      "id": 74526,
+      "event_id": 25,
+      "user_id": 28509,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "布龙泽蒂",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "夕***阳"
+    },
+    {
+      "id": 74530,
+      "event_id": 25,
+      "user_id": 28752,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "A1_K"
+    },
+    {
+      "id": 74531,
+      "event_id": 25,
+      "user_id": 28781,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "郑钦文",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "活宝哈u"
+    },
+    {
+      "id": 74532,
+      "event_id": 25,
+      "user_id": 28991,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "马尔蒂奇",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "张文静之歌"
+    },
+    {
+      "id": 74533,
+      "event_id": 25,
+      "user_id": 29045,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "布龙泽蒂",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "Kwan-tennis"
+    },
+    {
+      "id": 74534,
+      "event_id": 25,
+      "user_id": 29057,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "布龙泽蒂",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "WillKris锴"
+    },
+    {
+      "id": 74536,
+      "event_id": 25,
+      "user_id": 29134,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕里",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "IGAmandaSLAY"
+    },
+    {
+      "id": 74537,
+      "event_id": 25,
+      "user_id": 29163,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "马尔蒂奇",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "Catsickcat_"
+    },
+    {
+      "id": 74539,
+      "event_id": 25,
+      "user_id": 29270,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "xxxjusAng"
+    },
+    {
+      "id": 74565,
+      "event_id": 25,
+      "user_id": 31251,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "帕奎",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "A***9"
+    },
+    {
+      "id": 74569,
+      "event_id": 25,
+      "user_id": 31465,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "188******62"
+    },
+    {
+      "id": 74570,
+      "event_id": 25,
+      "user_id": 31550,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "九_墨_"
+    },
+    {
+      "id": 74574,
+      "event_id": 25,
+      "user_id": 31750,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "ForAI83373"
+    },
+    {
+      "id": 74576,
+      "event_id": 25,
+      "user_id": 31791,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "连b_MicleJ26"
+    },
+    {
+      "id": 74583,
+      "event_id": 25,
+      "user_id": 32278,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "泰赫曼"
+      ],
+      "fill_status": "球员输球",
+      "username": "Xinyuan Yang"
+    },
+    {
+      "id": 74584,
+      "event_id": 25,
+      "user_id": 32322,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "帕奎",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "大满贯的W"
+    },
+    {
+      "id": 74587,
+      "event_id": 25,
+      "user_id": 32606,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "帕奎",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "mj ouyang"
+    },
+    {
+      "id": 74590,
+      "event_id": 25,
+      "user_id": 32980,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "克里斯蒂安",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "Elroy ZHANG"
+    },
+    {
+      "id": 74594,
+      "event_id": 25,
+      "user_id": 33092,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "布龙泽蒂",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "用户6484200286"
+    },
+    {
+      "id": 74600,
+      "event_id": 25,
+      "user_id": 33263,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "C***Y"
+    },
+    {
+      "id": 74614,
+      "event_id": 25,
+      "user_id": 34148,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "萨卡外"
+    },
+    {
+      "id": 74620,
+      "event_id": 25,
+      "user_id": 34283,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "布龙泽蒂",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "John Z"
+    },
+    {
+      "id": 74622,
+      "event_id": 25,
+      "user_id": 34334,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "鲁斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Ariana Lin"
+    },
+    {
+      "id": 74627,
+      "event_id": 25,
+      "user_id": 34808,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "帕里",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "freedom_or_death"
+    },
+    {
+      "id": 74629,
+      "event_id": 25,
+      "user_id": 35081,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "帕奎",
+        "鲁斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "jian cui"
+    },
+    {
+      "id": 74632,
+      "event_id": 25,
+      "user_id": 35126,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "泰赫曼"
+      ],
+      "fill_status": "球员输球",
+      "username": "M***y"
+    },
+    {
+      "id": 74633,
+      "event_id": 25,
+      "user_id": 35142,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "布龙泽蒂",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "danieltarnal"
+    },
+    {
+      "id": 74635,
+      "event_id": 25,
+      "user_id": 35565,
+      "status": -2,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "帕奎",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "D***l"
+    },
+    {
+      "id": 74504,
+      "event_id": 25,
+      "user_id": 16670,
+      "status": -3,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "贝古"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "你附加费的"
+    },
+    {
+      "id": 74547,
+      "event_id": 25,
+      "user_id": 29610,
+      "status": -3,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "郑钦文",
+        "穆霍娃"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "凌希纪"
+    },
+    {
+      "id": 74592,
+      "event_id": 25,
+      "user_id": 33055,
+      "status": -3,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "贝古"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "是猫咪大王"
+    },
+    {
+      "id": 74611,
+      "event_id": 25,
+      "user_id": 33828,
+      "status": -3,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "帕奎",
+        "贝古"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "重生之我在幸存者十连冠"
+    },
+    {
+      "id": 74617,
+      "event_id": 25,
+      "user_id": 34194,
+      "status": -3,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "郑钦文",
+        "穆霍娃"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "此刻度人家"
+    },
+    {
+      "id": 74636,
+      "event_id": 25,
+      "user_id": 35636,
+      "status": -3,
+      "day": 2,
+      "score": 30,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "郑钦文",
+        "穆霍娃"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "188******86"
+    },
+    {
+      "id": 74555,
+      "event_id": 25,
+      "user_id": 30269,
+      "status": 0,
+      "day": 1,
+      "score": 15,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "merril_W"
+    },
+    {
+      "id": 74563,
+      "event_id": 25,
+      "user_id": 31015,
+      "status": 0,
+      "day": 1,
+      "score": 15,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "大白菜爱喝汤"
+    },
+    {
+      "id": 74567,
+      "event_id": 25,
+      "user_id": 31355,
+      "status": 0,
+      "day": 1,
+      "score": 15,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "404的Cozy"
+    },
+    {
+      "id": 74610,
+      "event_id": 25,
+      "user_id": 33812,
+      "status": 0,
+      "day": 1,
+      "score": 15,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "用户5638241188"
+    },
+    {
+      "id": 74487,
+      "event_id": 25,
+      "user_id": 1956,
+      "status": -2,
+      "day": 1,
+      "score": 15,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "玛利亚"
+      ],
+      "fill_status": "球员输球",
+      "username": "芋y头h小m生"
+    },
+    {
+      "id": 74497,
+      "event_id": 25,
+      "user_id": 6623,
+      "status": -2,
+      "day": 1,
+      "score": 15,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "斯特恩斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞三皮"
+    },
+    {
+      "id": 74525,
+      "event_id": 25,
+      "user_id": 28485,
+      "status": -2,
+      "day": 1,
+      "score": 15,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "谢里芙"
+      ],
+      "fill_status": "球员输球",
+      "username": "Jiakun Yi"
+    },
+    {
+      "id": 74529,
+      "event_id": 25,
+      "user_id": 28638,
+      "status": -2,
+      "day": 1,
+      "score": 15,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "谢里芙"
+      ],
+      "fill_status": "球员输球",
+      "username": "whk1Q59"
+    },
+    {
+      "id": 74550,
+      "event_id": 25,
+      "user_id": 29966,
+      "status": -2,
+      "day": 1,
+      "score": 15,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "玛利亚"
+      ],
+      "fill_status": "球员输球",
+      "username": "BBBHYYY"
+    },
+    {
+      "id": 74578,
+      "event_id": 25,
+      "user_id": 31885,
+      "status": -2,
+      "day": 1,
+      "score": 15,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "诺哈-阿库古",
+        "谢里芙"
+      ],
+      "fill_status": "球员输球",
+      "username": "Eric Li"
+    },
+    {
+      "id": 74580,
+      "event_id": 25,
+      "user_id": 32052,
+      "status": -2,
+      "day": 1,
+      "score": 15,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "玛利亚"
+      ],
+      "fill_status": "球员输球",
+      "username": "Harry Chen"
+    },
+    {
+      "id": 74588,
+      "event_id": 25,
+      "user_id": 32611,
+      "status": -2,
+      "day": 1,
+      "score": 15,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "斯特恩斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Riku_"
+    },
+    {
+      "id": 74621,
+      "event_id": 25,
+      "user_id": 34288,
+      "status": -2,
+      "day": 1,
+      "score": 15,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "贝古",
+        "谢里芙"
+      ],
+      "fill_status": "球员输球",
+      "username": "John大师兄"
+    },
+    {
+      "id": 74623,
+      "event_id": 25,
+      "user_id": 34366,
+      "status": -2,
+      "day": 1,
+      "score": 15,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "谢里芙"
+      ],
+      "fill_status": "球员输球",
+      "username": "用户7766595336"
+    },
+    {
+      "id": 74624,
+      "event_id": 25,
+      "user_id": 34368,
+      "status": -2,
+      "day": 1,
+      "score": 15,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "穆霍娃",
+        "斯特恩斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "回破"
+    },
+    {
+      "id": 74634,
+      "event_id": 25,
+      "user_id": 35342,
+      "status": -2,
+      "day": 1,
+      "score": 15,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "泰赫曼",
+        "谢里芙"
+      ],
+      "fill_status": "球员输球",
+      "username": "wb789005"
+    },
+    {
+      "id": 74641,
+      "event_id": 25,
+      "user_id": 590,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "洛漠08"
+    },
+    {
+      "id": 74642,
+      "event_id": 25,
+      "user_id": 1785,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "yangxiaqing2"
+    },
+    {
+      "id": 74643,
+      "event_id": 25,
+      "user_id": 5245,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "贝西卜殿下"
+    },
+    {
+      "id": 74644,
+      "event_id": 25,
+      "user_id": 10322,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "ElvisD95"
+    },
+    {
+      "id": 74645,
+      "event_id": 25,
+      "user_id": 13823,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "牛牪犇18"
+    },
+    {
+      "id": 74646,
+      "event_id": 25,
+      "user_id": 17024,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "victorgc"
+    },
+    {
+      "id": 74647,
+      "event_id": 25,
+      "user_id": 19581,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "homeboyliu"
+    },
+    {
+      "id": 74648,
+      "event_id": 25,
+      "user_id": 22854,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "不管小哈是我的"
+    },
+    {
+      "id": 74649,
+      "event_id": 25,
+      "user_id": 26595,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "Jiabei He"
+    },
+    {
+      "id": 74650,
+      "event_id": 25,
+      "user_id": 27486,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "kono秀明da"
+    },
+    {
+      "id": 74651,
+      "event_id": 25,
+      "user_id": 27994,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "板尼哟"
+    },
+    {
+      "id": 74637,
+      "event_id": 25,
+      "user_id": 28673,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "巴特尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "神秘的药"
+    },
+    {
+      "id": 74652,
+      "event_id": 25,
+      "user_id": 28845,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "浙江土特产"
+    },
+    {
+      "id": 74653,
+      "event_id": 25,
+      "user_id": 28884,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "Ryan-Tennis"
+    },
+    {
+      "id": 74654,
+      "event_id": 25,
+      "user_id": 29026,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "德不驴"
+    },
+    {
+      "id": 74655,
+      "event_id": 25,
+      "user_id": 29703,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "那不勒斯Jasper"
+    },
+    {
+      "id": 74656,
+      "event_id": 25,
+      "user_id": 29762,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "JTY似水流年"
+    },
+    {
+      "id": 74657,
+      "event_id": 25,
+      "user_id": 30889,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "文夏在中"
+    },
+    {
+      "id": 74658,
+      "event_id": 25,
+      "user_id": 30891,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "k***y"
+    },
+    {
+      "id": 74659,
+      "event_id": 25,
+      "user_id": 31115,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "青花比目"
+    },
+    {
+      "id": 74660,
+      "event_id": 25,
+      "user_id": 31227,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "John-zhangsh"
+    },
+    {
+      "id": 74661,
+      "event_id": 25,
+      "user_id": 31497,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "过于简单0723"
+    },
+    {
+      "id": 74662,
+      "event_id": 25,
+      "user_id": 32181,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "文文不打棒球"
+    },
+    {
+      "id": 74663,
+      "event_id": 25,
+      "user_id": 32796,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "紫之隐小屋"
+    },
+    {
+      "id": 74664,
+      "event_id": 25,
+      "user_id": 33026,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "底线老五"
+    },
+    {
+      "id": 74638,
+      "event_id": 25,
+      "user_id": 33233,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "巴特尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "精明姐姐的小秘"
+    },
+    {
+      "id": 74669,
+      "event_id": 25,
+      "user_id": 33801,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "里斯蒂奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "继续继续快下课"
+    },
+    {
+      "id": 74665,
+      "event_id": 25,
+      "user_id": 34367,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "网球爱好者Schur"
+    },
+    {
+      "id": 74666,
+      "event_id": 25,
+      "user_id": 34766,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "为你而来呀"
+    },
+    {
+      "id": 74639,
+      "event_id": 25,
+      "user_id": 34807,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "巴特尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "许yunkai"
+    },
+    {
+      "id": 74640,
+      "event_id": 25,
+      "user_id": 35132,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "巴特尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "h***t"
+    },
+    {
+      "id": 74667,
+      "event_id": 25,
+      "user_id": 35657,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "小三花和小黑喵"
+    },
+    {
+      "id": 74668,
+      "event_id": 25,
+      "user_id": 35661,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2024-07-21T22:15:18.000000Z",
+      "players": [
+        "布林科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "只***e"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "event_id": "20605",
+  "year": 2025,
+  "tour": "MS",
+  "city": "都灵",
+  "page_type": "score",
+  "completed": true,
+  "fetched_at": "2026-10-13 23:34:15",
+  "rows": [
+    {
+      "id": 381068,
+      "event_id": 118,
+      "user_id": 4936,
+      "status": -2,
+      "day": 2,
+      "score": 300,
+      "updated_at": "2025-11-14T00:17:07.000000Z",
+      "players": [
+        "阿尔卡拉斯",
+        "辛纳",
+        "弗里茨"
+      ],
+      "fill_status": "球员输球",
+      "username": "liu8322925"
+    },
+    {
+      "id": 381069,
+      "event_id": 118,
+      "user_id": 17024,
+      "status": -2,
+      "day": 2,
+      "score": 300,
+      "updated_at": "2025-11-14T00:17:07.000000Z",
+      "players": [
+        "阿尔卡拉斯",
+        "辛纳",
+        "弗里茨"
+      ],
+      "fill_status": "球员输球",
+      "username": "victorgc"
+    },
+    {
+      "id": 381070,
+      "event_id": 118,
+      "user_id": 29351,
+      "status": -2,
+      "day": 2,
+      "score": 300,
+      "updated_at": "2025-11-14T00:17:07.000000Z",
+      "players": [
+        "阿尔卡拉斯",
+        "辛纳",
+        "弗里茨"
+      ],
+      "fill_status": "球员输球",
+      "username": "日***岸"
+    },
+    {
+      "id": 381071,
+      "event_id": 118,
+      "user_id": 30932,
+      "status": -2,
+      "day": 2,
+      "score": 300,
+      "updated_at": "2025-11-14T00:17:07.000000Z",
+      "players": [
+        "阿尔卡拉斯",
+        "辛纳",
+        "弗里茨"
+      ],
+      "fill_status": "球员输球",
+      "username": "samsonyip"
+    },
+    {
+      "id": 381072,
+      "event_id": 118,
+      "user_id": 35082,
+      "status": -2,
+      "day": 2,
+      "score": 300,
+      "updated_at": "2025-11-14T00:17:07.000000Z",
+      "players": [
+        "阿尔卡拉斯",
+        "辛纳",
+        "弗里茨"
+      ],
+      "fill_status": "球员输球",
+      "username": "年终的W"
+    },
+    {
+      "id": 381073,
+      "event_id": 118,
+      "user_id": 37256,
+      "status": -2,
+      "day": 2,
+      "score": 300,
+      "updated_at": "2025-11-14T00:17:07.000000Z",
+      "players": [
+        "阿尔卡拉斯",
+        "辛纳",
+        "弗里茨"
+      ],
+      "fill_status": "球员输球",
+      "username": "Dagenais"
+    },
+    {
+      "id": 381074,
+      "event_id": 118,
+      "user_id": 35032,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2025-11-14T00:17:07.000000Z",
+      "players": [
+        "德米纳尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "旧纳琛"
+    },
+    {
+      "id": 381075,
+      "event_id": 118,
+      "user_id": 2156,
+      "status": -4,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2025-11-14T00:17:07.000000Z",
+      "players": [
+        "阿尔卡拉斯"
+      ],
+      "fill_status": "自杀(主备冲突)",
+      "username": "和楼盘规模破破"
+    }
+  ]
+}

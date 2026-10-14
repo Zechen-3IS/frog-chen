@@ -1,0 +1,4500 @@
+{
+  "event_id": "31111",
+  "year": 2025,
+  "tour": "WS",
+  "city": "伦敦",
+  "page_type": "score",
+  "completed": true,
+  "fetched_at": "2026-10-13 23:32:57",
+  "rows": [
+    {
+      "id": 261296,
+      "event_id": 87,
+      "user_id": 29134,
+      "status": 0,
+      "day": 6,
+      "score": 325,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "玛雅",
+        "博尔特",
+        "凯斯",
+        "郑钦文",
+        "阿尼西莫娃",
+        "玛利亚"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "IGAmandaSLAY"
+    },
+    {
+      "id": 261306,
+      "event_id": 87,
+      "user_id": 31388,
+      "status": 0,
+      "day": 6,
+      "score": 325,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "博尔特",
+        "凯斯",
+        "雷巴金娜",
+        "郑钦文",
+        "玛利亚"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "BORIS-_-i"
+    },
+    {
+      "id": 261313,
+      "event_id": 87,
+      "user_id": 32980,
+      "status": 0,
+      "day": 6,
+      "score": 325,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "凯斯",
+        "雷巴金娜",
+        "郑钦文",
+        "玛利亚"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "Elroy ZHANG"
+    },
+    {
+      "id": 261321,
+      "event_id": 87,
+      "user_id": 34340,
+      "status": 0,
+      "day": 6,
+      "score": 325,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃",
+        "拉杜卡努",
+        "凯斯",
+        "雷巴金娜",
+        "阿尼西莫娃",
+        "玛利亚"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "Ivejoy"
+    },
+    {
+      "id": 261323,
+      "event_id": 87,
+      "user_id": 34500,
+      "status": 0,
+      "day": 6,
+      "score": 325,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "凯斯",
+        "雷巴金娜",
+        "郑钦文",
+        "玛利亚"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "陈***8"
+    },
+    {
+      "id": 261333,
+      "event_id": 87,
+      "user_id": 35948,
+      "status": 0,
+      "day": 6,
+      "score": 325,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "凯斯",
+        "雷巴金娜",
+        "郑钦文",
+        "玛利亚"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "荞二皮"
+    },
+    {
+      "id": 261370,
+      "event_id": 87,
+      "user_id": 40702,
+      "status": 0,
+      "day": 6,
+      "score": 325,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "扎哈罗娃",
+        "施内德",
+        "凯斯",
+        "郑钦文",
+        "阿尼西莫娃",
+        "玛利亚"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "中网亚军福基纳"
+    },
+    {
+      "id": 261372,
+      "event_id": 87,
+      "user_id": 40803,
+      "status": 0,
+      "day": 6,
+      "score": 325,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "玛雅",
+        "施内德",
+        "玛利亚",
+        "拉杜卡努",
+        "凯斯",
+        "阿尼西莫娃"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "Maya Wong"
+    },
+    {
+      "id": 261348,
+      "event_id": 87,
+      "user_id": 39231,
+      "status": -2,
+      "day": 6,
+      "score": 325,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃",
+        "博尔特",
+        "埃-纳瓦罗",
+        "郑钦文",
+        "凯斯",
+        "玛利亚",
+        "阿尼西莫娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "taru wa"
+    },
+    {
+      "id": 261325,
+      "event_id": 87,
+      "user_id": 35009,
+      "status": -3,
+      "day": 6,
+      "score": 325,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "凯斯",
+        "雷巴金娜",
+        "郑钦文",
+        "玛利亚",
+        "阿尼西莫娃"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "杰***鞋"
+    },
+    {
+      "id": 261338,
+      "event_id": 87,
+      "user_id": 37337,
+      "status": -3,
+      "day": 6,
+      "score": 325,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "博尔特",
+        "凯斯",
+        "拉杜卡努",
+        "郑钦文",
+        "玛利亚",
+        "阿尼西莫娃"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "IggyAzaleaChina"
+    },
+    {
+      "id": 261276,
+      "event_id": 87,
+      "user_id": 1956,
+      "status": -2,
+      "day": 5,
+      "score": 195,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "玛利亚",
+        "施内德",
+        "凯斯",
+        "雷巴金娜",
+        "阿尼西莫娃",
+        "郑钦文"
+      ],
+      "fill_status": "球员输球",
+      "username": "芋y头h小m生"
+    },
+    {
+      "id": 261286,
+      "event_id": 87,
+      "user_id": 19581,
+      "status": -2,
+      "day": 5,
+      "score": 195,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃",
+        "施内德",
+        "凯斯",
+        "雷巴金娜",
+        "阿尼西莫娃",
+        "郑钦文"
+      ],
+      "fill_status": "球员输球",
+      "username": "homeboyliu"
+    },
+    {
+      "id": 261288,
+      "event_id": 87,
+      "user_id": 22773,
+      "status": -2,
+      "day": 5,
+      "score": 195,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃",
+        "拉杜卡努",
+        "凯斯",
+        "雷巴金娜",
+        "阿尼西莫娃",
+        "郑钦文"
+      ],
+      "fill_status": "球员输球",
+      "username": "Aeonbert"
+    },
+    {
+      "id": 261314,
+      "event_id": 87,
+      "user_id": 33015,
+      "status": -2,
+      "day": 5,
+      "score": 195,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "玛雅",
+        "博尔特",
+        "凯斯",
+        "雷巴金娜",
+        "阿尼西莫娃",
+        "郑钦文"
+      ],
+      "fill_status": "球员输球",
+      "username": "一位神秘的来Ke"
+    },
+    {
+      "id": 261336,
+      "event_id": 87,
+      "user_id": 36346,
+      "status": -2,
+      "day": 5,
+      "score": 195,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃",
+        "拉杜卡努",
+        "阿尼西莫娃",
+        "雷巴金娜",
+        "郑钦文",
+        "凯斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "普普通通的成年人_"
+    },
+    {
+      "id": 261345,
+      "event_id": 87,
+      "user_id": 39088,
+      "status": -2,
+      "day": 5,
+      "score": 195,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃",
+        "拉杜卡努",
+        "埃-纳瓦罗",
+        "施内德",
+        "凯斯",
+        "郑钦文"
+      ],
+      "fill_status": "球员输球",
+      "username": "勤***2"
+    },
+    {
+      "id": 261362,
+      "event_id": 87,
+      "user_id": 40054,
+      "status": -2,
+      "day": 5,
+      "score": 195,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "玛雅",
+        "博尔特",
+        "阿尼西莫娃",
+        "施内德",
+        "凯斯",
+        "郑钦文"
+      ],
+      "fill_status": "球员输球",
+      "username": "唐老鸭爱schur"
+    },
+    {
+      "id": 261365,
+      "event_id": 87,
+      "user_id": 40286,
+      "status": -2,
+      "day": 5,
+      "score": 195,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "施内德",
+        "玛利亚",
+        "拉杜卡努",
+        "凯斯",
+        "郑钦文"
+      ],
+      "fill_status": "球员输球",
+      "username": "薄荷奶绿不加冰_"
+    },
+    {
+      "id": 261293,
+      "event_id": 87,
+      "user_id": 28935,
+      "status": -3,
+      "day": 5,
+      "score": 195,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "博尔特",
+        "凯斯",
+        "雷巴金娜",
+        "郑钦文",
+        "凯斯"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "马儿不会飞_"
+    },
+    {
+      "id": 261366,
+      "event_id": 87,
+      "user_id": 40554,
+      "status": -3,
+      "day": 5,
+      "score": 195,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "埃-纳瓦罗",
+        "施内德",
+        "凯斯",
+        "凯斯"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "是***8"
+    },
+    {
+      "id": 261273,
+      "event_id": 87,
+      "user_id": 600,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "施内德",
+        "凯斯",
+        "拉杜卡努",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "Wiisim"
+    },
+    {
+      "id": 261274,
+      "event_id": 87,
+      "user_id": 806,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "博尔特",
+        "凯斯",
+        "郑钦文",
+        "埃-纳瓦罗"
+      ],
+      "fill_status": "球员输球",
+      "username": "yuhao9810"
+    },
+    {
+      "id": 261279,
+      "event_id": 87,
+      "user_id": 2834,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "凯斯",
+        "施内德",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "未来之匙"
+    },
+    {
+      "id": 261280,
+      "event_id": 87,
+      "user_id": 5053,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "凯斯",
+        "郑钦文",
+        "施内德"
+      ],
+      "fill_status": "球员输球",
+      "username": "Earth球球"
+    },
+    {
+      "id": 261282,
+      "event_id": 87,
+      "user_id": 10103,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "凯斯勒",
+        "凯斯",
+        "拉杜卡努",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "wennuan78"
+    },
+    {
+      "id": 261284,
+      "event_id": 87,
+      "user_id": 17024,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "凯斯",
+        "郑钦文",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "victorgc"
+    },
+    {
+      "id": 261285,
+      "event_id": 87,
+      "user_id": 17144,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "凯斯",
+        "施内德",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "白云静水"
+    },
+    {
+      "id": 261289,
+      "event_id": 87,
+      "user_id": 26279,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "博尔特",
+        "凯斯",
+        "施内德",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "南北南南i"
+    },
+    {
+      "id": 261295,
+      "event_id": 87,
+      "user_id": 29130,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃",
+        "拉杜卡努",
+        "凯斯",
+        "郑钦文",
+        "施内德"
+      ],
+      "fill_status": "球员输球",
+      "username": "Tony-Tennis"
+    },
+    {
+      "id": 261297,
+      "event_id": 87,
+      "user_id": 29270,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "玛雅",
+        "拉杜卡努",
+        "凯斯",
+        "施内德",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "xxxjusAng"
+    },
+    {
+      "id": 261298,
+      "event_id": 87,
+      "user_id": 29293,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃",
+        "施内德",
+        "凯斯",
+        "拉杜卡努",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "喧嚣L阳光"
+    },
+    {
+      "id": 261299,
+      "event_id": 87,
+      "user_id": 29406,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃",
+        "博尔特",
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "A***y"
+    },
+    {
+      "id": 261300,
+      "event_id": 87,
+      "user_id": 29678,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃",
+        "拉杜卡努",
+        "凯斯",
+        "施内德",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "小小帅哥_"
+    },
+    {
+      "id": 261303,
+      "event_id": 87,
+      "user_id": 30567,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "施拉姆科娃",
+        "埃-纳瓦罗",
+        "郑钦文",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "N***_"
+    },
+    {
+      "id": 261304,
+      "event_id": 87,
+      "user_id": 30932,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "施内德",
+        "凯斯",
+        "雷巴金娜",
+        "埃-纳瓦罗"
+      ],
+      "fill_status": "球员输球",
+      "username": "samsonyip"
+    },
+    {
+      "id": 261305,
+      "event_id": 87,
+      "user_id": 31115,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "施内德",
+        "凯斯",
+        "拉杜卡努",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "青花比目"
+    },
+    {
+      "id": 261308,
+      "event_id": 87,
+      "user_id": 31549,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "凯斯",
+        "施内德",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "强化型米斯prototype"
+    },
+    {
+      "id": 261310,
+      "event_id": 87,
+      "user_id": 32121,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "凯斯",
+        "郑钦文",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "用户7856057992"
+    },
+    {
+      "id": 261315,
+      "event_id": 87,
+      "user_id": 33162,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "轮空",
+        "拉杜卡努",
+        "凯斯",
+        "郑钦文",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "r***i"
+    },
+    {
+      "id": 261316,
+      "event_id": 87,
+      "user_id": 33193,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "凯斯",
+        "施内德",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "果金灵灵"
+    },
+    {
+      "id": 261317,
+      "event_id": 87,
+      "user_id": 33207,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "施内德",
+        "凯斯",
+        "拉杜卡努",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "Samuel Bao"
+    },
+    {
+      "id": 261318,
+      "event_id": 87,
+      "user_id": 33264,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "凯斯勒",
+        "凯斯",
+        "郑钦文",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "林强行长的小挎包"
+    },
+    {
+      "id": 261319,
+      "event_id": 87,
+      "user_id": 34148,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "施内德",
+        "埃-纳瓦罗",
+        "拉杜卡努",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "萨卡外"
+    },
+    {
+      "id": 261322,
+      "event_id": 87,
+      "user_id": 34367,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "施内德",
+        "凯斯",
+        "拉杜卡努",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "网球爱好者Schur"
+    },
+    {
+      "id": 261324,
+      "event_id": 87,
+      "user_id": 34808,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "博尔特",
+        "凯斯",
+        "雷巴金娜",
+        "拉杜卡努"
+      ],
+      "fill_status": "球员输球",
+      "username": "freedom_or_death"
+    },
+    {
+      "id": 261326,
+      "event_id": 87,
+      "user_id": 35077,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "凯斯",
+        "郑钦文",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "500赛的W"
+    },
+    {
+      "id": 261329,
+      "event_id": 87,
+      "user_id": 35323,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃",
+        "拉杜卡努",
+        "凯斯",
+        "郑钦文",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "不羁灬的灵魂"
+    },
+    {
+      "id": 261332,
+      "event_id": 87,
+      "user_id": 35898,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "施内德",
+        "凯斯",
+        "拉杜卡努",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "吴二饼"
+    },
+    {
+      "id": 261337,
+      "event_id": 87,
+      "user_id": 37184,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "施内德",
+        "凯斯",
+        "拉杜卡努",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "爱***森"
+    },
+    {
+      "id": 261340,
+      "event_id": 87,
+      "user_id": 37582,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "博尔特",
+        "凯斯",
+        "拉杜卡努",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "D***3"
+    },
+    {
+      "id": 261342,
+      "event_id": 87,
+      "user_id": 37596,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "凯斯",
+        "施内德",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "188*****355"
+    },
+    {
+      "id": 261344,
+      "event_id": 87,
+      "user_id": 39070,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "施内德",
+        "凯斯",
+        "拉杜卡努",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "E***冰"
+    },
+    {
+      "id": 261346,
+      "event_id": 87,
+      "user_id": 39126,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃",
+        "博尔特",
+        "埃-纳瓦罗",
+        "拉杜卡努",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "晨曦中的楷模Elroy"
+    },
+    {
+      "id": 261352,
+      "event_id": 87,
+      "user_id": 39567,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "玛雅",
+        "拉杜卡努",
+        "埃-纳瓦罗",
+        "郑钦文",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "田***妞"
+    },
+    {
+      "id": 261355,
+      "event_id": 87,
+      "user_id": 39652,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃",
+        "施内德",
+        "凯斯",
+        "拉杜卡努",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "Xena"
+    },
+    {
+      "id": 261357,
+      "event_id": 87,
+      "user_id": 39708,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "凯斯",
+        "郑钦文",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "猫崽孑丶"
+    },
+    {
+      "id": 261361,
+      "event_id": 87,
+      "user_id": 39944,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "施内德",
+        "凯斯",
+        "郑钦文",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "萌***尼"
+    },
+    {
+      "id": 261367,
+      "event_id": 87,
+      "user_id": 40561,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "施内德",
+        "凯斯",
+        "拉杜卡努",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "迪***9"
+    },
+    {
+      "id": 261373,
+      "event_id": 87,
+      "user_id": 40868,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃",
+        "拉杜卡努",
+        "凯斯",
+        "郑钦文",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "南半球的小狮子"
+    },
+    {
+      "id": 261375,
+      "event_id": 87,
+      "user_id": 40950,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "博尔特",
+        "凯斯",
+        "拉杜卡努",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "萌兔戴上霍元甲"
+    },
+    {
+      "id": 261376,
+      "event_id": 87,
+      "user_id": 41428,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃",
+        "拉杜卡努",
+        "阿尼西莫娃",
+        "郑钦文",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "Yvkuuuu"
+    },
+    {
+      "id": 261377,
+      "event_id": 87,
+      "user_id": 41680,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "施内德",
+        "凯斯",
+        "拉杜卡努",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "c***i"
+    },
+    {
+      "id": 261382,
+      "event_id": 87,
+      "user_id": 42293,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "施内德",
+        "玛利亚",
+        "拉杜卡努",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "大***一"
+    },
+    {
+      "id": 261383,
+      "event_id": 87,
+      "user_id": 42383,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "施内德",
+        "凯斯",
+        "拉杜卡努",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "霁夜茶Sweet"
+    },
+    {
+      "id": 261384,
+      "event_id": 87,
+      "user_id": 42391,
+      "status": -2,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "博尔特",
+        "凯斯",
+        "拉杜卡努",
+        "雷巴金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "风***虚"
+    },
+    {
+      "id": 261331,
+      "event_id": 87,
+      "user_id": 35574,
+      "status": -3,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃",
+        "拉杜卡努",
+        "凯斯",
+        "雷巴金娜",
+        "雷巴金娜"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "远***咻"
+    },
+    {
+      "id": 261363,
+      "event_id": 87,
+      "user_id": 40189,
+      "status": -3,
+      "day": 4,
+      "score": 108,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃",
+        "拉杜卡努",
+        "阿尼西莫娃",
+        "施内德",
+        "阿尼西莫娃"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "手机用户2324835593"
+    },
+    {
+      "id": 261278,
+      "event_id": 87,
+      "user_id": 2608,
+      "status": -2,
+      "day": 3,
+      "score": 84,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "凯斯",
+        "凯斯勒"
+      ],
+      "fill_status": "球员输球",
+      "username": "德约的粉丝"
+    },
+    {
+      "id": 261354,
+      "event_id": 87,
+      "user_id": 39614,
+      "status": -3,
+      "day": 3,
+      "score": 84,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "凯斯",
+        "拉杜卡努"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "今天是最后一次失眠"
+    },
+    {
+      "id": 261359,
+      "event_id": 87,
+      "user_id": 39920,
+      "status": -3,
+      "day": 3,
+      "score": 84,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "凯斯",
+        "拉杜卡努"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "无***痕"
+    },
+    {
+      "id": 261349,
+      "event_id": 87,
+      "user_id": 39234,
+      "status": 0,
+      "day": 2,
+      "score": 60,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "施内德"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "136*****843"
+    },
+    {
+      "id": 261272,
+      "event_id": 87,
+      "user_id": 116,
+      "status": -2,
+      "day": 2,
+      "score": 60,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "穆霍娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "钱老奶奶"
+    },
+    {
+      "id": 261275,
+      "event_id": 87,
+      "user_id": 870,
+      "status": -2,
+      "day": 2,
+      "score": 60,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "轮空",
+        "拉杜卡努",
+        "穆霍娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "hr337"
+    },
+    {
+      "id": 261277,
+      "event_id": 87,
+      "user_id": 2005,
+      "status": -2,
+      "day": 2,
+      "score": 60,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "轮空",
+        "博尔特",
+        "穆霍娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞麦皮"
+    },
+    {
+      "id": 261281,
+      "event_id": 87,
+      "user_id": 6603,
+      "status": -2,
+      "day": 2,
+      "score": 60,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "玛雅",
+        "拉杜卡努",
+        "穆霍娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "梦是无尽的荒野"
+    },
+    {
+      "id": 261287,
+      "event_id": 87,
+      "user_id": 21672,
+      "status": -2,
+      "day": 2,
+      "score": 60,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "沃特森",
+        "穆霍娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "158*****803"
+    },
+    {
+      "id": 261291,
+      "event_id": 87,
+      "user_id": 28725,
+      "status": -2,
+      "day": 2,
+      "score": 60,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "穆霍娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "顶***家"
+    },
+    {
+      "id": 261294,
+      "event_id": 87,
+      "user_id": 28991,
+      "status": -2,
+      "day": 2,
+      "score": 60,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "施内德",
+        "穆霍娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "张文静之歌"
+    },
+    {
+      "id": 261301,
+      "event_id": 87,
+      "user_id": 30480,
+      "status": -2,
+      "day": 2,
+      "score": 60,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "凯斯勒",
+        "穆霍娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "yh11yh22"
+    },
+    {
+      "id": 261302,
+      "event_id": 87,
+      "user_id": 30566,
+      "status": -2,
+      "day": 2,
+      "score": 60,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "博尔特",
+        "穆霍娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "变现狂魔_"
+    },
+    {
+      "id": 261307,
+      "event_id": 87,
+      "user_id": 31465,
+      "status": -2,
+      "day": 2,
+      "score": 60,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "玛雅",
+        "博尔特",
+        "穆霍娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "188******62"
+    },
+    {
+      "id": 261309,
+      "event_id": 87,
+      "user_id": 31705,
+      "status": -2,
+      "day": 2,
+      "score": 60,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "轮空",
+        "拉杜卡努",
+        "穆霍娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "Pomelo琛"
+    },
+    {
+      "id": 261311,
+      "event_id": 87,
+      "user_id": 32606,
+      "status": -2,
+      "day": 2,
+      "score": 60,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "穆霍娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "mj ouyang"
+    },
+    {
+      "id": 261312,
+      "event_id": 87,
+      "user_id": 32763,
+      "status": -2,
+      "day": 2,
+      "score": 60,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "施内德",
+        "穆霍娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "1000赛的W"
+    },
+    {
+      "id": 261327,
+      "event_id": 87,
+      "user_id": 35126,
+      "status": -2,
+      "day": 2,
+      "score": 60,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "穆霍娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "M***y"
+    },
+    {
+      "id": 261341,
+      "event_id": 87,
+      "user_id": 37595,
+      "status": -2,
+      "day": 2,
+      "score": 60,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "穆霍娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "类胡萝卜素a"
+    },
+    {
+      "id": 261347,
+      "event_id": 87,
+      "user_id": 39223,
+      "status": -2,
+      "day": 2,
+      "score": 60,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "穆霍娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "巴***机"
+    },
+    {
+      "id": 261360,
+      "event_id": 87,
+      "user_id": 39935,
+      "status": -2,
+      "day": 2,
+      "score": 60,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃",
+        "博尔特",
+        "卡塔尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "田纳西草莓干加工厂"
+    },
+    {
+      "id": 261364,
+      "event_id": 87,
+      "user_id": 40265,
+      "status": -2,
+      "day": 2,
+      "score": 60,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "玛雅",
+        "博尔特",
+        "穆霍娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "稀有的木臼犬"
+    },
+    {
+      "id": 261368,
+      "event_id": 87,
+      "user_id": 40587,
+      "status": -2,
+      "day": 2,
+      "score": 60,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "凯斯勒",
+        "穆霍娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "一寺一壶酒尔乐"
+    },
+    {
+      "id": 261369,
+      "event_id": 87,
+      "user_id": 40691,
+      "status": -2,
+      "day": 2,
+      "score": 60,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "拉杜卡努",
+        "玛雅"
+      ],
+      "fill_status": "球员输球",
+      "username": "三分之二糖有点甜"
+    },
+    {
+      "id": 261374,
+      "event_id": 87,
+      "user_id": 40905,
+      "status": -2,
+      "day": 2,
+      "score": 60,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "博尔特",
+        "穆霍娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "追星打工人"
+    },
+    {
+      "id": 261283,
+      "event_id": 87,
+      "user_id": 10322,
+      "status": 0,
+      "day": 1,
+      "score": 30,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "ElvisD95"
+    },
+    {
+      "id": 261320,
+      "event_id": 87,
+      "user_id": 34229,
+      "status": 0,
+      "day": 1,
+      "score": 30,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "深***名"
+    },
+    {
+      "id": 261330,
+      "event_id": 87,
+      "user_id": 35491,
+      "status": 0,
+      "day": 1,
+      "score": 30,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "羊***z"
+    },
+    {
+      "id": 261339,
+      "event_id": 87,
+      "user_id": 37569,
+      "status": 0,
+      "day": 1,
+      "score": 30,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "L***e"
+    },
+    {
+      "id": 261343,
+      "event_id": 87,
+      "user_id": 39012,
+      "status": 0,
+      "day": 1,
+      "score": 30,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "138******61"
+    },
+    {
+      "id": 261350,
+      "event_id": 87,
+      "user_id": 39438,
+      "status": 0,
+      "day": 1,
+      "score": 30,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "Lak-s"
+    },
+    {
+      "id": 261356,
+      "event_id": 87,
+      "user_id": 39706,
+      "status": 0,
+      "day": 1,
+      "score": 30,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "袁***女"
+    },
+    {
+      "id": 261358,
+      "event_id": 87,
+      "user_id": 39859,
+      "status": 0,
+      "day": 1,
+      "score": 30,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "粒粒万乡-726"
+    },
+    {
+      "id": 261379,
+      "event_id": 87,
+      "user_id": 41743,
+      "status": 0,
+      "day": 1,
+      "score": 30,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "Ava世界和平"
+    },
+    {
+      "id": 261290,
+      "event_id": 87,
+      "user_id": 28508,
+      "status": -2,
+      "day": 1,
+      "score": 30,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "玛利亚",
+        "普汀塞娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "一杯思s"
+    },
+    {
+      "id": 261292,
+      "event_id": 87,
+      "user_id": 28782,
+      "status": -2,
+      "day": 1,
+      "score": 30,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃",
+        "克赖奇科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "荣拉法RaphaelCigar"
+    },
+    {
+      "id": 261328,
+      "event_id": 87,
+      "user_id": 35132,
+      "status": -2,
+      "day": 1,
+      "score": 30,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃",
+        "普汀塞娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "h***t"
+    },
+    {
+      "id": 261334,
+      "event_id": 87,
+      "user_id": 35974,
+      "status": -2,
+      "day": 1,
+      "score": 30,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "玛雅",
+        "普汀塞娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞四皮"
+    },
+    {
+      "id": 261335,
+      "event_id": 87,
+      "user_id": 36322,
+      "status": -2,
+      "day": 1,
+      "score": 30,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "玛雅",
+        "普汀塞娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "130rings"
+    },
+    {
+      "id": 261351,
+      "event_id": 87,
+      "user_id": 39561,
+      "status": -2,
+      "day": 1,
+      "score": 30,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃",
+        "普汀塞娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "luckybweh_"
+    },
+    {
+      "id": 261353,
+      "event_id": 87,
+      "user_id": 39569,
+      "status": -2,
+      "day": 1,
+      "score": 30,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "普汀塞娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "EcstAsy7"
+    },
+    {
+      "id": 261371,
+      "event_id": 87,
+      "user_id": 40751,
+      "status": -2,
+      "day": 1,
+      "score": 30,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "阿尼西莫娃",
+        "普汀塞娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "大西洋信风200309"
+    },
+    {
+      "id": 261378,
+      "event_id": 87,
+      "user_id": 41698,
+      "status": -2,
+      "day": 1,
+      "score": 30,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃",
+        "弗-琼斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "普***粉"
+    },
+    {
+      "id": 261380,
+      "event_id": 87,
+      "user_id": 41787,
+      "status": -2,
+      "day": 1,
+      "score": 30,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃",
+        "汤姆亚诺维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "卷毛Flis"
+    },
+    {
+      "id": 261381,
+      "event_id": 87,
+      "user_id": 42034,
+      "status": -2,
+      "day": 1,
+      "score": 30,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "穆霍娃",
+        "克赖奇科娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "178******45"
+    },
+    {
+      "id": 261386,
+      "event_id": 87,
+      "user_id": 272,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "tenfoynis"
+    },
+    {
+      "id": 261387,
+      "event_id": 87,
+      "user_id": 483,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "天邪幻世"
+    },
+    {
+      "id": 261506,
+      "event_id": 87,
+      "user_id": 603,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "Change琛子"
+    },
+    {
+      "id": 261388,
+      "event_id": 87,
+      "user_id": 1785,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "yangxiaqing2"
+    },
+    {
+      "id": 261389,
+      "event_id": 87,
+      "user_id": 2156,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "和楼盘规模破破"
+    },
+    {
+      "id": 261543,
+      "event_id": 87,
+      "user_id": 2769,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "蕾-费尔南德斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "a407102500"
+    },
+    {
+      "id": 261507,
+      "event_id": 87,
+      "user_id": 2999,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "美网冠军丘里奇"
+    },
+    {
+      "id": 261390,
+      "event_id": 87,
+      "user_id": 4936,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "liu8322925"
+    },
+    {
+      "id": 261391,
+      "event_id": 87,
+      "user_id": 5245,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "贝西卜殿下"
+    },
+    {
+      "id": 261508,
+      "event_id": 87,
+      "user_id": 6435,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "silver小小蓝"
+    },
+    {
+      "id": 261509,
+      "event_id": 87,
+      "user_id": 6623,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞三皮"
+    },
+    {
+      "id": 261392,
+      "event_id": 87,
+      "user_id": 7042,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "__Novak__"
+    },
+    {
+      "id": 261393,
+      "event_id": 87,
+      "user_id": 8895,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "木的讷"
+    },
+    {
+      "id": 261510,
+      "event_id": 87,
+      "user_id": 10037,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "黑***友"
+    },
+    {
+      "id": 261511,
+      "event_id": 87,
+      "user_id": 11064,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "Poah优昙花_"
+    },
+    {
+      "id": 261394,
+      "event_id": 87,
+      "user_id": 11119,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "我宝儿子不露脸不改名"
+    },
+    {
+      "id": 261395,
+      "event_id": 87,
+      "user_id": 11228,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "第7路单车"
+    },
+    {
+      "id": 261396,
+      "event_id": 87,
+      "user_id": 15816,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "三满贯科贝尔"
+    },
+    {
+      "id": 261397,
+      "event_id": 87,
+      "user_id": 16570,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "黑白_大山"
+    },
+    {
+      "id": 261398,
+      "event_id": 87,
+      "user_id": 16602,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "ymc227485360"
+    },
+    {
+      "id": 261399,
+      "event_id": 87,
+      "user_id": 17574,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "此号已废16"
+    },
+    {
+      "id": 261400,
+      "event_id": 87,
+      "user_id": 22854,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "不管小哈是我的"
+    },
+    {
+      "id": 261401,
+      "event_id": 87,
+      "user_id": 23015,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "lovehuiruoqi"
+    },
+    {
+      "id": 261402,
+      "event_id": 87,
+      "user_id": 24258,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "RV--RV"
+    },
+    {
+      "id": 261403,
+      "event_id": 87,
+      "user_id": 24543,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "aeonbert"
+    },
+    {
+      "id": 261404,
+      "event_id": 87,
+      "user_id": 25850,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "jellyddfish"
+    },
+    {
+      "id": 261405,
+      "event_id": 87,
+      "user_id": 25881,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "lwpsgj"
+    },
+    {
+      "id": 261406,
+      "event_id": 87,
+      "user_id": 27372,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "镇远神"
+    },
+    {
+      "id": 261407,
+      "event_id": 87,
+      "user_id": 27388,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "之后再喝咖啡我就是狗"
+    },
+    {
+      "id": 261408,
+      "event_id": 87,
+      "user_id": 27446,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "指纹Nongzw"
+    },
+    {
+      "id": 261409,
+      "event_id": 87,
+      "user_id": 27450,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "MobiusZH"
+    },
+    {
+      "id": 261544,
+      "event_id": 87,
+      "user_id": 27545,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "蕾-费尔南德斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "西蒙娃斯"
+    },
+    {
+      "id": 261545,
+      "event_id": 87,
+      "user_id": 27983,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "蕾-费尔南德斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "吃货大爱凯凯_982"
+    },
+    {
+      "id": 261410,
+      "event_id": 87,
+      "user_id": 27994,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "板尼哟"
+    },
+    {
+      "id": 261411,
+      "event_id": 87,
+      "user_id": 28021,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "AdonisZhang"
+    },
+    {
+      "id": 261512,
+      "event_id": 87,
+      "user_id": 28412,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "jason大志志"
+    },
+    {
+      "id": 261412,
+      "event_id": 87,
+      "user_id": 28485,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "Jiakun Yi"
+    },
+    {
+      "id": 261413,
+      "event_id": 87,
+      "user_id": 28509,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "夕***阳"
+    },
+    {
+      "id": 261546,
+      "event_id": 87,
+      "user_id": 28510,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "蕾-费尔南德斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "akane 11"
+    },
+    {
+      "id": 261547,
+      "event_id": 87,
+      "user_id": 28582,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "蕾-费尔南德斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "蔷***机"
+    },
+    {
+      "id": 261414,
+      "event_id": 87,
+      "user_id": 28625,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "octbt"
+    },
+    {
+      "id": 261548,
+      "event_id": 87,
+      "user_id": 28636,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "蕾-费尔南德斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "啦***拉"
+    },
+    {
+      "id": 261415,
+      "event_id": 87,
+      "user_id": 28673,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "神秘的药"
+    },
+    {
+      "id": 261416,
+      "event_id": 87,
+      "user_id": 28781,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "活宝哈u"
+    },
+    {
+      "id": 261417,
+      "event_id": 87,
+      "user_id": 28845,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "浙江土特产"
+    },
+    {
+      "id": 261418,
+      "event_id": 87,
+      "user_id": 28884,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "Ryan-Tennis"
+    },
+    {
+      "id": 261419,
+      "event_id": 87,
+      "user_id": 28903,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "slay全场666"
+    },
+    {
+      "id": 261513,
+      "event_id": 87,
+      "user_id": 29045,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "Kwan-tennis"
+    },
+    {
+      "id": 261514,
+      "event_id": 87,
+      "user_id": 29057,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "WillKris锴"
+    },
+    {
+      "id": 261420,
+      "event_id": 87,
+      "user_id": 29300,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "-Frictionless"
+    },
+    {
+      "id": 261421,
+      "event_id": 87,
+      "user_id": 29320,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "寻感获叹"
+    },
+    {
+      "id": 261422,
+      "event_id": 87,
+      "user_id": 29335,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "moommomoommo"
+    },
+    {
+      "id": 261423,
+      "event_id": 87,
+      "user_id": 29351,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "日***岸"
+    },
+    {
+      "id": 261424,
+      "event_id": 87,
+      "user_id": 29363,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "张潮1986"
+    },
+    {
+      "id": 261425,
+      "event_id": 87,
+      "user_id": 29479,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "马戏团冠军"
+    },
+    {
+      "id": 261515,
+      "event_id": 87,
+      "user_id": 29573,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "09劉继"
+    },
+    {
+      "id": 261426,
+      "event_id": 87,
+      "user_id": 29703,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "那不勒斯Jasper"
+    },
+    {
+      "id": 261427,
+      "event_id": 87,
+      "user_id": 29978,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "外星驻地球代表"
+    },
+    {
+      "id": 261428,
+      "event_id": 87,
+      "user_id": 29995,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "锦暔"
+    },
+    {
+      "id": 261516,
+      "event_id": 87,
+      "user_id": 30128,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "5默大叔"
+    },
+    {
+      "id": 261429,
+      "event_id": 87,
+      "user_id": 30209,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "_被窝哲学家_-"
+    },
+    {
+      "id": 261430,
+      "event_id": 87,
+      "user_id": 30373,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "Rhine Luke"
+    },
+    {
+      "id": 261431,
+      "event_id": 87,
+      "user_id": 30456,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "S***d"
+    },
+    {
+      "id": 261432,
+      "event_id": 87,
+      "user_id": 30552,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "卡尼TT"
+    },
+    {
+      "id": 261433,
+      "event_id": 87,
+      "user_id": 30644,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "肥花太肥"
+    },
+    {
+      "id": 261549,
+      "event_id": 87,
+      "user_id": 31092,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "蕾-费尔南德斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "落叶是秋天的情人"
+    },
+    {
+      "id": 261434,
+      "event_id": 87,
+      "user_id": 31354,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "派派派崔克"
+    },
+    {
+      "id": 261435,
+      "event_id": 87,
+      "user_id": 31375,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "刘小闹小闹闹呀"
+    },
+    {
+      "id": 261436,
+      "event_id": 87,
+      "user_id": 31550,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "九_墨_"
+    },
+    {
+      "id": 261550,
+      "event_id": 87,
+      "user_id": 31557,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "蕾-费尔南德斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "一***酒"
+    },
+    {
+      "id": 261517,
+      "event_id": 87,
+      "user_id": 31683,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "liangZxx"
+    },
+    {
+      "id": 261437,
+      "event_id": 87,
+      "user_id": 31768,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "WillKrisKai"
+    },
+    {
+      "id": 261438,
+      "event_id": 87,
+      "user_id": 31855,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "yygq专家"
+    },
+    {
+      "id": 261551,
+      "event_id": 87,
+      "user_id": 31960,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "蕾-费尔南德斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "愿***l"
+    },
+    {
+      "id": 261518,
+      "event_id": 87,
+      "user_id": 32088,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "浮空a倾城"
+    },
+    {
+      "id": 261439,
+      "event_id": 87,
+      "user_id": 32109,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "素***e"
+    },
+    {
+      "id": 261440,
+      "event_id": 87,
+      "user_id": 32322,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "大满贯的W"
+    },
+    {
+      "id": 261519,
+      "event_id": 87,
+      "user_id": 32450,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "c***9"
+    },
+    {
+      "id": 261441,
+      "event_id": 87,
+      "user_id": 32552,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "海狸先生的小翘臀"
+    },
+    {
+      "id": 261442,
+      "event_id": 87,
+      "user_id": 32796,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "紫之隐小屋"
+    },
+    {
+      "id": 261520,
+      "event_id": 87,
+      "user_id": 33026,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "底线老五"
+    },
+    {
+      "id": 261443,
+      "event_id": 87,
+      "user_id": 33063,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "是月牙呦"
+    },
+    {
+      "id": 261444,
+      "event_id": 87,
+      "user_id": 33147,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "湫秋兮如风"
+    },
+    {
+      "id": 261521,
+      "event_id": 87,
+      "user_id": 33233,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "精明姐姐的小秘"
+    },
+    {
+      "id": 261445,
+      "event_id": 87,
+      "user_id": 33262,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "Oreache_TAO"
+    },
+    {
+      "id": 261446,
+      "event_id": 87,
+      "user_id": 33276,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "唯爱张帅"
+    },
+    {
+      "id": 261522,
+      "event_id": 87,
+      "user_id": 33308,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "西瓜太郎笑嘻嘻"
+    },
+    {
+      "id": 261447,
+      "event_id": 87,
+      "user_id": 33386,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "逍遥笑叹红尘"
+    },
+    {
+      "id": 261448,
+      "event_id": 87,
+      "user_id": 33422,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "爱歪歪的坏宝贝"
+    },
+    {
+      "id": 261523,
+      "event_id": 87,
+      "user_id": 33447,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "QelenaRyueen"
+    },
+    {
+      "id": 261524,
+      "event_id": 87,
+      "user_id": 33502,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "枪手lisa"
+    },
+    {
+      "id": 261449,
+      "event_id": 87,
+      "user_id": 33637,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "Rccc1888"
+    },
+    {
+      "id": 261525,
+      "event_id": 87,
+      "user_id": 33657,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "Schurink舒尔克"
+    },
+    {
+      "id": 261526,
+      "event_id": 87,
+      "user_id": 33770,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "用户7376159987"
+    },
+    {
+      "id": 261450,
+      "event_id": 87,
+      "user_id": 33828,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "重生之我在幸存者十连冠"
+    },
+    {
+      "id": 261451,
+      "event_id": 87,
+      "user_id": 33869,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "z***4"
+    },
+    {
+      "id": 261452,
+      "event_id": 87,
+      "user_id": 34178,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "→→←←↑↑"
+    },
+    {
+      "id": 261453,
+      "event_id": 87,
+      "user_id": 34186,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "AllenXiangxy"
+    },
+    {
+      "id": 261454,
+      "event_id": 87,
+      "user_id": 34350,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "风儿007008"
+    },
+    {
+      "id": 261455,
+      "event_id": 87,
+      "user_id": 34366,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "用户7766595336"
+    },
+    {
+      "id": 261527,
+      "event_id": 87,
+      "user_id": 34368,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "回破"
+    },
+    {
+      "id": 261528,
+      "event_id": 87,
+      "user_id": 34369,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "稀有气体hyk"
+    },
+    {
+      "id": 261552,
+      "event_id": 87,
+      "user_id": 34382,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "蕾-费尔南德斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "弗外外茨"
+    },
+    {
+      "id": 261529,
+      "event_id": 87,
+      "user_id": 34394,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "斜杠少年00053"
+    },
+    {
+      "id": 261456,
+      "event_id": 87,
+      "user_id": 34454,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "Kellan Li"
+    },
+    {
+      "id": 261457,
+      "event_id": 87,
+      "user_id": 34627,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "一***客"
+    },
+    {
+      "id": 261458,
+      "event_id": 87,
+      "user_id": 34710,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "懒觉鱼睡不醒"
+    },
+    {
+      "id": 261530,
+      "event_id": 87,
+      "user_id": 34766,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "为你而来呀"
+    },
+    {
+      "id": 261459,
+      "event_id": 87,
+      "user_id": 35032,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "旧纳琛"
+    },
+    {
+      "id": 261460,
+      "event_id": 87,
+      "user_id": 35082,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "年终的W"
+    },
+    {
+      "id": 261461,
+      "event_id": 87,
+      "user_id": 35099,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "苟***术"
+    },
+    {
+      "id": 261462,
+      "event_id": 87,
+      "user_id": 35127,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "崔***啊"
+    },
+    {
+      "id": 261553,
+      "event_id": 87,
+      "user_id": 35342,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "蕾-费尔南德斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "wb789005"
+    },
+    {
+      "id": 261463,
+      "event_id": 87,
+      "user_id": 35661,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "只***e"
+    },
+    {
+      "id": 261464,
+      "event_id": 87,
+      "user_id": 35965,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "Schurkel Yeein"
+    },
+    {
+      "id": 261465,
+      "event_id": 87,
+      "user_id": 36171,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "相信科学是非明"
+    },
+    {
+      "id": 261466,
+      "event_id": 87,
+      "user_id": 36253,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞麦皮真皮"
+    },
+    {
+      "id": 261467,
+      "event_id": 87,
+      "user_id": 36458,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "刘***亮"
+    },
+    {
+      "id": 261468,
+      "event_id": 87,
+      "user_id": 36469,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "嗨嗨嗨改名字好难"
+    },
+    {
+      "id": 261469,
+      "event_id": 87,
+      "user_id": 36847,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "Leo_T1nyFo2est_autor"
+    },
+    {
+      "id": 261531,
+      "event_id": 87,
+      "user_id": 37027,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "古木_鱼"
+    },
+    {
+      "id": 261470,
+      "event_id": 87,
+      "user_id": 37043,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "法拉利策略组"
+    },
+    {
+      "id": 261471,
+      "event_id": 87,
+      "user_id": 37089,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "空***o"
+    },
+    {
+      "id": 261472,
+      "event_id": 87,
+      "user_id": 37108,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "交H于一点"
+    },
+    {
+      "id": 261473,
+      "event_id": 87,
+      "user_id": 37135,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "z***z"
+    },
+    {
+      "id": 261474,
+      "event_id": 87,
+      "user_id": 37154,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "曙***裳"
+    },
+    {
+      "id": 261475,
+      "event_id": 87,
+      "user_id": 37256,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "Dagenais"
+    },
+    {
+      "id": 261476,
+      "event_id": 87,
+      "user_id": 37273,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "152*****282"
+    },
+    {
+      "id": 261554,
+      "event_id": 87,
+      "user_id": 37315,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "蕾-费尔南德斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "6***6"
+    },
+    {
+      "id": 261477,
+      "event_id": 87,
+      "user_id": 37317,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "零***澄"
+    },
+    {
+      "id": 261478,
+      "event_id": 87,
+      "user_id": 37344,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "用户5472180102"
+    },
+    {
+      "id": 261532,
+      "event_id": 87,
+      "user_id": 37556,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "irenelucky_117"
+    },
+    {
+      "id": 261479,
+      "event_id": 87,
+      "user_id": 37558,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "136******19"
+    },
+    {
+      "id": 261480,
+      "event_id": 87,
+      "user_id": 37559,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "网球联赛TennisLeague"
+    },
+    {
+      "id": 261481,
+      "event_id": 87,
+      "user_id": 37564,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "精神故乡丝芙兰"
+    },
+    {
+      "id": 261482,
+      "event_id": 87,
+      "user_id": 37598,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "198******80"
+    },
+    {
+      "id": 261483,
+      "event_id": 87,
+      "user_id": 37599,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "漪***7"
+    },
+    {
+      "id": 261555,
+      "event_id": 87,
+      "user_id": 37994,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "蕾-费尔南德斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "BOHEYE_"
+    },
+    {
+      "id": 261484,
+      "event_id": 87,
+      "user_id": 38686,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "福基纳夺冠就改名__哈卡卡可"
+    },
+    {
+      "id": 261485,
+      "event_id": 87,
+      "user_id": 39030,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "星***子"
+    },
+    {
+      "id": 261556,
+      "event_id": 87,
+      "user_id": 39155,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "蕾-费尔南德斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "T***_"
+    },
+    {
+      "id": 261486,
+      "event_id": 87,
+      "user_id": 39227,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "l***9"
+    },
+    {
+      "id": 261533,
+      "event_id": 87,
+      "user_id": 39229,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "F-orestcold"
+    },
+    {
+      "id": 261487,
+      "event_id": 87,
+      "user_id": 39230,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "子***寒"
+    },
+    {
+      "id": 261488,
+      "event_id": 87,
+      "user_id": 39232,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "爱***d"
+    },
+    {
+      "id": 261489,
+      "event_id": 87,
+      "user_id": 39367,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "强化型米斯alternate"
+    },
+    {
+      "id": 261490,
+      "event_id": 87,
+      "user_id": 39368,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "Elroy晨曦"
+    },
+    {
+      "id": 261534,
+      "event_id": 87,
+      "user_id": 39396,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "178******17"
+    },
+    {
+      "id": 261491,
+      "event_id": 87,
+      "user_id": 39413,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "吡***吩"
+    },
+    {
+      "id": 261492,
+      "event_id": 87,
+      "user_id": 39478,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "_愉悦混乱_"
+    },
+    {
+      "id": 261493,
+      "event_id": 87,
+      "user_id": 39492,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "A-ries_15"
+    },
+    {
+      "id": 261557,
+      "event_id": 87,
+      "user_id": 39542,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "蕾-费尔南德斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "W***界"
+    },
+    {
+      "id": 261535,
+      "event_id": 87,
+      "user_id": 39565,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "深***泪"
+    },
+    {
+      "id": 261536,
+      "event_id": 87,
+      "user_id": 39596,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "黑***6"
+    },
+    {
+      "id": 261494,
+      "event_id": 87,
+      "user_id": 39616,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "侯小知Moya"
+    },
+    {
+      "id": 261558,
+      "event_id": 87,
+      "user_id": 39648,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "蕾-费尔南德斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "羊哈奇"
+    },
+    {
+      "id": 261559,
+      "event_id": 87,
+      "user_id": 39687,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "蕾-费尔南德斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "嘚嘚啵咿"
+    },
+    {
+      "id": 261560,
+      "event_id": 87,
+      "user_id": 39933,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "蕾-费尔南德斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Oreache"
+    },
+    {
+      "id": 261537,
+      "event_id": 87,
+      "user_id": 39938,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "萌***落"
+    },
+    {
+      "id": 261561,
+      "event_id": 87,
+      "user_id": 39941,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "蕾-费尔南德斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "多吃点不怕胖123"
+    },
+    {
+      "id": 261562,
+      "event_id": 87,
+      "user_id": 39942,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "蕾-费尔南德斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "毛毛猫猫喵喵喵喵"
+    },
+    {
+      "id": 261495,
+      "event_id": 87,
+      "user_id": 40035,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "樊心所向是振东"
+    },
+    {
+      "id": 261538,
+      "event_id": 87,
+      "user_id": 40395,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "香山一根筋小松鼠"
+    },
+    {
+      "id": 261496,
+      "event_id": 87,
+      "user_id": 40563,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "C_Marin"
+    },
+    {
+      "id": 261497,
+      "event_id": 87,
+      "user_id": 40592,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "250赛的W"
+    },
+    {
+      "id": 261498,
+      "event_id": 87,
+      "user_id": 40616,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "Ace_Moment"
+    },
+    {
+      "id": 261539,
+      "event_id": 87,
+      "user_id": 40717,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "Beautysofia"
+    },
+    {
+      "id": 261499,
+      "event_id": 87,
+      "user_id": 40798,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "怀***蕴"
+    },
+    {
+      "id": 261540,
+      "event_id": 87,
+      "user_id": 40799,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "Markwu0626"
+    },
+    {
+      "id": 261500,
+      "event_id": 87,
+      "user_id": 40800,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "宋承宪我老公"
+    },
+    {
+      "id": 261541,
+      "event_id": 87,
+      "user_id": 40966,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "风泽_2022"
+    },
+    {
+      "id": 261501,
+      "event_id": 87,
+      "user_id": 40978,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "v逍遥自在1"
+    },
+    {
+      "id": 261502,
+      "event_id": 87,
+      "user_id": 40992,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "这位沈女士"
+    },
+    {
+      "id": 261503,
+      "event_id": 87,
+      "user_id": 41074,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "梦***e"
+    },
+    {
+      "id": 261563,
+      "event_id": 87,
+      "user_id": 41086,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "蕾-费尔南德斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "153******07"
+    },
+    {
+      "id": 261504,
+      "event_id": 87,
+      "user_id": 41426,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "a***8"
+    },
+    {
+      "id": 261542,
+      "event_id": 87,
+      "user_id": 41679,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "卡萨特金娜"
+      ],
+      "fill_status": "球员输球",
+      "username": "爱网球的女孩子"
+    },
+    {
+      "id": 261564,
+      "event_id": 87,
+      "user_id": 41697,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "蕾-费尔南德斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Ariana Lin"
+    },
+    {
+      "id": 261565,
+      "event_id": 87,
+      "user_id": 41718,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "蕾-费尔南德斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "爱网球的小女孩子"
+    },
+    {
+      "id": 261566,
+      "event_id": 87,
+      "user_id": 42235,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "蕾-费尔南德斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "我是我自己zyt"
+    },
+    {
+      "id": 261385,
+      "event_id": 87,
+      "user_id": 42354,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "科维托娃"
+      ],
+      "fill_status": "球员输球",
+      "username": "白***超"
+    },
+    {
+      "id": 261505,
+      "event_id": 87,
+      "user_id": 42403,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-06-23T06:27:22.000000Z",
+      "players": [
+        "维基奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "兰娃娃泥哈cc"
+    }
+  ]
+}

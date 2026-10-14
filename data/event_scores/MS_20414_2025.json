@@ -1,0 +1,3561 @@
+{
+  "event_id": "20414",
+  "year": 2025,
+  "tour": "MS",
+  "city": "汉堡",
+  "page_type": "score",
+  "completed": true,
+  "fetched_at": "2026-10-13 23:32:48",
+  "rows": [
+    {
+      "id": 238623,
+      "event_id": 83,
+      "user_id": 34382,
+      "status": 2,
+      "day": 7,
+      "score": 500,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "莱赫奇卡",
+        "达维多维奇",
+        "阿利亚西姆",
+        "埃切韦里",
+        "卢布列夫",
+        "科博利"
+      ],
+      "fill_status": "存活",
+      "username": "弗外外茨"
+    },
+    {
+      "id": 238576,
+      "event_id": 83,
+      "user_id": 30992,
+      "status": -2,
+      "day": 6,
+      "score": 330,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "包蒂斯塔-阿古特",
+        "蒂亚福",
+        "埃切韦里",
+        "阿利亚西姆",
+        "科博利",
+        "卢布列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "Ha-1234567"
+    },
+    {
+      "id": 238543,
+      "event_id": 83,
+      "user_id": 28510,
+      "status": 0,
+      "day": 5,
+      "score": 200,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "卢布列夫",
+        "科博利",
+        "埃切韦里",
+        "阿利亚西姆"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "akane 11"
+    },
+    {
+      "id": 238511,
+      "event_id": 83,
+      "user_id": 7042,
+      "status": -2,
+      "day": 5,
+      "score": 200,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "莱赫奇卡",
+        "科博利",
+        "卢布列夫",
+        "阿利亚西姆",
+        "埃切韦里"
+      ],
+      "fill_status": "球员输球",
+      "username": "__Novak__"
+    },
+    {
+      "id": 238515,
+      "event_id": 83,
+      "user_id": 10322,
+      "status": -2,
+      "day": 5,
+      "score": 200,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "莱赫奇卡",
+        "阿利亚西姆",
+        "卢布列夫",
+        "科博利",
+        "埃切韦里"
+      ],
+      "fill_status": "球员输球",
+      "username": "ElvisD95"
+    },
+    {
+      "id": 238529,
+      "event_id": 83,
+      "user_id": 24543,
+      "status": -2,
+      "day": 5,
+      "score": 200,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "亚-兹韦列夫",
+        "科博利",
+        "卢布列夫",
+        "阿利亚西姆",
+        "埃切韦里"
+      ],
+      "fill_status": "球员输球",
+      "username": "aeonbert"
+    },
+    {
+      "id": 238532,
+      "event_id": 83,
+      "user_id": 26279,
+      "status": -2,
+      "day": 5,
+      "score": 200,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "莱赫奇卡",
+        "科博利",
+        "卢布列夫",
+        "阿利亚西姆",
+        "埃切韦里"
+      ],
+      "fill_status": "球员输球",
+      "username": "南北南南i"
+    },
+    {
+      "id": 238534,
+      "event_id": 83,
+      "user_id": 27372,
+      "status": -2,
+      "day": 5,
+      "score": 200,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "莱赫奇卡",
+        "科博利",
+        "卢布列夫",
+        "阿利亚西姆",
+        "埃切韦里"
+      ],
+      "fill_status": "球员输球",
+      "username": "镇远神"
+    },
+    {
+      "id": 238536,
+      "event_id": 83,
+      "user_id": 27450,
+      "status": -2,
+      "day": 5,
+      "score": 200,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "莱赫奇卡",
+        "科博利",
+        "卢布列夫",
+        "阿利亚西姆",
+        "埃切韦里"
+      ],
+      "fill_status": "球员输球",
+      "username": "MobiusZH"
+    },
+    {
+      "id": 238541,
+      "event_id": 83,
+      "user_id": 28485,
+      "status": -2,
+      "day": 5,
+      "score": 200,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "中岛布兰登",
+        "科博利",
+        "卢布列夫",
+        "阿利亚西姆",
+        "埃切韦里"
+      ],
+      "fill_status": "球员输球",
+      "username": "Jiakun Yi"
+    },
+    {
+      "id": 238564,
+      "event_id": 83,
+      "user_id": 29703,
+      "status": -2,
+      "day": 5,
+      "score": 200,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "莱赫奇卡",
+        "科博利",
+        "卢布列夫",
+        "阿利亚西姆",
+        "埃切韦里"
+      ],
+      "fill_status": "球员输球",
+      "username": "那不勒斯Jasper"
+    },
+    {
+      "id": 238589,
+      "event_id": 83,
+      "user_id": 32121,
+      "status": -2,
+      "day": 5,
+      "score": 200,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "卢布列夫",
+        "阿利亚西姆",
+        "埃切韦里"
+      ],
+      "fill_status": "球员输球",
+      "username": "用户7856057992"
+    },
+    {
+      "id": 238594,
+      "event_id": 83,
+      "user_id": 32796,
+      "status": -2,
+      "day": 5,
+      "score": 200,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "莱赫奇卡",
+        "科博利",
+        "卢布列夫",
+        "阿利亚西姆",
+        "埃切韦里"
+      ],
+      "fill_status": "球员输球",
+      "username": "紫之隐小屋"
+    },
+    {
+      "id": 238614,
+      "event_id": 83,
+      "user_id": 34148,
+      "status": -2,
+      "day": 5,
+      "score": 200,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "卢布列夫",
+        "阿利亚西姆",
+        "埃切韦里"
+      ],
+      "fill_status": "球员输球",
+      "username": "萨卡外"
+    },
+    {
+      "id": 238618,
+      "event_id": 83,
+      "user_id": 34340,
+      "status": -2,
+      "day": 5,
+      "score": 200,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "亚-兹韦列夫",
+        "科博利",
+        "埃切韦里",
+        "卢布列夫",
+        "阿利亚西姆"
+      ],
+      "fill_status": "球员输球",
+      "username": "Ivejoy"
+    },
+    {
+      "id": 238629,
+      "event_id": 83,
+      "user_id": 35032,
+      "status": -2,
+      "day": 5,
+      "score": 200,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "卢布列夫",
+        "阿利亚西姆",
+        "埃切韦里"
+      ],
+      "fill_status": "球员输球",
+      "username": "旧纳琛"
+    },
+    {
+      "id": 238631,
+      "event_id": 83,
+      "user_id": 35082,
+      "status": -2,
+      "day": 5,
+      "score": 200,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "米勒",
+        "蒂亚福",
+        "卢布列夫",
+        "阿利亚西姆",
+        "埃切韦里"
+      ],
+      "fill_status": "球员输球",
+      "username": "年终的W"
+    },
+    {
+      "id": 238632,
+      "event_id": 83,
+      "user_id": 35099,
+      "status": -2,
+      "day": 5,
+      "score": 200,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "中岛布兰登",
+        "科博利",
+        "卢布列夫",
+        "阿利亚西姆",
+        "埃切韦里"
+      ],
+      "fill_status": "球员输球",
+      "username": "苟***术"
+    },
+    {
+      "id": 238636,
+      "event_id": 83,
+      "user_id": 35265,
+      "status": -2,
+      "day": 5,
+      "score": 200,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "中岛布兰登",
+        "阿利亚西姆",
+        "卢布列夫",
+        "科博利",
+        "埃切韦里"
+      ],
+      "fill_status": "球员输球",
+      "username": "米***术"
+    },
+    {
+      "id": 238646,
+      "event_id": 83,
+      "user_id": 36847,
+      "status": -2,
+      "day": 5,
+      "score": 200,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "中岛布兰登",
+        "科博利",
+        "卢布列夫",
+        "阿利亚西姆",
+        "埃切韦里"
+      ],
+      "fill_status": "球员输球",
+      "username": "Leo_T1nyFo2est_autor"
+    },
+    {
+      "id": 238653,
+      "event_id": 83,
+      "user_id": 37317,
+      "status": -2,
+      "day": 5,
+      "score": 200,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "卢布列夫",
+        "阿利亚西姆",
+        "埃切韦里"
+      ],
+      "fill_status": "球员输球",
+      "username": "零***澄"
+    },
+    {
+      "id": 238658,
+      "event_id": 83,
+      "user_id": 37559,
+      "status": -2,
+      "day": 5,
+      "score": 200,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "莱赫奇卡",
+        "科博利",
+        "卢布列夫",
+        "阿利亚西姆",
+        "埃切韦里"
+      ],
+      "fill_status": "球员输球",
+      "username": "网球联赛TennisLeague"
+    },
+    {
+      "id": 238666,
+      "event_id": 83,
+      "user_id": 38686,
+      "status": -2,
+      "day": 5,
+      "score": 200,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "亚-兹韦列夫",
+        "蒂亚福",
+        "卢布列夫",
+        "阿利亚西姆",
+        "埃切韦里"
+      ],
+      "fill_status": "球员输球",
+      "username": "福基纳夺冠就改名__哈卡卡可"
+    },
+    {
+      "id": 238671,
+      "event_id": 83,
+      "user_id": 39223,
+      "status": -2,
+      "day": 5,
+      "score": 200,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "亚-兹韦列夫",
+        "科博利",
+        "卢布列夫",
+        "阿利亚西姆",
+        "埃切韦里"
+      ],
+      "fill_status": "球员输球",
+      "username": "巴***机"
+    },
+    {
+      "id": 238691,
+      "event_id": 83,
+      "user_id": 39944,
+      "status": -2,
+      "day": 5,
+      "score": 200,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "亚-兹韦列夫",
+        "科博利",
+        "卢布列夫",
+        "阿利亚西姆",
+        "埃切韦里"
+      ],
+      "fill_status": "球员输球",
+      "username": "萌***尼"
+    },
+    {
+      "id": 238697,
+      "event_id": 83,
+      "user_id": 40587,
+      "status": -2,
+      "day": 5,
+      "score": 200,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "亚-兹韦列夫",
+        "达维多维奇",
+        "阿利亚西姆",
+        "科博利",
+        "埃切韦里"
+      ],
+      "fill_status": "球员输球",
+      "username": "一寺一壶酒尔乐"
+    },
+    {
+      "id": 238699,
+      "event_id": 83,
+      "user_id": 40616,
+      "status": -2,
+      "day": 5,
+      "score": 200,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "米勒",
+        "蒂亚福",
+        "卢布列夫",
+        "阿利亚西姆",
+        "埃切韦里"
+      ],
+      "fill_status": "球员输球",
+      "username": "Ace_Moment"
+    },
+    {
+      "id": 238642,
+      "event_id": 83,
+      "user_id": 35965,
+      "status": 0,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "米勒",
+        "达维多维奇",
+        "阿利亚西姆"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "Schurkel Yeein"
+    },
+    {
+      "id": 238505,
+      "event_id": 83,
+      "user_id": 2834,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "卢布列夫",
+        "包蒂斯塔-阿古特"
+      ],
+      "fill_status": "球员输球",
+      "username": "未来之匙"
+    },
+    {
+      "id": 238512,
+      "event_id": 83,
+      "user_id": 8895,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "卢布列夫",
+        "莱赫奇卡"
+      ],
+      "fill_status": "球员输球",
+      "username": "木的讷"
+    },
+    {
+      "id": 238547,
+      "event_id": 83,
+      "user_id": 28673,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "卢布列夫",
+        "包蒂斯塔-阿古特"
+      ],
+      "fill_status": "球员输球",
+      "username": "神秘的药"
+    },
+    {
+      "id": 238549,
+      "event_id": 83,
+      "user_id": 28845,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "卢布列夫",
+        "科博利",
+        "阿利亚西姆",
+        "莱赫奇卡"
+      ],
+      "fill_status": "球员输球",
+      "username": "浙江土特产"
+    },
+    {
+      "id": 238550,
+      "event_id": 83,
+      "user_id": 28884,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "莱赫奇卡",
+        "科博利",
+        "卢布列夫",
+        "包蒂斯塔-阿古特"
+      ],
+      "fill_status": "球员输球",
+      "username": "Ryan-Tennis"
+    },
+    {
+      "id": 238556,
+      "event_id": 83,
+      "user_id": 29057,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "阿利亚西姆",
+        "莱赫奇卡"
+      ],
+      "fill_status": "球员输球",
+      "username": "WillKris锴"
+    },
+    {
+      "id": 238557,
+      "event_id": 83,
+      "user_id": 29130,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "莱赫奇卡",
+        "蒂亚福",
+        "卢布列夫",
+        "米勒"
+      ],
+      "fill_status": "球员输球",
+      "username": "Tony-Tennis"
+    },
+    {
+      "id": 238558,
+      "event_id": 83,
+      "user_id": 29270,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "卢布列夫",
+        "包蒂斯塔-阿古特"
+      ],
+      "fill_status": "球员输球",
+      "username": "xxxjusAng"
+    },
+    {
+      "id": 238559,
+      "event_id": 83,
+      "user_id": 29300,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "卢布列夫",
+        "莱赫奇卡"
+      ],
+      "fill_status": "球员输球",
+      "username": "-Frictionless"
+    },
+    {
+      "id": 238570,
+      "event_id": 83,
+      "user_id": 30552,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "卢布列夫",
+        "莱赫奇卡"
+      ],
+      "fill_status": "球员输球",
+      "username": "卡尼TT"
+    },
+    {
+      "id": 238571,
+      "event_id": 83,
+      "user_id": 30566,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "米勒",
+        "科博利",
+        "埃切韦里",
+        "莱赫奇卡"
+      ],
+      "fill_status": "球员输球",
+      "username": "变现狂魔_"
+    },
+    {
+      "id": 238572,
+      "event_id": 83,
+      "user_id": 30567,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "米勒",
+        "埃切韦里",
+        "卢布列夫",
+        "包蒂斯塔-阿古特"
+      ],
+      "fill_status": "球员输球",
+      "username": "N***_"
+    },
+    {
+      "id": 238575,
+      "event_id": 83,
+      "user_id": 30932,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "卢布列夫",
+        "莱赫奇卡"
+      ],
+      "fill_status": "球员输球",
+      "username": "samsonyip"
+    },
+    {
+      "id": 238577,
+      "event_id": 83,
+      "user_id": 31115,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "亚-兹韦列夫",
+        "科博利",
+        "卢布列夫",
+        "包蒂斯塔-阿古特"
+      ],
+      "fill_status": "球员输球",
+      "username": "青花比目"
+    },
+    {
+      "id": 238579,
+      "event_id": 83,
+      "user_id": 31375,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "中岛布兰登",
+        "科博利",
+        "阿利亚西姆",
+        "莱赫奇卡"
+      ],
+      "fill_status": "球员输球",
+      "username": "刘小闹小闹闹呀"
+    },
+    {
+      "id": 238583,
+      "event_id": 83,
+      "user_id": 31550,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "卢布列夫",
+        "莱赫奇卡"
+      ],
+      "fill_status": "球员输球",
+      "username": "九_墨_"
+    },
+    {
+      "id": 238588,
+      "event_id": 83,
+      "user_id": 32088,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "卢布列夫",
+        "包蒂斯塔-阿古特"
+      ],
+      "fill_status": "球员输球",
+      "username": "浮空a倾城"
+    },
+    {
+      "id": 238590,
+      "event_id": 83,
+      "user_id": 32322,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "亚-兹韦列夫",
+        "蒂亚福",
+        "卢布列夫",
+        "米勒"
+      ],
+      "fill_status": "球员输球",
+      "username": "大满贯的W"
+    },
+    {
+      "id": 238593,
+      "event_id": 83,
+      "user_id": 32763,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "卢布列夫",
+        "蒂亚福",
+        "阿利亚西姆",
+        "包蒂斯塔-阿古特"
+      ],
+      "fill_status": "球员输球",
+      "username": "1000赛的W"
+    },
+    {
+      "id": 238601,
+      "event_id": 83,
+      "user_id": 33233,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "莱赫奇卡",
+        "科博利",
+        "卢布列夫",
+        "包蒂斯塔-阿古特"
+      ],
+      "fill_status": "球员输球",
+      "username": "精明姐姐的小秘"
+    },
+    {
+      "id": 238602,
+      "event_id": 83,
+      "user_id": 33262,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "阿利亚西姆",
+        "包蒂斯塔-阿古特"
+      ],
+      "fill_status": "球员输球",
+      "username": "Oreache_TAO"
+    },
+    {
+      "id": 238644,
+      "event_id": 83,
+      "user_id": 36253,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "亚-兹韦列夫",
+        "科博利",
+        "卢布列夫",
+        "莱赫奇卡"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞麦皮真皮"
+    },
+    {
+      "id": 238651,
+      "event_id": 83,
+      "user_id": 37256,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "卢布列夫",
+        "莱赫奇卡"
+      ],
+      "fill_status": "球员输球",
+      "username": "Dagenais"
+    },
+    {
+      "id": 238676,
+      "event_id": 83,
+      "user_id": 39251,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "莱赫奇卡",
+        "科博利",
+        "卢布列夫",
+        "包蒂斯塔-阿古特"
+      ],
+      "fill_status": "球员输球",
+      "username": "c***i"
+    },
+    {
+      "id": 238677,
+      "event_id": 83,
+      "user_id": 39367,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "莱赫奇卡",
+        "阿利亚西姆",
+        "卢布列夫",
+        "包蒂斯塔-阿古特"
+      ],
+      "fill_status": "球员输球",
+      "username": "强化型米斯alternate"
+    },
+    {
+      "id": 238686,
+      "event_id": 83,
+      "user_id": 39687,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "卢布列夫",
+        "科博利",
+        "埃切韦里",
+        "莱赫奇卡"
+      ],
+      "fill_status": "球员输球",
+      "username": "嘚嘚啵咿"
+    },
+    {
+      "id": 238690,
+      "event_id": 83,
+      "user_id": 39941,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "卢布列夫",
+        "科博利",
+        "阿利亚西姆",
+        "莱赫奇卡"
+      ],
+      "fill_status": "球员输球",
+      "username": "多吃点不怕胖123"
+    },
+    {
+      "id": 238704,
+      "event_id": 83,
+      "user_id": 40803,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "卢布列夫",
+        "莱赫奇卡"
+      ],
+      "fill_status": "球员输球",
+      "username": "Maya Wong"
+    },
+    {
+      "id": 238705,
+      "event_id": 83,
+      "user_id": 40905,
+      "status": -2,
+      "day": 4,
+      "score": 100,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "中岛布兰登",
+        "埃切韦里",
+        "阿利亚西姆",
+        "米勒"
+      ],
+      "fill_status": "球员输球",
+      "username": "追星打工人"
+    },
+    {
+      "id": 238683,
+      "event_id": 83,
+      "user_id": 39561,
+      "status": 0,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "中岛布兰登",
+        "阿利亚西姆"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "luckybweh_"
+    },
+    {
+      "id": 238499,
+      "event_id": 83,
+      "user_id": 603,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "卢布列夫",
+        "科博利",
+        "乌戈-卡拉贝利"
+      ],
+      "fill_status": "球员输球",
+      "username": "Change琛子"
+    },
+    {
+      "id": 238507,
+      "event_id": 83,
+      "user_id": 5471,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "乌戈-卡拉贝利"
+      ],
+      "fill_status": "球员输球",
+      "username": "姬州"
+    },
+    {
+      "id": 238517,
+      "event_id": 83,
+      "user_id": 11119,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "我宝儿子不露脸不改名"
+    },
+    {
+      "id": 238528,
+      "event_id": 83,
+      "user_id": 24258,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "卢布列夫",
+        "科博利",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "RV--RV"
+    },
+    {
+      "id": 238530,
+      "event_id": 83,
+      "user_id": 25850,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "达维多维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "jellyddfish"
+    },
+    {
+      "id": 238538,
+      "event_id": 83,
+      "user_id": 27983,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "中岛布兰登",
+        "科博利",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "吃货大爱凯凯_982"
+    },
+    {
+      "id": 238540,
+      "event_id": 83,
+      "user_id": 28021,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "卢布列夫",
+        "科博利",
+        "达维多维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "AdonisZhang"
+    },
+    {
+      "id": 238554,
+      "event_id": 83,
+      "user_id": 29026,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "达维多维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "德不驴"
+    },
+    {
+      "id": 238562,
+      "event_id": 83,
+      "user_id": 29351,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "卢布列夫",
+        "科博利",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "日***岸"
+    },
+    {
+      "id": 238563,
+      "event_id": 83,
+      "user_id": 29479,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "中岛布兰登",
+        "科博利",
+        "蒂亚福"
+      ],
+      "fill_status": "球员输球",
+      "username": "马戏团冠军"
+    },
+    {
+      "id": 238569,
+      "event_id": 83,
+      "user_id": 30480,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "卢布列夫",
+        "达维多维奇",
+        "弗-塞伦多洛"
+      ],
+      "fill_status": "球员输球",
+      "username": "yh11yh22"
+    },
+    {
+      "id": 238580,
+      "event_id": 83,
+      "user_id": 31388,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "卢布列夫",
+        "科博利",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "BORIS-_-i"
+    },
+    {
+      "id": 238581,
+      "event_id": 83,
+      "user_id": 31465,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "莱赫奇卡",
+        "科博利",
+        "蒂亚福"
+      ],
+      "fill_status": "球员输球",
+      "username": "188******62"
+    },
+    {
+      "id": 238582,
+      "event_id": 83,
+      "user_id": 31549,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "强化型米斯prototype"
+    },
+    {
+      "id": 238585,
+      "event_id": 83,
+      "user_id": 31705,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "蒂亚福"
+      ],
+      "fill_status": "球员输球",
+      "username": "Pomelo琛"
+    },
+    {
+      "id": 238586,
+      "event_id": 83,
+      "user_id": 31768,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "达维多维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "WillKrisKai"
+    },
+    {
+      "id": 238591,
+      "event_id": 83,
+      "user_id": 32552,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "莱赫奇卡",
+        "科博利",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "海狸先生的小翘臀"
+    },
+    {
+      "id": 238595,
+      "event_id": 83,
+      "user_id": 32980,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "卢布列夫",
+        "科博利",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "Elroy ZHANG"
+    },
+    {
+      "id": 238599,
+      "event_id": 83,
+      "user_id": 33162,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "卢布列夫",
+        "科博利",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "r***i"
+    },
+    {
+      "id": 238600,
+      "event_id": 83,
+      "user_id": 33207,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "Samuel Bao"
+    },
+    {
+      "id": 238603,
+      "event_id": 83,
+      "user_id": 33264,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "卢布列夫",
+        "阿利亚西姆",
+        "中岛布兰登"
+      ],
+      "fill_status": "球员输球",
+      "username": "林强行长的小挎包"
+    },
+    {
+      "id": 238604,
+      "event_id": 83,
+      "user_id": 33276,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "卢布列夫",
+        "科博利",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "唯爱张帅"
+    },
+    {
+      "id": 238608,
+      "event_id": 83,
+      "user_id": 33637,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "莱赫奇卡",
+        "科博利",
+        "弗-塞伦多洛"
+      ],
+      "fill_status": "球员输球",
+      "username": "Rccc1888"
+    },
+    {
+      "id": 238612,
+      "event_id": 83,
+      "user_id": 33828,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "卢布列夫",
+        "阿利亚西姆",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "重生之我在幸存者十连冠"
+    },
+    {
+      "id": 238620,
+      "event_id": 83,
+      "user_id": 34367,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "卢布列夫",
+        "科博利",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "网球爱好者Schur"
+    },
+    {
+      "id": 238622,
+      "event_id": 83,
+      "user_id": 34369,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "卢布列夫",
+        "蒂亚福",
+        "达维多维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "稀有气体hyk"
+    },
+    {
+      "id": 238626,
+      "event_id": 83,
+      "user_id": 34627,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "卢布列夫",
+        "科博利",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "一***客"
+    },
+    {
+      "id": 238635,
+      "event_id": 83,
+      "user_id": 35132,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "米勒",
+        "蒂亚福",
+        "中岛布兰登"
+      ],
+      "fill_status": "球员输球",
+      "username": "h***t"
+    },
+    {
+      "id": 238640,
+      "event_id": 83,
+      "user_id": 35898,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "莱赫奇卡",
+        "科博利",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "吴二饼"
+    },
+    {
+      "id": 238641,
+      "event_id": 83,
+      "user_id": 35948,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "卢布列夫",
+        "科博利",
+        "达维多维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞二皮"
+    },
+    {
+      "id": 238645,
+      "event_id": 83,
+      "user_id": 36346,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "卢布列夫",
+        "科博利",
+        "达维多维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "普普通通的成年人_"
+    },
+    {
+      "id": 238647,
+      "event_id": 83,
+      "user_id": 37043,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "卢布列夫",
+        "科博利",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "法拉利策略组"
+    },
+    {
+      "id": 238648,
+      "event_id": 83,
+      "user_id": 37108,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "弗-塞伦多洛"
+      ],
+      "fill_status": "球员输球",
+      "username": "交H于一点"
+    },
+    {
+      "id": 238656,
+      "event_id": 83,
+      "user_id": 37556,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "莱赫奇卡",
+        "科博利",
+        "达维多维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "irenelucky_117"
+    },
+    {
+      "id": 238673,
+      "event_id": 83,
+      "user_id": 39230,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "莱赫奇卡",
+        "阿利亚西姆",
+        "弗-塞伦多洛"
+      ],
+      "fill_status": "球员输球",
+      "username": "子***寒"
+    },
+    {
+      "id": 238674,
+      "event_id": 83,
+      "user_id": 39231,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "中岛布兰登",
+        "姆佩奇-佩里卡尔",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "taru wa"
+    },
+    {
+      "id": 238675,
+      "event_id": 83,
+      "user_id": 39232,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "莱赫奇卡",
+        "科博利",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "爱***d"
+    },
+    {
+      "id": 238684,
+      "event_id": 83,
+      "user_id": 39648,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "达维多维奇",
+        "弗-塞伦多洛"
+      ],
+      "fill_status": "球员输球",
+      "username": "羊哈奇"
+    },
+    {
+      "id": 238685,
+      "event_id": 83,
+      "user_id": 39652,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "卢布列夫",
+        "蒂亚福",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "Xena"
+    },
+    {
+      "id": 238687,
+      "event_id": 83,
+      "user_id": 39920,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "莱赫奇卡",
+        "科博利",
+        "达维多维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "无***痕"
+    },
+    {
+      "id": 238688,
+      "event_id": 83,
+      "user_id": 39933,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "米勒",
+        "达维多维奇",
+        "乌戈-卡拉贝利"
+      ],
+      "fill_status": "球员输球",
+      "username": "Oreache"
+    },
+    {
+      "id": 238692,
+      "event_id": 83,
+      "user_id": 40054,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "莱赫奇卡",
+        "蒂亚福",
+        "达维多维奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "唐老鸭爱schur"
+    },
+    {
+      "id": 238693,
+      "event_id": 83,
+      "user_id": 40265,
+      "status": -2,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科博利",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "稀有的木臼犬"
+    },
+    {
+      "id": 238503,
+      "event_id": 83,
+      "user_id": 2156,
+      "status": -3,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "卢布列夫",
+        "科博利",
+        "达尔德里"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "和楼盘规模破破"
+    },
+    {
+      "id": 238695,
+      "event_id": 83,
+      "user_id": 40457,
+      "status": -3,
+      "day": 3,
+      "score": 75,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "亚-兹韦列夫",
+        "蒂亚福",
+        "亚-兹韦列夫"
+      ],
+      "fill_status": "自杀(重复)",
+      "username": "Verelzorro"
+    },
+    {
+      "id": 238501,
+      "event_id": 83,
+      "user_id": 1956,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "卢布列夫",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "芋y头h小m生"
+    },
+    {
+      "id": 238502,
+      "event_id": 83,
+      "user_id": 2005,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "卢布列夫",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞麦皮"
+    },
+    {
+      "id": 238510,
+      "event_id": 83,
+      "user_id": 6623,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "莱赫奇卡",
+        "科梅萨纳"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞三皮"
+    },
+    {
+      "id": 238518,
+      "event_id": 83,
+      "user_id": 15424,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Emppu99"
+    },
+    {
+      "id": 238542,
+      "event_id": 83,
+      "user_id": 28509,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "米勒",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "夕***阳"
+    },
+    {
+      "id": 238545,
+      "event_id": 83,
+      "user_id": 28632,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "卢布列夫",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "y***7"
+    },
+    {
+      "id": 238553,
+      "event_id": 83,
+      "user_id": 29025,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "包蒂斯塔-阿古特",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "伊***贝"
+    },
+    {
+      "id": 238555,
+      "event_id": 83,
+      "user_id": 29045,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "卢布列夫",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Kwan-tennis"
+    },
+    {
+      "id": 238568,
+      "event_id": 83,
+      "user_id": 30456,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "卢布列夫",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "S***d"
+    },
+    {
+      "id": 238578,
+      "event_id": 83,
+      "user_id": 31354,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "科梅萨纳"
+      ],
+      "fill_status": "球员输球",
+      "username": "派派派崔克"
+    },
+    {
+      "id": 238596,
+      "event_id": 83,
+      "user_id": 33015,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "卢布列夫",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "一位神秘的来Ke"
+    },
+    {
+      "id": 238605,
+      "event_id": 83,
+      "user_id": 33308,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "莱赫奇卡",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "西瓜太郎笑嘻嘻"
+    },
+    {
+      "id": 238609,
+      "event_id": 83,
+      "user_id": 33657,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "中岛布兰登",
+        "布勃利克"
+      ],
+      "fill_status": "球员输球",
+      "username": "Schurink舒尔克"
+    },
+    {
+      "id": 238619,
+      "event_id": 83,
+      "user_id": 34350,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "中岛布兰登",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "风儿007008"
+    },
+    {
+      "id": 238627,
+      "event_id": 83,
+      "user_id": 34710,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "懒觉鱼睡不醒"
+    },
+    {
+      "id": 238630,
+      "event_id": 83,
+      "user_id": 35077,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "布勃利克"
+      ],
+      "fill_status": "球员输球",
+      "username": "500赛的W"
+    },
+    {
+      "id": 238633,
+      "event_id": 83,
+      "user_id": 35126,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "卢布列夫",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "M***y"
+    },
+    {
+      "id": 238634,
+      "event_id": 83,
+      "user_id": 35127,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "莱赫奇卡",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "崔***啊"
+    },
+    {
+      "id": 238643,
+      "event_id": 83,
+      "user_id": 35974,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "中岛布兰登",
+        "布勃利克"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞四皮"
+    },
+    {
+      "id": 238650,
+      "event_id": 83,
+      "user_id": 37184,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "中岛布兰登",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "爱***森"
+    },
+    {
+      "id": 238659,
+      "event_id": 83,
+      "user_id": 37564,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "精神故乡丝芙兰"
+    },
+    {
+      "id": 238660,
+      "event_id": 83,
+      "user_id": 37569,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "亚-兹韦列夫",
+        "布勃利克"
+      ],
+      "fill_status": "球员输球",
+      "username": "L***e"
+    },
+    {
+      "id": 238661,
+      "event_id": 83,
+      "user_id": 37582,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "卢布列夫",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "D***3"
+    },
+    {
+      "id": 238662,
+      "event_id": 83,
+      "user_id": 37595,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "莱赫奇卡",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "类胡萝卜素a"
+    },
+    {
+      "id": 238663,
+      "event_id": 83,
+      "user_id": 37596,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "中岛布兰登",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "188*****355"
+    },
+    {
+      "id": 238670,
+      "event_id": 83,
+      "user_id": 39155,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "亚-兹韦列夫",
+        "布勃利克"
+      ],
+      "fill_status": "球员输球",
+      "username": "T***_"
+    },
+    {
+      "id": 238678,
+      "event_id": 83,
+      "user_id": 39368,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "莱赫奇卡",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Elroy晨曦"
+    },
+    {
+      "id": 238681,
+      "event_id": 83,
+      "user_id": 39459,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "布勃利克"
+      ],
+      "fill_status": "球员输球",
+      "username": "vm10050134"
+    },
+    {
+      "id": 238694,
+      "event_id": 83,
+      "user_id": 40286,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "卢布列夫",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "薄荷奶绿不加冰_"
+    },
+    {
+      "id": 238698,
+      "event_id": 83,
+      "user_id": 40592,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "亚-兹韦列夫",
+        "布勃利克"
+      ],
+      "fill_status": "球员输球",
+      "username": "250赛的W"
+    },
+    {
+      "id": 238700,
+      "event_id": 83,
+      "user_id": 40691,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "米勒",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "三分之二糖有点甜"
+    },
+    {
+      "id": 238703,
+      "event_id": 83,
+      "user_id": 40800,
+      "status": -2,
+      "day": 2,
+      "score": 50,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "卢布列夫",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "宋承宪我老公"
+    },
+    {
+      "id": 238537,
+      "event_id": 83,
+      "user_id": 27545,
+      "status": 0,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "西蒙娃斯"
+    },
+    {
+      "id": 238587,
+      "event_id": 83,
+      "user_id": 31850,
+      "status": 0,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "安妍与花"
+    },
+    {
+      "id": 238598,
+      "event_id": 83,
+      "user_id": 33099,
+      "status": 0,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "La_Mariposa_Azul"
+    },
+    {
+      "id": 238657,
+      "event_id": 83,
+      "user_id": 37558,
+      "status": 0,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "136******19"
+    },
+    {
+      "id": 238667,
+      "event_id": 83,
+      "user_id": 38990,
+      "status": 0,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "G***e"
+    },
+    {
+      "id": 238707,
+      "event_id": 83,
+      "user_id": 41057,
+      "status": 0,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "Corin"
+    },
+    {
+      "id": 238497,
+      "event_id": 83,
+      "user_id": 272,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "tenfoynis"
+    },
+    {
+      "id": 238498,
+      "event_id": 83,
+      "user_id": 483,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "天邪幻世"
+    },
+    {
+      "id": 238500,
+      "event_id": 83,
+      "user_id": 1785,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "yangxiaqing2"
+    },
+    {
+      "id": 238504,
+      "event_id": 83,
+      "user_id": 2608,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "德约的粉丝"
+    },
+    {
+      "id": 238506,
+      "event_id": 83,
+      "user_id": 4936,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "liu8322925"
+    },
+    {
+      "id": 238508,
+      "event_id": 83,
+      "user_id": 6435,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "silver小小蓝"
+    },
+    {
+      "id": 238509,
+      "event_id": 83,
+      "user_id": 6603,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "梦是无尽的荒野"
+    },
+    {
+      "id": 238513,
+      "event_id": 83,
+      "user_id": 10037,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "黑***友"
+    },
+    {
+      "id": 238514,
+      "event_id": 83,
+      "user_id": 10103,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "wennuan78"
+    },
+    {
+      "id": 238516,
+      "event_id": 83,
+      "user_id": 11064,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "Poah优昙花_"
+    },
+    {
+      "id": 238519,
+      "event_id": 83,
+      "user_id": 16570,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "黑白_大山"
+    },
+    {
+      "id": 238520,
+      "event_id": 83,
+      "user_id": 17024,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "victorgc"
+    },
+    {
+      "id": 238521,
+      "event_id": 83,
+      "user_id": 17144,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "白云静水"
+    },
+    {
+      "id": 238522,
+      "event_id": 83,
+      "user_id": 21672,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "158*****803"
+    },
+    {
+      "id": 238523,
+      "event_id": 83,
+      "user_id": 22199,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "无聊-消遣"
+    },
+    {
+      "id": 238524,
+      "event_id": 83,
+      "user_id": 22773,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "Aeonbert"
+    },
+    {
+      "id": 238525,
+      "event_id": 83,
+      "user_id": 22854,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "不管小哈是我的"
+    },
+    {
+      "id": 238526,
+      "event_id": 83,
+      "user_id": 23015,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "lovehuiruoqi"
+    },
+    {
+      "id": 238527,
+      "event_id": 83,
+      "user_id": 24220,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "丨Salvation丨"
+    },
+    {
+      "id": 238531,
+      "event_id": 83,
+      "user_id": 25881,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "lwpsgj"
+    },
+    {
+      "id": 238533,
+      "event_id": 83,
+      "user_id": 27308,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "S***8"
+    },
+    {
+      "id": 238535,
+      "event_id": 83,
+      "user_id": 27446,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "指纹Nongzw"
+    },
+    {
+      "id": 238539,
+      "event_id": 83,
+      "user_id": 27994,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "板尼哟"
+    },
+    {
+      "id": 238544,
+      "event_id": 83,
+      "user_id": 28625,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "octbt"
+    },
+    {
+      "id": 238546,
+      "event_id": 83,
+      "user_id": 28636,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "啦***拉"
+    },
+    {
+      "id": 238548,
+      "event_id": 83,
+      "user_id": 28781,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "活宝哈u"
+    },
+    {
+      "id": 238551,
+      "event_id": 83,
+      "user_id": 28903,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "slay全场666"
+    },
+    {
+      "id": 238552,
+      "event_id": 83,
+      "user_id": 28991,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "张文静之歌"
+    },
+    {
+      "id": 238560,
+      "event_id": 83,
+      "user_id": 29320,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "寻感获叹"
+    },
+    {
+      "id": 238561,
+      "event_id": 83,
+      "user_id": 29335,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "moommomoommo"
+    },
+    {
+      "id": 238565,
+      "event_id": 83,
+      "user_id": 29978,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "外星驻地球代表"
+    },
+    {
+      "id": 238566,
+      "event_id": 83,
+      "user_id": 30209,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "_被窝哲学家_-"
+    },
+    {
+      "id": 238567,
+      "event_id": 83,
+      "user_id": 30373,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "Rhine Luke"
+    },
+    {
+      "id": 238573,
+      "event_id": 83,
+      "user_id": 30644,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "肥花太肥"
+    },
+    {
+      "id": 238574,
+      "event_id": 83,
+      "user_id": 30840,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "ilove33"
+    },
+    {
+      "id": 238584,
+      "event_id": 83,
+      "user_id": 31557,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "一***酒"
+    },
+    {
+      "id": 238592,
+      "event_id": 83,
+      "user_id": 32554,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "忆***枫"
+    },
+    {
+      "id": 238597,
+      "event_id": 83,
+      "user_id": 33026,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "底线老五"
+    },
+    {
+      "id": 238606,
+      "event_id": 83,
+      "user_id": 33386,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "逍遥笑叹红尘"
+    },
+    {
+      "id": 238607,
+      "event_id": 83,
+      "user_id": 33422,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "爱歪歪的坏宝贝"
+    },
+    {
+      "id": 238610,
+      "event_id": 83,
+      "user_id": 33770,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "用户7376159987"
+    },
+    {
+      "id": 238611,
+      "event_id": 83,
+      "user_id": 33812,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "用户5638241188"
+    },
+    {
+      "id": 238613,
+      "event_id": 83,
+      "user_id": 33869,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "z***4"
+    },
+    {
+      "id": 238615,
+      "event_id": 83,
+      "user_id": 34161,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "历***4"
+    },
+    {
+      "id": 238616,
+      "event_id": 83,
+      "user_id": 34178,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "→→←←↑↑"
+    },
+    {
+      "id": 238617,
+      "event_id": 83,
+      "user_id": 34229,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "深***名"
+    },
+    {
+      "id": 238621,
+      "event_id": 83,
+      "user_id": 34368,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "回破"
+    },
+    {
+      "id": 238624,
+      "event_id": 83,
+      "user_id": 34454,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "Kellan Li"
+    },
+    {
+      "id": 238625,
+      "event_id": 83,
+      "user_id": 34500,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "陈***8"
+    },
+    {
+      "id": 238628,
+      "event_id": 83,
+      "user_id": 35009,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "杰***鞋"
+    },
+    {
+      "id": 238637,
+      "event_id": 83,
+      "user_id": 35323,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "不羁灬的灵魂"
+    },
+    {
+      "id": 238638,
+      "event_id": 83,
+      "user_id": 35342,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "wb789005"
+    },
+    {
+      "id": 238639,
+      "event_id": 83,
+      "user_id": 35661,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "只***e"
+    },
+    {
+      "id": 238649,
+      "event_id": 83,
+      "user_id": 37154,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "曙***裳"
+    },
+    {
+      "id": 238652,
+      "event_id": 83,
+      "user_id": 37273,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "152*****282"
+    },
+    {
+      "id": 238654,
+      "event_id": 83,
+      "user_id": 37337,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "IggyAzaleaChina"
+    },
+    {
+      "id": 238655,
+      "event_id": 83,
+      "user_id": 37344,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "用户5472180102"
+    },
+    {
+      "id": 238664,
+      "event_id": 83,
+      "user_id": 37598,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "198******80"
+    },
+    {
+      "id": 238665,
+      "event_id": 83,
+      "user_id": 37599,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "漪***7"
+    },
+    {
+      "id": 238668,
+      "event_id": 83,
+      "user_id": 39088,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "勤***2"
+    },
+    {
+      "id": 238669,
+      "event_id": 83,
+      "user_id": 39126,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "晨曦中的楷模Elroy"
+    },
+    {
+      "id": 238672,
+      "event_id": 83,
+      "user_id": 39227,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "l***9"
+    },
+    {
+      "id": 238679,
+      "event_id": 83,
+      "user_id": 39396,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "178******17"
+    },
+    {
+      "id": 238680,
+      "event_id": 83,
+      "user_id": 39438,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "Lak-s"
+    },
+    {
+      "id": 238682,
+      "event_id": 83,
+      "user_id": 39492,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "A-ries_15"
+    },
+    {
+      "id": 238689,
+      "event_id": 83,
+      "user_id": 39935,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "田纳西草莓干加工厂"
+    },
+    {
+      "id": 238696,
+      "event_id": 83,
+      "user_id": 40561,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "达尔德里",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "迪***9"
+    },
+    {
+      "id": 238701,
+      "event_id": 83,
+      "user_id": 40798,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "怀***蕴"
+    },
+    {
+      "id": 238702,
+      "event_id": 83,
+      "user_id": 40799,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "Markwu0626"
+    },
+    {
+      "id": 238706,
+      "event_id": 83,
+      "user_id": 40950,
+      "status": -2,
+      "day": 1,
+      "score": 25,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛",
+        "施特鲁夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "萌兔戴上霍元甲"
+    },
+    {
+      "id": 238708,
+      "event_id": 83,
+      "user_id": 11228,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "佩-马丁内斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "第7路单车"
+    },
+    {
+      "id": 238709,
+      "event_id": 83,
+      "user_id": 28508,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "佩-马丁内斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "一杯思s"
+    },
+    {
+      "id": 238710,
+      "event_id": 83,
+      "user_id": 40702,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "佩-马丁内斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "中网亚军福基纳"
+    },
+    {
+      "id": 238711,
+      "event_id": 83,
+      "user_id": 40717,
+      "status": -2,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "佩-马丁内斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Beautysofia"
+    },
+    {
+      "id": 238712,
+      "event_id": 83,
+      "user_id": 39515,
+      "status": -4,
+      "day": 0,
+      "score": 1,
+      "updated_at": "2025-05-24T14:15:23.000000Z",
+      "players": [
+        "弗-塞伦多洛"
+      ],
+      "fill_status": "自杀(主备冲突)",
+      "username": "TaylorGAGA瑜"
+    }
+  ]
+}

@@ -1,0 +1,4020 @@
+{
+  "event_id": "26242",
+  "year": 2026,
+  "tour": "MS",
+  "city": "温斯顿塞勒姆",
+  "page_type": "score",
+  "completed": true,
+  "fetched_at": "2026-10-13 23:28:24",
+  "rows": [
+    {
+      "id": 661372,
+      "event_id": 174,
+      "user_id": 17144,
+      "status": -2,
+      "day": 5,
+      "score": 100,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "科瓦切维奇",
+        "巴埃斯",
+        "费里",
+        "布塞",
+        "邦齐"
+      ],
+      "fill_status": "球员输球",
+      "username": "白云静水"
+    },
+    {
+      "id": 661575,
+      "event_id": 174,
+      "user_id": 33422,
+      "status": 0,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达克沃斯",
+        "费里",
+        "毛罗然"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "爱歪歪的坏宝贝"
+    },
+    {
+      "id": 661450,
+      "event_id": 174,
+      "user_id": 36346,
+      "status": 0,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达克沃斯",
+        "胡-塞伦多洛",
+        "毛罗然"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "普普通通的成年人_"
+    },
+    {
+      "id": 661470,
+      "event_id": 174,
+      "user_id": 39230,
+      "status": 0,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "达姆",
+        "费里",
+        "布塞"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "子***寒"
+    },
+    {
+      "id": 661474,
+      "event_id": 174,
+      "user_id": 39478,
+      "status": 0,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达克沃斯",
+        "范德尚舒尔普",
+        "费里"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "_愉悦混乱_"
+    },
+    {
+      "id": 661489,
+      "event_id": 174,
+      "user_id": 40798,
+      "status": 0,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "科瓦切维奇",
+        "胡-塞伦多洛",
+        "费里"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "怀***蕴"
+    },
+    {
+      "id": 661358,
+      "event_id": 174,
+      "user_id": 116,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达克沃斯",
+        "胡-塞伦多洛",
+        "毛罗然",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "钱老奶奶"
+    },
+    {
+      "id": 661361,
+      "event_id": 174,
+      "user_id": 6623,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "达姆",
+        "巴埃斯",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞三皮"
+    },
+    {
+      "id": 661365,
+      "event_id": 174,
+      "user_id": 10103,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达克沃斯",
+        "巴埃斯",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "wennuan78"
+    },
+    {
+      "id": 661373,
+      "event_id": 174,
+      "user_id": 21672,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "科瓦切维奇",
+        "胡-塞伦多洛",
+        "费里",
+        "毛罗然"
+      ],
+      "fill_status": "球员输球",
+      "username": "158*****803"
+    },
+    {
+      "id": 661378,
+      "event_id": 174,
+      "user_id": 24483,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达姆",
+        "巴埃斯",
+        "费里",
+        "胡-塞伦多洛"
+      ],
+      "fill_status": "球员输球",
+      "username": "Chris Ivanovic"
+    },
+    {
+      "id": 661381,
+      "event_id": 174,
+      "user_id": 26589,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "科瓦切维奇",
+        "费里",
+        "邦齐",
+        "毛罗然"
+      ],
+      "fill_status": "球员输球",
+      "username": "流星飞舞啦啦啦"
+    },
+    {
+      "id": 661389,
+      "event_id": 174,
+      "user_id": 28485,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "科瓦切维奇",
+        "达尔德里",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "Jiakun Yi"
+    },
+    {
+      "id": 661390,
+      "event_id": 174,
+      "user_id": 28508,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "科瓦切维奇",
+        "范德尚舒尔普",
+        "费里",
+        "毛罗然"
+      ],
+      "fill_status": "球员输球",
+      "username": "一杯思s"
+    },
+    {
+      "id": 661402,
+      "event_id": 174,
+      "user_id": 30209,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达克沃斯",
+        "巴埃斯",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "_被窝哲学家_-"
+    },
+    {
+      "id": 661411,
+      "event_id": 174,
+      "user_id": 31433,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "科瓦切维奇",
+        "费里",
+        "毛罗然",
+        "胡-塞伦多洛"
+      ],
+      "fill_status": "球员输球",
+      "username": "Patrick Ding"
+    },
+    {
+      "id": 661592,
+      "event_id": 174,
+      "user_id": 32552,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达克沃斯",
+        "胡-塞伦多洛",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "海狸先生的小翘臀"
+    },
+    {
+      "id": 661429,
+      "event_id": 174,
+      "user_id": 33869,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "西西帕斯",
+        "胡-塞伦多洛",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "z***4"
+    },
+    {
+      "id": 661433,
+      "event_id": 174,
+      "user_id": 34382,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达姆",
+        "巴埃斯",
+        "费里",
+        "毛罗然"
+      ],
+      "fill_status": "球员输球",
+      "username": "弗外外茨"
+    },
+    {
+      "id": 661442,
+      "event_id": 174,
+      "user_id": 35127,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "科瓦切维奇",
+        "费里",
+        "邦齐",
+        "毛罗然"
+      ],
+      "fill_status": "球员输球",
+      "username": "崔***啊"
+    },
+    {
+      "id": 661447,
+      "event_id": 174,
+      "user_id": 35898,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "达克沃斯",
+        "巴埃斯",
+        "费里",
+        "胡-塞伦多洛"
+      ],
+      "fill_status": "球员输球",
+      "username": "吴二饼"
+    },
+    {
+      "id": 661452,
+      "event_id": 174,
+      "user_id": 36847,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "科瓦切维奇",
+        "胡-塞伦多洛",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "Leo_T1nyFo2est_autor"
+    },
+    {
+      "id": 661454,
+      "event_id": 174,
+      "user_id": 37043,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达克沃斯",
+        "胡-塞伦多洛",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "法拉利策略组"
+    },
+    {
+      "id": 661458,
+      "event_id": 174,
+      "user_id": 37273,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达克沃斯",
+        "巴埃斯",
+        "费里",
+        "毛罗然"
+      ],
+      "fill_status": "球员输球",
+      "username": "152*****282"
+    },
+    {
+      "id": 661459,
+      "event_id": 174,
+      "user_id": 37337,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "克-休伊特",
+        "胡-塞伦多洛",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "IggyAzaleaChina"
+    },
+    {
+      "id": 661466,
+      "event_id": 174,
+      "user_id": 39126,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "科瓦切维奇",
+        "巴埃斯",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "晨曦中的楷模Elroy"
+    },
+    {
+      "id": 661472,
+      "event_id": 174,
+      "user_id": 39367,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "达姆",
+        "胡-塞伦多洛",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "强化型米斯alternate"
+    },
+    {
+      "id": 661582,
+      "event_id": 174,
+      "user_id": 39413,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达克沃斯",
+        "巴埃斯",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "吡***吩"
+    },
+    {
+      "id": 661475,
+      "event_id": 174,
+      "user_id": 39514,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达克沃斯",
+        "胡-塞伦多洛",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "WintheTiebreak"
+    },
+    {
+      "id": 661482,
+      "event_id": 174,
+      "user_id": 39944,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达克沃斯",
+        "胡-塞伦多洛",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "萌***尼"
+    },
+    {
+      "id": 661483,
+      "event_id": 174,
+      "user_id": 40265,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "索内戈",
+        "胡-塞伦多洛",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "稀有的木臼犬"
+    },
+    {
+      "id": 661487,
+      "event_id": 174,
+      "user_id": 40587,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达姆",
+        "巴埃斯",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "一寺一壶酒尔乐"
+    },
+    {
+      "id": 661568,
+      "event_id": 174,
+      "user_id": 40616,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "科瓦切维奇",
+        "巴埃斯",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "Ace_Moment"
+    },
+    {
+      "id": 661498,
+      "event_id": 174,
+      "user_id": 42094,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达克沃斯",
+        "胡-塞伦多洛",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "w***3"
+    },
+    {
+      "id": 661500,
+      "event_id": 174,
+      "user_id": 42563,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达克沃斯",
+        "胡-塞伦多洛",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "沫小琦_259695"
+    },
+    {
+      "id": 661510,
+      "event_id": 174,
+      "user_id": 43803,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达克沃斯",
+        "胡-塞伦多洛",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "滑板2号"
+    },
+    {
+      "id": 661511,
+      "event_id": 174,
+      "user_id": 43939,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "马-贝鲁奇",
+        "达克沃斯",
+        "胡-塞伦多洛",
+        "毛罗然",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "天***能"
+    },
+    {
+      "id": 661515,
+      "event_id": 174,
+      "user_id": 44548,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达克沃斯",
+        "胡-塞伦多洛",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "p***7"
+    },
+    {
+      "id": 661526,
+      "event_id": 174,
+      "user_id": 44942,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "科瓦切维奇",
+        "巴埃斯",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "卑***高"
+    },
+    {
+      "id": 661528,
+      "event_id": 174,
+      "user_id": 45550,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "科瓦切维奇",
+        "胡-塞伦多洛",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "Dylan Bai"
+    },
+    {
+      "id": 661534,
+      "event_id": 174,
+      "user_id": 46197,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "达姆",
+        "巴埃斯",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "yichun shan"
+    },
+    {
+      "id": 661539,
+      "event_id": 174,
+      "user_id": 46415,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达克沃斯",
+        "巴埃斯",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "Opalescent0"
+    },
+    {
+      "id": 661545,
+      "event_id": 174,
+      "user_id": 46627,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "巴列霍",
+        "沃尔顿",
+        "勒特格林",
+        "邦齐",
+        "毛罗然"
+      ],
+      "fill_status": "球员输球",
+      "username": "紫葡萄126"
+    },
+    {
+      "id": 661548,
+      "event_id": 174,
+      "user_id": 46723,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "达克沃斯",
+        "胡-塞伦多洛",
+        "费里",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "2***噢"
+    },
+    {
+      "id": 661562,
+      "event_id": 174,
+      "user_id": 49441,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "索内戈",
+        "巴埃斯",
+        "胡-塞伦多洛",
+        "毛罗然"
+      ],
+      "fill_status": "球员输球",
+      "username": "精神病脑残羊癫疯"
+    },
+    {
+      "id": 661564,
+      "event_id": 174,
+      "user_id": 49443,
+      "status": -2,
+      "day": 4,
+      "score": 50,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "科瓦切维奇",
+        "费里",
+        "毛罗然",
+        "范德尚舒尔普"
+      ],
+      "fill_status": "球员输球",
+      "username": "温网冠军诺斯科娃"
+    },
+    {
+      "id": 661403,
+      "event_id": 174,
+      "user_id": 30321,
+      "status": 0,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达克沃斯",
+        "胡-塞伦多洛"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "信籁亮"
+    },
+    {
+      "id": 661502,
+      "event_id": 174,
+      "user_id": 42777,
+      "status": 0,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达克沃斯",
+        "达尔德里"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "寻***9"
+    },
+    {
+      "id": 661359,
+      "event_id": 174,
+      "user_id": 272,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "阿尔特迈尔",
+        "胡-塞伦多洛",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "tenfoynis"
+    },
+    {
+      "id": 661585,
+      "event_id": 174,
+      "user_id": 2005,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "科瓦切维奇",
+        "费里",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞麦皮"
+    },
+    {
+      "id": 661360,
+      "event_id": 174,
+      "user_id": 6435,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达克沃斯",
+        "范德尚舒尔普",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "silver小小蓝"
+    },
+    {
+      "id": 661362,
+      "event_id": 174,
+      "user_id": 7042,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达姆",
+        "费里",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "__Novak__"
+    },
+    {
+      "id": 661364,
+      "event_id": 174,
+      "user_id": 10037,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达克沃斯",
+        "胡-塞伦多洛",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "黑***友"
+    },
+    {
+      "id": 661368,
+      "event_id": 174,
+      "user_id": 11228,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "达克沃斯",
+        "胡-塞伦多洛",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "第7路单车"
+    },
+    {
+      "id": 661371,
+      "event_id": 174,
+      "user_id": 17024,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达克沃斯",
+        "费里",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "victorgc"
+    },
+    {
+      "id": 661375,
+      "event_id": 174,
+      "user_id": 22773,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达克沃斯",
+        "费里",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Aeonbert"
+    },
+    {
+      "id": 661383,
+      "event_id": 174,
+      "user_id": 27773,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "达姆",
+        "费里",
+        "索内戈"
+      ],
+      "fill_status": "球员输球",
+      "username": "颔种别啄我"
+    },
+    {
+      "id": 661392,
+      "event_id": 174,
+      "user_id": 28636,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达姆",
+        "费里",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "啦***拉"
+    },
+    {
+      "id": 661395,
+      "event_id": 174,
+      "user_id": 28991,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达姆",
+        "巴埃斯",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "张文静之歌"
+    },
+    {
+      "id": 661401,
+      "event_id": 174,
+      "user_id": 29978,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达克沃斯",
+        "巴埃斯",
+        "索内戈"
+      ],
+      "fill_status": "球员输球",
+      "username": "外星驻地球代表"
+    },
+    {
+      "id": 661408,
+      "event_id": 174,
+      "user_id": 31218,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "科瓦切维奇",
+        "费里",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "奥索里奥科斯秋克阿瓦涅相我老婆"
+    },
+    {
+      "id": 661410,
+      "event_id": 174,
+      "user_id": 31388,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达姆",
+        "费里",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "BORIS-_-i"
+    },
+    {
+      "id": 661591,
+      "event_id": 174,
+      "user_id": 31550,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达克沃斯",
+        "胡-塞伦多洛",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "九_墨_"
+    },
+    {
+      "id": 661413,
+      "event_id": 174,
+      "user_id": 31557,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达克沃斯",
+        "胡-塞伦多洛",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "一***酒"
+    },
+    {
+      "id": 661416,
+      "event_id": 174,
+      "user_id": 32121,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达克沃斯",
+        "巴埃斯",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "用户7856057992"
+    },
+    {
+      "id": 661420,
+      "event_id": 174,
+      "user_id": 33015,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "巴列霍",
+        "达克沃斯",
+        "胡-塞伦多洛",
+        "索内戈"
+      ],
+      "fill_status": "球员输球",
+      "username": "一位神秘的来Ke"
+    },
+    {
+      "id": 661432,
+      "event_id": 174,
+      "user_id": 34369,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "科瓦切维奇",
+        "胡-塞伦多洛",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "稀有气体hyk"
+    },
+    {
+      "id": 661434,
+      "event_id": 174,
+      "user_id": 34454,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达克沃斯",
+        "费里",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Kellan Li"
+    },
+    {
+      "id": 661444,
+      "event_id": 174,
+      "user_id": 35138,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达克沃斯",
+        "巴埃斯",
+        "索内戈"
+      ],
+      "fill_status": "球员输球",
+      "username": "s***3"
+    },
+    {
+      "id": 661445,
+      "event_id": 174,
+      "user_id": 35191,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达姆",
+        "胡-塞伦多洛",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "猪尔代夫"
+    },
+    {
+      "id": 661595,
+      "event_id": 174,
+      "user_id": 37108,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达姆",
+        "费里",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "交H于一点"
+    },
+    {
+      "id": 661460,
+      "event_id": 174,
+      "user_id": 37598,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "达克沃斯",
+        "巴埃斯",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "198******80"
+    },
+    {
+      "id": 661462,
+      "event_id": 174,
+      "user_id": 39017,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达克沃斯",
+        "费里",
+        "索内戈"
+      ],
+      "fill_status": "球员输球",
+      "username": "用户7904914234"
+    },
+    {
+      "id": 661567,
+      "event_id": 174,
+      "user_id": 39232,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达克沃斯",
+        "费里",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "爱***d"
+    },
+    {
+      "id": 661598,
+      "event_id": 174,
+      "user_id": 39368,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达克沃斯",
+        "费里",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Elroy晨曦"
+    },
+    {
+      "id": 661493,
+      "event_id": 174,
+      "user_id": 40992,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达克沃斯",
+        "胡-塞伦多洛",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "这位沈女士"
+    },
+    {
+      "id": 661494,
+      "event_id": 174,
+      "user_id": 41074,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达克沃斯",
+        "费里",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "梦***e"
+    },
+    {
+      "id": 661503,
+      "event_id": 174,
+      "user_id": 42922,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达克沃斯",
+        "费里",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "z***7"
+    },
+    {
+      "id": 661505,
+      "event_id": 174,
+      "user_id": 43087,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达姆",
+        "胡-塞伦多洛",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "做丞琳永远的歌迷ya"
+    },
+    {
+      "id": 661506,
+      "event_id": 174,
+      "user_id": 43200,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "达姆",
+        "费里",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Iridescent29"
+    },
+    {
+      "id": 661512,
+      "event_id": 174,
+      "user_id": 43992,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达克沃斯",
+        "胡-塞伦多洛",
+        "索内戈"
+      ],
+      "fill_status": "球员输球",
+      "username": "胡一统居士"
+    },
+    {
+      "id": 661513,
+      "event_id": 174,
+      "user_id": 44085,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "科瓦切维奇",
+        "巴埃斯",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "FritzGo"
+    },
+    {
+      "id": 661514,
+      "event_id": 174,
+      "user_id": 44445,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "科瓦切维奇",
+        "范德尚舒尔普",
+        "索内戈"
+      ],
+      "fill_status": "球员输球",
+      "username": "空中飞人入童话"
+    },
+    {
+      "id": 661518,
+      "event_id": 174,
+      "user_id": 44683,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "达姆",
+        "费里",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Bublik Go"
+    },
+    {
+      "id": 661521,
+      "event_id": 174,
+      "user_id": 44797,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "达克沃斯",
+        "费里",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "吴三饼"
+    },
+    {
+      "id": 661525,
+      "event_id": 174,
+      "user_id": 44938,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达克沃斯",
+        "费里",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "网球评级update"
+    },
+    {
+      "id": 661527,
+      "event_id": 174,
+      "user_id": 45490,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达姆",
+        "胡-塞伦多洛",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "慷慨竹子投资房产"
+    },
+    {
+      "id": 661536,
+      "event_id": 174,
+      "user_id": 46273,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达姆",
+        "费里",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "海***y"
+    },
+    {
+      "id": 661537,
+      "event_id": 174,
+      "user_id": 46278,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "达姆",
+        "巴埃斯",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "q***1"
+    },
+    {
+      "id": 661538,
+      "event_id": 174,
+      "user_id": 46392,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "布鲁克斯比",
+        "科瓦切维奇",
+        "费里",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "灞***年"
+    },
+    {
+      "id": 661541,
+      "event_id": 174,
+      "user_id": 46418,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达克沃斯",
+        "费里",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "E***s"
+    },
+    {
+      "id": 661544,
+      "event_id": 174,
+      "user_id": 46597,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达克沃斯",
+        "费里",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "我是霍小脚"
+    },
+    {
+      "id": 661549,
+      "event_id": 174,
+      "user_id": 46775,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "达姆",
+        "费里",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "会打逆风球的小米拉"
+    },
+    {
+      "id": 661555,
+      "event_id": 174,
+      "user_id": 49378,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "布鲁克斯比",
+        "克-休伊特",
+        "费里",
+        "巴埃斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "網球糕手_"
+    },
+    {
+      "id": 661559,
+      "event_id": 174,
+      "user_id": 49418,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "阿尔特迈尔",
+        "达尔德里",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "本命草莓百香果"
+    },
+    {
+      "id": 661560,
+      "event_id": 174,
+      "user_id": 49439,
+      "status": -2,
+      "day": 3,
+      "score": 25,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "布鲁克斯比",
+        "达姆",
+        "费里",
+        "西西帕斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "果断土拨鼠玩剪纸"
+    },
+    {
+      "id": 661363,
+      "event_id": 174,
+      "user_id": 8895,
+      "status": 0,
+      "day": 2,
+      "score": 13,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达克沃斯"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "木的讷"
+    },
+    {
+      "id": 661446,
+      "event_id": 174,
+      "user_id": 35661,
+      "status": 0,
+      "day": 2,
+      "score": 13,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达克沃斯"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "只***e"
+    },
+    {
+      "id": 661366,
+      "event_id": 174,
+      "user_id": 11064,
+      "status": -2,
+      "day": 2,
+      "score": 13,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "科瓦切维奇",
+        "马哈奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "Poah优昙花_"
+    },
+    {
+      "id": 661376,
+      "event_id": 174,
+      "user_id": 23015,
+      "status": -2,
+      "day": 2,
+      "score": 13,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "达克沃斯",
+        "沃尔顿"
+      ],
+      "fill_status": "球员输球",
+      "username": "lovehuiruoqi"
+    },
+    {
+      "id": 661382,
+      "event_id": 174,
+      "user_id": 27446,
+      "status": -2,
+      "day": 2,
+      "score": 13,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达克沃斯",
+        "马哈奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "指纹Nongzw"
+    },
+    {
+      "id": 661396,
+      "event_id": 174,
+      "user_id": 29335,
+      "status": -2,
+      "day": 2,
+      "score": 13,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "科瓦切维奇",
+        "阿里斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "moommomoommo"
+    },
+    {
+      "id": 661415,
+      "event_id": 174,
+      "user_id": 31855,
+      "status": -2,
+      "day": 2,
+      "score": 13,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "达克沃斯",
+        "马哈奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "yygq专家"
+    },
+    {
+      "id": 661425,
+      "event_id": 174,
+      "user_id": 33262,
+      "status": -2,
+      "day": 2,
+      "score": 13,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "布鲁克斯比",
+        "科瓦切维奇",
+        "马哈奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "Oreache_TAO"
+    },
+    {
+      "id": 661443,
+      "event_id": 174,
+      "user_id": 35132,
+      "status": -2,
+      "day": 2,
+      "score": 13,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达克沃斯",
+        "马哈奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "h***t"
+    },
+    {
+      "id": 661461,
+      "event_id": 174,
+      "user_id": 37994,
+      "status": -2,
+      "day": 2,
+      "score": 13,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "达克沃斯",
+        "马哈奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "BOHEYE_"
+    },
+    {
+      "id": 661477,
+      "event_id": 174,
+      "user_id": 39743,
+      "status": -2,
+      "day": 2,
+      "score": 13,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "达姆",
+        "阿里斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "Zoey"
+    },
+    {
+      "id": 661481,
+      "event_id": 174,
+      "user_id": 39935,
+      "status": -2,
+      "day": 2,
+      "score": 13,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "布鲁克斯比",
+        "达姆",
+        "沃尔顿"
+      ],
+      "fill_status": "球员输球",
+      "username": "田纳西草莓干加工厂"
+    },
+    {
+      "id": 661486,
+      "event_id": 174,
+      "user_id": 40561,
+      "status": -2,
+      "day": 2,
+      "score": 13,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "达克沃斯",
+        "马哈奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "迪***9"
+    },
+    {
+      "id": 661508,
+      "event_id": 174,
+      "user_id": 43748,
+      "status": -2,
+      "day": 2,
+      "score": 13,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "西西帕斯",
+        "科利尼翁"
+      ],
+      "fill_status": "球员输球",
+      "username": "1所大房子"
+    },
+    {
+      "id": 661530,
+      "event_id": 174,
+      "user_id": 45995,
+      "status": -2,
+      "day": 2,
+      "score": 13,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "科瓦切维奇",
+        "沃尔顿"
+      ],
+      "fill_status": "球员输球",
+      "username": "Wild Chicken"
+    },
+    {
+      "id": 661532,
+      "event_id": 174,
+      "user_id": 46003,
+      "status": -2,
+      "day": 2,
+      "score": 13,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "达姆",
+        "梅德韦杰夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "Paul Go"
+    },
+    {
+      "id": 661533,
+      "event_id": 174,
+      "user_id": 46004,
+      "status": -2,
+      "day": 2,
+      "score": 13,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "达克沃斯",
+        "马哈奇"
+      ],
+      "fill_status": "球员输球",
+      "username": "Ruud Go"
+    },
+    {
+      "id": 661543,
+      "event_id": 174,
+      "user_id": 46562,
+      "status": -2,
+      "day": 2,
+      "score": 13,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "沃尔顿",
+        "梅德韦杰夫"
+      ],
+      "fill_status": "球员输球",
+      "username": "tennis幸存者"
+    },
+    {
+      "id": 661553,
+      "event_id": 174,
+      "user_id": 48257,
+      "status": -2,
+      "day": 2,
+      "score": 13,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "达姆",
+        "阿里斯"
+      ],
+      "fill_status": "球员输球",
+      "username": "M***1"
+    },
+    {
+      "id": 661556,
+      "event_id": 174,
+      "user_id": 49383,
+      "status": -2,
+      "day": 2,
+      "score": 13,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "巴列霍",
+        "达姆",
+        "纳沃内"
+      ],
+      "fill_status": "球员输球",
+      "username": "Gin_战"
+    },
+    {
+      "id": 661557,
+      "event_id": 174,
+      "user_id": 49408,
+      "status": -2,
+      "day": 2,
+      "score": 13,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "科瓦切维奇",
+        "沃尔顿"
+      ],
+      "fill_status": "球员输球",
+      "username": "ChrisGu9920"
+    },
+    {
+      "id": 661428,
+      "event_id": 174,
+      "user_id": 33812,
+      "status": 0,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "用户5638241188"
+    },
+    {
+      "id": 661517,
+      "event_id": 174,
+      "user_id": 44618,
+      "status": 0,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "wenguang wu"
+    },
+    {
+      "id": 661558,
+      "event_id": 174,
+      "user_id": 49412,
+      "status": 0,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "D***1"
+    },
+    {
+      "id": 661367,
+      "event_id": 174,
+      "user_id": 11119,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "我宝儿子不露脸不改名"
+    },
+    {
+      "id": 661369,
+      "event_id": 174,
+      "user_id": 11870,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "就是爱吃虾_"
+    },
+    {
+      "id": 661374,
+      "event_id": 174,
+      "user_id": 21990,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "最爱KG的阿杰"
+    },
+    {
+      "id": 661377,
+      "event_id": 174,
+      "user_id": 24258,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "RV--RV"
+    },
+    {
+      "id": 661380,
+      "event_id": 174,
+      "user_id": 24898,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "后曹操"
+    },
+    {
+      "id": 661384,
+      "event_id": 174,
+      "user_id": 27983,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "吃货大爱凯凯_982"
+    },
+    {
+      "id": 661385,
+      "event_id": 174,
+      "user_id": 27994,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "板尼哟"
+    },
+    {
+      "id": 661386,
+      "event_id": 174,
+      "user_id": 28366,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "impum"
+    },
+    {
+      "id": 661388,
+      "event_id": 174,
+      "user_id": 28484,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "YJkCarl"
+    },
+    {
+      "id": 661391,
+      "event_id": 174,
+      "user_id": 28510,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "布鲁克斯比",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "akane 11"
+    },
+    {
+      "id": 661393,
+      "event_id": 174,
+      "user_id": 28692,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "番薯阿瓜"
+    },
+    {
+      "id": 661398,
+      "event_id": 174,
+      "user_id": 29479,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "马戏团冠军"
+    },
+    {
+      "id": 661400,
+      "event_id": 174,
+      "user_id": 29654,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "RiverFish_JHC"
+    },
+    {
+      "id": 661404,
+      "event_id": 174,
+      "user_id": 30480,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "yh11yh22"
+    },
+    {
+      "id": 661406,
+      "event_id": 174,
+      "user_id": 30567,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "N***_"
+    },
+    {
+      "id": 661409,
+      "event_id": 174,
+      "user_id": 31342,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "萨菲乌林"
+      ],
+      "fill_status": "球员输球",
+      "username": "法网冠军丰塞卡"
+    },
+    {
+      "id": 661412,
+      "event_id": 174,
+      "user_id": 31549,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "强化型米斯prototype"
+    },
+    {
+      "id": 661414,
+      "event_id": 174,
+      "user_id": 31705,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "萨菲乌林"
+      ],
+      "fill_status": "球员输球",
+      "username": "Pomelo琛"
+    },
+    {
+      "id": 661418,
+      "event_id": 174,
+      "user_id": 32944,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "KG5Benzema9Jokic15Luka77_Paul3"
+    },
+    {
+      "id": 661419,
+      "event_id": 174,
+      "user_id": 32980,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "Elroy ZHANG"
+    },
+    {
+      "id": 661421,
+      "event_id": 174,
+      "user_id": 33026,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "底线老五"
+    },
+    {
+      "id": 661422,
+      "event_id": 174,
+      "user_id": 33063,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "是月牙呦"
+    },
+    {
+      "id": 661426,
+      "event_id": 174,
+      "user_id": 33264,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "林强行长的小挎包"
+    },
+    {
+      "id": 661427,
+      "event_id": 174,
+      "user_id": 33770,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "用户7376159987"
+    },
+    {
+      "id": 661436,
+      "event_id": 174,
+      "user_id": 34627,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "一***客"
+    },
+    {
+      "id": 661437,
+      "event_id": 174,
+      "user_id": 34766,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "为你而来呀"
+    },
+    {
+      "id": 661451,
+      "event_id": 174,
+      "user_id": 36469,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "嗨嗨嗨改名字好难"
+    },
+    {
+      "id": 661453,
+      "event_id": 174,
+      "user_id": 37027,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "古木_鱼"
+    },
+    {
+      "id": 661455,
+      "event_id": 174,
+      "user_id": 37146,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "Raymond Wong"
+    },
+    {
+      "id": 661456,
+      "event_id": 174,
+      "user_id": 37184,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "爱***森"
+    },
+    {
+      "id": 661463,
+      "event_id": 174,
+      "user_id": 39080,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "憨皮儿不是小怪兽"
+    },
+    {
+      "id": 661465,
+      "event_id": 174,
+      "user_id": 39095,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "萨菲乌林"
+      ],
+      "fill_status": "球员输球",
+      "username": "极昼9920"
+    },
+    {
+      "id": 661467,
+      "event_id": 174,
+      "user_id": 39223,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "萨菲乌林"
+      ],
+      "fill_status": "球员输球",
+      "username": "巴***机"
+    },
+    {
+      "id": 661468,
+      "event_id": 174,
+      "user_id": 39225,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "萨菲乌林"
+      ],
+      "fill_status": "球员输球",
+      "username": "晚睡早起冲冲冲"
+    },
+    {
+      "id": 661471,
+      "event_id": 174,
+      "user_id": 39231,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "taru wa"
+    },
+    {
+      "id": 661473,
+      "event_id": 174,
+      "user_id": 39381,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "AlcarazTennis_bot"
+    },
+    {
+      "id": 661478,
+      "event_id": 174,
+      "user_id": 39883,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "说出吾名_吓汝一跳-"
+    },
+    {
+      "id": 661480,
+      "event_id": 174,
+      "user_id": 39933,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "Oreache"
+    },
+    {
+      "id": 661484,
+      "event_id": 174,
+      "user_id": 40286,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "萨菲乌林"
+      ],
+      "fill_status": "球员输球",
+      "username": "薄荷奶绿不加冰_"
+    },
+    {
+      "id": 661485,
+      "event_id": 174,
+      "user_id": 40457,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "Verelzorro"
+    },
+    {
+      "id": 661488,
+      "event_id": 174,
+      "user_id": 40717,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "Beautysofia"
+    },
+    {
+      "id": 661490,
+      "event_id": 174,
+      "user_id": 40799,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "Markwu0626"
+    },
+    {
+      "id": 661492,
+      "event_id": 174,
+      "user_id": 40868,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "霍因斯基"
+      ],
+      "fill_status": "球员输球",
+      "username": "南半球的小狮子"
+    },
+    {
+      "id": 661495,
+      "event_id": 174,
+      "user_id": 41076,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "w***酱"
+    },
+    {
+      "id": 661499,
+      "event_id": 174,
+      "user_id": 42274,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "我是霍小耳"
+    },
+    {
+      "id": 661501,
+      "event_id": 174,
+      "user_id": 42564,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "超***间"
+    },
+    {
+      "id": 661504,
+      "event_id": 174,
+      "user_id": 42997,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "135******08"
+    },
+    {
+      "id": 661509,
+      "event_id": 174,
+      "user_id": 43772,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "萨菲乌林"
+      ],
+      "fill_status": "球员输球",
+      "username": "本命百香果柠檬"
+    },
+    {
+      "id": 661516,
+      "event_id": 174,
+      "user_id": 44589,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "德雨珀1"
+    },
+    {
+      "id": 661520,
+      "event_id": 174,
+      "user_id": 44701,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "Karen Go"
+    },
+    {
+      "id": 661522,
+      "event_id": 174,
+      "user_id": 44801,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "na_go_h"
+    },
+    {
+      "id": 661529,
+      "event_id": 174,
+      "user_id": 45878,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "JuKKa_z"
+    },
+    {
+      "id": 661531,
+      "event_id": 174,
+      "user_id": 45998,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "Vegetable Chicken"
+    },
+    {
+      "id": 661540,
+      "event_id": 174,
+      "user_id": 46416,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "Pearlescent_69"
+    },
+    {
+      "id": 661546,
+      "event_id": 174,
+      "user_id": 46638,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "是小葱葱葱啊"
+    },
+    {
+      "id": 661547,
+      "event_id": 174,
+      "user_id": 46697,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "C***_"
+    },
+    {
+      "id": 661551,
+      "event_id": 174,
+      "user_id": 47785,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "Dylan B"
+    },
+    {
+      "id": 661552,
+      "event_id": 174,
+      "user_id": 47794,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "土豆熬豆角"
+    },
+    {
+      "id": 661554,
+      "event_id": 174,
+      "user_id": 49372,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "牛哈奇"
+    },
+    {
+      "id": 661561,
+      "event_id": 174,
+      "user_id": 49440,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "土方凛辉",
+        "萨菲乌林"
+      ],
+      "fill_status": "球员输球",
+      "username": "澳网冠军诺斯科娃"
+    },
+    {
+      "id": 661565,
+      "event_id": 174,
+      "user_id": 49444,
+      "status": -2,
+      "day": 1,
+      "score": 7,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "凯茨曼诺维奇",
+        "萨菲乌林"
+      ],
+      "fill_status": "球员输球",
+      "username": "美网冠军诺斯科娃"
+    },
+    {
+      "id": 661435,
+      "event_id": 174,
+      "user_id": 34500,
+      "status": 0,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "陈***8"
+    },
+    {
+      "id": 661601,
+      "event_id": 174,
+      "user_id": 40803,
+      "status": 0,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空"
+      ],
+      "fill_status": "自杀(退赛)",
+      "username": "Maya Wong"
+    },
+    {
+      "id": 661524,
+      "event_id": 174,
+      "user_id": 44918,
+      "status": -1,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "普里兹米奇"
+      ],
+      "fill_status": "球员退赛",
+      "username": "李杨科-RM"
+    },
+    {
+      "id": 661535,
+      "event_id": 174,
+      "user_id": 46209,
+      "status": -1,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "普里兹米奇"
+      ],
+      "fill_status": "球员退赛",
+      "username": "c***3"
+    },
+    {
+      "id": 661570,
+      "event_id": 174,
+      "user_id": 1956,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "兰达卢塞"
+      ],
+      "fill_status": "球员输球",
+      "username": "芋y头h小m生"
+    },
+    {
+      "id": 661586,
+      "event_id": 174,
+      "user_id": 4958,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "仿生羊会梦见电子工程毕业生"
+    },
+    {
+      "id": 661571,
+      "event_id": 174,
+      "user_id": 5471,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "兰达卢塞"
+      ],
+      "fill_status": "球员输球",
+      "username": "姬州"
+    },
+    {
+      "id": 661370,
+      "event_id": 174,
+      "user_id": 15424,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "Emppu99"
+    },
+    {
+      "id": 661379,
+      "event_id": 174,
+      "user_id": 24543,
+      "status": -2,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "aeonbert"
+    },
+    {
+      "id": 661587,
+      "event_id": 174,
+      "user_id": 27859,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "莫***卿"
+    },
+    {
+      "id": 661387,
+      "event_id": 174,
+      "user_id": 28367,
+      "status": -2,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "谁***控"
+    },
+    {
+      "id": 661588,
+      "event_id": 174,
+      "user_id": 28509,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "夕***阳"
+    },
+    {
+      "id": 661394,
+      "event_id": 174,
+      "user_id": 28845,
+      "status": -2,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "浙江土特产"
+    },
+    {
+      "id": 661589,
+      "event_id": 174,
+      "user_id": 29270,
+      "status": -2,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "xxxjusAng"
+    },
+    {
+      "id": 661397,
+      "event_id": 174,
+      "user_id": 29351,
+      "status": -2,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "日***岸"
+    },
+    {
+      "id": 661399,
+      "event_id": 174,
+      "user_id": 29627,
+      "status": -2,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "没有滑板的张某某"
+    },
+    {
+      "id": 661572,
+      "event_id": 174,
+      "user_id": 29995,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "兰达卢塞"
+      ],
+      "fill_status": "球员输球",
+      "username": "锦暔"
+    },
+    {
+      "id": 661405,
+      "event_id": 174,
+      "user_id": 30552,
+      "status": -2,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "卡尼TT"
+    },
+    {
+      "id": 661573,
+      "event_id": 174,
+      "user_id": 30566,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "兰达卢塞"
+      ],
+      "fill_status": "球员输球",
+      "username": "变现狂魔_"
+    },
+    {
+      "id": 661590,
+      "event_id": 174,
+      "user_id": 30932,
+      "status": -2,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "samsonyip"
+    },
+    {
+      "id": 661407,
+      "event_id": 174,
+      "user_id": 31115,
+      "status": -2,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "青花比目"
+    },
+    {
+      "id": 661417,
+      "event_id": 174,
+      "user_id": 32506,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "兰达卢塞"
+      ],
+      "fill_status": "球员输球",
+      "username": "一缕清风-55"
+    },
+    {
+      "id": 661423,
+      "event_id": 174,
+      "user_id": 33162,
+      "status": -2,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "r***i"
+    },
+    {
+      "id": 661574,
+      "event_id": 174,
+      "user_id": 33207,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "兰达卢塞"
+      ],
+      "fill_status": "球员输球",
+      "username": "Samuel Bao"
+    },
+    {
+      "id": 661424,
+      "event_id": 174,
+      "user_id": 33233,
+      "status": -2,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "精明姐姐的小秘"
+    },
+    {
+      "id": 661576,
+      "event_id": 174,
+      "user_id": 33828,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "兰达卢塞"
+      ],
+      "fill_status": "球员输球",
+      "username": "重生之我在幸存者十连冠"
+    },
+    {
+      "id": 661593,
+      "event_id": 174,
+      "user_id": 34148,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "萨卡外"
+    },
+    {
+      "id": 661430,
+      "event_id": 174,
+      "user_id": 34229,
+      "status": -2,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "深***名"
+    },
+    {
+      "id": 661431,
+      "event_id": 174,
+      "user_id": 34368,
+      "status": -2,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "回破"
+    },
+    {
+      "id": 661438,
+      "event_id": 174,
+      "user_id": 35032,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "旧纳琛"
+    },
+    {
+      "id": 661439,
+      "event_id": 174,
+      "user_id": 35081,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "jian cui"
+    },
+    {
+      "id": 661440,
+      "event_id": 174,
+      "user_id": 35099,
+      "status": -2,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "苟***术"
+    },
+    {
+      "id": 661441,
+      "event_id": 174,
+      "user_id": 35126,
+      "status": -2,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "M***y"
+    },
+    {
+      "id": 661594,
+      "event_id": 174,
+      "user_id": 35514,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "131*****034"
+    },
+    {
+      "id": 661577,
+      "event_id": 174,
+      "user_id": 35657,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "兰达卢塞"
+      ],
+      "fill_status": "球员输球",
+      "username": "小三花和小黑喵"
+    },
+    {
+      "id": 661448,
+      "event_id": 174,
+      "user_id": 35948,
+      "status": -2,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞二皮"
+    },
+    {
+      "id": 661449,
+      "event_id": 174,
+      "user_id": 36171,
+      "status": -2,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "相信科学是非明"
+    },
+    {
+      "id": 661457,
+      "event_id": 174,
+      "user_id": 37256,
+      "status": -2,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "Dagenais"
+    },
+    {
+      "id": 661596,
+      "event_id": 174,
+      "user_id": 37559,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "网球联赛TennisLeague"
+    },
+    {
+      "id": 661566,
+      "event_id": 174,
+      "user_id": 37564,
+      "status": -2,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "精神故乡丝芙兰"
+    },
+    {
+      "id": 661464,
+      "event_id": 174,
+      "user_id": 39094,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "兰达卢塞"
+      ],
+      "fill_status": "球员输球",
+      "username": "C***古"
+    },
+    {
+      "id": 661597,
+      "event_id": 174,
+      "user_id": 39228,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "Genie201312"
+    },
+    {
+      "id": 661469,
+      "event_id": 174,
+      "user_id": 39229,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "F-orestcold"
+    },
+    {
+      "id": 661578,
+      "event_id": 174,
+      "user_id": 39492,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "兰达卢塞"
+      ],
+      "fill_status": "球员输球",
+      "username": "A-ries_15"
+    },
+    {
+      "id": 661476,
+      "event_id": 174,
+      "user_id": 39648,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "羊哈奇"
+    },
+    {
+      "id": 661599,
+      "event_id": 174,
+      "user_id": 39918,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "老***6"
+    },
+    {
+      "id": 661479,
+      "event_id": 174,
+      "user_id": 39920,
+      "status": -2,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "无***痕"
+    },
+    {
+      "id": 661600,
+      "event_id": 174,
+      "user_id": 40106,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "Alcaraz Go"
+    },
+    {
+      "id": 661491,
+      "event_id": 174,
+      "user_id": 40800,
+      "status": -2,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "宋承宪我老公"
+    },
+    {
+      "id": 661583,
+      "event_id": 174,
+      "user_id": 40905,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "姆佩奇-佩里卡尔"
+      ],
+      "fill_status": "球员输球",
+      "username": "追星打工人"
+    },
+    {
+      "id": 661579,
+      "event_id": 174,
+      "user_id": 40950,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "兰达卢塞"
+      ],
+      "fill_status": "球员输球",
+      "username": "萌兔戴上霍元甲"
+    },
+    {
+      "id": 661496,
+      "event_id": 174,
+      "user_id": 41409,
+      "status": -2,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "188*****126"
+    },
+    {
+      "id": 661569,
+      "event_id": 174,
+      "user_id": 41680,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "卡雷尼奥-布斯塔"
+      ],
+      "fill_status": "球员输球",
+      "username": "c***i"
+    },
+    {
+      "id": 661497,
+      "event_id": 174,
+      "user_id": 41787,
+      "status": -2,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "卷毛Flis"
+    },
+    {
+      "id": 661602,
+      "event_id": 174,
+      "user_id": 42235,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "我是我自己zyt"
+    },
+    {
+      "id": 661603,
+      "event_id": 174,
+      "user_id": 42460,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "荞***记"
+    },
+    {
+      "id": 661604,
+      "event_id": 174,
+      "user_id": 42970,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "卡萨布兰卡9920"
+    },
+    {
+      "id": 661507,
+      "event_id": 174,
+      "user_id": 43652,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "卡雷尼奥-布斯塔"
+      ],
+      "fill_status": "球员输球",
+      "username": "Tennis-苟活者"
+    },
+    {
+      "id": 661605,
+      "event_id": 174,
+      "user_id": 43722,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "l***5"
+    },
+    {
+      "id": 661580,
+      "event_id": 174,
+      "user_id": 44074,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "兰达卢塞"
+      ],
+      "fill_status": "球员输球",
+      "username": "Dylan Byron"
+    },
+    {
+      "id": 661519,
+      "event_id": 174,
+      "user_id": 44684,
+      "status": -2,
+      "day": 1,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "轮空",
+        "吉隆"
+      ],
+      "fill_status": "球员输球",
+      "username": "Dimitrov Go"
+    },
+    {
+      "id": 661606,
+      "event_id": 174,
+      "user_id": 44805,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "G***t"
+    },
+    {
+      "id": 661523,
+      "event_id": 174,
+      "user_id": 44822,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "Cobolli Go"
+    },
+    {
+      "id": 661607,
+      "event_id": 174,
+      "user_id": 44823,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "Tallon Go"
+    },
+    {
+      "id": 661584,
+      "event_id": 174,
+      "user_id": 44900,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "岛袋将"
+      ],
+      "fill_status": "球员输球",
+      "username": "吾***叔"
+    },
+    {
+      "id": 661608,
+      "event_id": 174,
+      "user_id": 46063,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "壶之力"
+    },
+    {
+      "id": 661609,
+      "event_id": 174,
+      "user_id": 46175,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "午夜伤感猛男_"
+    },
+    {
+      "id": 661542,
+      "event_id": 174,
+      "user_id": 46440,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "超级至尊芝心披萨"
+    },
+    {
+      "id": 661550,
+      "event_id": 174,
+      "user_id": 47492,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "PoppyBagel"
+    },
+    {
+      "id": 661610,
+      "event_id": 174,
+      "user_id": 47972,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "Tetrapod-0"
+    },
+    {
+      "id": 661611,
+      "event_id": 174,
+      "user_id": 48292,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "用户8267496097"
+    },
+    {
+      "id": 661581,
+      "event_id": 174,
+      "user_id": 49395,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "兰达卢塞"
+      ],
+      "fill_status": "球员输球",
+      "username": "町田予"
+    },
+    {
+      "id": 661563,
+      "event_id": 174,
+      "user_id": 49442,
+      "status": -2,
+      "day": 0,
+      "score": 0,
+      "updated_at": "2026-08-29T01:17:51.000000Z",
+      "players": [
+        "吴易昺"
+      ],
+      "fill_status": "球员输球",
+      "username": "法网冠军诺斯科娃"
+    }
+  ]
+}
