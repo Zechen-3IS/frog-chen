@@ -1,0 +1,42 @@
+name: Update live (pick pages)
+
+on:
+  schedule:
+    # Every 15 minutes UTC (GitHub may delay under load)
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: frog-live-pages
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate pick-related pages
+        working-directory: src
+        run: python main.py --live
+
+      - name: Publish HTML
+        env:
+          PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN || github.token }}
+          PUBLISH_REPOSITORY: ${{ vars.PUBLISH_REPOSITORY || github.repository }}
+          PUBLISH_BRANCH: ${{ vars.PUBLISH_BRANCH || 'pages' }}
+        run: |
+          chmod +x .github/scripts/push-pages.sh
+          .github/scripts/push-pages.sh live "自动更新选人相关页面"

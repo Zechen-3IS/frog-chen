@@ -1,0 +1,33 @@
+__pycache__/
+*.py[cod]
+.Python
+.venv/
+venv/
+.env
+.DS_Store
+.update.log
+*.log
+.idea/
+.vscode/
+
+# local / generated runtime
+src/test.yaml
+logs/
+weather_cards_cache.json
+players.json
+
+# generated site (published by Actions to pages branch)
+*.html
+events/
+assets/echarts.min.js
+
+# heavy / regenerable caches
+data/event_scores/
+data/event_draws/
+data/event_day_rounds/
+data/calendar_*.json
+data/breakdown_*.js
+data/breakdown_*.json
+data/players.json
+data/weather_cards_cache.json
+data/player_events.json

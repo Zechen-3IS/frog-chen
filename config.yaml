@@ -1,0 +1,65 @@
+year: 2026
+datetime_format: "%Y年%m月%d日 %H:%M:%S"
+
+theme: hard  # options: grass, hard, clay
+
+output_dir: ".."
+cache_path: "../data/weather_cards_cache.json"
+
+atp:
+  event: "25014"
+  name: "上海"
+  bye_rate: 0.25
+  removed_tournament_name: "上海"
+  week_start_date: "2026-10-05"
+  latitude: 31.040780058149505
+  longitude: 121.36193069600846
+
+wta:
+  event: "31075"
+  name: "武汉"
+  bye_rate: 0.125
+  removed_tournament_name: "武汉"  # 1000锚点：2025武汉 ← 2026武汉（宁波为下一周，不对齐）
+  week_start_date: "2026-10-12"
+  latitude: 30.475076686425332
+  longitude: 114.46240927116361
+
+weather:
+  hours: 24
+  step: 1
+  label: "天气信息"
+  wind_speed_unit: "kmh"  # options: kmh (default), ms, mph, kn
+
+champions_path: "../data/champions.csv"
+
+h2h:
+  csv_path: "../data/h2h_records.csv"
+  update_hour: 7  # only update h2h CSV at this hour
+  backfill_enabled: true
+  backfill_events: 2
+  max_events_per_tour: 5
+  full_rebuild_hour: null  # set hour 0-23 to enable full rebuild
+
+version: "6.0"
+
+home:
+  week_cards: true  # 首页上/本/下周赛况（赛事对应 = slam/1000 锚点映射）
+  last_calendar_path: "../data/calendar_2025.json"
+
+settlement:
+  enabled: true  # 签表实时结算（先于官方 score 更新判定胜负/轮空/自杀）
+
+player_stats:
+  enabled: true
+  # 独立于主流程；用 `python main.py --stats` 增量更新，或设 weekday(0=周一) 在主流程顺带刷
+  update_weekday: null
+
+calendar_browser:
+  enabled: true
+  # 幸存者赛历：`python main.py --calendar` 增量抓各站得分并生成页面
+  # live-tennis 公开赛历从 2024 起有数据；更早年份页面为空
+  years_from: 2024
+  # years_to: null  # 默认到 config.year / 当年
+
+debug:
+  index_output_path: null # set to null to use output_dir/index.html
