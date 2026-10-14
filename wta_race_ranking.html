@@ -641,7 +641,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     ← 首页
   </a>
   <div class="topbar-right">
-    <span class="updated">⏱ 2026年10月15日 00:22:28</span>
+    <span class="updated">⏱ 2026年10月15日 01:00:37</span>
     <button class="theme-btn" id="themeBtn" onclick="toggleTheme()">🌙 暗色</button>
   </div>
 </div>
@@ -666,9 +666,9 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
         </button>
         </div>
         <div class="sum-meta">
-        <span class="meta-chip chip-valid">✓ 4 人已选</span>
+        <span class="meta-chip chip-valid">✓ 12 人已选</span>
     <span class="meta-sep">｜</span>
-    <span class="meta-chip chip-nosel">104 人未选</span>
+    <span class="meta-chip chip-nosel">96 人未选</span>
     <span class="meta-sep">｜</span>
     <span class="meta-total">总计 108 人</span>
         </div>
@@ -682,7 +682,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     </div>
         <div class="sum-list" id="sumList"></div>
         <button class="sum-toggle" id="sumToggle" onclick="toggleSumPanel()">
-        <span id="sumToggleTxt">显示全部 3 名球员）</span>
+        <span id="sumToggleTxt">显示全部 5 名球员）</span>
         <span class="sum-ticon" id="sumTicon">▼</span>
         </button>
     </div>
@@ -690,10 +690,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     (function(){
         var TOP_N   = 3;
         var HAS_BYE = false;
-        var ROWS    = [{"name": "斯维托丽娜", "normal": 2, "bye": 0, "status": "confirmed"}, {"name": "李吉妮", "normal": 1, "bye": 0, "status": "confirmed"}, {"name": "萨卡里", "normal": 1, "bye": 0, "status": "confirmed"}];
-        var TOTALS  = {"normal": 4, "bye": 0, "grand": 4};
-        var MAX_VAL = 2;
-        var CLIPBOARD_HEADER = "已选4 未选104";
+        var ROWS    = [{"name": "斯维托丽娜", "normal": 6, "bye": 0, "status": "confirmed"}, {"name": "李吉妮", "normal": 2, "bye": 0, "status": "confirmed"}, {"name": "萨卡里", "normal": 2, "bye": 0, "status": "confirmed"}, {"name": "保利尼", "normal": 1, "bye": 0, "status": "confirmed"}, {"name": "奥斯塔彭科", "normal": 1, "bye": 0, "status": "confirmed"}];
+        var TOTALS  = {"normal": 12, "bye": 0, "grand": 12};
+        var MAX_VAL = 6;
+        var CLIPBOARD_HEADER = "已选12 未选96";
         var expanded = false;
 
         function pct(n){ return ((n / TOTALS.grand) * 100).toFixed(1) + '%'; }
@@ -1582,9 +1582,9 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td><span class="st-badge st-alive">存活</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td>未选</td>
+    <td>斯维托丽娜</td>
+    <td>施内德</td>
+    <td>已选</td>
     <td>120</td>
     <td>3897</td>
     <td><span class="rank same"></span></td>
@@ -2562,9 +2562,9 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td><span class="st-badge st-alive">存活</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td>未选</td>
+    <td>斯维托丽娜</td>
+    <td>穆霍娃</td>
+    <td>已选</td>
     <td>120</td>
     <td>2976</td>
     <td><span class="rank down">-4</span></td>
@@ -2940,9 +2940,9 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td><span class="st-badge st-alive">存活</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td>未选</td>
+    <td>斯维托丽娜</td>
+    <td>李吉妮</td>
+    <td>已选</td>
     <td>120</td>
     <td>2788</td>
     <td><span class="rank up">+3</span></td>
@@ -3430,9 +3430,9 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td><span class="st-badge st-alive">存活</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td>未选</td>
+    <td>萨卡里</td>
+    <td>伊-约维奇</td>
+    <td>已选</td>
     <td>120</td>
     <td>2500</td>
     <td><span class="rank same"></span></td>
@@ -3654,9 +3654,9 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td><span class="st-badge st-alive">存活</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td>未选</td>
+    <td>李吉妮</td>
+    <td>萨卡里</td>
+    <td>已选</td>
     <td>120</td>
     <td>2393</td>
     <td><span class="rank up">+5</span></td>
@@ -4732,9 +4732,9 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td><span class="st-badge st-alive">存活</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td>未选</td>
+    <td>奥斯塔彭科</td>
+    <td>穆霍娃</td>
+    <td>已选</td>
     <td>120</td>
     <td>1918</td>
     <td><span class="rank up">+7</span></td>
@@ -8540,9 +8540,9 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td><span class="st-badge st-alive">存活</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td>未选</td>
+    <td>斯维托丽娜</td>
+    <td>李吉妮</td>
+    <td>已选</td>
     <td>120</td>
     <td>397</td>
     <td><span class="rank up">+27</span></td>
@@ -9842,9 +9842,9 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td><span class="st-badge st-alive">存活</span></td>
     <td>3</td>
     <td></td>
+    <td>保利尼</td>
     <td></td>
-    <td></td>
-    <td>未选</td>
+    <td>已选</td>
     <td>120</td>
     <td>205</td>
     <td><span class="rank up">+63</span></td>
