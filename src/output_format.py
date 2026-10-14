@@ -74,12 +74,15 @@ def hide_today_picks_for_eliminated(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def mark_unfinished_status(
-    df: pd.DataFrame, live_players: Optional[list] = None
+    df: pd.DataFrame,
+    live_players: Optional[list] = None,
+    pending_user_ids: Optional[set] = None,
 ) -> pd.DataFrame:
     """
-    Display-only: still-alive users whose 今日主选 is mid-match → 未完赛.
+    Display-only: still-alive users whose today's pick is not settled → 未完赛.
 
-    Keeps settled winners as 存活. Call after hide_today_picks_for_eliminated.
+    Covers in-progress matches (``live_players``) and not-yet-started ones
+    (``pending_user_ids`` from live settlement). Settled winners stay 存活.
     """
     if df is None or df.empty or "当前状态" not in df.columns:
         return df
@@ -88,13 +91,42 @@ def mark_unfinished_status(
         for p in (live_players or [])
         if p is not None and str(p).strip()
     }
-    if not live or "今日主选" not in df.columns:
+    pending = {
+        str(u).strip()
+        for u in (pending_user_ids or set())
+        if u is not None and str(u).strip()
+    }
+    if not live and not pending:
         return df
     out = df.copy()
     status = out["当前状态"].astype("string").fillna("").str.strip()
-    pick = out["今日主选"].astype("string").fillna("").str.strip()
-    out.loc[status.eq("存活") & pick.isin(live), "当前状态"] = "未完赛"
+    unfinished = pd.Series(False, index=out.index)
+    if live and "今日主选" in out.columns:
+        pick = out["今日主选"].astype("string").fillna("").str.strip()
+        unfinished = unfinished | pick.isin(live)
+    if pending:
+        unfinished = unfinished | _uid_series(out).isin(pending)
+    out.loc[status.eq("存活") & unfinished, "当前状态"] = "未完赛"
     return out
+
+
+def _uid_series(df: pd.DataFrame) -> pd.Series:
+    def _key(value) -> str:
+        if value is None or (isinstance(value, float) and pd.isna(value)):
+            return ""
+        text = str(value).strip()
+        if text.endswith(".0"):
+            try:
+                float(text)
+                return text[:-2]
+            except ValueError:
+                return text
+        return text
+
+    for col in ("user_id", "主键"):
+        if col in df.columns:
+            return df[col].map(_key)
+    return pd.Series([""] * len(df), index=df.index)
 
 
 def generate_summary(df: pd.DataFrame, day1: bool = False, bye: bool = False):

@@ -403,7 +403,7 @@ def apply_live_settlement(
     detail_rows: list[dict[str, Any]],
     draw: DrawStatus | None,
     rank_by_id: dict[str, int] | None = None,
-) -> tuple[pd.DataFrame, dict[str, int], set[str]]:
+) -> tuple[pd.DataFrame, dict[str, int], set[str], set[str]]:
     """
     Settle alive users against the live draw.
 
@@ -412,10 +412,11 @@ def apply_live_settlement(
     score_df : updated score table (fill_status / day / score / players / killer)
     counts : win/loss/pending/suicide/bye tallies
     bye_users : first-day bye user_id keys
+    pending_users : alive users whose current-day pick is not settled yet
     """
     empty = {"win": 0, "loss": 0, "pending": 0, "suicide": 0, "bye": 0}
     if score_df is None or score_df.empty or not detail_rows:
-        return score_df, empty, set()
+        return score_df, empty, set(), set()
 
     grouped = _details_by_user(detail_rows)
     bye_users = first_day_bye_users(detail_rows, draw, rank_by_id)
@@ -458,6 +459,7 @@ def apply_live_settlement(
     result["alive_at_open"] = result["fill_status"].astype(str).eq("存活")
 
     counts = dict(empty)
+    pending_users: set[str] = set()
     for index, row in result.iterrows():
         if str(row.get("fill_status") or "") != "存活":
             continue
@@ -549,6 +551,8 @@ def apply_live_settlement(
             break
         if pending:
             counts["pending"] += 1
+            if uid:
+                pending_users.add(uid)
 
     # Sync numeric status codes used by compute_live_ranking
     if "status" in result.columns:
@@ -556,7 +560,7 @@ def apply_live_settlement(
             lambda s: FILL_TO_STATUS.get(str(s), 2)
         )
 
-    return result, counts, bye_users
+    return result, counts, bye_users, pending_users
 
 
 def settle_tour_scores(
@@ -564,19 +568,25 @@ def settle_tour_scores(
     submission_df: Optional[pd.DataFrame],
     draw: DrawStatus | None,
     rank_df: Optional[pd.DataFrame] = None,
-) -> tuple[Optional[pd.DataFrame], dict[str, int], set[str], int]:
+) -> tuple[Optional[pd.DataFrame], dict[str, int], set[str], int, set[str]]:
     """
     High-level entry: ensure score table → settle → return play day.
 
-    Returns ``(score_df, counts, bye_users, play_day)``.
+    Returns ``(score_df, counts, bye_users, play_day, pending_users)``.
     """
     detail_rows = submission_to_detail_rows(submission_df)
     ensured = ensure_score_df(score_df, submission_df)
     if ensured is None:
-        return None, {"win": 0, "loss": 0, "pending": 0, "suicide": 0, "bye": 0}, set(), 0
+        return (
+            None,
+            {"win": 0, "loss": 0, "pending": 0, "suicide": 0, "bye": 0},
+            set(),
+            0,
+            set(),
+        )
 
     ranks = rank_by_id_from_df(rank_df)
-    settled, counts, bye_users = apply_live_settlement(
+    settled, counts, bye_users, pending_users = apply_live_settlement(
         ensured, detail_rows, draw, ranks
     )
     play_day = current_play_day(draw, detail_rows)
@@ -587,4 +597,4 @@ def settle_tour_scores(
             f"bye={counts['bye']} suicide={counts['suicide']} "
             f"pending={counts['pending']} play_day={play_day}"
         )
-    return settled, counts, bye_users, play_day
+    return settled, counts, bye_users, play_day, pending_users

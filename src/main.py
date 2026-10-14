@@ -161,7 +161,8 @@ def build_tour_tables(tour_cfg, tour_code, tour_label):
 
     Returns
     -------
-    table, race, raw_rank, submissions, score_df, day, live_players, raw_race
+    table, race, raw_rank, submissions, score_df, day, live_players, raw_race,
+    pending_uids
     """
     if tour_cfg.get("event") is None:
         logger.info(f"{tour_label} — no tournament this week, skipping fetch")
@@ -191,13 +192,14 @@ def build_tour_tables(tour_cfg, tour_code, tour_label):
             .drop("removed_point", axis=1)
             .rename(COL_ZH_DICT, axis=1)
         )
-        return table, race, r, None, None, day, [], ra
+        return table, race, r, None, None, day, [], ra, set()
 
     r, s, re, ra = fetch_all_tables(tour_cfg["event"], tour=tour_code)
     day = infer_day(s, re)
     use_settled = False
     bye_users: set[str] = set()
     live_players: list[str] = []
+    pending_uids: set[str] = set()
 
     settlement_cfg = (cfg or {}).get("settlement") or {}
     if settlement_cfg.get("enabled", True) and s is not None:
@@ -213,7 +215,7 @@ def build_tour_tables(tour_cfg, tour_code, tour_label):
                 for p in draw.by_id.values()
                 if p.live and not p.eliminated and str(p.name or "").strip()
             ]
-            re, counts, bye_users, play_day = settle_tour_scores(
+            re, counts, bye_users, play_day, pending_uids = settle_tour_scores(
                 re, s, draw, rank_df=r
             )
             if play_day > 0:
@@ -238,6 +240,7 @@ def build_tour_tables(tour_cfg, tour_code, tour_label):
             )
             use_settled = False
             bye_users = set()
+            pending_uids = set()
             day = infer_day(s, re)
 
     logger.info(
@@ -277,7 +280,7 @@ def build_tour_tables(tour_cfg, tour_code, tour_label):
         race = race.merge(
             table.loc[:, ["user_id", "今日状态"]], how="left", on="user_id"
         )
-    return table, race, r, s, re, day, live_players, ra
+    return table, race, r, s, re, day, live_players, ra, pending_uids
 
 
 def _log_submissions_for_users(submissions_df, day, user_ids):
@@ -408,6 +411,8 @@ def update_rank_pages(
     wta_players: list = None,
     atp_live_players: list = None,
     wta_live_players: list = None,
+    atp_pending_uids: set = None,
+    wta_pending_uids: set = None,
     atp_rank_raw: pd.DataFrame = None,
     wta_rank_raw: pd.DataFrame = None,
     atp_race_raw: pd.DataFrame = None,
@@ -417,11 +422,14 @@ def update_rank_pages(
     atp_stats = generate_summary(atp, atp_day1, atp_bye)
     atp_killers = daily_killer_stats(atp)
     atp_view = mark_unfinished_status(
-        hide_today_picks_for_eliminated(atp), atp_live_players
+        hide_today_picks_for_eliminated(atp),
+        atp_live_players,
+        atp_pending_uids,
     )
     atp_race_view = mark_unfinished_status(
         hide_today_picks_for_eliminated(prepare_rank_change(atp_race)),
         atp_live_players,
+        atp_pending_uids,
     )
     render_ranking_page(
         atp_view,
@@ -453,11 +461,14 @@ def update_rank_pages(
     wta_stats = generate_summary(wta, wta_day1, wta_bye)
     wta_killers = daily_killer_stats(wta)
     wta_view = mark_unfinished_status(
-        hide_today_picks_for_eliminated(wta), wta_live_players
+        hide_today_picks_for_eliminated(wta),
+        wta_live_players,
+        wta_pending_uids,
     )
     wta_race_view = mark_unfinished_status(
         hide_today_picks_for_eliminated(prepare_rank_change(wta_race)),
         wta_live_players,
+        wta_pending_uids,
     )
     render_ranking_page(
         wta_view,
@@ -490,10 +501,18 @@ def update_rank_pages(
         atp_cfg_local = (cfg or {}).get("atp") or {}
         wta_cfg_local = (cfg or {}).get("wta") or {}
         update_combined_pages(
-            mark_unfinished_status(atp_table, atp_live_players),
-            mark_unfinished_status(wta_table, wta_live_players),
-            mark_unfinished_status(atp_race, atp_live_players),
-            mark_unfinished_status(wta_race, wta_live_players),
+            mark_unfinished_status(
+                atp_table, atp_live_players, atp_pending_uids
+            ),
+            mark_unfinished_status(
+                wta_table, wta_live_players, wta_pending_uids
+            ),
+            mark_unfinished_status(
+                atp_race, atp_live_players, atp_pending_uids
+            ),
+            mark_unfinished_status(
+                wta_race, wta_live_players, wta_pending_uids
+            ),
             atp_event=atp_cfg_local.get("name"),
             wta_event=wta_cfg_local.get("name"),
             atp_removed=atp_cfg_local.get("removed_tournament_name"),
@@ -791,6 +810,7 @@ def main(*, mode: str = "default"):
         atp_day,
         atp_live,
         atp_ra,
+        atp_pending,
     ) = build_tour_tables(atp_cfg, "MS", "ATP")
     (
         wta_table,
@@ -801,6 +821,7 @@ def main(*, mode: str = "default"):
         wta_day,
         wta_live,
         wta_ra,
+        wta_pending,
     ) = build_tour_tables(wta_cfg, "WS", "WTA")
     # Event detail: players, dates, rounds/scores for current day
     atp_players = []
@@ -925,6 +946,8 @@ def main(*, mode: str = "default"):
         wta_players=wta_players,
         atp_live_players=atp_live,
         wta_live_players=wta_live,
+        atp_pending_uids=atp_pending,
+        wta_pending_uids=wta_pending,
         atp_rank_raw=atp_r,
         wta_rank_raw=wta_r,
         atp_race_raw=atp_ra,
