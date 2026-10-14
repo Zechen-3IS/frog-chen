@@ -163,7 +163,7 @@ _JS_BREAKDOWN = r"""
           + '<div>'+esc(e.name||'')+'</div>'
           + '<div class="pts">'+(e.points||0)+'</div>'
           + '<div>'+esc(e.round||'—')+'</div>'
-          + '<div>'+esc(e.expires||'—')+'</div>'
+          + '<div>'+esc(e.expires_month || (e.expires ? String(e.expires).slice(0,7).replace('-','.') : '') || '—')+'</div>'
           + '</div>';
       });
     });
