@@ -25,7 +25,7 @@ assets/echarts.min.js
 data/event_scores/
 data/event_draws/
 data/event_day_rounds/
-data/calendar_*.json
+# Keep calendar_*.json in git for CI replace-map / home weeks offline fallback
 data/breakdown_*.js
 data/breakdown_*.json
 data/players.json

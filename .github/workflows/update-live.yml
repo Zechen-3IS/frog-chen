@@ -28,9 +28,24 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Connectivity check
+        run: |
+          python - <<'PY'
+          import urllib.request
+          url = "https://www.live-tennis.cn/zh/survivor/calendar/2026"
+          try:
+              with urllib.request.urlopen(url, timeout=30) as r:
+                  print("live-tennis status", r.status, "len", len(r.read(200)))
+          except Exception as e:
+              print("live-tennis UNREACHABLE:", type(e).__name__, e)
+          PY
+
       - name: Generate pick-related pages
         working-directory: src
-        run: python main.py --live
+        env:
+          PYTHONUNBUFFERED: "1"
+          TZ: Asia/Shanghai
+        run: python -u main.py --live
 
       - name: Publish HTML
         env:

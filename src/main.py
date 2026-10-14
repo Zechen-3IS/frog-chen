@@ -761,8 +761,11 @@ def main(*, mode: str = "default"):
     try:
         refresh_event_config()
     except Exception as err:
+        # CI / offline: keep going with committed config.yaml (live & daily).
         logger.exception(f"Failed to refresh event configuration: {err}")
-        raise
+        if mode == "default":
+            raise
+        logger.warning("Continuing with existing config.yaml (mode=%s)", mode)
     global cfg
     cfg = _load_cfg()
     global YEAR

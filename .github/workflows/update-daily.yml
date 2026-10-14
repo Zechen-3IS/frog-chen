@@ -30,7 +30,10 @@ jobs:
 
       - name: Generate daily pages
         working-directory: src
-        run: python main.py --daily
+        env:
+          PYTHONUNBUFFERED: "1"
+          TZ: Asia/Shanghai
+        run: python -u main.py --daily
 
       - name: Publish HTML
         env:

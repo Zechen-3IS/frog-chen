@@ -415,6 +415,11 @@ def build_tour_config(
     saved_id = config.get(tour_label, {}).get("event")
 
     if saved_id != current_id:
+        if event_dict is None:
+            config_dict = {"event": None, "name": None, "week_start_date": None}
+            config_manager.update({tour_label: config_dict})
+            logger.info("Clear %s event in YAML (no ongoing tournament)", tour_label)
+            return config_dict
         config_dict = {
             "event": current_id,
             "name": event_dict["city"],
@@ -422,26 +427,34 @@ def build_tour_config(
         }
         # Anchor-based replace: slam/1000 first, mid-tier by time between anchors.
         calendar_path = Path(last_yr_calendar_path)
-        last_calendar = pd.read_json(calendar_path, orient="table")
-        for col in ["week_start_date", "valid_from", "invalid_date"]:
-            if col in last_calendar.columns:
-                last_calendar[col] = pd.to_datetime(last_calendar[col])
+        week_names: list[str] = []
+        if not calendar_path.exists():
+            logger.warning(
+                "last-year calendar missing at %s; skip replace-map", calendar_path
+            )
+        elif event_dict is None:
+            logger.warning("no current event; skip replace-map for %s", tour_label)
+        else:
+            last_calendar = pd.read_json(calendar_path, orient="table")
+            for col in ["week_start_date", "valid_from", "invalid_date"]:
+                if col in last_calendar.columns:
+                    last_calendar[col] = pd.to_datetime(last_calendar[col])
 
-        this_year = int(
-            event_dict["event_year"]
-            if event_dict.get("event_year") is not None
-            else pd.Timestamp(event_dict["week_start_date"]).year
-        )
-        this_calendar, _ = fetch_survivor_calendar_event_df(this_year)
+            this_year = int(
+                event_dict["event_year"]
+                if event_dict.get("event_year") is not None
+                else pd.Timestamp(event_dict["week_start_date"]).year
+            )
+            this_calendar, _ = fetch_survivor_calendar_event_df(this_year)
 
-        week_names = find_corresponding_week_events(
-            last_calendar,
-            tour_flag,
-            event_dict["week_start_date"],
-            this_event_id=current_id,
-            this_calendar=this_calendar,
-            this_city=event_dict.get("city"),
-        )
+            week_names = find_corresponding_week_events(
+                last_calendar,
+                tour_flag,
+                event_dict["week_start_date"],
+                this_event_id=current_id,
+                this_calendar=this_calendar,
+                this_city=event_dict.get("city"),
+            )
         if week_names:
             config_dict["removed_tournament_name"] = (
                 week_names[0] if len(week_names) == 1 else week_names
