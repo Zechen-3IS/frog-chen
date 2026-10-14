@@ -900,6 +900,18 @@ def main(*, mode: str = "default"):
         )
         logger.info("Index page updated")
 
+    # Score / day-round caches must exist before combined breakdown (赛事清单轮次).
+    if mode in {"live", "daily"}:
+        try:
+            run_calendar_browser(
+                refresh=True,
+                years=[int(YEAR)] if mode == "live" else None,
+            )
+        except Exception:
+            logger.exception(
+                "%s calendar sync failed; rankings may lack round labels", mode
+            )
+
     update_rank_pages(
         atp_table,
         wta_table,
@@ -920,10 +932,6 @@ def main(*, mode: str = "default"):
     )
 
     if mode == "live":
-        try:
-            run_calendar_browser(refresh=True, years=[int(YEAR)])
-        except Exception:
-            logger.exception("Live calendar (current year) failed; rankings kept")
         return
 
     # H2H + killer + champion pages
@@ -934,10 +942,6 @@ def main(*, mode: str = "default"):
 
     if mode == "daily":
         run_player_stats(refresh=True)
-        try:
-            run_calendar_browser(refresh=True, years=None)
-        except Exception:
-            logger.exception("Daily full calendar failed")
         return
 
     # Player career stats (optional weekday hook; prefer `python main.py --stats`)
