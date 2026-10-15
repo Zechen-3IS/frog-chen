@@ -641,7 +641,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     ← 首页
   </a>
   <div class="topbar-right">
-    <span class="updated">⏱ 2026年10月15日 07:20:23</span>
+    <span class="updated">⏱ 2026年10月15日 09:45:19</span>
     <button class="theme-btn" id="themeBtn" onclick="toggleTheme()">🌙 暗色</button>
   </div>
 </div>
@@ -665,11 +665,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
         </button>
         </div>
         <div class="sum-meta">
-        <span class="meta-chip chip-valid">✓ 24 人已选</span>
+        <span class="meta-chip chip-valid">✓ 54 人已选</span>
     <span class="meta-sep">｜</span>
-    <span class="meta-chip chip-nosel">84 人未选</span>
+    <span class="meta-chip chip-nosel">53 人未选</span>
     <span class="meta-sep">｜</span>
-    <span class="meta-total">总计 108 人</span>
+    <span class="meta-total">总计 107 人</span>
         </div>
         </div>
             <div class="sum-col-hd">
@@ -681,7 +681,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     </div>
         <div class="sum-list" id="sumList"></div>
         <button class="sum-toggle" id="sumToggle" onclick="toggleSumPanel()">
-        <span id="sumToggleTxt">显示全部 6 名球员）</span>
+        <span id="sumToggleTxt">显示全部 8 名球员）</span>
         <span class="sum-ticon" id="sumTicon">▼</span>
         </button>
     </div>
@@ -689,10 +689,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     (function(){
         var TOP_N   = 3;
         var HAS_BYE = false;
-        var ROWS    = [{"name": "斯维托丽娜", "normal": 11, "bye": 0, "status": "live"}, {"name": "萨卡里", "normal": 5, "bye": 0, "status": "live"}, {"name": "李吉妮", "normal": 4, "bye": 0, "status": "live"}, {"name": "保利尼", "normal": 2, "bye": 0, "status": "live"}, {"name": "奥斯塔彭科", "normal": 1, "bye": 0, "status": "live"}, {"name": "希维昂泰克", "normal": 1, "bye": 0, "status": "live"}];
-        var TOTALS  = {"normal": 24, "bye": 0, "grand": 24};
-        var MAX_VAL = 11;
-        var CLIPBOARD_HEADER = "已选24 未选84";
+        var ROWS    = [{"name": "斯维托丽娜", "normal": 20, "bye": 0, "status": "live"}, {"name": "萨卡里", "normal": 18, "bye": 0, "status": "live"}, {"name": "李吉妮", "normal": 8, "bye": 0, "status": "live"}, {"name": "伊-约维奇", "normal": 3, "bye": 0, "status": "live"}, {"name": "保利尼", "normal": 2, "bye": 0, "status": "live"}, {"name": "奥斯塔彭科", "normal": 1, "bye": 0, "status": "live"}, {"name": "希维昂泰克", "normal": 1, "bye": 0, "status": "live"}, {"name": "施内德", "normal": 1, "bye": 0, "status": "live"}];
+        var TOTALS  = {"normal": 54, "bye": 0, "grand": 54};
+        var MAX_VAL = 20;
+        var CLIPBOARD_HEADER = "已选54 未选53";
         var expanded = false;
 
         function pct(n){ return ((n / TOTALS.grand) * 100).toFixed(1) + '%'; }
@@ -1004,11 +1004,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>2</td>
     <td>2</td>
     <td>152*****282</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>斯维托丽娜</td>
+    <td>萨卡里</td>
     <td>120</td>
     <td>0</td>
     <td>5691</td>
@@ -1228,11 +1228,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>18</td>
     <td>18</td>
     <td>wennuan78</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>斯维托丽娜</td>
+    <td>李吉妮</td>
     <td>120</td>
     <td>0</td>
     <td>4702</td>
@@ -1284,11 +1284,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>23</td>
     <td>22</td>
     <td>做丞琳永远的歌迷ya</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>伊-约维奇</td>
+    <td>希维昂泰克</td>
     <td>120</td>
     <td>0</td>
     <td>4649</td>
@@ -1732,11 +1732,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>54</td>
     <td>54</td>
     <td>LilZao</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>萨卡里</td>
+    <td>斯维托丽娜</td>
     <td>120</td>
     <td>0</td>
     <td>3823</td>
@@ -1746,11 +1746,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>55</td>
     <td>55</td>
     <td>精明姐姐的小秘</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>斯维托丽娜</td>
+    <td>萨卡里</td>
     <td>120</td>
     <td>0</td>
     <td>3812</td>
@@ -1788,11 +1788,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>58</td>
     <td>58</td>
     <td>法网冠军丰塞卡</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>李吉妮</td>
+    <td>斯维托丽娜</td>
     <td>120</td>
     <td>0</td>
     <td>3730</td>
@@ -2124,11 +2124,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>82</td>
     <td>82</td>
     <td>Leo_T1nyFo2est_autor</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>萨卡里</td>
+    <td>斯维托丽娜</td>
     <td>120</td>
     <td>0</td>
     <td>3343</td>
@@ -2278,11 +2278,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>87</td>
     <td>93</td>
     <td>青花比目</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>李吉妮</td>
+    <td>斯维托丽娜</td>
     <td>120</td>
     <td>0</td>
     <td>3244</td>
@@ -2474,10 +2474,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>108</td>
     <td>107</td>
     <td>寻感获叹</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
+    <td>斯维托丽娜</td>
     <td></td>
     <td>120</td>
     <td>0</td>
@@ -2740,11 +2740,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>127</td>
     <td>126</td>
     <td>德雨珀2</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>斯维托丽娜</td>
+    <td>希维昂泰克</td>
     <td>120</td>
     <td>0</td>
     <td>2946</td>
@@ -3244,11 +3244,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>157</td>
     <td>162</td>
     <td>victorgc</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>斯维托丽娜</td>
+    <td>萨卡里</td>
     <td>120</td>
     <td>0</td>
     <td>2658</td>
@@ -3370,11 +3370,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>167</td>
     <td>171</td>
     <td>_被窝哲学家_-</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>萨卡里</td>
+    <td>斯维托丽娜</td>
     <td>120</td>
     <td>0</td>
     <td>2588</td>
@@ -3510,11 +3510,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>163</td>
     <td>181</td>
     <td>黑***6</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>斯维托丽娜</td>
+    <td>克鲁格</td>
     <td>120</td>
     <td>0</td>
     <td>2599</td>
@@ -3762,11 +3762,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>190</td>
     <td>199</td>
     <td>崔***啊</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>斯维托丽娜</td>
+    <td>李吉妮</td>
     <td>120</td>
     <td>0</td>
     <td>2418</td>
@@ -3888,11 +3888,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>199</td>
     <td>208</td>
     <td>是月牙呦</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>萨卡里</td>
+    <td>希维昂泰克</td>
     <td>120</td>
     <td>0</td>
     <td>2390</td>
@@ -4070,11 +4070,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>221</td>
     <td>221</td>
     <td>和楼盘规模破破</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>萨卡里</td>
+    <td>保利尼</td>
     <td>120</td>
     <td>0</td>
     <td>2232</td>
@@ -4308,10 +4308,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>234</td>
     <td>238</td>
     <td>Kwan-tennis</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
+    <td>李吉妮</td>
     <td></td>
     <td>120</td>
     <td>0</td>
@@ -4364,11 +4364,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>236</td>
     <td>242</td>
     <td>WillKris锴</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>萨卡里</td>
+    <td>斯维托丽娜</td>
     <td>120</td>
     <td>0</td>
     <td>2149</td>
@@ -4588,11 +4588,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>247</td>
     <td>258</td>
     <td>小煜v0</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>伊-约维奇</td>
+    <td>希维昂泰克</td>
     <td>120</td>
     <td>0</td>
     <td>2064</td>
@@ -4784,11 +4784,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>266</td>
     <td>272</td>
     <td>底线老五</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>萨卡里</td>
+    <td>蕾-费尔南德斯</td>
     <td>120</td>
     <td>0</td>
     <td>1912</td>
@@ -5344,10 +5344,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>297</td>
     <td>312</td>
     <td>用户5472180102</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
+    <td>斯维托丽娜</td>
     <td></td>
     <td>120</td>
     <td>0</td>
@@ -5386,21 +5386,21 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>298</td>
     <td>315</td>
     <td>3ga-Swiatek</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
+    <td>伊-约维奇</td>
     <td></td>
     <td>120</td>
     <td>0</td>
     <td>1684</td>
     <td><span class="rank up">+17</span></td>
   </tr>
-  <tr class="row-live" data-detail="[&quot;弗雷希&quot;, &quot;李吉妮&quot;, &quot;克鲁格&quot;]">
+  <tr class="row-out" data-detail="[&quot;弗雷希&quot;, &quot;李吉妮&quot;, &quot;克鲁格&quot;, &quot;李吉妮&quot;]">
     <td>299</td>
     <td>316</td>
     <td>AKA鱼饼</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-out">自杀(重复)</span></td>
     <td>3</td>
     <td></td>
     <td></td>
@@ -5764,11 +5764,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>332</td>
     <td>342</td>
     <td>我是我自己zyt</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>萨卡里</td>
+    <td>斯维托丽娜</td>
     <td>120</td>
     <td>0</td>
     <td>1498</td>
@@ -5834,11 +5834,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>339</td>
     <td>347</td>
     <td>C***_</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>萨卡里</td>
+    <td>斯维托丽娜</td>
     <td>120</td>
     <td>0</td>
     <td>1465</td>
@@ -5862,11 +5862,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>341</td>
     <td>349</td>
     <td>奥索里奥科斯秋克阿瓦涅相我老婆</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>萨卡里</td>
+    <td>伊-约维奇</td>
     <td>120</td>
     <td>0</td>
     <td>1454</td>
@@ -6744,11 +6744,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>399</td>
     <td>412</td>
     <td>h***t</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>萨卡里</td>
+    <td>斯维托丽娜</td>
     <td>120</td>
     <td>0</td>
     <td>1042</td>
@@ -7332,10 +7332,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>433</td>
     <td>454</td>
     <td>Hakulamatata_-B</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
+    <td>萨卡里</td>
     <td></td>
     <td>120</td>
     <td>0</td>
@@ -8312,11 +8312,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>493</td>
     <td>524</td>
     <td>Mamba24NeverOUT</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>李吉妮</td>
+    <td>波汉科娃</td>
     <td>120</td>
     <td>0</td>
     <td>503</td>
@@ -8634,10 +8634,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>521</td>
     <td>547</td>
     <td>4ga-Swiatek</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
+    <td>施内德</td>
     <td></td>
     <td>120</td>
     <td>0</td>
@@ -9208,11 +9208,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>551</td>
     <td>588</td>
     <td>Cassie Yu</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>3</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>萨卡里</td>
+    <td>斯维托丽娜</td>
     <td>120</td>
     <td>0</td>
     <td>286</td>
