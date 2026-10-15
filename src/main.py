@@ -442,10 +442,11 @@ def update_rank_pages(
     atp_race_raw: pd.DataFrame = None,
     wta_race_raw: pd.DataFrame = None,
 ):
-    # Mark 未完赛/未选 on full frames (still have user_id / 今日主选), then trim.
+    # Mark 未完赛/未选 first (keep today's picks for losers so summary counts them),
+    # then hide picks only on the rendered table.
     atp_base = mark_unpicked_status(
         mark_unfinished_status(
-            hide_today_picks_for_eliminated(atp_table),
+            atp_table,
             atp_live_players,
             atp_pending_uids,
         )
@@ -453,14 +454,16 @@ def update_rank_pages(
     atp = prepare_rank_change(atp_base)
     atp_stats = generate_summary(atp, atp_day1, atp_bye)
     atp_killers = daily_killer_stats(atp)
-    atp_view = drop_today_status_column(atp)
+    atp_view = drop_today_status_column(hide_today_picks_for_eliminated(atp))
     atp_race_view = drop_today_status_column(
-        prepare_rank_change(
-            mark_unpicked_status(
-                mark_unfinished_status(
-                    hide_today_picks_for_eliminated(atp_race),
-                    atp_live_players,
-                    atp_pending_uids,
+        hide_today_picks_for_eliminated(
+            prepare_rank_change(
+                mark_unpicked_status(
+                    mark_unfinished_status(
+                        atp_race,
+                        atp_live_players,
+                        atp_pending_uids,
+                    )
                 )
             )
         )
@@ -493,7 +496,7 @@ def update_rank_pages(
 
     wta_base = mark_unpicked_status(
         mark_unfinished_status(
-            hide_today_picks_for_eliminated(wta_table),
+            wta_table,
             wta_live_players,
             wta_pending_uids,
         )
@@ -501,14 +504,16 @@ def update_rank_pages(
     wta = prepare_rank_change(wta_base)
     wta_stats = generate_summary(wta, wta_day1, wta_bye)
     wta_killers = daily_killer_stats(wta)
-    wta_view = drop_today_status_column(wta)
+    wta_view = drop_today_status_column(hide_today_picks_for_eliminated(wta))
     wta_race_view = drop_today_status_column(
-        prepare_rank_change(
-            mark_unpicked_status(
-                mark_unfinished_status(
-                    hide_today_picks_for_eliminated(wta_race),
-                    wta_live_players,
-                    wta_pending_uids,
+        hide_today_picks_for_eliminated(
+            prepare_rank_change(
+                mark_unpicked_status(
+                    mark_unfinished_status(
+                        wta_race,
+                        wta_live_players,
+                        wta_pending_uids,
+                    )
                 )
             )
         )
