@@ -778,7 +778,7 @@ body.dark .t-type.w1000  {color:var(--primary);}
     ← ATP赛历
   </a>
   <div class="topbar-right">
-    <span class="updated">⏱ 2026年10月16日 00:16:19</span>
+    <span class="updated">⏱ 2026年10月16日 00:30:58</span>
     <button class="theme-btn" id="themeBtn" onclick="toggleTheme()">🌙 暗色</button>
   </div>
 </div>
@@ -789,13 +789,13 @@ body.dark .t-type.w1000  {color:var(--primary);}
     蒙彼利埃 · 2026
     <span class="ttag ttag-atp">ATP</span>
       <span class="ttag ttag-all">2026</span>
-      <span class="ttag ttag-all">ATP500</span>
+      <span class="ttag ttag-all">ATP250</span>
       <span class="ttag ttag-all">得分</span>
   </div>
 </div>
 
 <div class="score-meta">
-  <span class="t-type m500">ATP500</span>
+  <span class="t-type m250">ATP250</span>
   <span>参赛 <b>287</b> 人</span>
 </div>
 <div class="score-stats">
@@ -2985,12 +2985,17 @@ document.addEventListener('DOMContentLoaded',function(){
 
         if(isNumericCol){
             // ── build slider filter ──────────────────────────────
-            const minVal=Math.min(...parsedNums);
-            const maxVal=Math.max(...parsedNums);
-            const step=(maxVal-minVal)>20 ? 1 : (maxVal-minVal)/100 || 1;
+            const headerText=header.textContent.trim();
+            const forceInt=/天数|排名|周数|参赛|冠军数|亚军|连胜|连败|得分|积分/.test(headerText)
+                && !/率/.test(headerText);
+            const isIntCol=forceInt || parsedNums.every(n=>Number.isInteger(n));
+            let minVal=Math.min(...parsedNums);
+            let maxVal=Math.max(...parsedNums);
+            if(isIntCol){ minVal=Math.floor(minVal); maxVal=Math.ceil(maxVal); }
+            const step=isIntCol ? 1 : ((maxVal-minVal)>20 ? 1 : (maxVal-minVal)/100 || 1);
 
             columnMeta[index]={type:'numeric', min:minVal, max:maxVal,
-                                curMin:minVal, curMax:maxVal};
+                                curMin:minVal, curMax:maxVal, intCol:isIntCol};
 
             const dropdownWrapper=document.createElement('div');
             dropdownWrapper.className='filter-dropdown';
@@ -3004,11 +3009,13 @@ document.addEventListener('DOMContentLoaded',function(){
             const readout=document.createElement('div');
             readout.className='filter-slider-readout';
             const inMin=document.createElement('input');
-            inMin.type='number'; inMin.value=minVal;
+            inMin.type='number'; inMin.value=minVal; inMin.step=step;
+            if(isIntCol){ inMin.step='1'; inMin.setAttribute('inputmode','numeric'); }
             const sep=document.createElement('span');
             sep.className='filter-slider-sep'; sep.textContent='~';
             const inMax=document.createElement('input');
-            inMax.type='number'; inMax.value=maxVal;
+            inMax.type='number'; inMax.value=maxVal; inMax.step=step;
+            if(isIntCol){ inMax.step='1'; inMax.setAttribute('inputmode','numeric'); }
             readout.append(inMin,sep,inMax);
 
             const rangeWrap=document.createElement('div');
@@ -3031,10 +3038,12 @@ document.addEventListener('DOMContentLoaded',function(){
 
             function syncUI(){
                 let lo=parseFloat(rMin.value), hi=parseFloat(rMax.value);
+                if(isIntCol){ lo=Math.round(lo); hi=Math.round(hi); }
                 if(lo>hi){ const t=lo; lo=hi; hi=t; }
                 columnMeta[index].curMin=lo;
                 columnMeta[index].curMax=hi;
-                inMin.value=lo; inMax.value=hi;
+                inMin.value=isIntCol?String(lo):lo; inMax.value=isIntCol?String(hi):hi;
+                rMin.value=lo; rMax.value=hi;
                 const pct=v=>((v-minVal)/(maxVal-minVal||1))*100;
                 fill.style.left=pct(lo)+'%';
                 fill.style.width=(pct(hi)-pct(lo))+'%';
@@ -3044,8 +3053,16 @@ document.addEventListener('DOMContentLoaded',function(){
             }
             rMin.addEventListener('input',()=>{ if(+rMin.value>+rMax.value)rMin.value=rMax.value; syncUI(); });
             rMax.addEventListener('input',()=>{ if(+rMax.value<+rMin.value)rMax.value=rMin.value; syncUI(); });
-            inMin.addEventListener('change',()=>{ rMin.value=inMin.value; syncUI(); });
-            inMax.addEventListener('change',()=>{ rMax.value=inMax.value; syncUI(); });
+            inMin.addEventListener('change',()=>{
+                let v=parseFloat(inMin.value); if(isNaN(v))v=minVal;
+                if(isIntCol) v=Math.round(v);
+                rMin.value=v; syncUI();
+            });
+            inMax.addEventListener('change',()=>{
+                let v=parseFloat(inMax.value); if(isNaN(v))v=maxVal;
+                if(isIntCol) v=Math.round(v);
+                rMax.value=v; syncUI();
+            });
             resetBtn.addEventListener('click',()=>{ rMin.value=minVal; rMax.value=maxVal; syncUI(); });
             syncUI();
 

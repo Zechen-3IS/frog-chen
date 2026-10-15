@@ -159,26 +159,37 @@ body::before{
         .wk-level{font-size:10px;padding:1px 6px;border-radius:8px;background:var(--surface2);
             color:var(--muted);border:0.5px solid var(--border);}
         .wk-date{font-family:'Space Mono',monospace;font-size:10px;color:var(--faint);}
-        .wk-stats{display:flex;flex-wrap:wrap;gap:10px 16px;font-size:12px;
-            color:var(--ink2,var(--muted));margin-bottom:8px;}
-        .wk-stat-lbl{color:var(--faint);}
+        .wk-stats{display:flex;flex-wrap:wrap;gap:8px;margin:2px 0 10px;}
+        .wk-stat{display:inline-flex;align-items:baseline;gap:6px;
+            padding:4px 10px;border-radius:999px;background:var(--surface2);
+            border:0.5px solid var(--border);font-size:12px;}
+        .wk-stat-lbl{color:var(--faint);font-size:10px;letter-spacing:.04em;}
         .wk-stats b{font-family:'Space Mono',monospace;color:var(--primary-dark);font-weight:700;}
         body.dark .wk-stats b{color:var(--primary);}
-        .wk-result{font-size:13px;line-height:1.55;margin-top:2px;}
-        .wk-result.win{color:#2a6b4f;}
-        .wk-result.out{color:var(--muted);}
-        .wk-result.pending{color:#8a5a18;}
-        body.dark .wk-result.win{color:#7dcea0;}
-        body.dark .wk-result.pending{color:#e0b56a;}
+        .wk-label{font-size:11px;font-weight:600;letter-spacing:.04em;margin:8px 0 6px;}
+        .wk-label.win{color:#2a6b4f;}
+        .wk-label.out{color:var(--muted);}
+        .wk-label.pending{color:#8a5a18;}
+        .wk-label.soft{color:var(--faint);font-weight:500;margin-top:4px;}
+        body.dark .wk-label.win{color:#7dcea0;}
+        body.dark .wk-label.pending{color:#e0b56a;}
+        .wk-people{margin:0 0 2px;}
+        .wk-chips{display:flex;flex-wrap:wrap;gap:5px;}
+        .wk-chip{display:inline-block;max-width:100%;padding:3px 9px;border-radius:999px;
+            background:rgba(42,107,79,.08);border:0.5px solid rgba(42,107,79,.18);
+            color:#1f4f3a;font-size:12px;line-height:1.35;white-space:nowrap;
+            overflow:hidden;text-overflow:ellipsis;}
+        body.dark .wk-chip{background:rgba(125,206,160,.12);border-color:rgba(125,206,160,.22);
+            color:#b7e0c6;}
         .wk-sub{font-size:12px;color:var(--muted);line-height:1.55;margin-top:4px;}
-        .wk-defend-title{font-size:11px;color:var(--faint);letter-spacing:.06em;
-            margin-top:8px;margin-bottom:4px;}
+        .wk-defend-card{margin-top:10px;padding:10px 12px;border-radius:8px;
+            background:var(--surface2);border:0.5px solid var(--border);}
+        .wk-defend-title{font-family:'Space Mono',monospace;font-size:9px;
+            letter-spacing:.14em;text-transform:uppercase;color:var(--faint);
+            margin:0 0 6px;}
         .wk-defend-event{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px;
-            margin-bottom:4px;}
-        .wk-defend-city{font-size:13px;font-weight:600;color:var(--ink);}
-        .wk-defend{font-size:12px;color:#2a6b4f;line-height:1.55;margin-top:3px;}
-        .wk-defend.muted{color:var(--muted);}
-        body.dark .wk-defend:not(.muted){color:#7dcea0;}
+            margin-bottom:2px;}
+        .wk-defend-city{font-size:14px;font-weight:600;color:var(--ink);}
         .wk-empty,.muted{color:var(--faint);font-size:13px;}
 
         /* sections */
@@ -302,15 +313,17 @@ body::before{
                 <span class="wk-city">北京</span>
                 <span class="wk-level">ATP500</span>
                 <span class="wk-date">09/28开赛</span>
-            </div><div class="wk-result win">恭喜锦暔, 年终的W, 晨曦中的楷模Elroy, 李杨科-RM夺冠</div>
+            </div><div class="wk-label win">夺冠</div>
+<div class="wk-people"><span class="wk-chips"><span class="wk-chip">锦暔</span><span class="wk-chip">年终的W</span><span class="wk-chip">晨曦中的楷模Elroy</span><span class="wk-chip">李杨科-RM</span></span></div>
         </div>        <div class="wk-panel wta">
             <div class="wk-eye">WTA · 上周</div>
                         <div class="wk-event">
                 <span class="wk-city">北京</span>
                 
                 <span class="wk-date">09/28开赛</span>
-            </div><div class="wk-result out">本站无人生还</div>
-<div class="wk-result win">恭喜风***虚获得赛事最高分：650</div>
+            </div><div class="wk-label out">本站无人生还</div>
+<div class="wk-label soft">最高分 650</div>
+<div class="wk-people"><span class="wk-chips"><span class="wk-chip">风***虚</span></span></div>
         </div>
         </div>
     </div>    <div class="wk-block">
@@ -322,22 +335,28 @@ body::before{
                 <span class="wk-city">上海</span>
                 
                 <span class="wk-date">10/05开赛</span>
-            </div><div class="wk-stats"><span class="wk-stat"><span class="wk-stat-lbl">参赛: </span><b>348</b></span> <span class="wk-stat"><span class="wk-stat-lbl">幸存: </span><b>32</b></span></div>
-<div class="wk-defend-title">卫冕赛事：</div>
+            </div><div class="wk-stats"><span class="wk-stat"><span class="wk-stat-lbl">参赛</span><b>348</b></span><span class="wk-stat"><span class="wk-stat-lbl">幸存</span><b>31</b></span></div>
+<div class="wk-defend-card">
+<div class="wk-defend-title">卫冕赛事</div>
 <div class="wk-defend-event"><span class="wk-defend-city">上海</span></div>
-<div class="wk-defend muted">卫冕赛事无人生还</div>
-<div class="wk-defend">做丞琳永远的歌迷ya获得赛事最高分：150</div>
+<div class="wk-label out">卫冕站无人生还</div>
+<div class="wk-label soft">最高分 150</div>
+<div class="wk-people"><span class="wk-chips"><span class="wk-chip">做丞琳永远的歌迷ya</span></span></div>
+</div>
         </div>        <div class="wk-panel wta">
             <div class="wk-eye">WTA · 本周</div>
                         <div class="wk-event">
                 <span class="wk-city">武汉</span>
                 
                 <span class="wk-date">10/12开赛</span>
-            </div><div class="wk-stats"><span class="wk-stat"><span class="wk-stat-lbl">参赛: </span><b>402</b></span> <span class="wk-stat"><span class="wk-stat-lbl">幸存: </span><b>94</b></span></div>
-<div class="wk-defend-title">卫冕赛事：</div>
+            </div><div class="wk-stats"><span class="wk-stat"><span class="wk-stat-lbl">参赛</span><b>402</b></span><span class="wk-stat"><span class="wk-stat-lbl">幸存</span><b>94</b></span></div>
+<div class="wk-defend-card">
+<div class="wk-defend-title">卫冕赛事</div>
 <div class="wk-defend-event"><span class="wk-defend-city">武汉</span></div>
-<div class="wk-defend muted">卫冕赛事无人生还</div>
-<div class="wk-defend">silver小小蓝, 梦是无尽的荒野, 黑***友, 黑白_大山, Aeonbert, 后曹操, 板尼哟, 活宝哈u, liangZxx, WillKrisKai, M***y, Leo_T1nyFo2est_autor, 198******80, 无***痕, pododic Tang获得赛事最高分：650</div>
+<div class="wk-label out">卫冕站无人生还</div>
+<div class="wk-label soft">最高分 650</div>
+<div class="wk-people"><span class="wk-chips"><span class="wk-chip">silver小小蓝</span><span class="wk-chip">梦是无尽的荒野</span><span class="wk-chip">黑***友</span><span class="wk-chip">黑白_大山</span><span class="wk-chip">Aeonbert</span><span class="wk-chip">后曹操</span><span class="wk-chip">板尼哟</span><span class="wk-chip">活宝哈u</span><span class="wk-chip">liangZxx</span><span class="wk-chip">WillKrisKai</span><span class="wk-chip">M***y</span><span class="wk-chip">Leo_T1nyFo2est_autor</span><span class="wk-chip">198******80</span><span class="wk-chip">无***痕</span><span class="wk-chip">pododic Tang</span></span></div>
+</div>
         </div>
         </div>
     </div>
