@@ -107,8 +107,11 @@ def _build_live_ranking(df_rank: pd.DataFrame, df_score: pd.DataFrame) -> pd.Dat
     has_score = live_ranking_df["select_day"].notna()
     live_ranking_df.loc[has_score, "event_num"] += 1
     def _last_pick(players) -> str:
-        if isinstance(players, list) and players:
-            return str(players[-1])
+        if isinstance(players, list):
+            for item in reversed(players):
+                text = str(item or "").strip()
+                if text and text != "轮空":
+                    return text
         return ""
 
     last_pick = live_ranking_df["players"].map(_last_pick)
@@ -126,7 +129,15 @@ def _build_live_ranking(df_rank: pd.DataFrame, df_score: pd.DataFrame) -> pd.Dat
     )
     live_ranking_df.loc[has_score, "status"] = status_txt
     loser_mask = live_ranking_df["fill_status"] == "球员输球"
-    live_ranking_df.loc[loser_mask, "killer"] = last_pick.loc[loser_mask]
+    # Prefer settlement killer when set; otherwise last pick. Never wipe with "".
+    if "killer" not in live_ranking_df.columns:
+        live_ranking_df["killer"] = ""
+    existing_killer = (
+        live_ranking_df["killer"].fillna("").astype(str).map(lambda s: s.strip())
+    )
+    inferred = last_pick.fillna("").astype(str).map(lambda s: s.strip())
+    merged_killer = inferred.where(inferred.ne(""), existing_killer)
+    live_ranking_df.loc[loser_mask, "killer"] = merged_killer.loc[loser_mask]
     live_ranking_df.loc[~has_score, "status"] = "未参赛"
     live_ranking_df["fill_status"] = live_ranking_df["fill_status"].fillna("未参赛")
 

@@ -357,6 +357,94 @@ def clean_player_list(value) -> list:
     return [p for p in items if str(p).strip() and str(p).strip() != "轮空"]
 
 
+def _detail_for_pick(
+    details: list[dict[str, Any]], pick: str
+) -> dict[str, Any] | None:
+    """Latest submission row whose primary equals ``pick``."""
+    pick = str(pick or "").strip()
+    if not pick:
+        return None
+    matched = [
+        item
+        for item in details
+        if str(item.get("player") or "").strip() == pick
+    ]
+    if not matched:
+        return None
+    matched.sort(key=lambda row: int(row.get("day") or 0))
+    return matched[-1]
+
+
+def _repair_early_retirement_rows(
+    result: pd.DataFrame,
+    grouped: dict[str, list[dict[str, Any]]],
+    draw: DrawStatus,
+) -> int:
+    """
+    Fix official rows that already marked death on an early-ret/W/O primary.
+
+    - With backup: revive to 存活 and drop the primary from ``players`` so the
+      main loop can settle on the backup (killer follows backup outcome).
+    - Without backup: normalize ``自杀(退赛)`` → ``球员输球`` with killer=primary.
+    """
+    repaired = 0
+    for index, row in result.iterrows():
+        status = str(row.get("fill_status") or "").strip()
+        if status not in {"球员输球", "自杀(退赛)"}:
+            continue
+        used = clean_player_list(row.get("players"))
+        if not used:
+            continue
+        last = str(used[-1]).strip()
+        uid = _as_key(row.get("user_id"))
+        detail = _detail_for_pick(grouped.get(uid, []), last)
+        if detail is None:
+            if status == "自杀(退赛)":
+                result.at[index, "fill_status"] = "球员输球"
+                result.at[index, "killer"] = last
+                result.at[index, "players"] = used
+                repaired += 1
+            continue
+        player = draw.lookup(detail.get("fill"), last)
+        if player is None or not player.eliminated:
+            if status == "自杀(退赛)":
+                result.at[index, "fill_status"] = "球员输球"
+                result.at[index, "killer"] = last
+                result.at[index, "players"] = used
+                repaired += 1
+            continue
+        early = retirement_backup_allowed(player.elim_score)
+        alt = str(detail.get("player_alt") or "").strip()
+        if early and alt:
+            # Wrongly died on primary despite usable backup — revive for re-settle.
+            used = used[:-1]
+            death_day = int(detail.get("day") or 0) or (len(used) + 1)
+            result.at[index, "players"] = used
+            result.at[index, "fill_status"] = "存活"
+            result.at[index, "killer"] = ""
+            result.at[index, "day"] = max(0, death_day - 1)
+            if "status" in result.columns:
+                result.at[index, "status"] = FILL_TO_STATUS.get("存活", 2)
+            repaired += 1
+            continue
+        if early and not alt:
+            result.at[index, "fill_status"] = "球员输球"
+            result.at[index, "killer"] = last
+            result.at[index, "players"] = used
+            if "status" in result.columns:
+                result.at[index, "status"] = FILL_TO_STATUS.get("球员输球", -2)
+            repaired += 1
+            continue
+        if status == "自杀(退赛)":
+            result.at[index, "fill_status"] = "球员输球"
+            result.at[index, "killer"] = last
+            result.at[index, "players"] = used
+            if "status" in result.columns:
+                result.at[index, "status"] = FILL_TO_STATUS.get("球员输球", -2)
+            repaired += 1
+    return repaired
+
+
 def ensure_score_df(
     score_df: Optional[pd.DataFrame],
     submission_df: Optional[pd.DataFrame],
@@ -513,6 +601,17 @@ def apply_live_settlement(
     # Snapshot before settlement mutates fill_status — today's pick summary
     # must only count users who were still alive at the open of the day.
     result["alive_at_open"] = result["fill_status"].astype(str).eq("存活")
+    if draw is not None and draw.by_id:
+        repaired_n = _repair_early_retirement_rows(result, grouped, draw)
+        if repaired_n:
+            logger.info(
+                f"Repaired {repaired_n} early-retirement / 退赛 rows for backup"
+            )
+        # Revived rows were wrongly marked dead on primary; treat as alive at open
+        # so today's pick board / summary still include them.
+        result.loc[
+            result["fill_status"].astype(str).eq("存活"), "alive_at_open"
+        ] = True
 
     counts = dict(empty)
     pending_users: set[str] = set()
