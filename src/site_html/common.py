@@ -189,72 +189,6 @@ def _df_to_html_table(
     lines.append("</table>")
     return "\n".join(lines)
 
-def _backup_panel_html(backup_events: Optional[list] = None) -> str:
-    """Render early-retirement backup activation block for the summary panel."""
-    if not backup_events:
-        return ""
-    blocks: list[str] = []
-    for item in backup_events:
-        primary = html.escape(str(item.get("primary") or "").strip())
-        if not primary:
-            continue
-        score = html.escape(str(item.get("score") or "").strip())
-        score_html = (
-            f'<span class="bak-score">{score}</span>' if score else ""
-        )
-        rows_html: list[str] = []
-        for back in item.get("backs") or []:
-            name = str(back.get("name") or "").strip()
-            label = html.escape(name) if name else "无备选"
-            chips: list[str] = []
-            alive_n = int(back.get("alive") or 0)
-            live_n = int(back.get("live") or 0)
-            out_n = int(back.get("out") or 0)
-            if alive_n:
-                chips.append(
-                    f'<span class="meta-chip chip-alive">{alive_n} 人存活</span>'
-                )
-            if live_n:
-                chips.append(
-                    f'<span class="meta-chip chip-live">{live_n} 人未完赛</span>'
-                )
-            if out_n:
-                chips.append(
-                    f'<span class="meta-chip chip-out">{out_n} 人淘汰</span>'
-                )
-            if not chips:
-                continue
-            rows_html.append(
-                '<div class="bak-row">'
-                f'<span class="bak-arrow">→</span>'
-                f'<span class="bak-alt">{label}</span>'
-                f'<span class="bak-chips">{" ".join(chips)}</span>'
-                "</div>"
-            )
-        if not rows_html:
-            continue
-        total = int(item.get("total") or 0)
-        blocks.append(
-            '<div class="bak-block">'
-            '<div class="bak-primary">'
-            f'<span class="bak-name">{primary}</span>'
-            f"{score_html}"
-            '<span class="bak-tag">第一盘退赛 / W/O</span>'
-            f'<span class="bak-total">{total} 人</span>'
-            "</div>"
-            + "".join(rows_html)
-            + "</div>"
-        )
-    if not blocks:
-        return ""
-    return (
-        '<div class="bak-box">'
-        '<div class="bak-title">备选启用</div>'
-        + "".join(blocks)
-        + "</div>"
-    )
-
-
 def _summary_bar_html(
     df: pd.DataFrame,
     top_n: int = 3,
@@ -430,6 +364,24 @@ def _summary_bar_html(
     # ── build JSON data for JS renderer ──────────────────────────────────────
     import json
 
+    backup_by_primary: dict[str, list] = {}
+    for item in backup_events or []:
+        primary = str(item.get("primary") or "").strip()
+        if not primary:
+            continue
+        backs = []
+        for back in item.get("backs") or []:
+            backs.append(
+                {
+                    "name": str(back.get("name") or "").strip(),
+                    "alive": int(back.get("alive") or 0),
+                    "live": int(back.get("live") or 0),
+                    "out": int(back.get("out") or 0),
+                }
+            )
+        if backs:
+            backup_by_primary[primary] = backs
+
     rows_js = []
     for _, r in data_df.iterrows():
         normal_n = int(r.get(normal_col, 0) or 0)
@@ -437,14 +389,19 @@ def _summary_bar_html(
         name = str(r["今日主选"]).strip()
         # Skip empty / synthetic bye label — bye count lives in meta chips only.
         if name and name != "轮空":
-            rows_js.append(
-                {
-                    "name": name,
-                    "normal": normal_n,
-                    "bye": bye_n,
-                    "status": _player_status(name),
-                }
-            )
+            status = _player_status(name)
+            backs = backup_by_primary.get(name) or []
+            if backs:
+                status = "backup"
+            row_obj = {
+                "name": name,
+                "normal": normal_n,
+                "bye": bye_n,
+                "status": status,
+            }
+            if backs:
+                row_obj["backs"] = backs
+            rows_js.append(row_obj)
 
     rows_json = json.dumps(rows_js, ensure_ascii=False)
     totals_json = json.dumps(
@@ -464,27 +421,6 @@ def _summary_bar_html(
     if suicide_total > 0:
         header_parts.append(f"自杀{suicide_total}")
     clipboard_header = json.dumps(" ".join(header_parts), ensure_ascii=False)
-    backup_html = _backup_panel_html(backup_events)
-    backup_clip_lines: list[str] = []
-    for item in backup_events or []:
-        primary = str(item.get("primary") or "").strip()
-        if not primary:
-            continue
-        score = str(item.get("score") or "").strip()
-        head = f"备选启用 {primary}" + (f" {score}" if score else "")
-        backup_clip_lines.append(head)
-        for back in item.get("backs") or []:
-            name = str(back.get("name") or "").strip() or "无备选"
-            bits = []
-            if int(back.get("alive") or 0):
-                bits.append(f"存活{int(back['alive'])}")
-            if int(back.get("live") or 0):
-                bits.append(f"未完赛{int(back['live'])}")
-            if int(back.get("out") or 0):
-                bits.append(f"淘汰{int(back['out'])}")
-            if bits:
-                backup_clip_lines.append(f"→ {name} {' '.join(bits)}")
-    backup_clip_json = json.dumps(backup_clip_lines, ensure_ascii=False)
 
     # ── assemble HTML ─────────────────────────────────────────────────────────
     return f"""\
@@ -501,7 +437,6 @@ def _summary_bar_html(
         {meta_html}
         </div>
         </div>
-        {backup_html}
         {col_hd_html}
         <div class="sum-list" id="sumList"></div>
         <button class="sum-toggle" id="sumToggle" onclick="toggleSumPanel()">
@@ -517,13 +452,13 @@ def _summary_bar_html(
         var TOTALS  = {totals_json};
         var MAX_VAL = {max_val};
         var CLIPBOARD_HEADER = {clipboard_header};
-        var BACKUP_CLIP = {backup_clip_json};
         var expanded = false;
 
         function pct(n){{ return ((n / TOTALS.grand) * 100).toFixed(1) + '%'; }}
 
         function trackClass(r){{
         if (r.status === 'out') return 'solo-out';
+        if (r.status === 'backup') return 'solo-bak';
         if (r.status === 'live') return 'solo-live';
         if (r.status === 'confirmed') return 'solo-alive';
         if (!HAS_BYE) return 'solo-v';
@@ -533,6 +468,7 @@ def _summary_bar_html(
 
         function statusClass(r){{
         if (r.status === 'live') return 'is-live';
+        if (r.status === 'backup') return 'is-bak';
         if (r.status === 'confirmed') return 'is-alive';
         if (r.status === 'out') return 'is-out';
         return '';
@@ -544,6 +480,9 @@ def _summary_bar_html(
         if (r.status === 'live') {{
             tip += ' · 未完赛';
             tag = '<span class="sbar-tag tag-live">未完赛</span>';
+        }} else if (r.status === 'backup') {{
+            tip += ' · 启用备选';
+            tag = '<span class="sbar-tag tag-bak">启用备选</span>';
         }} else if (r.status === 'confirmed') {{
             tip += ' · 存活';
             tag = '<span class="sbar-tag tag-alive">存活</span>';
@@ -560,6 +499,7 @@ def _summary_bar_html(
 
         function segClass(r){{
         if (r.status === 'out') return 'seg-out';
+        if (r.status === 'backup') return 'seg-bak';
         if (r.status === 'live') return 'seg-live';
         if (r.status === 'confirmed') return 'seg-alive';
         return 'seg-v';
@@ -567,9 +507,18 @@ def _summary_bar_html(
 
         function statusMark(r){{
         if (r.status === 'out') return '❌';
+        if (r.status === 'backup') return '↪️';
         if (r.status === 'confirmed') return '✅';
         if (r.status === 'live') return '⭕️';
         return '';
+        }}
+
+        function bakChips(b){{
+        var parts = [];
+        if (b.alive) parts.push('<span class="meta-chip chip-alive">' + b.alive + ' 人存活</span>');
+        if (b.live) parts.push('<span class="meta-chip chip-live">' + b.live + ' 人未完赛</span>');
+        if (b.out) parts.push('<span class="meta-chip chip-out">' + b.out + ' 人淘汰</span>');
+        return parts.join('');
         }}
 
         function renderList(){{
@@ -581,11 +530,13 @@ def _summary_bar_html(
         var normW = Math.round(r.normal / MAX_VAL * 100);
         var byeW  = Math.round(r.bye    / MAX_VAL * 100);
             var hidden = i >= TOP_N;
+            var hideCls = hidden && !expanded ? 's-hidden' : '';
+            var expCls = hidden && expanded ? 's-exp' : '';
 
             var cls = ['sbar-row',
             statusClass(r),
-            hidden && !expanded ? 's-hidden' : '',
-            hidden &&  expanded ? 's-exp'    : '',
+            hideCls,
+            expCls,
             ].filter(Boolean).join(' ');
 
             var inlineHtml = HAS_BYE
@@ -603,7 +554,7 @@ def _summary_bar_html(
             nameHtml(r) +
             '<div class="sbar-track ' + trackClass(r) + '">' +
                 '<div class="sbar-seg ' + segClass(r) + '" style="width:' + normW + '%"></div>' +
-                (HAS_BYE && r.status !== 'out' ? '<div class="sbar-seg seg-b" style="width:' + byeW + '%"></div>' : '') +
+                (HAS_BYE && r.status !== 'out' && r.status !== 'backup' ? '<div class="sbar-seg seg-b" style="width:' + byeW + '%"></div>' : '') +
             '</div>' +
             inlineHtml +
             '<div class="sbar-right">' +
@@ -611,6 +562,23 @@ def _summary_bar_html(
                 '<span class="sbar-pct">'  + pct(tot) + '</span>' +
             '</div>';
             list.appendChild(row);
+
+            if (r.backs && r.backs.length) {{
+                r.backs.forEach(function(b){{
+                    var chips = bakChips(b);
+                    if (!chips) return;
+                    var bak = document.createElement('div');
+                    bak.className = ['sbar-bak', hideCls, expCls].filter(Boolean).join(' ');
+                    bak.innerHTML =
+                        '<span class="sbar-rank"></span>' +
+                        '<span class="sbar-bak-main">' +
+                          '<span class="bak-arrow">→</span>' +
+                          '<span class="bak-alt">' + (b.name || '无备选') + '</span>' +
+                          '<span class="bak-chips">' + chips + '</span>' +
+                        '</span>';
+                    list.appendChild(bak);
+                }});
+            }}
         }});
 
         /* totals row */
@@ -660,9 +628,6 @@ def _summary_bar_html(
 
         window.copySumStats = function(){{
             var lines = [CLIPBOARD_HEADER];
-            if (BACKUP_CLIP && BACKUP_CLIP.length) {{
-                lines.push.apply(lines, BACKUP_CLIP);
-            }}
             ROWS.forEach(function(r){{
                 if (r.normal === 0 && r.bye === 0) return;
                 var mark = statusMark(r);
@@ -674,6 +639,17 @@ def _summary_bar_html(
                     line = named + ' ' + r.normal;
                 }}
                 lines.push(line);
+                if (r.backs && r.backs.length) {{
+                    r.backs.forEach(function(b){{
+                        var bits = [];
+                        if (b.alive) bits.push('存活' + b.alive);
+                        if (b.live) bits.push('未完赛' + b.live);
+                        if (b.out) bits.push('淘汰' + b.out);
+                        if (bits.length) {{
+                            lines.push('→ ' + (b.name || '无备选') + ' ' + bits.join(' '));
+                        }}
+                    }});
+                }}
             }});
             var text = lines.join('\\n');
             navigator.clipboard.writeText(text).then(function(){{
