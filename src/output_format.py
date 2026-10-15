@@ -49,7 +49,9 @@ def prepare_rank_change(df):
     df["排名变化"] = df["排名变化"].astype("Int64")
     for col in ("当前排名", "当前积分", "本站得分", "扣除积分", "即时积分", "即时排名", "存活天数"):
         if col in df.columns:
-            df[col] = pd.to_numeric(df[col], errors="coerce").astype("Int64")
+            df[col] = (
+                pd.to_numeric(df[col], errors="coerce").round(0).astype("Int64")
+            )
     if "今日主选" in df.columns:
         df["今日主选"] = df["今日主选"].fillna("")
         df["今日备选"] = df["今日备选"].fillna("")

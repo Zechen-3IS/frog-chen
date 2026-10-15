@@ -46,6 +46,14 @@
       {
         "name":"page_type",
         "type":"string"
+      },
+      {
+        "name":"type",
+        "type":"string"
+      },
+      {
+        "name":"level",
+        "type":"string"
       }
     ],
     "primaryKey":[
@@ -65,7 +73,9 @@
       "event_id":"20336",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"ATP250",
+      "level":"M250"
     },
     {
       "index":1,
@@ -78,7 +88,9 @@
       "event_id":"30800",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA500",
+      "level":"W500"
     },
     {
       "index":2,
@@ -91,7 +103,9 @@
       "event_id":"28998",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"ATP250",
+      "level":"M250"
     },
     {
       "index":3,
@@ -104,7 +118,9 @@
       "event_id":"32014",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA500",
+      "level":"W500"
     },
     {
       "index":4,
@@ -117,7 +133,9 @@
       "event_id":"AO",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"大满贯",
+      "level":"大满贯"
     },
     {
       "index":5,
@@ -130,7 +148,9 @@
       "event_id":"AO",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"大满贯",
+      "level":"大满贯"
     },
     {
       "index":6,
@@ -143,7 +163,9 @@
       "event_id":"20375",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"ATP250",
+      "level":"M250"
     },
     {
       "index":7,
@@ -156,7 +178,9 @@
       "event_id":"31096",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA250",
+      "level":"W250"
     },
     {
       "index":8,
@@ -169,7 +193,9 @@
       "event_id":"20424",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"ATP500",
+      "level":"M500"
     },
     {
       "index":9,
@@ -182,7 +208,9 @@
       "event_id":"32088",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA500",
+      "level":"W500"
     },
     {
       "index":10,
@@ -195,7 +223,9 @@
       "event_id":"20496",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"ATP250",
+      "level":"M250"
     },
     {
       "index":11,
@@ -208,7 +238,9 @@
       "event_id":"31003",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA1000",
+      "level":"W1000"
     },
     {
       "index":12,
@@ -221,7 +253,9 @@
       "event_id":"20451",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"ATP500",
+      "level":"M500"
     },
     {
       "index":13,
@@ -234,7 +268,9 @@
       "event_id":"30718",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA1000",
+      "level":"W1000"
     },
     {
       "index":14,
@@ -247,7 +283,9 @@
       "event_id":"20495",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"ATP500",
+      "level":"M500"
     },
     {
       "index":15,
@@ -260,7 +298,9 @@
       "event_id":"32082",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA250",
+      "level":"W250"
     },
     {
       "index":16,
@@ -273,7 +313,9 @@
       "event_id":"20404",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"ATP1000",
+      "level":"M1000"
     },
     {
       "index":17,
@@ -286,7 +328,9 @@
       "event_id":"30609",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA1000",
+      "level":"W1000"
     },
     {
       "index":18,
@@ -299,7 +343,9 @@
       "event_id":"20403",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"ATP1000",
+      "level":"M1000"
     },
     {
       "index":19,
@@ -312,7 +358,9 @@
       "event_id":"30902",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA1000",
+      "level":"W1000"
     },
     {
       "index":20,
@@ -325,7 +373,9 @@
       "event_id":"24462",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"ATP250",
+      "level":"M250"
     },
     {
       "index":21,
@@ -338,7 +388,9 @@
       "event_id":"30804",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA500",
+      "level":"W500"
     },
     {
       "index":22,
@@ -351,7 +403,9 @@
       "event_id":"20410",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"ATP1000",
+      "level":"M1000"
     },
     {
       "index":23,
@@ -364,7 +418,9 @@
       "event_id":"21536",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"ATP1000",
+      "level":"M1000"
     },
     {
       "index":24,
@@ -377,7 +433,9 @@
       "event_id":"31038",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA1000",
+      "level":"W1000"
     },
     {
       "index":25,
@@ -390,7 +448,9 @@
       "event_id":"20416",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"ATP1000",
+      "level":"M1000"
     },
     {
       "index":26,
@@ -403,7 +463,9 @@
       "event_id":"30709",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA1000",
+      "level":"W1000"
     },
     {
       "index":27,
@@ -416,7 +478,9 @@
       "event_id":"20414",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"ATP500",
+      "level":"M500"
     },
     {
       "index":28,
@@ -429,7 +493,9 @@
       "event_id":"30406",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA500",
+      "level":"W500"
     },
     {
       "index":29,
@@ -442,7 +508,9 @@
       "event_id":"RG",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"大满贯",
+      "level":"大满贯"
     },
     {
       "index":30,
@@ -455,7 +523,9 @@
       "event_id":"RG",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"大满贯",
+      "level":"大满贯"
     },
     {
       "index":31,
@@ -468,7 +538,9 @@
       "event_id":"31111",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA500",
+      "level":"W500"
     },
     {
       "index":32,
@@ -481,7 +553,9 @@
       "event_id":"32012",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA500",
+      "level":"W500"
     },
     {
       "index":33,
@@ -494,7 +568,9 @@
       "event_id":"28994",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"ATP250",
+      "level":"M250"
     },
     {
       "index":34,
@@ -507,7 +583,9 @@
       "event_id":"32017",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA500",
+      "level":"W500"
     },
     {
       "index":35,
@@ -520,7 +598,9 @@
       "event_id":"WC",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"大满贯",
+      "level":"大满贯"
     },
     {
       "index":36,
@@ -533,7 +613,9 @@
       "event_id":"WC",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"大满贯",
+      "level":"大满贯"
     },
     {
       "index":37,
@@ -546,7 +628,9 @@
       "event_id":"27480",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"ATP250",
+      "level":"M250"
     },
     {
       "index":38,
@@ -559,7 +643,9 @@
       "event_id":"20418",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"ATP500",
+      "level":"M500"
     },
     {
       "index":39,
@@ -572,7 +658,9 @@
       "event_id":"31082",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA250",
+      "level":"W250"
     },
     {
       "index":40,
@@ -585,7 +673,9 @@
       "event_id":"20421",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"ATP1000",
+      "level":"M1000"
     },
     {
       "index":41,
@@ -598,7 +688,9 @@
       "event_id":"30806",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA1000",
+      "level":"W1000"
     },
     {
       "index":42,
@@ -611,7 +703,9 @@
       "event_id":"20422",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"my"
+      "page_type":"my",
+      "type":"ATP1000",
+      "level":"M1000"
     },
     {
       "index":43,
@@ -624,7 +718,9 @@
       "event_id":"31017",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA1000",
+      "level":"W1000"
     },
     {
       "index":44,
@@ -637,7 +733,9 @@
       "event_id":"26242",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"ATP250",
+      "level":"M250"
     },
     {
       "index":45,
@@ -650,7 +748,9 @@
       "event_id":"32040",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA250",
+      "level":"W250"
     },
     {
       "index":46,
@@ -663,7 +763,9 @@
       "event_id":"UO",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"大满贯",
+      "level":"大满贯"
     },
     {
       "index":47,
@@ -676,7 +778,9 @@
       "event_id":"UO",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"大满贯",
+      "level":"大满贯"
     },
     {
       "index":48,
@@ -689,7 +793,9 @@
       "event_id":"24713",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"ATP250",
+      "level":"M250"
     },
     {
       "index":49,
@@ -702,7 +808,9 @@
       "event_id":"31024",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA500",
+      "level":"W500"
     },
     {
       "index":50,
@@ -715,7 +823,9 @@
       "event_id":"20747",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"ATP500",
+      "level":"M500"
     },
     {
       "index":51,
@@ -728,7 +838,9 @@
       "event_id":"31020",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA1000",
+      "level":"W1000"
     },
     {
       "index":52,
@@ -741,7 +853,9 @@
       "event_id":"25014",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"ATP1000",
+      "level":"M1000"
     },
     {
       "index":53,
@@ -754,7 +868,9 @@
       "event_id":"31075",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA1000",
+      "level":"W1000"
     },
     {
       "index":54,
@@ -767,7 +883,9 @@
       "event_id":"32092",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA500",
+      "level":"W500"
     },
     {
       "index":55,
@@ -780,7 +898,9 @@
       "event_id":"31056",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA500",
+      "level":"W500"
     },
     {
       "index":56,
@@ -793,7 +913,9 @@
       "event_id":"20352",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"ATP1000",
+      "level":"M1000"
     },
     {
       "index":57,
@@ -806,7 +928,9 @@
       "event_id":"31077",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"WTA250",
+      "level":"W250"
     },
     {
       "index":58,
@@ -819,7 +943,9 @@
       "event_id":"30808",
       "event_year":2025,
       "event_tour":"WS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"年终总决赛",
+      "level":"W1000"
     },
     {
       "index":59,
@@ -832,7 +958,9 @@
       "event_id":"20605",
       "event_year":2025,
       "event_tour":"MS",
-      "page_type":"score"
+      "page_type":"score",
+      "type":"年终总决赛",
+      "level":"M1000"
     }
   ]
 }

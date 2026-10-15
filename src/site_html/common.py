@@ -65,6 +65,50 @@ def _row_status_class(val) -> str:
     return ""
 
 
+# Count / day / rank columns must never show trailing ".0".
+_INT_COL_HINTS = (
+    "天数",
+    "排名",
+    "积分",
+    "得分",
+    "周数",
+    "参赛",
+    "冠军",
+    "亚军",
+    "连胜",
+    "连败",
+)
+
+
+def _format_table_cell(col: object, val: object) -> str:
+    """Stringify a cell; force whole numbers for day/rank/score columns."""
+    try:
+        if hasattr(val, "item"):
+            val = val.item()
+    except (TypeError, ValueError, OverflowError):
+        pass
+    col_s = str(col or "")
+    want_int = any(h in col_s for h in _INT_COL_HINTS) and "率" not in col_s
+    if want_int:
+        try:
+            num = float(val)
+            if num == num:  # not NaN
+                return str(int(round(num)))
+        except (TypeError, ValueError, OverflowError):
+            pass
+    try:
+        if isinstance(val, float) and val.is_integer():
+            return str(int(val))
+    except (TypeError, ValueError, OverflowError):
+        pass
+    text = str(val).strip()
+    if text.endswith(".0"):
+        head = text[:-2]
+        if head.lstrip("-").isdigit():
+            return head
+    return text
+
+
 def _df_to_html_table(
     df: pd.DataFrame,
     rank_change_col: Optional[str] = "排名变化",
@@ -130,7 +174,9 @@ def _df_to_html_table(
                 extra_attrs += f' data-uid="{uid_text}"'
         if detail_col and detail_col in df.columns:
             raw_detail = row.get(detail_col, [])
-            if isinstance(raw_detail, list):
+            if isinstance(raw_detail, dict):
+                details = raw_detail
+            elif isinstance(raw_detail, list):
                 details = [str(x) for x in raw_detail]
             elif isinstance(raw_detail, str):
                 s = raw_detail.strip()
@@ -142,14 +188,18 @@ def _df_to_html_table(
                         details = (
                             [str(x) for x in parsed]
                             if isinstance(parsed, list)
-                            else [s]
+                            else (
+                                parsed if isinstance(parsed, dict) else [s]
+                            )
                         )
                     except Exception:
                         details = [s]
-            elif pd.isna(raw_detail):
-                details = []
             else:
-                details = [str(raw_detail)]
+                try:
+                    is_na = bool(pd.isna(raw_detail))
+                except (TypeError, ValueError):
+                    is_na = False
+                details = [] if is_na else [str(raw_detail)]
             detail_json = html.escape(
                 json.dumps(details, ensure_ascii=False), quote=True
             )
@@ -174,15 +224,7 @@ def _df_to_html_table(
                 if is_na:
                     cell_html = ""
                 else:
-                    # Whole numbers as ints (avoid "65.0" from float/Int64 edge cases)
-                    try:
-                        if hasattr(val, "item"):
-                            val = val.item()
-                        if isinstance(val, float) and val.is_integer():
-                            val = int(val)
-                    except (TypeError, ValueError, OverflowError):
-                        pass
-                    cell_html = html.escape(str(val))
+                    cell_html = html.escape(_format_table_cell(col, val))
             lines.append(f"    <td>{cell_html}</td>")
         lines.append("  </tr>")
     lines.append("  </tbody>")

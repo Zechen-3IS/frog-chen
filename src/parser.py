@@ -345,6 +345,42 @@ def _parse_calendar_event_url(url: str, language: str) -> dict:
     return out
 
 
+# Calendar cell logos: …/level_logo/WTA-500-2025.png, GS-AO.png, ATP-Final-2019.png
+_LEVEL_LOGO_STEM_RE = re.compile(r"/level_logo/([^/?#]+)\.png", re.I)
+_LEVEL_LOGO_YEAR_SUFFIX_RE = re.compile(r"-\d{4}$")
+_LEVEL_LOGO_TO_LABELS: dict[str, tuple[str, str]] = {
+    # champion type label, chart bucket (matches tournament_meta.classify_level)
+    "WTA-250": ("WTA250", "W250"),
+    "WTA-500": ("WTA500", "W500"),
+    "WTA-1000": ("WTA1000", "W1000"),
+    "ATP-250": ("ATP250", "M250"),
+    "ATP-500": ("ATP500", "M500"),
+    "ATP-1000": ("ATP1000", "M1000"),
+    "WTA-Final": ("年终总决赛", "W1000"),
+    "ATP-Final": ("年终总决赛", "M1000"),
+    "ITF-OL": ("奥运会", "奥运会"),
+}
+
+
+def parse_survivor_level_logo(src: str) -> tuple[str, str]:
+    """Map live-tennis level logo URL → (type label, chart level).
+
+    Levels change by season (e.g. 新加坡 2025=WTA250, 2026=WTA500), so callers
+    should persist these on each year's calendar row rather than hard-coding by city.
+    """
+    if not src:
+        return "", ""
+    m = _LEVEL_LOGO_STEM_RE.search(str(src))
+    if not m:
+        return "", ""
+    stem = _LEVEL_LOGO_YEAR_SUFFIX_RE.sub("", m.group(1).strip())
+    if stem in _LEVEL_LOGO_TO_LABELS:
+        return _LEVEL_LOGO_TO_LABELS[stem]
+    if stem.startswith("GS-") or stem == "GS":
+        return "大满贯", "大满贯"
+    return "", ""
+
+
 def fetch_survivor_calendar_event_df(
     calendar_year: int, language: str = "zh"
 ) -> tuple[pd.DataFrame, dict]:
@@ -406,6 +442,12 @@ def fetch_survivor_calendar_event_df(
             city = _strip_html(city)
 
             parsed = _parse_calendar_event_url(href, language)
+            logo_srcs = a[0].xpath(
+                ".//img[contains(@class, 'cSurvivorLevelImg')]/@src"
+            )
+            type_label, level = parse_survivor_level_logo(
+                logo_srcs[0] if logo_srcs else ""
+            )
 
             rows.append(
                 {
@@ -419,6 +461,8 @@ def fetch_survivor_calendar_event_df(
                     "event_year": parsed["event_year"],
                     "event_tour": parsed["event_tour"],
                     "page_type": parsed["page_type"],
+                    "type": type_label,
+                    "level": level,
                 }
             )
 
@@ -663,8 +707,47 @@ def annotate_multi_day_rounds(round_by_day: dict[int, str]) -> dict[int, str]:
     return out
 
 
+def pick_rounds_to_result_rounds(round_by_day: dict[int, str]) -> dict[int, str]:
+    """Map pick-page ``当前轮次`` → result round for survivor day scores.
+
+    The pick page labels the round being selected (championship day is ``F``)
+    while surviving that day awards the next-stage points (``500`` = ``W``).
+    Shift non-``R1`` days to the following pick label; the final ``F`` becomes
+    ``W``. Early ``R1/…`` days stay as-is (first-round exits).
+    """
+    cleaned: dict[int, str] = {}
+    for day, raw in round_by_day.items():
+        try:
+            d = int(day)
+        except (TypeError, ValueError):
+            continue
+        text = str(raw or "").strip()
+        if text:
+            cleaned[d] = text
+    if not cleaned:
+        return {}
+
+    days = sorted(cleaned)
+    out: dict[int, str] = {}
+    for idx, day in enumerate(days):
+        pick = cleaned[day]
+        base = pick.split("/", 1)[0].strip().upper()
+        if base == "R1":
+            out[day] = pick
+            continue
+        if idx + 1 < len(days):
+            out[day] = cleaned[days[idx + 1]]
+        else:
+            out[day] = "W" if base == "F" else pick
+    return out
+
+
 def day_round_labels(days: dict) -> list[str]:
-    """Ordered round labels for Day 1..N (empty string when unknown)."""
+    """Ordered *result* round labels for Day 1..N (empty string when unknown).
+
+    Converts pick-page rounds (``F`` on title day) to score-board rounds
+    (``W`` for champions, ``F`` for finalists, …).
+    """
     if not days:
         return []
     nums = []
@@ -676,11 +759,14 @@ def day_round_labels(days: dict) -> list[str]:
     if not nums:
         return []
     max_day = max(nums)
-    out = []
+    pick: dict[int, str] = {}
     for i in range(1, max_day + 1):
         info = days.get(str(i)) or days.get(i) or {}
-        out.append(str(info.get("round") or "").strip())
-    return out
+        label = str(info.get("round") or "").strip()
+        if label:
+            pick[i] = label
+    result = pick_rounds_to_result_rounds(pick)
+    return [result.get(i, pick.get(i, "")) for i in range(1, max_day + 1)]
 
 
 def get_coordinates(city):

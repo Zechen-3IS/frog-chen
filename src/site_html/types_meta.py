@@ -42,6 +42,19 @@ _LEVEL_TO_CHAMPION_TYPE = {
     "W1000": "WTA1000",
     "W500": "WTA500",
     "W250": "WTA250",
+    "奥运会": "奥运会",
+}
+
+_CHAMPION_TYPE_TO_LEVEL = {
+    "大满贯": "大满贯",
+    "年终总决赛": None,  # tour-dependent; see level_from_champion_type
+    "奥运会": "奥运会",
+    "ATP1000": "M1000",
+    "ATP500": "M500",
+    "ATP250": "M250",
+    "WTA1000": "W1000",
+    "WTA500": "W500",
+    "WTA250": "W250",
 }
 
 ATP_TYPE_FILTERS = ["大满贯", "年终总决赛", "奥运会", "ATP1000", "ATP500", "ATP250"]
@@ -56,8 +69,34 @@ def _type_order(t: str) -> int:
     return _TYPE_SORT_ORDER.get(str(t).strip(), 99)
 
 
-def champion_type_label(city: str, tour: str) -> str:
-    """Same labels as champions.csv ``type`` column (for calendar pills)."""
+def level_from_champion_type(type_label: str, tour: str = "") -> str:
+    """Chart bucket for a stored champion-type label (per-year calendar)."""
+    label = str(type_label or "").strip()
+    if not label:
+        return ""
+    if label == "年终总决赛":
+        t = str(tour or "").upper()
+        return "W1000" if t in {"WS", "WTA"} else "M1000"
+    mapped = _CHAMPION_TYPE_TO_LEVEL.get(label)
+    if mapped is not None:
+        return mapped
+    return ""
+
+
+def champion_type_label(
+    city: str, tour: str, *, type_hint: str = "", level_hint: str = ""
+) -> str:
+    """Same labels as champions.csv ``type`` column (for calendar pills).
+
+    Prefer ``type_hint`` / ``level_hint`` scraped for that season — city→level
+    static tables are wrong when a stop changes tier (新加坡 250→500).
+    """
+    hint = str(type_hint or "").strip()
+    if hint:
+        return hint
+    level_h = str(level_hint or "").strip()
+    if level_h and level_h in _LEVEL_TO_CHAMPION_TYPE:
+        return _LEVEL_TO_CHAMPION_TYPE[level_h]
     name = str(city or "").strip()
     t = str(tour or "").upper()
     if name == "奥运会":
@@ -83,9 +122,17 @@ _TYPE_MAX_SCORE: dict[str, int] = {
 }
 
 
-def event_theoretical_max(city: str, tour: str) -> Optional[int]:
+def event_theoretical_max(
+    city: str,
+    tour: str,
+    *,
+    type_hint: str = "",
+    level_hint: str = "",
+) -> Optional[int]:
     """Max board score for this event type, or None if unknown."""
-    label = champion_type_label(city, tour)
+    label = champion_type_label(
+        city, tour, type_hint=type_hint, level_hint=level_hint
+    )
     return _TYPE_MAX_SCORE.get(label)
 
 

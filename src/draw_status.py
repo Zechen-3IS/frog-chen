@@ -80,6 +80,8 @@ class DrawPlayer:
     bye: bool = False
     # Match score text when eliminated, e.g. ``52 Ret.`` / ``W/O`` / ``64 75``.
     elim_score: str = ""
+    # Display name of the opponent who eliminated this player (if known).
+    elim_opponent: str = ""
 
     @property
     def round_rank(self) -> int:
@@ -416,6 +418,7 @@ def _annotate_elim_scores(status: DrawStatus, soup: BeautifulSoup, tour: str) ->
     tour = str(tour or "").strip().upper()
     for player in status.by_id.values():
         player.elim_score = ""
+        player.elim_opponent = ""
     for part in soup.select(".cDrawPart"):
         if part.get("data-id") != tour:
             continue
@@ -427,7 +430,16 @@ def _annotate_elim_scores(status: DrawStatus, soup: BeautifulSoup, tour: str) ->
                 loser = status.lookup(None, match.get("loser"))
                 if loser is None or not loser.eliminated:
                     continue
-                loser.elim_score = _prefer_elim_score(loser.elim_score, score)
+                prev = str(loser.elim_score or "").strip()
+                preferred = _prefer_elim_score(prev, score)
+                winner = str(match.get("winner") or "").strip()
+                if preferred != prev:
+                    loser.elim_score = preferred
+                    # Opponent follows the score we kept.
+                    if preferred == score and winner:
+                        loser.elim_opponent = winner
+                elif not loser.elim_opponent and winner:
+                    loser.elim_opponent = winner
 
 
 def fetch_draw_matches(

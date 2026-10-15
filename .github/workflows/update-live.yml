@@ -2,12 +2,15 @@ name: Update live (pick pages)
 
 on:
   schedule:
-    # Every 15 minutes UTC (GitHub may delay under load)
+    # Best-effort backup only. GitHub routinely delays */15 by hours.
+    # Primary cadence: local LaunchAgent → workflow_dispatch every 15 min
+    # (see .github/launchd/com.zechen.frog-chen-live.plist).
     - cron: "*/15 * * * *"
   workflow_dispatch:
 
 concurrency:
   group: frog-live-pages
+  # Prefer the newest dispatch; overlapping 15‑min pings cancel stale runs.
   cancel-in-progress: true
 
 permissions:

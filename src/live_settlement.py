@@ -64,7 +64,33 @@ def _details_by_user(rows: list[dict[str, Any]]) -> dict[str, list[dict[str, Any
     return grouped
 
 
-def _suicide_reason(detail: dict[str, Any], used: list[str]) -> str | None:
+def _backup_is_elim_opponent(
+    detail: dict[str, Any], draw: DrawStatus | None
+) -> bool:
+    """True when 备选 is the opponent who eliminated 主选 (both sides of one match)."""
+    if draw is None or not draw.by_id:
+        return False
+    pick = str(detail.get("player") or "").strip()
+    alt = str(detail.get("player_alt") or "").strip()
+    if not pick or not alt or pick == "轮空" or alt == "轮空":
+        return False
+    primary = draw.lookup(detail.get("fill"), pick)
+    if primary is None or not primary.eliminated:
+        return False
+    opp = str(primary.elim_opponent or "").strip()
+    return bool(opp) and opp == alt
+
+
+def _suicide_reason(
+    detail: dict[str, Any],
+    used: list[str],
+    draw: DrawStatus | None = None,
+) -> str | None:
+    """
+    Suicide checks run *before* backup activation.
+
+    Order: repeat → same-player/fill/match-id conflict → backup-is-elim-opponent.
+    """
     pick = str(detail.get("player") or "").strip()
     alt = str(detail.get("player_alt") or "").strip()
     if pick and pick != "轮空" and pick in used:
@@ -80,6 +106,10 @@ def _suicide_reason(detail: dict[str, Any], used: list[str]) -> str | None:
     match_id = detail.get("normal_match_id")
     match_alt = detail.get("normal_match_id_alt")
     if _has_id(match_id) and _has_id(match_alt) and str(match_id) == str(match_alt):
+        return SUICIDE_CONFLICT
+    # Match-id can disagree with the draw (e.g. Zoey day3 1210/1215) while
+    # 主选/备选 are still the two sides of the elimination match.
+    if _backup_is_elim_opponent(detail, draw):
         return SUICIDE_CONFLICT
     return None
 
@@ -126,17 +156,20 @@ def _pick_outcome(
     if player is None:
         return None, detail
     if player.eliminated:
+        # Conflict / suicide already handled upstream; never activate backup
+        # onto the opponent who just eliminated the primary.
         if allow_backup and retirement_backup_allowed(player.elim_score):
-            alt = _alt_detail(detail)
-            if alt is not None:
-                return _pick_outcome(
-                    alt,
-                    draw,
-                    fills_by_match,
-                    live_round,
-                    min_still_round,
-                    allow_backup=False,
-                )
+            if not _backup_is_elim_opponent(detail, draw):
+                alt = _alt_detail(detail)
+                if alt is not None:
+                    return _pick_outcome(
+                        alt,
+                        draw,
+                        fills_by_match,
+                        live_round,
+                        min_still_round,
+                        allow_backup=False,
+                    )
         return "loss", detail
     if player.live:
         return None, detail
@@ -416,6 +449,17 @@ def _repair_early_retirement_rows(
         early = retirement_backup_allowed(player.elim_score)
         alt = str(detail.get("player_alt") or "").strip()
         if early and alt:
+            # Suicide/conflict first: backup cannot be the elim opponent.
+            if _backup_is_elim_opponent(detail, draw):
+                result.at[index, "fill_status"] = SUICIDE_CONFLICT
+                result.at[index, "killer"] = ""
+                result.at[index, "players"] = used
+                if "status" in result.columns:
+                    result.at[index, "status"] = FILL_TO_STATUS.get(
+                        SUICIDE_CONFLICT, -4
+                    )
+                repaired += 1
+                continue
             # Wrongly died on primary despite usable backup — revive for re-settle.
             used = used[:-1]
             death_day = int(detail.get("day") or 0) or (len(used) + 1)
@@ -641,7 +685,7 @@ def apply_live_settlement(
             if not pick:
                 pending = True
                 break
-            suicide = _suicide_reason(detail, used)
+            suicide = _suicide_reason(detail, used, draw)
             if suicide:
                 if pick != "轮空":
                     used.append(pick)

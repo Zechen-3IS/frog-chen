@@ -27,25 +27,23 @@ logger = get_logger(__name__)
 
 STATS_CACHE = Path(__file__).resolve().parent.parent / "data" / "player_events.json"
 PLAYED_STATUS = {"存活", "球员输球", "自杀(退赛)", "自杀(重复)", "自杀(主备冲突)"}
+# Long free-text details live in the row-click modal (not table columns).
 DISPLAY_COLS = [
     "排名",
     "用户名",
     "周期参赛数",
     "周期冠军数",
     "历史冠军数",
-    "夺冠明细",
     "历史亚军数",
-    "夺亚明细",
     "历史最佳排名",
     "历史最长连胜天数",
-    "连胜细节",
     "历史最长连败天数",
-    "连败细节",
     "世界第一周数",
     "历史最高得分",
     "赛季存活率",
     "历史存活率",
 ]
+CAREER_DETAIL_COL = "_生涯明细"
 
 TOUR_CODE = {"atp": "MS", "wta": "WS"}
 
@@ -529,6 +527,8 @@ def build_player_stats(
         all_rate = (
             round(float(person["day"].sum()) / all_possible, 6) if all_possible else 0.0
         )
+        title_labels = [str(x) for x in titles["label"].tolist()]
+        runner_labels = [str(x) for x in runners["label"].tolist()]
         rows_out.append(
             {
                 "主键": uid,
@@ -536,18 +536,20 @@ def build_player_stats(
                 "周期参赛数": int(len(cycle)),
                 "周期冠军数": int(cycle["champion"].sum()),
                 "历史冠军数": int(titles.shape[0]),
-                "夺冠明细": ", ".join(titles["label"].tolist()),
                 "历史亚军数": int(runners.shape[0]),
-                "夺亚明细": ", ".join(runners["label"].tolist()),
                 "历史最佳排名": int(best_rank.get(uid, 0)),
                 "历史最长连胜天数": int(win_days),
-                "连胜细节": win_detail,
                 "历史最长连败天数": int(lose_days),
-                "连败细节": lose_detail,
                 "世界第一周数": int(weeks_at_one.get(uid, 0)),
                 "历史最高得分": int(best_score.get(uid, 0)),
                 "赛季存活率": season_rate,
                 "历史存活率": all_rate,
+                CAREER_DETAIL_COL: {
+                    "titles": title_labels,
+                    "runners": runner_labels,
+                    "win_streak": str(win_detail or ""),
+                    "lose_streak": str(lose_detail or ""),
+                },
             }
         )
 
@@ -559,7 +561,7 @@ def build_player_stats(
     ).reset_index(drop=True)
     frame = frame.drop(columns=["_最佳排名"])
     frame["排名"] = range(1, len(frame) + 1)
-    view = frame[DISPLAY_COLS].copy()
+    view = frame[DISPLAY_COLS + [CAREER_DETAIL_COL]].copy()
     # Show rates as percent strings for readability
     for col in ("赛季存活率", "历史存活率"):
         view[col] = view[col].map(lambda v: f"{float(v) * 100:.1f}%")
@@ -596,9 +598,10 @@ def update_player_stats_pages(
             updated=updated,
             summary_df=None,
             rank_change_col=None,
-            extra_tags=["生涯统计"],
+            extra_tags=["生涯统计", "点击行查看夺冠/夺亚"],
             available_players=None,
             enable_detail=False,
+            enable_career_detail=True,
             output_path=str(out),
         )
         written.append(out)

@@ -346,6 +346,8 @@ def event_board_stats(
     tour: str,
     completed: bool = False,
     matches: Optional[list[dict[str, str]]] = None,
+    type_hint: str = "",
+    level_hint: str = "",
 ) -> dict[str, Any]:
     """
     Summary strip for an event score page.
@@ -356,7 +358,9 @@ def event_board_stats(
     - biggest_upset: underdog win with max pick-count gap (both sides picked)
     """
     champions: list[str] = []
-    max_pts = event_theoretical_max(city, tour)
+    max_pts = event_theoretical_max(
+        city, tour, type_hint=type_hint, level_hint=level_hint
+    )
     if max_pts is not None and df is not None and not df.empty:
         score_col = "本站得分" if "本站得分" in df.columns else "score"
         name_col = "用户名" if "用户名" in df.columns else "username"
@@ -632,6 +636,8 @@ def _event_dict(row: pd.Series) -> dict[str, Any]:
     else:
         monday_s = str(monday or "")[:10]
     href = score_html_relpath(tour, event_id, year)
+    type_hint = str(row.get("type") or "").strip()
+    level_hint = str(row.get("level") or "").strip()
     return {
         "year": year,
         "tour": tour,
@@ -642,7 +648,10 @@ def _event_dict(row: pd.Series) -> dict[str, Any]:
         "week_mmdd": mmdd,
         "href": href,
         "source_url": str(row.get("url") or ""),
-        "type": champion_type_label(city, tour),
+        "level": level_hint,
+        "type": champion_type_label(
+            city, tour, type_hint=type_hint, level_hint=level_hint
+        ),
     }
 
 
@@ -838,7 +847,12 @@ def update_survivor_calendar_pages(
         ev["has_scores"] = n > 0
         ev["n_players"] = n
         if not ev.get("type"):
-            ev["type"] = champion_type_label(ev.get("city") or "", ev.get("tour") or "")
+            ev["type"] = champion_type_label(
+                ev.get("city") or "",
+                ev.get("tour") or "",
+                type_hint=str(ev.get("type") or ""),
+                level_hint=str(ev.get("level") or ""),
+            )
 
     hub_path = output_dir / "survivor_calendar.html"
     atp_path = output_dir / "survivor_calendar_atp.html"
@@ -886,6 +900,8 @@ def update_survivor_calendar_pages(
             tour=ev["tour"],
             completed=completed,
             matches=matches,
+            type_hint=str(ev.get("type") or ""),
+            level_hint=str(ev.get("level") or ""),
         )
         out = output_dir / ev["href"]
         render_event_score_page(
@@ -898,6 +914,7 @@ def update_survivor_calendar_pages(
             output_path=out,
             source_url=ev.get("source_url") or "",
             stats=stats,
+            type_label=str(ev.get("type") or ""),
         )
         written += 1
 

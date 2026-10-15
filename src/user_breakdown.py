@@ -18,6 +18,7 @@ from live_ranking import add_new_tournament, remove_current_tournament
 from live_settlement import _as_key
 from logger import get_logger
 from points_calculation import calculate_points, parse_events
+from site_html.types_meta import level_from_champion_type
 from tournament_meta import (
     SURFACE_ORDER,
     classify_level,
@@ -61,9 +62,24 @@ def _load_calendars(
         out["invalid_date"] = pd.to_datetime(out["invalid_date"], errors="coerce")
     else:
         out["invalid_date"] = out["week_start_date"].map(estimate_invalid_date)
-    out["level"] = [
-        classify_level(c, t) for c, t in zip(out["city"], out["tour"])
-    ]
+    if "level" not in out.columns:
+        out["level"] = ""
+    out["level"] = out["level"].astype(str).fillna("").str.strip()
+    out["level"] = out["level"].replace({"nan": ""})
+    # Prefer scraped level; else derive from scraped type; else static city map.
+    missing = out["level"].eq("")
+    if missing.any() and "type" in out.columns:
+        derived = [
+            level_from_champion_type(tp, tr)
+            for tp, tr in zip(out.loc[missing, "type"], out.loc[missing, "tour"])
+        ]
+        out.loc[missing, "level"] = derived
+        missing = out["level"].eq("")
+    if missing.any():
+        out.loc[missing, "level"] = [
+            classify_level(c, t)
+            for c, t in zip(out.loc[missing, "city"], out.loc[missing, "tour"])
+        ]
     return out
 
 
@@ -236,12 +252,20 @@ def _load_event_day_rounds(
     *,
     fetch: bool = False,
 ) -> dict[int, str]:
-    """Day number → pick-page round label (``R1/1``, ``QF/2``, …)."""
+    """Day number → *result* round label (``W``, ``F``, ``QF/2``, …)."""
+    from parser import pick_rounds_to_result_rounds
+
     path = _round_cache_path(tour, event_id, year, cache_dir)
     if path.exists():
         try:
             raw = json.loads(path.read_text(encoding="utf-8"))
-            return {int(k): str(v) for k, v in (raw or {}).items() if str(v).strip()}
+            cached = {
+                int(k): str(v) for k, v in (raw or {}).items() if str(v).strip()
+            }
+            # Old caches stored pick-page rounds (title day = F); normalize once.
+            if cached and cached.get(max(cached)) != "W":
+                cached = pick_rounds_to_result_rounds(cached)
+            return cached
         except Exception:
             pass
     if not fetch:

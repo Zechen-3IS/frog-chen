@@ -61,12 +61,17 @@ document.addEventListener('DOMContentLoaded',function(){
 
         if(isNumericCol){
             // ── build slider filter ──────────────────────────────
-            const minVal=Math.min(...parsedNums);
-            const maxVal=Math.max(...parsedNums);
-            const step=(maxVal-minVal)>20 ? 1 : (maxVal-minVal)/100 || 1;
+            const headerText=header.textContent.trim();
+            const forceInt=/天数|排名|周数|参赛|冠军数|亚军|连胜|连败|得分|积分/.test(headerText)
+                && !/率/.test(headerText);
+            const isIntCol=forceInt || parsedNums.every(n=>Number.isInteger(n));
+            let minVal=Math.min(...parsedNums);
+            let maxVal=Math.max(...parsedNums);
+            if(isIntCol){ minVal=Math.floor(minVal); maxVal=Math.ceil(maxVal); }
+            const step=isIntCol ? 1 : ((maxVal-minVal)>20 ? 1 : (maxVal-minVal)/100 || 1);
 
             columnMeta[index]={type:'numeric', min:minVal, max:maxVal,
-                                curMin:minVal, curMax:maxVal};
+                                curMin:minVal, curMax:maxVal, intCol:isIntCol};
 
             const dropdownWrapper=document.createElement('div');
             dropdownWrapper.className='filter-dropdown';
@@ -80,11 +85,13 @@ document.addEventListener('DOMContentLoaded',function(){
             const readout=document.createElement('div');
             readout.className='filter-slider-readout';
             const inMin=document.createElement('input');
-            inMin.type='number'; inMin.value=minVal;
+            inMin.type='number'; inMin.value=minVal; inMin.step=step;
+            if(isIntCol){ inMin.step='1'; inMin.setAttribute('inputmode','numeric'); }
             const sep=document.createElement('span');
             sep.className='filter-slider-sep'; sep.textContent='~';
             const inMax=document.createElement('input');
-            inMax.type='number'; inMax.value=maxVal;
+            inMax.type='number'; inMax.value=maxVal; inMax.step=step;
+            if(isIntCol){ inMax.step='1'; inMax.setAttribute('inputmode','numeric'); }
             readout.append(inMin,sep,inMax);
 
             const rangeWrap=document.createElement('div');
@@ -107,10 +114,12 @@ document.addEventListener('DOMContentLoaded',function(){
 
             function syncUI(){
                 let lo=parseFloat(rMin.value), hi=parseFloat(rMax.value);
+                if(isIntCol){ lo=Math.round(lo); hi=Math.round(hi); }
                 if(lo>hi){ const t=lo; lo=hi; hi=t; }
                 columnMeta[index].curMin=lo;
                 columnMeta[index].curMax=hi;
-                inMin.value=lo; inMax.value=hi;
+                inMin.value=isIntCol?String(lo):lo; inMax.value=isIntCol?String(hi):hi;
+                rMin.value=lo; rMax.value=hi;
                 const pct=v=>((v-minVal)/(maxVal-minVal||1))*100;
                 fill.style.left=pct(lo)+'%';
                 fill.style.width=(pct(hi)-pct(lo))+'%';
@@ -120,8 +129,16 @@ document.addEventListener('DOMContentLoaded',function(){
             }
             rMin.addEventListener('input',()=>{ if(+rMin.value>+rMax.value)rMin.value=rMax.value; syncUI(); });
             rMax.addEventListener('input',()=>{ if(+rMax.value<+rMin.value)rMax.value=rMin.value; syncUI(); });
-            inMin.addEventListener('change',()=>{ rMin.value=inMin.value; syncUI(); });
-            inMax.addEventListener('change',()=>{ rMax.value=inMax.value; syncUI(); });
+            inMin.addEventListener('change',()=>{
+                let v=parseFloat(inMin.value); if(isNaN(v))v=minVal;
+                if(isIntCol) v=Math.round(v);
+                rMin.value=v; syncUI();
+            });
+            inMax.addEventListener('change',()=>{
+                let v=parseFloat(inMax.value); if(isNaN(v))v=maxVal;
+                if(isIntCol) v=Math.round(v);
+                rMax.value=v; syncUI();
+            });
             resetBtn.addEventListener('click',()=>{ rMin.value=minVal; rMax.value=maxVal; syncUI(); });
             syncUI();
 
@@ -363,6 +380,100 @@ document.addEventListener('DOMContentLoaded',()=>{
         });
     });
 });
+"""
+
+_JS_CAREER_DETAIL = """\
+document.addEventListener('DOMContentLoaded',function(){
+    var modal=document.getElementById('detail-modal');
+    var closeBtn=document.getElementById('detail-close');
+    var body=document.getElementById('detail-body');
+    var metaLine=document.getElementById('detail-meta-line');
+    var footer=document.getElementById('detail-footer');
+    if(!modal||!closeBtn||!body)return;
+
+    function esc(s){
+        return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    }
+    function closeModal(){
+        var card=modal.querySelector('.detail-card');
+        if(card){ card.style.transform='translateY(10px) scale(.97)'; card.style.opacity='0'; }
+        setTimeout(function(){
+            modal.classList.remove('show');
+            if(card){ card.style.transform=''; card.style.opacity=''; }
+        },220);
+    }
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', function(e){ if(e.target===modal) closeModal(); });
+    document.addEventListener('keydown', function(e){
+        if(e.key==='Escape'&&modal.classList.contains('show')) closeModal();
+    });
+
+    function getPlayerName(row){
+        var cells=row.querySelectorAll('td');
+        for(var i=0;i<cells.length;i++){
+            var t=cells[i].textContent.trim();
+            if(t&&i>0&&isNaN(parseFloat(t))) return t;
+        }
+        return '';
+    }
+
+    function chipBlock(title, items, emptyText){
+        var list=Array.isArray(items)?items:[];
+        var chips=list.length
+            ? list.map(function(x){ return '<span class="career-chip">'+esc(x)+'</span>'; }).join('')
+            : '<span class="career-empty">'+esc(emptyText)+'</span>';
+        return '<div class="career-sec">'
+            +'<div class="career-sec-hd"><span>'+esc(title)+'</span>'
+            +'<em>'+list.length+'</em></div>'
+            +'<div class="career-chips">'+chips+'</div></div>';
+    }
+
+    function textBlock(title, text){
+        var t=String(text||'').trim();
+        return '<div class="career-sec">'
+            +'<div class="career-sec-hd"><span>'+esc(title)+'</span></div>'
+            +'<div class="career-note">'+(t?esc(t):'<span class="career-empty">暂无</span>')+'</div></div>';
+    }
+
+    document.querySelectorAll('.filterable-table tbody tr').forEach(function(row){
+        row.style.cursor='pointer';
+        row.addEventListener('click', function(){
+            var data={};
+            try{ data=JSON.parse(row.dataset.detail||'{}'); }catch(_e){ data={}; }
+            if(!data||typeof data!=='object'||Array.isArray(data)) data={};
+            var name=getPlayerName(row);
+            if(metaLine) metaLine.textContent=name||'';
+            body.innerHTML =
+                chipBlock('夺冠明细', data.titles, '暂无夺冠')
+                + chipBlock('夺亚明细', data.runners, '暂无夺亚')
+                + textBlock('连胜细节', data.win_streak)
+                + textBlock('连败细节', data.lose_streak);
+            var nT=(data.titles||[]).length, nR=(data.runners||[]).length;
+            if(footer) footer.textContent='冠军 '+nT+' · 亚军 '+nR+' · 点击空白处关闭';
+            modal.classList.add('show');
+        });
+    });
+});
+"""
+
+_CSS_CAREER_DETAIL = """\
+.career-sec{margin:0 0 14px;}
+.career-sec:last-child{margin-bottom:0;}
+.career-sec-hd{display:flex;align-items:baseline;justify-content:space-between;
+  gap:10px;margin-bottom:8px;font-size:12px;color:var(--muted);}
+.career-sec-hd span{font-family:'Space Mono',monospace;letter-spacing:.08em;
+  text-transform:uppercase;font-size:10px;color:var(--faint);}
+.career-sec-hd em{font-style:normal;font-family:'Space Mono',monospace;
+  color:var(--primary-dark);font-weight:700;}
+body.dark .career-sec-hd em{color:var(--primary);}
+.career-chips{display:flex;flex-wrap:wrap;gap:6px;}
+.career-chip{display:inline-block;padding:4px 9px;border-radius:999px;
+  background:var(--surface2);border:0.5px solid var(--border);font-size:12px;
+  color:var(--ink);line-height:1.35;max-width:100%;}
+.career-note{font-size:13px;line-height:1.6;color:var(--ink2,var(--muted));
+  padding:8px 10px;border-radius:8px;background:var(--surface2);}
+.career-empty{font-size:12px;color:var(--faint);}
+.filterable-table tbody tr{cursor:pointer;}
 """
 
 

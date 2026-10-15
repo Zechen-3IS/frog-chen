@@ -19,7 +19,12 @@ from site_html.common import (
     _route_query_block,
     _summary_bar_html,
 )
-from site_html.js import _JS_RANKING_DETAIL, _JS_ROUTE_QUERY
+from site_html.js import (
+    _CSS_CAREER_DETAIL,
+    _JS_CAREER_DETAIL,
+    _JS_RANKING_DETAIL,
+    _JS_ROUTE_QUERY,
+)
 
 def render_ranking_page(
     df: pd.DataFrame,
@@ -37,6 +42,7 @@ def render_ranking_page(
     backup_events: Optional[list] = None,
     output_path: str | Path = "ranking.html",
     enable_detail: bool = True,
+    enable_career_detail: bool = False,
     enable_breakdown: bool = False,
     breakdown_atp_url: str = "data/breakdown_live_atp.json",
     breakdown_wta_url: str = "data/breakdown_live_wta.json",
@@ -88,7 +94,9 @@ def render_ranking_page(
         Destination file.
     enable_detail : bool
         When True (default), clicking a row opens the 选人明细 modal.
-        Set False for pages without pick history (e.g. career stats).
+        Set False for pages without pick history.
+    enable_career_detail : bool
+        Career stats: row click opens 夺冠/夺亚 chip modal from ``_生涯明细``.
     enable_breakdown : bool
         Combined-ranking mode: row click opens ATP/WTA points charts.
     breakdown_atp_url / breakdown_wta_url : str
@@ -116,10 +124,17 @@ def render_ranking_page(
 
     killer_block = _killer_panel_html(killer_df)
 
+    if enable_career_detail:
+        detail_col = "_生涯明细"
+    elif enable_detail:
+        detail_col = "选人明细"
+    else:
+        detail_col = None
+
     main_table_html = _df_to_html_table(
         df,
         rank_change_col=rank_change_col,
-        detail_col="选人明细" if enable_detail else None,
+        detail_col=detail_col,
         hide_detail_col=True,
         uid_col="主键" if enable_breakdown else None,
         hide_uid_col=True,
@@ -130,15 +145,16 @@ def render_ranking_page(
 
     detail_modal = ""
     no_detail_style = ""
-    if enable_detail:
-        detail_modal = """\
+    detail_title = "生涯明细" if enable_career_detail else "选人明细"
+    if enable_detail or enable_career_detail:
+        detail_modal = f"""\
     <div id="detail-modal" class="detail-modal">
       <div class="detail-card">
         <div class="detail-hd">
           <div class="detail-title-wrap">
             <div class="detail-icon">📋</div>
             <div>
-              <div class="detail-title">选人明细</div>
+              <div class="detail-title">{detail_title}</div>
               <div class="detail-meta" id="detail-meta-line"></div>
             </div>
           </div>
@@ -152,7 +168,7 @@ def render_ranking_page(
     </div>"""
     elif not enable_breakdown:
         no_detail_style = (
-            "<style>.filterable-table tbody tr{cursor:default;}</style>"
+            "<style>.filterable-table tbody tr{{cursor:default;}}</style>"
         )
 
     bd_modal = breakdown_modal_html() if enable_breakdown else ""
@@ -180,8 +196,18 @@ def render_ranking_page(
     </div>
 {detail_modal}"""
 
-    detail_js = _JS_RANKING_DETAIL if enable_detail else ""
+    if enable_career_detail:
+        detail_js = _JS_CAREER_DETAIL
+    elif enable_detail:
+        detail_js = _JS_RANKING_DETAIL
+    else:
+        detail_js = ""
     route_js = _JS_ROUTE_QUERY if _players else ""
+    extra_css_parts = []
+    if enable_breakdown:
+        extra_css_parts.append(_CSS_BREAKDOWN)
+    if enable_career_detail:
+        extra_css_parts.append(_CSS_CAREER_DETAIL)
     html_str = _inner_page_shell(
         page_title=title,
         title=title,
@@ -191,7 +217,7 @@ def render_ranking_page(
         extra_tags=extra_tags,
         body_content=body,
         extra_js=summary_js + "\n" + detail_js + "\n" + route_js + "\n" + bd_boot,
-        extra_css=_CSS_BREAKDOWN if enable_breakdown else "",
+        extra_css="\n".join(extra_css_parts),
         # Modal must sit outside .page stacking context or it can be covered
         after_page=bd_modal,
     )

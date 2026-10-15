@@ -449,10 +449,11 @@ def render_event_score_page(
     output_path: str | Path,
     source_url: str = "",
     stats: Optional[dict[str, Any]] = None,
+    type_label: str = "",
 ) -> str:
     tour_u = str(tour).upper()
     tour_lbl = _tour_label(tour_u)
-    type_label = champion_type_label(city, tour_u)
+    type_label = str(type_label or "").strip() or champion_type_label(city, tour_u)
     type_cls = _type_cls(type_label)
     title = f"{city} · {year}"
     table_html = _df_to_html_table(

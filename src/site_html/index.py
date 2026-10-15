@@ -21,13 +21,23 @@ from site_html.state import VERSION
 
 
 def _fmt_names(names: list[str], limit: Optional[int] = None) -> str:
-    """Chen-compatible name list: comma-separated; optional truncation."""
+    """Comma-separated plain names (legacy / title text)."""
     clean = [html.escape(str(n).strip()) for n in names if str(n).strip()]
     if not clean:
         return ""
     if limit is not None and len(clean) > limit:
         return ", ".join(clean[:limit]) + f" 等{len(clean)}人"
     return ", ".join(clean)
+
+
+def _fmt_name_chips(names: list[str], limit: int = 4) -> str:
+    """One chip per player; always show the full list (no collapse)."""
+    del limit  # kept for call-site compatibility; never truncate
+    clean = [html.escape(str(n).strip()) for n in names if str(n).strip()]
+    if not clean:
+        return ""
+    chips = "".join(f'<span class="wk-chip">{n}</span>' for n in clean)
+    return f'<span class="wk-chips">{chips}</span>'
 
 
 def _week_panel_html(card) -> str:
@@ -71,17 +81,20 @@ def _week_panel_html(card) -> str:
             top = int(getattr(card, "top_score", 0) or 0)
             top_names = list(getattr(card, "top_names", []) or [])
             if champs:
+                body_parts.append('<div class="wk-label win">夺冠</div>')
                 body_parts.append(
-                    f'<div class="wk-result win">恭喜{_fmt_names(champs)}夺冠</div>'
-                )
+                    f'<div class="wk-people">{_fmt_name_chips(champs)}</div>'
+                )  # expand ctrl inside _fmt_name_chips
             elif getattr(card, "ongoing", False):
-                body_parts.append('<div class="wk-result pending">赛事进行中</div>')
+                body_parts.append('<div class="wk-label pending">赛事进行中</div>')
             else:
-                body_parts.append('<div class="wk-result out">本站无人生还</div>')
+                body_parts.append('<div class="wk-label out">本站无人生还</div>')
                 if top_names and top:
                     body_parts.append(
-                        f'<div class="wk-result win">恭喜{_fmt_names(top_names)}'
-                        f"获得赛事最高分：{top}</div>"
+                        f'<div class="wk-label soft">最高分 {top}</div>'
+                    )
+                    body_parts.append(
+                        f'<div class="wk-people">{_fmt_name_chips(top_names)}</div>'
                     )
                 elif top:
                     body_parts.append(
@@ -93,16 +106,16 @@ def _week_panel_html(card) -> str:
             survivors = getattr(card, "survivors", None)
             if participants is not None:
                 parts.append(
-                    f'<span class="wk-stat"><span class="wk-stat-lbl">参赛: </span>'
+                    f'<span class="wk-stat"><span class="wk-stat-lbl">参赛</span>'
                     f"<b>{int(participants)}</b></span>"
                 )
             if survivors is not None:
                 parts.append(
-                    f'<span class="wk-stat"><span class="wk-stat-lbl">幸存: </span>'
+                    f'<span class="wk-stat"><span class="wk-stat-lbl">幸存</span>'
                     f"<b>{int(survivors)}</b></span>"
                 )
             if parts:
-                body_parts.append(f'<div class="wk-stats">{" ".join(parts)}</div>')
+                body_parts.append(f'<div class="wk-stats">{"".join(parts)}</div>')
 
             corr = list(getattr(card, "corresponding", []) or [])
             defend = list(getattr(card, "defending_names", []) or [])
@@ -110,7 +123,6 @@ def _week_panel_html(card) -> str:
             d_score = int(getattr(card, "defending_score", 0) or 0)
             d_level = str(getattr(card, "defending_level", "") or "")
             if corr:
-                # Chen: 「卫冕赛事：」+ event name/level + champion / top-score line
                 corr_city = html.escape(str(corr[0]))
                 extra_cities = ""
                 if len(corr) > 1:
@@ -122,7 +134,10 @@ def _week_panel_html(card) -> str:
                     if d_level
                     else ""
                 )
-                body_parts.append('<div class="wk-defend-title">卫冕赛事：</div>')
+                body_parts.append('<div class="wk-defend-card">')
+                body_parts.append(
+                    '<div class="wk-defend-title">卫冕赛事</div>'
+                )
                 body_parts.append(
                     f'<div class="wk-defend-event">'
                     f'<span class="wk-defend-city">{corr_city}{extra_cities}</span>'
@@ -130,29 +145,34 @@ def _week_panel_html(card) -> str:
                 )
                 if defend:
                     body_parts.append(
-                        f'<div class="wk-defend">卫冕冠军：{_fmt_names(defend)}</div>'
+                        '<div class="wk-label win">卫冕冠军</div>'
+                    )
+                    body_parts.append(
+                        f'<div class="wk-people">{_fmt_name_chips(defend)}</div>'
                     )
                 elif d_top and d_score:
                     body_parts.append(
-                        '<div class="wk-defend muted">卫冕赛事无人生还</div>'
+                        '<div class="wk-label out">卫冕站无人生还</div>'
                     )
                     body_parts.append(
-                        f'<div class="wk-defend">{_fmt_names(d_top)}'
-                        f"获得赛事最高分：{d_score}</div>"
+                        f'<div class="wk-label soft">最高分 {d_score}</div>'
+                    )
+                    body_parts.append(
+                        f'<div class="wk-people">{_fmt_name_chips(d_top)}</div>'
                     )
                 elif d_score:
                     body_parts.append(
-                        '<div class="wk-defend muted">卫冕赛事无人生还</div>'
+                        '<div class="wk-label out">卫冕站无人生还</div>'
                     )
                     body_parts.append(
                         f'<div class="wk-sub">赛事最高分：{d_score}</div>'
                     )
                 else:
                     body_parts.append(
-                        '<div class="wk-defend muted">卫冕赛事无人生还</div>'
+                        '<div class="wk-label out">卫冕站无人生还</div>'
                     )
-            # else: chen hides defending block when no previous edition
-        else:  # next — chen only shows event name/level
+                body_parts.append("</div>")
+        else:  # next — event name/level only
             pass
 
         inner = head + "\n".join(body_parts)
@@ -378,26 +398,37 @@ def render_index(
         .wk-level{{font-size:10px;padding:1px 6px;border-radius:8px;background:var(--surface2);
             color:var(--muted);border:0.5px solid var(--border);}}
         .wk-date{{font-family:'Space Mono',monospace;font-size:10px;color:var(--faint);}}
-        .wk-stats{{display:flex;flex-wrap:wrap;gap:10px 16px;font-size:12px;
-            color:var(--ink2,var(--muted));margin-bottom:8px;}}
-        .wk-stat-lbl{{color:var(--faint);}}
+        .wk-stats{{display:flex;flex-wrap:wrap;gap:8px;margin:2px 0 10px;}}
+        .wk-stat{{display:inline-flex;align-items:baseline;gap:6px;
+            padding:4px 10px;border-radius:999px;background:var(--surface2);
+            border:0.5px solid var(--border);font-size:12px;}}
+        .wk-stat-lbl{{color:var(--faint);font-size:10px;letter-spacing:.04em;}}
         .wk-stats b{{font-family:'Space Mono',monospace;color:var(--primary-dark);font-weight:700;}}
         body.dark .wk-stats b{{color:var(--primary);}}
-        .wk-result{{font-size:13px;line-height:1.55;margin-top:2px;}}
-        .wk-result.win{{color:#2a6b4f;}}
-        .wk-result.out{{color:var(--muted);}}
-        .wk-result.pending{{color:#8a5a18;}}
-        body.dark .wk-result.win{{color:#7dcea0;}}
-        body.dark .wk-result.pending{{color:#e0b56a;}}
+        .wk-label{{font-size:11px;font-weight:600;letter-spacing:.04em;margin:8px 0 6px;}}
+        .wk-label.win{{color:#2a6b4f;}}
+        .wk-label.out{{color:var(--muted);}}
+        .wk-label.pending{{color:#8a5a18;}}
+        .wk-label.soft{{color:var(--faint);font-weight:500;margin-top:4px;}}
+        body.dark .wk-label.win{{color:#7dcea0;}}
+        body.dark .wk-label.pending{{color:#e0b56a;}}
+        .wk-people{{margin:0 0 2px;}}
+        .wk-chips{{display:flex;flex-wrap:wrap;gap:5px;}}
+        .wk-chip{{display:inline-block;max-width:100%;padding:3px 9px;border-radius:999px;
+            background:rgba(42,107,79,.08);border:0.5px solid rgba(42,107,79,.18);
+            color:#1f4f3a;font-size:12px;line-height:1.35;white-space:nowrap;
+            overflow:hidden;text-overflow:ellipsis;}}
+        body.dark .wk-chip{{background:rgba(125,206,160,.12);border-color:rgba(125,206,160,.22);
+            color:#b7e0c6;}}
         .wk-sub{{font-size:12px;color:var(--muted);line-height:1.55;margin-top:4px;}}
-        .wk-defend-title{{font-size:11px;color:var(--faint);letter-spacing:.06em;
-            margin-top:8px;margin-bottom:4px;}}
+        .wk-defend-card{{margin-top:10px;padding:10px 12px;border-radius:8px;
+            background:var(--surface2);border:0.5px solid var(--border);}}
+        .wk-defend-title{{font-family:'Space Mono',monospace;font-size:9px;
+            letter-spacing:.14em;text-transform:uppercase;color:var(--faint);
+            margin:0 0 6px;}}
         .wk-defend-event{{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px;
-            margin-bottom:4px;}}
-        .wk-defend-city{{font-size:13px;font-weight:600;color:var(--ink);}}
-        .wk-defend{{font-size:12px;color:#2a6b4f;line-height:1.55;margin-top:3px;}}
-        .wk-defend.muted{{color:var(--muted);}}
-        body.dark .wk-defend:not(.muted){{color:#7dcea0;}}
+            margin-bottom:2px;}}
+        .wk-defend-city{{font-size:14px;font-weight:600;color:var(--ink);}}
         .wk-empty,.muted{{color:var(--faint);font-size:13px;}}
 
         /* sections */

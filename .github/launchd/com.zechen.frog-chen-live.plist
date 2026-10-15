@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.zechen.frog-chen-live</string>
+	<key>WorkingDirectory</key>
+	<string>/Users/yinzechen/程序/frog_chen_web</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/bin/bash</string>
+		<string>/Users/yinzechen/程序/frog_chen_web/.github/scripts/dispatch-live.sh</string>
+	</array>
+	<!-- Fire at :00 :15 :30 :45 every hour (Mac awake). -->
+	<key>StartCalendarInterval</key>
+	<array>
+		<dict>
+			<key>Minute</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Minute</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Minute</key>
+			<integer>30</integer>
+		</dict>
+		<dict>
+			<key>Minute</key>
+			<integer>45</integer>
+		</dict>
+	</array>
+	<key>StandardOutPath</key>
+	<string>/Users/yinzechen/程序/frog_chen_web/logs/dispatch-live.launchd.out.log</string>
+	<key>StandardErrorPath</key>
+	<string>/Users/yinzechen/程序/frog_chen_web/logs/dispatch-live.launchd.err.log</string>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>PATH</key>
+		<string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+		<key>PUBLISH_REPOSITORY</key>
+		<string>Zechen-3IS/frog-chen</string>
+	</dict>
+</dict>
+</plist>

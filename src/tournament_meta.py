@@ -69,6 +69,8 @@ WTA_500 = {
 
 LEVEL_ORDER_ATP = ["大满贯", "M1000", "M500", "M250"]
 LEVEL_ORDER_WTA = ["大满贯", "W1000", "W500", "W250"]
+# City→500 sets below are fallbacks only; prefer calendar ``level``/``type``
+# scraped per season (see parser.parse_survivor_level_logo).
 
 SURFACE_ORDER = ["硬地", "红土", "草地"]
 
@@ -126,12 +128,21 @@ def classify_surface(city: str) -> str:
     return "硬地"
 
 
-def classify_level(city: str, tour: str) -> str:
-    """Map event city/name to chart bucket (4 levels; finals fold into 1000)."""
+def classify_level(city: str, tour: str, *, level_hint: str = "") -> str:
+    """Map event city/name to chart bucket (4 levels; finals fold into 1000).
+
+    Prefer ``level_hint`` from that year's calendar scrape when present —
+    static city sets are only a fallback (tiers change season to season).
+    """
+    hint = str(level_hint or "").strip()
+    if hint:
+        return hint
     name = str(city or "").strip()
     t = str(tour or "").upper()
     if name in GRAND_SLAMS:
         return "大满贯"
+    if name == "奥运会":
+        return "奥运会"
     if t in {"WS", "WTA"}:
         if name in WTA1000_COMBINED or name in WTA1000_NON_COMBINED or name in WTA_YEAR_END_FINAL:
             return "W1000"
