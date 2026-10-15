@@ -44,7 +44,7 @@ from survivor_html import (
 from champion_stats import render_champion_pages
 from weather import build_weather_cards
 from draw_status import fetch_draw_status
-from live_settlement import settle_tour_scores
+from live_settlement import settle_tour_scores, summarize_backup_events
 from player_stats import update_player_stats_pages
 from combined_ranking import update_combined_pages
 from event_calendar import update_survivor_calendar_pages
@@ -164,7 +164,7 @@ def build_tour_tables(tour_cfg, tour_code, tour_label):
     Returns
     -------
     table, race, raw_rank, submissions, score_df, day, live_players, raw_race,
-    pending_uids
+    pending_uids, backup_events
     """
     if tour_cfg.get("event") is None:
         logger.info(f"{tour_label} — no tournament this week, skipping fetch")
@@ -194,7 +194,7 @@ def build_tour_tables(tour_cfg, tour_code, tour_label):
             .drop("removed_point", axis=1)
             .rename(COL_ZH_DICT, axis=1)
         )
-        return table, race, r, None, None, day, [], ra, set()
+        return table, race, r, None, None, day, [], ra, set(), []
 
     r, s, re, ra = fetch_all_tables(tour_cfg["event"], tour=tour_code)
     day = infer_day(s, re)
@@ -202,6 +202,7 @@ def build_tour_tables(tour_cfg, tour_code, tour_label):
     bye_users: set[str] = set()
     live_players: list[str] = []
     pending_uids: set[str] = set()
+    backup_events: list = []
 
     settlement_cfg = (cfg or {}).get("settlement") or {}
     if settlement_cfg.get("enabled", True) and s is not None:
@@ -217,8 +218,8 @@ def build_tour_tables(tour_cfg, tour_code, tour_label):
                 for p in draw.by_id.values()
                 if p.live and not p.eliminated and str(p.name or "").strip()
             ]
-            re, counts, bye_users, play_day, pending_uids = settle_tour_scores(
-                re, s, draw, rank_df=r
+            re, counts, bye_users, play_day, pending_uids, backup_events = (
+                settle_tour_scores(re, s, draw, rank_df=r)
             )
             if play_day > 0:
                 day = play_day
@@ -243,6 +244,7 @@ def build_tour_tables(tour_cfg, tour_code, tour_label):
             use_settled = False
             bye_users = set()
             pending_uids = set()
+            backup_events = []
             day = infer_day(s, re)
 
     logger.info(
@@ -304,7 +306,7 @@ def build_tour_tables(tour_cfg, tour_code, tour_label):
                 [*(live_players or []), *sorted(pending_picks)]
             )
         )
-    return table, race, r, s, re, day, live_players, ra, pending_uids
+    return table, race, r, s, re, day, live_players, ra, pending_uids, backup_events
 
 
 def _log_submissions_for_users(submissions_df, day, user_ids):
@@ -441,6 +443,8 @@ def update_rank_pages(
     wta_rank_raw: pd.DataFrame = None,
     atp_race_raw: pd.DataFrame = None,
     wta_race_raw: pd.DataFrame = None,
+    atp_backup_events: list = None,
+    wta_backup_events: list = None,
 ):
     # Mark 未完赛/未选 first (keep today's picks for losers so summary counts them),
     # then hide picks only on the rendered table.
@@ -454,6 +458,7 @@ def update_rank_pages(
     atp = prepare_rank_change(atp_base)
     atp_stats = generate_summary(atp, atp_day1, atp_bye)
     atp_killers = daily_killer_stats(atp)
+    atp_backup = summarize_backup_events(atp_backup_events)
     atp_view = drop_today_status_column(hide_today_picks_for_eliminated(atp))
     atp_race_view = drop_today_status_column(
         hide_today_picks_for_eliminated(
@@ -478,6 +483,7 @@ def update_rank_pages(
         killer_df=atp_killers,
         available_players=atp_players,
         live_players=atp_live_players,
+        backup_events=atp_backup,
         output_path="../atp_ranking.html",
     )
     render_ranking_page(
@@ -491,6 +497,7 @@ def update_rank_pages(
         extra_tags=["2026"],
         available_players=atp_players,
         live_players=atp_live_players,
+        backup_events=atp_backup,
         output_path="../atp_race_ranking.html",
     )
 
@@ -504,6 +511,7 @@ def update_rank_pages(
     wta = prepare_rank_change(wta_base)
     wta_stats = generate_summary(wta, wta_day1, wta_bye)
     wta_killers = daily_killer_stats(wta)
+    wta_backup = summarize_backup_events(wta_backup_events)
     wta_view = drop_today_status_column(hide_today_picks_for_eliminated(wta))
     wta_race_view = drop_today_status_column(
         hide_today_picks_for_eliminated(
@@ -528,6 +536,7 @@ def update_rank_pages(
         killer_df=wta_killers,
         available_players=wta_players,
         live_players=wta_live_players,
+        backup_events=wta_backup,
         output_path="../wta_ranking.html",
     )
     render_ranking_page(
@@ -541,6 +550,7 @@ def update_rank_pages(
         extra_tags=["2026"],
         available_players=wta_players,
         live_players=wta_live_players,
+        backup_events=wta_backup,
         output_path="../wta_race_ranking.html",
     )
 
@@ -867,6 +877,7 @@ def main(*, mode: str = "default"):
         atp_live,
         atp_ra,
         atp_pending,
+        atp_backup_events,
     ) = build_tour_tables(atp_cfg, "MS", "ATP")
     (
         wta_table,
@@ -878,6 +889,7 @@ def main(*, mode: str = "default"):
         wta_live,
         wta_ra,
         wta_pending,
+        wta_backup_events,
     ) = build_tour_tables(wta_cfg, "WS", "WTA")
     # Event detail: players, dates, rounds/scores for current day
     atp_players = []
@@ -1008,6 +1020,8 @@ def main(*, mode: str = "default"):
         wta_rank_raw=wta_r,
         atp_race_raw=atp_ra,
         wta_race_raw=wta_ra,
+        atp_backup_events=atp_backup_events,
+        wta_backup_events=wta_backup_events,
     )
 
     if mode == "live":

@@ -34,6 +34,7 @@ def render_ranking_page(
     extra_tags: Optional[list[str]] = None,
     available_players: Union[list[str], str, Path, None] = None,
     live_players: Optional[list[str]] = None,
+    backup_events: Optional[list] = None,
     output_path: str | Path = "ranking.html",
     enable_detail: bool = True,
     enable_breakdown: bool = False,
@@ -80,6 +81,9 @@ def render_ranking_page(
         Subset of available_players whose match is still in progress
         (未完赛). Used by the summary panel to distinguish 未完赛 vs
         已完赛确认存活.
+    backup_events : list or None
+        Aggregated early-retirement backup activations for the summary panel
+        (``summarize_backup_events`` output).
     output_path : str or Path
         Destination file.
     enable_detail : bool
@@ -103,6 +107,7 @@ def render_ranking_page(
             top_n=summary_top_n,
             available_players=_players,
             live_players=live_players,
+            backup_events=backup_events,
         )
         summary_js = ""  # JS is inlined inside _summary_bar_html
     else:

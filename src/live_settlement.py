@@ -398,12 +398,67 @@ def ensure_score_df(
     )
 
 
+def summarize_backup_events(events: list[dict[str, Any]] | None) -> list[dict[str, Any]]:
+    """
+    Collapse raw backup events into panel rows.
+
+    Each item: ``{primary, score, total, backs:[{name, alive, out, live, total}]}``.
+    """
+    if not events:
+        return []
+    by_primary: dict[str, dict[str, Any]] = {}
+    for event in events:
+        primary = str(event.get("primary") or "").strip()
+        if not primary:
+            continue
+        bucket = by_primary.setdefault(
+            primary,
+            {"score": "", "backs": defaultdict(lambda: {"alive": 0, "out": 0, "live": 0})},
+        )
+        score = str(event.get("score") or "").strip()
+        if score and not bucket["score"]:
+            bucket["score"] = score
+        backup = str(event.get("backup") or "").strip()
+        result = str(event.get("result") or "").strip()
+        if result not in {"alive", "out", "live"}:
+            continue
+        bucket["backs"][backup][result] += 1
+
+    panels: list[dict[str, Any]] = []
+    for primary, payload in by_primary.items():
+        backs: list[dict[str, Any]] = []
+        for name, counts in payload["backs"].items():
+            total = int(counts["alive"]) + int(counts["out"]) + int(counts["live"])
+            if total <= 0:
+                continue
+            backs.append(
+                {
+                    "name": name,
+                    "alive": int(counts["alive"]),
+                    "out": int(counts["out"]),
+                    "live": int(counts["live"]),
+                    "total": total,
+                }
+            )
+        backs.sort(key=lambda row: (row["name"] == "", -row["total"], row["name"]))
+        panels.append(
+            {
+                "primary": primary,
+                "score": payload["score"],
+                "total": sum(row["total"] for row in backs),
+                "backs": backs,
+            }
+        )
+    panels.sort(key=lambda row: -row["total"])
+    return panels
+
+
 def apply_live_settlement(
     score_df: pd.DataFrame,
     detail_rows: list[dict[str, Any]],
     draw: DrawStatus | None,
     rank_by_id: dict[str, int] | None = None,
-) -> tuple[pd.DataFrame, dict[str, int], set[str], set[str]]:
+) -> tuple[pd.DataFrame, dict[str, int], set[str], set[str], list[dict[str, Any]]]:
     """
     Settle alive users against the live draw.
 
@@ -413,10 +468,11 @@ def apply_live_settlement(
     counts : win/loss/pending/suicide/bye tallies
     bye_users : first-day bye user_id keys
     pending_users : alive users whose current-day pick is not settled yet
+    backup_events : early-retirement backup activations for the summary panel
     """
     empty = {"win": 0, "loss": 0, "pending": 0, "suicide": 0, "bye": 0}
     if score_df is None or score_df.empty or not detail_rows:
-        return score_df, empty, set(), set()
+        return score_df, empty, set(), set(), []
 
     grouped = _details_by_user(detail_rows)
     bye_users = first_day_bye_users(detail_rows, draw, rank_by_id)
@@ -460,6 +516,7 @@ def apply_live_settlement(
 
     counts = dict(empty)
     pending_users: set[str] = set()
+    backup_events: list[dict[str, Any]] = []
     for index, row in result.iterrows():
         if str(row.get("fill_status") or "") != "存活":
             continue
@@ -523,6 +580,39 @@ def apply_live_settlement(
                 detail, draw, fills_by_match, live_round, min_still_round
             )
             eff_pick = str(effective.get("player") or pick).strip()
+            alt = str(detail.get("player_alt") or "").strip()
+            primary_player = draw.lookup(detail.get("fill"), pick)
+            early_ret = bool(
+                primary_player is not None
+                and primary_player.eliminated
+                and retirement_backup_allowed(primary_player.elim_score)
+            )
+            if early_ret:
+                score_txt = str(primary_player.elim_score or "").strip()
+                if alt and eff_pick == alt:
+                    if outcome == "win":
+                        bak_result = "alive"
+                    elif outcome == "loss":
+                        bak_result = "out"
+                    else:
+                        bak_result = "live"
+                    backup_events.append(
+                        {
+                            "primary": pick,
+                            "backup": alt,
+                            "result": bak_result,
+                            "score": score_txt,
+                        }
+                    )
+                elif not alt and outcome == "loss":
+                    backup_events.append(
+                        {
+                            "primary": pick,
+                            "backup": "",
+                            "result": "out",
+                            "score": score_txt,
+                        }
+                    )
             if outcome == "win":
                 if eff_pick and eff_pick != "轮空":
                     used.append(eff_pick)
@@ -560,7 +650,7 @@ def apply_live_settlement(
             lambda s: FILL_TO_STATUS.get(str(s), 2)
         )
 
-    return result, counts, bye_users, pending_users
+    return result, counts, bye_users, pending_users, backup_events
 
 
 def settle_tour_scores(
@@ -568,11 +658,13 @@ def settle_tour_scores(
     submission_df: Optional[pd.DataFrame],
     draw: DrawStatus | None,
     rank_df: Optional[pd.DataFrame] = None,
-) -> tuple[Optional[pd.DataFrame], dict[str, int], set[str], int, set[str]]:
+) -> tuple[
+    Optional[pd.DataFrame], dict[str, int], set[str], int, set[str], list[dict[str, Any]]
+]:
     """
     High-level entry: ensure score table → settle → return play day.
 
-    Returns ``(score_df, counts, bye_users, play_day, pending_users)``.
+    Returns ``(score_df, counts, bye_users, play_day, pending_users, backup_events)``.
     """
     detail_rows = submission_to_detail_rows(submission_df)
     ensured = ensure_score_df(score_df, submission_df)
@@ -583,10 +675,11 @@ def settle_tour_scores(
             set(),
             0,
             set(),
+            [],
         )
 
     ranks = rank_by_id_from_df(rank_df)
-    settled, counts, bye_users, pending_users = apply_live_settlement(
+    settled, counts, bye_users, pending_users, backup_events = apply_live_settlement(
         ensured, detail_rows, draw, ranks
     )
     play_day = current_play_day(draw, detail_rows)
@@ -597,4 +690,10 @@ def settle_tour_scores(
             f"bye={counts['bye']} suicide={counts['suicide']} "
             f"pending={counts['pending']} play_day={play_day}"
         )
-    return settled, counts, bye_users, play_day, pending_users
+    if backup_events:
+        logger.info(
+            "Backup activations: "
+            f"{len(backup_events)} "
+            f"({', '.join(sorted({e.get('primary','') for e in backup_events}))})"
+        )
+    return settled, counts, bye_users, play_day, pending_users, backup_events

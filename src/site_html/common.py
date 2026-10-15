@@ -189,11 +189,78 @@ def _df_to_html_table(
     lines.append("</table>")
     return "\n".join(lines)
 
+def _backup_panel_html(backup_events: Optional[list] = None) -> str:
+    """Render early-retirement backup activation block for the summary panel."""
+    if not backup_events:
+        return ""
+    blocks: list[str] = []
+    for item in backup_events:
+        primary = html.escape(str(item.get("primary") or "").strip())
+        if not primary:
+            continue
+        score = html.escape(str(item.get("score") or "").strip())
+        score_html = (
+            f'<span class="bak-score">{score}</span>' if score else ""
+        )
+        rows_html: list[str] = []
+        for back in item.get("backs") or []:
+            name = str(back.get("name") or "").strip()
+            label = html.escape(name) if name else "无备选"
+            chips: list[str] = []
+            alive_n = int(back.get("alive") or 0)
+            live_n = int(back.get("live") or 0)
+            out_n = int(back.get("out") or 0)
+            if alive_n:
+                chips.append(
+                    f'<span class="meta-chip chip-alive">{alive_n} 人存活</span>'
+                )
+            if live_n:
+                chips.append(
+                    f'<span class="meta-chip chip-live">{live_n} 人未完赛</span>'
+                )
+            if out_n:
+                chips.append(
+                    f'<span class="meta-chip chip-out">{out_n} 人淘汰</span>'
+                )
+            if not chips:
+                continue
+            rows_html.append(
+                '<div class="bak-row">'
+                f'<span class="bak-arrow">→</span>'
+                f'<span class="bak-alt">{label}</span>'
+                f'<span class="bak-chips">{" ".join(chips)}</span>'
+                "</div>"
+            )
+        if not rows_html:
+            continue
+        total = int(item.get("total") or 0)
+        blocks.append(
+            '<div class="bak-block">'
+            '<div class="bak-primary">'
+            f'<span class="bak-name">{primary}</span>'
+            f"{score_html}"
+            '<span class="bak-tag">第一盘退赛 / W/O</span>'
+            f'<span class="bak-total">{total} 人</span>'
+            "</div>"
+            + "".join(rows_html)
+            + "</div>"
+        )
+    if not blocks:
+        return ""
+    return (
+        '<div class="bak-box">'
+        '<div class="bak-title">备选启用</div>'
+        + "".join(blocks)
+        + "</div>"
+    )
+
+
 def _summary_bar_html(
     df: pd.DataFrame,
     top_n: int = 3,
     available_players: Optional[list[str]] = None,
     live_players: Optional[list[str]] = None,
+    backup_events: Optional[list] = None,
 ) -> str:
     """
     Convert a generate_summary() DataFrame into the bar-chart summary panel.
@@ -211,6 +278,7 @@ def _summary_bar_html(
     available_players : still-alive draw players
     live_players : subset still in a live match (未完赛); others in
         available_players are treated as 存活
+    backup_events : aggregated early-retirement backup activations
 
     Returns
     -------
@@ -396,6 +464,27 @@ def _summary_bar_html(
     if suicide_total > 0:
         header_parts.append(f"自杀{suicide_total}")
     clipboard_header = json.dumps(" ".join(header_parts), ensure_ascii=False)
+    backup_html = _backup_panel_html(backup_events)
+    backup_clip_lines: list[str] = []
+    for item in backup_events or []:
+        primary = str(item.get("primary") or "").strip()
+        if not primary:
+            continue
+        score = str(item.get("score") or "").strip()
+        head = f"备选启用 {primary}" + (f" {score}" if score else "")
+        backup_clip_lines.append(head)
+        for back in item.get("backs") or []:
+            name = str(back.get("name") or "").strip() or "无备选"
+            bits = []
+            if int(back.get("alive") or 0):
+                bits.append(f"存活{int(back['alive'])}")
+            if int(back.get("live") or 0):
+                bits.append(f"未完赛{int(back['live'])}")
+            if int(back.get("out") or 0):
+                bits.append(f"淘汰{int(back['out'])}")
+            if bits:
+                backup_clip_lines.append(f"→ {name} {' '.join(bits)}")
+    backup_clip_json = json.dumps(backup_clip_lines, ensure_ascii=False)
 
     # ── assemble HTML ─────────────────────────────────────────────────────────
     return f"""\
@@ -412,6 +501,7 @@ def _summary_bar_html(
         {meta_html}
         </div>
         </div>
+        {backup_html}
         {col_hd_html}
         <div class="sum-list" id="sumList"></div>
         <button class="sum-toggle" id="sumToggle" onclick="toggleSumPanel()">
@@ -427,6 +517,7 @@ def _summary_bar_html(
         var TOTALS  = {totals_json};
         var MAX_VAL = {max_val};
         var CLIPBOARD_HEADER = {clipboard_header};
+        var BACKUP_CLIP = {backup_clip_json};
         var expanded = false;
 
         function pct(n){{ return ((n / TOTALS.grand) * 100).toFixed(1) + '%'; }}
@@ -569,6 +660,9 @@ def _summary_bar_html(
 
         window.copySumStats = function(){{
             var lines = [CLIPBOARD_HEADER];
+            if (BACKUP_CLIP && BACKUP_CLIP.length) {{
+                lines.push.apply(lines, BACKUP_CLIP);
+            }}
             ROWS.forEach(function(r){{
                 if (r.normal === 0 && r.bye === 0) return;
                 var mark = statusMark(r);
