@@ -116,6 +116,10 @@ _WO_RE = re.compile(r"\bW\s*/\s*O\b|\bWO\b", re.I)
 _RET_RE = re.compile(r"\bRet\.?\b", re.I)
 
 
+# Live game-point values (not set games). ``15:0`` after set 1 means set 2 started.
+_GAME_POINT_VALUES = frozenset({15, 30, 40})
+
+
 def _set_token_complete(token: str) -> bool | None:
     """Whether a single set token is a finished set. None if unparseable."""
     text = str(token or "").strip()
@@ -129,6 +133,9 @@ def _set_token_complete(token: str) -> bool | None:
     a, b = int(m.group(1)), int(m.group(2))
     if a > 20 or b > 20:
         return None
+    # ``15:0`` / ``30-0`` are game points inside a set, not a finished set.
+    if a in _GAME_POINT_VALUES or b in _GAME_POINT_VALUES:
+        return False
     if max(a, b) >= 6 and abs(a - b) >= 2:
         return True
     if max(a, b) >= 7:  # 7-6 / 7-5
@@ -146,8 +153,9 @@ def retirement_backup_allowed(score_text: str) -> bool:
 
     Rules (survivor):
     - ``W/O`` → backup allowed
-    - ``Ret.`` / incomplete first-set score (e.g. ``52``, ``52 Ret.``) → allowed
-    - First set completed (e.g. ``64 Ret.``, ``63 22 Ret.``, ``64 75``) → not allowed
+    - Incomplete first set only (e.g. ``41``, ``52``, ``52 Ret.``) → allowed
+    - First set finished, or set 2 started (e.g. ``64 Ret.``, ``63 15``,
+      ``63 15:0 Ret.``, ``63 22 Ret.``) → not allowed
     """
     text = " ".join(str(score_text or "").split())
     if not text:
@@ -161,20 +169,33 @@ def retirement_backup_allowed(score_text: str) -> bool:
     tokens = score_tokens(body)
     if not tokens:
         return has_ret
+    # Any second-set fragment (games or points like ``15`` / ``15:0``) ⇒ no backup.
+    if len(tokens) >= 2:
+        return False
     first = _set_token_complete(tokens[0])
     if first is True:
-        return False
+        return False  # first set completed (e.g. ``64 Ret.``)
     if first is False:
-        return True
+        return True  # incomplete first set (e.g. ``41``, ``52``)
     return has_ret
+
+
+def _score_candidate_rank(text: str) -> tuple:
+    """Lower tuple wins when choosing among score cells in a match group."""
+    special = 0 if (_WO_RE.search(text) or _RET_RE.search(text)) else 1
+    early = 0 if retirement_backup_allowed(text) else 1
+    tokens = score_tokens(text)
+    return (special, early, len(tokens), len(text))
 
 
 def _score_text_from_match_group(
     group: list[list[dict[str, Any]]], col: int
 ) -> str:
-    """Best score / Ret / W/O text in the match group (usually at ``col`` or ``col+1``)."""
+    """Best score / Ret / W/O text for the match at player column ``col``."""
     candidates: list[str] = []
-    score_cols = [c for c in (col, col + 1, col - 1) if c >= 0]
+    # Prefer the gutter after this round (``col+1``): previous-round scores often
+    # sit at ``col`` inside the same 4-row block (e.g. ``76(4) 64`` vs this-round ``41``).
+    score_cols = [c for c in (col + 1, col, col - 1) if c >= 0]
     for score_col in score_cols:
         for cells in group:
             if score_col >= len(cells):
@@ -192,11 +213,7 @@ def _score_text_from_match_group(
                 candidates.append(text)
     if not candidates:
         return ""
-    # Prefer explicit Ret/W/O; else first token-bearing cell.
-    for text in candidates:
-        if _WO_RE.search(text) or _RET_RE.search(text):
-            return text
-    return candidates[0]
+    return sorted(set(candidates), key=_score_candidate_rank)[0]
 
 
 def assign_draw_byes(players: dict[str, DrawPlayer] | list[DrawPlayer]) -> None:
