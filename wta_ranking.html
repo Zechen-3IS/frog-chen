@@ -641,7 +641,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     ← 首页
   </a>
   <div class="topbar-right">
-    <span class="updated">⏱ 2026年10月15日 20:13:31</span>
+    <span class="updated">⏱ 2026年10月15日 22:06:27</span>
     <button class="theme-btn" id="themeBtn" onclick="toggleTheme()">🌙 暗色</button>
   </div>
 </div>
@@ -665,11 +665,13 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
         </button>
         </div>
         <div class="sum-meta">
-        <span class="meta-chip chip-valid">✓ 92 人已选</span>
+        <span class="meta-chip chip-valid">✓ 105 人已选</span>
     <span class="meta-sep">｜</span>
     <span class="meta-chip chip-nosel">1 人未选</span>
     <span class="meta-sep">｜</span>
-    <span class="meta-total">总计 93 人</span>
+    <span class="meta-chip chip-suicide">⚠ 2 人自杀</span>
+    <span class="meta-sep">｜</span>
+    <span class="meta-total">总计 108 人</span>
         </div>
         </div>
             <div class="sum-col-hd">
@@ -681,7 +683,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     </div>
         <div class="sum-list" id="sumList"></div>
         <button class="sum-toggle" id="sumToggle" onclick="toggleSumPanel()">
-        <span id="sumToggleTxt">显示全部 7 名球员）</span>
+        <span id="sumToggleTxt">显示全部 10 名球员）</span>
         <span class="sum-ticon" id="sumTicon">▼</span>
         </button>
     </div>
@@ -689,10 +691,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     (function(){
         var TOP_N   = 3;
         var HAS_BYE = false;
-        var ROWS    = [{"name": "斯维托丽娜", "normal": 40, "bye": 0, "status": "confirmed"}, {"name": "萨卡里", "normal": 28, "bye": 0, "status": "confirmed"}, {"name": "李吉妮", "normal": 17, "bye": 0, "status": "live"}, {"name": "希维昂泰克", "normal": 4, "bye": 0, "status": "live"}, {"name": "卡塔尔", "normal": 1, "bye": 0, "status": "confirmed"}, {"name": "奥斯塔彭科", "normal": 1, "bye": 0, "status": "confirmed"}, {"name": "施内德", "normal": 1, "bye": 0, "status": "confirmed"}];
-        var TOTALS  = {"normal": 92, "bye": 0, "grand": 92};
-        var MAX_VAL = 40;
-        var CLIPBOARD_HEADER = "已选92 未选1";
+        var ROWS    = [{"name": "斯维托丽娜", "normal": 41, "bye": 0, "status": "confirmed"}, {"name": "萨卡里", "normal": 28, "bye": 0, "status": "confirmed"}, {"name": "李吉妮", "normal": 18, "bye": 0, "status": "live"}, {"name": "伊-约维奇", "normal": 6, "bye": 0, "status": "out"}, {"name": "保利尼", "normal": 4, "bye": 0, "status": "out"}, {"name": "希维昂泰克", "normal": 4, "bye": 0, "status": "confirmed"}, {"name": "施内德", "normal": 1, "bye": 0, "status": "confirmed"}, {"name": "卡塔尔", "normal": 1, "bye": 0, "status": "confirmed"}, {"name": "奥斯塔彭科", "normal": 1, "bye": 0, "status": "confirmed"}, {"name": "蕾-费尔南德斯", "normal": 1, "bye": 0, "status": "out"}];
+        var TOTALS  = {"normal": 105, "bye": 0, "grand": 105};
+        var MAX_VAL = 41;
+        var CLIPBOARD_HEADER = "已选105 未选1 自杀2";
         var expanded = false;
 
         function pct(n){ return ((n / TOTALS.grand) * 100).toFixed(1) + '%'; }
@@ -938,7 +940,6 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
         <div class="rq-opt-list" id="rq-opt-list">
           <div class="rq-opt" data-player="李吉妮"><input type="checkbox">李吉妮</div>
           <div class="rq-opt" data-player="曾丽美"><input type="checkbox">曾丽美</div>
-          <div class="rq-opt" data-player="克鲁格"><input type="checkbox">克鲁格</div>
           <div class="rq-opt" data-player="希维昂泰克"><input type="checkbox">希维昂泰克</div>
           <div class="rq-opt" data-player="赫瓦林斯卡"><input type="checkbox">赫瓦林斯卡</div>
           <div class="rq-opt" data-player="萨卡里"><input type="checkbox">萨卡里</div>
@@ -1807,7 +1808,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td><span class="rank down">-1</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;曾丽美&quot;, &quot;王曦雨&quot;]">
-    <td>62</td>
+    <td>63</td>
     <td>60</td>
     <td>交H于一点</td>
     <td><span class="st-badge st-out">球员输球</span></td>
@@ -1818,10 +1819,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>38</td>
     <td>0</td>
     <td>3630</td>
-    <td><span class="rank down">-2</span></td>
+    <td><span class="rank down">-3</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;曾丽美&quot;, &quot;科斯蒂亚&quot;]">
-    <td>63</td>
+    <td>64</td>
     <td>61</td>
     <td>r***i</td>
     <td><span class="st-badge st-out">球员输球</span></td>
@@ -1832,10 +1833,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>38</td>
     <td>0</td>
     <td>3624</td>
-    <td><span class="rank down">-2</span></td>
+    <td><span class="rank down">-3</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;伊-约维奇&quot;, &quot;科斯蒂亚&quot;]">
-    <td>64</td>
+    <td>65</td>
     <td>62</td>
     <td>木的讷</td>
     <td><span class="st-badge st-out">球员输球</span></td>
@@ -1846,10 +1847,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>38</td>
     <td>0</td>
     <td>3603</td>
-    <td><span class="rank down">-2</span></td>
+    <td><span class="rank down">-3</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;卡塔尔&quot;, &quot;李吉妮&quot;, &quot;希维昂泰克&quot;, &quot;斯维托丽娜&quot;]">
-    <td>65</td>
+    <td>66</td>
     <td>63</td>
     <td>E***冰</td>
     <td><span class="st-badge st-out">自杀(重复)</span></td>
@@ -1860,7 +1861,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>120</td>
     <td>0</td>
     <td>3596</td>
-    <td><span class="rank down">-2</span></td>
+    <td><span class="rank down">-3</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;邦达尔&quot;]">
     <td>67</td>
@@ -1919,7 +1920,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td><span class="rank down">-3</span></td>
   </tr>
   <tr class="row-alive" data-detail="[&quot;鲍兹科娃&quot;, &quot;施内德&quot;, &quot;伊-约维奇&quot;, &quot;斯维托丽娜&quot;]">
-    <td>61</td>
+    <td>62</td>
     <td>68</td>
     <td>1000赛的W</td>
     <td><span class="st-badge st-alive">存活</span></td>
@@ -1930,7 +1931,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>215</td>
     <td>0</td>
     <td>3668</td>
-    <td><span class="rank up">+7</span></td>
+    <td><span class="rank up">+6</span></td>
   </tr>
   <tr class="row-alive" data-detail="[&quot;曾丽美&quot;, &quot;奥斯塔彭科&quot;, &quot;希维昂泰克&quot;, &quot;斯维托丽娜&quot;]">
     <td>58</td>
@@ -1960,19 +1961,19 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>3525</td>
     <td><span class="rank down">-1</span></td>
   </tr>
-  <tr class="row-live" data-detail="[&quot;曾丽美&quot;, &quot;施内德&quot;, &quot;斯维托丽娜&quot;]">
-    <td>66</td>
+  <tr class="row-alive" data-detail="[&quot;曾丽美&quot;, &quot;施内德&quot;, &quot;斯维托丽娜&quot;, &quot;希维昂泰克&quot;]">
+    <td>61</td>
     <td>71</td>
     <td>ElvisD95</td>
-    <td><span class="st-badge st-live">未完赛</span></td>
-    <td>3</td>
+    <td><span class="st-badge st-alive">存活</span></td>
+    <td>4</td>
     <td></td>
     <td>希维昂泰克</td>
     <td>萨卡里</td>
-    <td>120</td>
+    <td>215</td>
     <td>0</td>
-    <td>3577</td>
-    <td><span class="rank up">+5</span></td>
+    <td>3672</td>
+    <td><span class="rank up">+10</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;伊埃拉&quot;]">
     <td>72</td>
@@ -2957,7 +2958,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[&quot;伊埃拉&quot;]">
     <td>145</td>
     <td>142</td>
-    <td>外星驻地球代表</td>
+    <td>无***痕</td>
     <td><span class="st-badge st-out">球员输球</span></td>
     <td>0</td>
     <td>伊埃拉</td>
@@ -2971,7 +2972,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[&quot;伊埃拉&quot;]">
     <td>145</td>
     <td>142</td>
-    <td>无***痕</td>
+    <td>外星驻地球代表</td>
     <td><span class="st-badge st-out">球员输球</span></td>
     <td>0</td>
     <td>伊埃拉</td>
@@ -3794,20 +3795,6 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>2378</td>
     <td><span class="rank same"></span></td>
   </tr>
-  <tr class="row-live" data-detail="[&quot;曾丽美&quot;, &quot;赫瓦林斯卡&quot;, &quot;穆霍娃&quot;]">
-    <td>199</td>
-    <td>202</td>
-    <td>强化型米斯alternate</td>
-    <td><span class="st-badge st-live">未完赛</span></td>
-    <td>3</td>
-    <td></td>
-    <td>李吉妮</td>
-    <td>萨卡里</td>
-    <td>120</td>
-    <td>0</td>
-    <td>2393</td>
-    <td><span class="rank up">+3</span></td>
-  </tr>
   <tr class="row-out" data-detail="[&quot;曾丽美&quot;, &quot;赫瓦林斯卡&quot;, &quot;斯尼古尔&quot;]">
     <td>203</td>
     <td>202</td>
@@ -3821,6 +3808,20 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>0</td>
     <td>2368</td>
     <td><span class="rank down">-1</span></td>
+  </tr>
+  <tr class="row-live" data-detail="[&quot;曾丽美&quot;, &quot;赫瓦林斯卡&quot;, &quot;穆霍娃&quot;]">
+    <td>199</td>
+    <td>202</td>
+    <td>强化型米斯alternate</td>
+    <td><span class="st-badge st-live">未完赛</span></td>
+    <td>3</td>
+    <td></td>
+    <td>李吉妮</td>
+    <td>萨卡里</td>
+    <td>120</td>
+    <td>0</td>
+    <td>2393</td>
+    <td><span class="rank up">+3</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;伊-约维奇&quot;, &quot;科斯蒂亚&quot;]">
     <td>205</td>
@@ -4285,7 +4286,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td><span class="rank down">-3</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;伊埃拉&quot;]">
-    <td>241</td>
+    <td>242</td>
     <td>237</td>
     <td>神秘的药</td>
     <td><span class="st-badge st-out">球员输球</span></td>
@@ -4296,7 +4297,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>10</td>
     <td>0</td>
     <td>2114</td>
-    <td><span class="rank down">-4</span></td>
+    <td><span class="rank down">-5</span></td>
   </tr>
   <tr class="row-live" data-detail="[&quot;曾丽美&quot;, &quot;施内德&quot;, &quot;伊-约维奇&quot;]">
     <td>235</td>
@@ -4313,7 +4314,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td><span class="rank up">+3</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;伊-约维奇&quot;, &quot;王曦雨&quot;]">
-    <td>242</td>
+    <td>243</td>
     <td>239</td>
     <td>超***2</td>
     <td><span class="st-badge st-out">球员输球</span></td>
@@ -4324,10 +4325,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>38</td>
     <td>0</td>
     <td>2109</td>
-    <td><span class="rank down">-3</span></td>
+    <td><span class="rank down">-4</span></td>
   </tr>
   <tr class="row-out" data-detail="[]">
-    <td>244</td>
+    <td>245</td>
     <td>240</td>
     <td>178******17</td>
     <td><span class="st-badge st-out">未参赛</span></td>
@@ -4338,7 +4339,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td></td>
     <td>0</td>
     <td>2097</td>
-    <td><span class="rank down">-4</span></td>
+    <td><span class="rank down">-5</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;鲍兹科娃&quot;, &quot;科斯蒂亚&quot;]">
     <td>240</td>
@@ -4369,7 +4370,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td><span class="rank up">+24</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;曾丽美&quot;, &quot;王曦雨&quot;]">
-    <td>245</td>
+    <td>246</td>
     <td>243</td>
     <td>南柯一梦-mx</td>
     <td><span class="st-badge st-out">球员输球</span></td>
@@ -4380,10 +4381,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>38</td>
     <td>0</td>
     <td>2084</td>
-    <td><span class="rank down">-2</span></td>
+    <td><span class="rank down">-3</span></td>
   </tr>
   <tr class="row-out" data-detail="[]">
-    <td>246</td>
+    <td>247</td>
     <td>244</td>
     <td>嘚嘚啵咿</td>
     <td><span class="st-badge st-out">未参赛</span></td>
@@ -4394,10 +4395,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td></td>
     <td>0</td>
     <td>2081</td>
-    <td><span class="rank down">-2</span></td>
+    <td><span class="rank down">-3</span></td>
   </tr>
   <tr class="row-out" data-detail="[]">
-    <td>249</td>
+    <td>250</td>
     <td>245</td>
     <td>那不勒斯Jasper</td>
     <td><span class="st-badge st-out">未参赛</span></td>
@@ -4408,10 +4409,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td></td>
     <td>0</td>
     <td>2051</td>
-    <td><span class="rank down">-4</span></td>
+    <td><span class="rank down">-5</span></td>
   </tr>
   <tr class="row-out" data-detail="[]">
-    <td>251</td>
+    <td>252</td>
     <td>246</td>
     <td>Cobolli Go</td>
     <td><span class="st-badge st-out">未参赛</span></td>
@@ -4422,10 +4423,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td></td>
     <td>0</td>
     <td>2039</td>
-    <td><span class="rank down">-5</span></td>
+    <td><span class="rank down">-6</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;伊埃拉&quot;]">
-    <td>252</td>
+    <td>253</td>
     <td>247</td>
     <td>别花里胡哨的</td>
     <td><span class="st-badge st-out">球员输球</span></td>
@@ -4436,10 +4437,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>10</td>
     <td>0</td>
     <td>2037</td>
-    <td><span class="rank down">-5</span></td>
+    <td><span class="rank down">-6</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;伊-约维奇&quot;, &quot;科斯蒂亚&quot;]">
-    <td>247</td>
+    <td>248</td>
     <td>248</td>
     <td>燃烧SylvanY</td>
     <td><span class="st-badge st-out">球员输球</span></td>
@@ -4450,10 +4451,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>38</td>
     <td>0</td>
     <td>2071</td>
-    <td><span class="rank up">+1</span></td>
+    <td><span class="rank same"></span></td>
   </tr>
   <tr class="row-out" data-detail="[]">
-    <td>253</td>
+    <td>254</td>
     <td>249</td>
     <td>z***7</td>
     <td><span class="st-badge st-out">未参赛</span></td>
@@ -4464,10 +4465,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td></td>
     <td>0</td>
     <td>2029</td>
-    <td><span class="rank down">-4</span></td>
+    <td><span class="rank down">-5</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;伊-约维奇&quot;, &quot;科斯蒂亚&quot;]">
-    <td>254</td>
+    <td>255</td>
     <td>250</td>
     <td>Roudric</td>
     <td><span class="st-badge st-out">球员输球</span></td>
@@ -4478,10 +4479,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>38</td>
     <td>0</td>
     <td>2029</td>
-    <td><span class="rank down">-4</span></td>
+    <td><span class="rank down">-5</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;伊埃拉&quot;]">
-    <td>255</td>
+    <td>256</td>
     <td>251</td>
     <td>顶***家</td>
     <td><span class="st-badge st-out">球员输球</span></td>
@@ -4492,7 +4493,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>10</td>
     <td>0</td>
     <td>2025</td>
-    <td><span class="rank down">-4</span></td>
+    <td><span class="rank down">-5</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;伊埃拉&quot;]">
     <td>258</td>
@@ -4551,7 +4552,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td><span class="rank down">-8</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;伊-约维奇&quot;, &quot;赫瓦林斯卡&quot;, &quot;鲍兹科娃&quot;]">
-    <td>250</td>
+    <td>251</td>
     <td>256</td>
     <td>极昼9920</td>
     <td><span class="st-badge st-out">球员输球</span></td>
@@ -4562,7 +4563,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>65</td>
     <td>0</td>
     <td>2048</td>
-    <td><span class="rank up">+6</span></td>
+    <td><span class="rank up">+5</span></td>
   </tr>
   <tr class="row-alive" data-detail="[&quot;曾丽美&quot;, &quot;赫瓦林斯卡&quot;, &quot;施内德&quot;, &quot;萨卡里&quot;]">
     <td>236</td>
@@ -4579,7 +4580,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td><span class="rank up">+21</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;曾丽美&quot;, &quot;巴尔通科娃&quot;, &quot;施内德&quot;, &quot;伊-约维奇&quot;]">
-    <td>248</td>
+    <td>249</td>
     <td>258</td>
     <td>小煜v0</td>
     <td><span class="st-badge st-out">球员输球</span></td>
@@ -4590,7 +4591,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>120</td>
     <td>0</td>
     <td>2064</td>
-    <td><span class="rank up">+10</span></td>
+    <td><span class="rank up">+9</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;伊埃拉&quot;]">
     <td>265</td>
@@ -4606,19 +4607,19 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>1959</td>
     <td><span class="rank down">-6</span></td>
   </tr>
-  <tr class="row-live" data-detail="[&quot;萨卡里&quot;, &quot;巴尔通科娃&quot;, &quot;施内德&quot;]">
-    <td>257</td>
+  <tr class="row-alive" data-detail="[&quot;萨卡里&quot;, &quot;巴尔通科娃&quot;, &quot;施内德&quot;, &quot;希维昂泰克&quot;]">
+    <td>241</td>
     <td>260</td>
     <td>Samuel Bao</td>
-    <td><span class="st-badge st-live">未完赛</span></td>
-    <td>3</td>
+    <td><span class="st-badge st-alive">存活</span></td>
+    <td>4</td>
     <td></td>
     <td>希维昂泰克</td>
     <td></td>
-    <td>120</td>
+    <td>215</td>
     <td>0</td>
-    <td>2020</td>
-    <td><span class="rank up">+3</span></td>
+    <td>2115</td>
+    <td><span class="rank up">+19</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;鲍兹科娃&quot;, &quot;科斯蒂亚&quot;]">
     <td>264</td>
@@ -4649,7 +4650,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td><span class="rank down">-5</span></td>
   </tr>
   <tr class="row-alive" data-detail="[&quot;曾丽美&quot;, &quot;赫瓦林斯卡&quot;, &quot;施内德&quot;, &quot;斯维托丽娜&quot;]">
-    <td>243</td>
+    <td>244</td>
     <td>263</td>
     <td>此号已废16</td>
     <td><span class="st-badge st-alive">存活</span></td>
@@ -4660,10 +4661,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>215</td>
     <td>0</td>
     <td>2101</td>
-    <td><span class="rank up">+20</span></td>
+    <td><span class="rank up">+19</span></td>
   </tr>
   <tr class="row-live" data-detail="[&quot;伊-约维奇&quot;, &quot;巴尔通科娃&quot;, &quot;穆霍娃&quot;]">
-    <td>256</td>
+    <td>257</td>
     <td>264</td>
     <td>用户7817136916</td>
     <td><span class="st-badge st-live">未完赛</span></td>
@@ -4674,10 +4675,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>120</td>
     <td>0</td>
     <td>2022</td>
-    <td><span class="rank up">+8</span></td>
+    <td><span class="rank up">+7</span></td>
   </tr>
   <tr class="row-out" data-detail="[]">
-    <td>269</td>
+    <td>270</td>
     <td>265</td>
     <td>云朵里遛弯指南</td>
     <td><span class="st-badge st-out">未参赛</span></td>
@@ -4688,10 +4689,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td></td>
     <td>0</td>
     <td>1903</td>
-    <td><span class="rank down">-4</span></td>
+    <td><span class="rank down">-5</span></td>
   </tr>
   <tr class="row-out" data-detail="[]">
-    <td>270</td>
+    <td>271</td>
     <td>266</td>
     <td>_aYvonne</td>
     <td><span class="st-badge st-out">未参赛</span></td>
@@ -4702,7 +4703,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td></td>
     <td>0</td>
     <td>1892</td>
-    <td><span class="rank down">-4</span></td>
+    <td><span class="rank down">-5</span></td>
   </tr>
   <tr class="row-alive" data-detail="[&quot;伊-约维奇&quot;, &quot;赫瓦林斯卡&quot;, &quot;希维昂泰克&quot;, &quot;奥斯塔彭科&quot;]">
     <td>259</td>
@@ -4719,7 +4720,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td><span class="rank up">+8</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;伊-约维奇&quot;, &quot;科斯蒂亚&quot;]">
-    <td>273</td>
+    <td>274</td>
     <td>268</td>
     <td>德星星星</td>
     <td><span class="st-badge st-out">球员输球</span></td>
@@ -4730,10 +4731,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>38</td>
     <td>0</td>
     <td>1854</td>
-    <td><span class="rank down">-5</span></td>
+    <td><span class="rank down">-6</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;维基奇&quot;]">
-    <td>272</td>
+    <td>273</td>
     <td>269</td>
     <td>芋y头h小m生</td>
     <td><span class="st-badge st-out">球员输球</span></td>
@@ -4744,10 +4745,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>10</td>
     <td>0</td>
     <td>1857</td>
-    <td><span class="rank down">-3</span></td>
+    <td><span class="rank down">-4</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;伊埃拉&quot;]">
-    <td>274</td>
+    <td>275</td>
     <td>270</td>
     <td>W***r</td>
     <td><span class="st-badge st-out">球员输球</span></td>
@@ -4758,10 +4759,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>10</td>
     <td>0</td>
     <td>1849</td>
-    <td><span class="rank down">-4</span></td>
+    <td><span class="rank down">-5</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;伊埃拉&quot;]">
-    <td>275</td>
+    <td>276</td>
     <td>271</td>
     <td>s***3</td>
     <td><span class="st-badge st-out">球员输球</span></td>
@@ -4772,7 +4773,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>10</td>
     <td>0</td>
     <td>1842</td>
-    <td><span class="rank down">-4</span></td>
+    <td><span class="rank down">-5</span></td>
   </tr>
   <tr class="row-alive" data-detail="[&quot;弗雷希&quot;, &quot;李吉妮&quot;, &quot;斯维托丽娜&quot;, &quot;萨卡里&quot;]">
     <td>262</td>
@@ -4789,7 +4790,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td><span class="rank up">+10</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;伊-约维奇&quot;, &quot;科斯蒂亚&quot;]">
-    <td>271</td>
+    <td>272</td>
     <td>273</td>
     <td>我是霍小耳</td>
     <td><span class="st-badge st-out">球员输球</span></td>
@@ -4800,7 +4801,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>38</td>
     <td>0</td>
     <td>1867</td>
-    <td><span class="rank up">+2</span></td>
+    <td><span class="rank up">+1</span></td>
   </tr>
   <tr class="row-out" data-detail="[]">
     <td>278</td>
@@ -4915,7 +4916,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td><span class="rank down">-6</span></td>
   </tr>
   <tr class="row-alive" data-detail="[&quot;弗雷希&quot;, &quot;巴尔通科娃&quot;, &quot;穆霍娃&quot;, &quot;萨卡里&quot;]">
-    <td>268</td>
+    <td>269</td>
     <td>282</td>
     <td>普普通通的成年人_</td>
     <td><span class="st-badge st-alive">存活</span></td>
@@ -4926,7 +4927,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>215</td>
     <td>0</td>
     <td>1925</td>
-    <td><span class="rank up">+14</span></td>
+    <td><span class="rank up">+13</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;伊埃拉&quot;]">
     <td>286</td>
@@ -5040,19 +5041,19 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>1718</td>
     <td><span class="rank down">-6</span></td>
   </tr>
-  <tr class="row-live" data-detail="[&quot;伊-约维奇&quot;, &quot;施内德&quot;, &quot;穆霍娃&quot;]">
-    <td>277</td>
+  <tr class="row-alive" data-detail="[&quot;伊-约维奇&quot;, &quot;施内德&quot;, &quot;穆霍娃&quot;, &quot;希维昂泰克&quot;]">
+    <td>268</td>
     <td>291</td>
     <td>晚睡早起冲冲冲</td>
-    <td><span class="st-badge st-live">未完赛</span></td>
-    <td>3</td>
+    <td><span class="st-badge st-alive">存活</span></td>
+    <td>4</td>
     <td></td>
     <td>希维昂泰克</td>
     <td>萨卡里</td>
-    <td>120</td>
+    <td>215</td>
     <td>0</td>
-    <td>1836</td>
-    <td><span class="rank up">+14</span></td>
+    <td>1931</td>
+    <td><span class="rank up">+23</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;曾丽美&quot;, &quot;巴尔通科娃&quot;, &quot;本西奇&quot;]">
     <td>291</td>
@@ -5251,7 +5252,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td><span class="rank down">-7</span></td>
   </tr>
   <tr class="row-alive" data-detail="[&quot;曾丽美&quot;, &quot;赫瓦林斯卡&quot;, &quot;施内德&quot;, &quot;萨卡里&quot;]">
-    <td>276</td>
+    <td>277</td>
     <td>306</td>
     <td>BOHEYE_</td>
     <td><span class="st-badge st-alive">存活</span></td>
@@ -5262,7 +5263,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>215</td>
     <td>0</td>
     <td>1838</td>
-    <td><span class="rank up">+30</span></td>
+    <td><span class="rank up">+29</span></td>
   </tr>
   <tr class="row-live" data-detail="[&quot;曾丽美&quot;, &quot;巴尔通科娃&quot;, &quot;伊-约维奇&quot;]">
     <td>301</td>
@@ -7631,7 +7632,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td><span class="rank down">-1</span></td>
   </tr>
   <tr class="row-out" data-detail="[]">
-    <td>478</td>
+    <td>479</td>
     <td>476</td>
     <td>超超wei_</td>
     <td><span class="st-badge st-out">未参赛</span></td>
@@ -7642,10 +7643,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td></td>
     <td>0</td>
     <td>561</td>
-    <td><span class="rank down">-2</span></td>
+    <td><span class="rank down">-3</span></td>
   </tr>
   <tr class="row-out" data-detail="[]">
-    <td>479</td>
+    <td>480</td>
     <td>477</td>
     <td>疯少爷一直很低调</td>
     <td><span class="st-badge st-out">未参赛</span></td>
@@ -7656,10 +7657,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td></td>
     <td>0</td>
     <td>560</td>
-    <td><span class="rank down">-2</span></td>
+    <td><span class="rank down">-3</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;麦克纳莉&quot;, &quot;王曦雨&quot;]">
-    <td>477</td>
+    <td>478</td>
     <td>478</td>
     <td>tennis幸存者</td>
     <td><span class="st-badge st-out">球员输球</span></td>
@@ -7670,10 +7671,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>38</td>
     <td>0</td>
     <td>592</td>
-    <td><span class="rank up">+1</span></td>
+    <td><span class="rank same"></span></td>
   </tr>
   <tr class="row-out" data-detail="[]">
-    <td>484</td>
+    <td>485</td>
     <td>479</td>
     <td>青春欠我一个胡先煦</td>
     <td><span class="st-badge st-out">未参赛</span></td>
@@ -7684,10 +7685,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td></td>
     <td>0</td>
     <td>547</td>
-    <td><span class="rank down">-5</span></td>
+    <td><span class="rank down">-6</span></td>
   </tr>
   <tr class="row-out" data-detail="[]">
-    <td>486</td>
+    <td>487</td>
     <td>480</td>
     <td>bless-Selena</td>
     <td><span class="st-badge st-out">未参赛</span></td>
@@ -7698,10 +7699,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td></td>
     <td>0</td>
     <td>542</td>
-    <td><span class="rank down">-6</span></td>
+    <td><span class="rank down">-7</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;伊埃拉&quot;]">
-    <td>482</td>
+    <td>483</td>
     <td>481</td>
     <td>美网冠军诺斯科娃</td>
     <td><span class="st-badge st-out">球员输球</span></td>
@@ -7712,10 +7713,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>10</td>
     <td>0</td>
     <td>549</td>
-    <td><span class="rank down">-1</span></td>
+    <td><span class="rank down">-2</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;伊埃拉&quot;]">
-    <td>482</td>
+    <td>483</td>
     <td>481</td>
     <td>法网冠军诺斯科娃</td>
     <td><span class="st-badge st-out">球员输球</span></td>
@@ -7726,10 +7727,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>10</td>
     <td>0</td>
     <td>549</td>
-    <td><span class="rank down">-1</span></td>
+    <td><span class="rank down">-2</span></td>
   </tr>
   <tr class="row-out" data-detail="[]">
-    <td>488</td>
+    <td>489</td>
     <td>483</td>
     <td>Yaczah_</td>
     <td><span class="st-badge st-out">未参赛</span></td>
@@ -7740,10 +7741,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td></td>
     <td>0</td>
     <td>530</td>
-    <td><span class="rank down">-5</span></td>
+    <td><span class="rank down">-6</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;伊埃拉&quot;]">
-    <td>487</td>
+    <td>488</td>
     <td>484</td>
     <td>精神病脑残羊癫疯</td>
     <td><span class="st-badge st-out">球员输球</span></td>
@@ -7754,10 +7755,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>10</td>
     <td>0</td>
     <td>534</td>
-    <td><span class="rank down">-3</span></td>
+    <td><span class="rank down">-4</span></td>
   </tr>
   <tr class="row-out" data-detail="[]">
-    <td>489</td>
+    <td>490</td>
     <td>485</td>
     <td>唯爱斯瓦泰克</td>
     <td><span class="st-badge st-out">未参赛</span></td>
@@ -7768,10 +7769,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td></td>
     <td>0</td>
     <td>522</td>
-    <td><span class="rank down">-4</span></td>
+    <td><span class="rank down">-5</span></td>
   </tr>
   <tr class="row-out" data-detail="[]">
-    <td>490</td>
+    <td>491</td>
     <td>486</td>
     <td>TTMY__123</td>
     <td><span class="st-badge st-out">未参赛</span></td>
@@ -7782,10 +7783,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td></td>
     <td>0</td>
     <td>519</td>
-    <td><span class="rank down">-4</span></td>
+    <td><span class="rank down">-5</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;伊-约维奇&quot;, &quot;科斯蒂亚&quot;]">
-    <td>480</td>
+    <td>481</td>
     <td>487</td>
     <td>-Bellaisy-</td>
     <td><span class="st-badge st-out">球员输球</span></td>
@@ -7796,10 +7797,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>38</td>
     <td>0</td>
     <td>556</td>
-    <td><span class="rank up">+7</span></td>
+    <td><span class="rank up">+6</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;曾丽美&quot;, &quot;科斯蒂亚&quot;]">
-    <td>481</td>
+    <td>482</td>
     <td>488</td>
     <td>D***1</td>
     <td><span class="st-badge st-out">球员输球</span></td>
@@ -7810,10 +7811,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>38</td>
     <td>0</td>
     <td>551</td>
-    <td><span class="rank up">+7</span></td>
+    <td><span class="rank up">+6</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;鲍兹科娃&quot;, &quot;科斯蒂亚&quot;]">
-    <td>485</td>
+    <td>486</td>
     <td>489</td>
     <td>樱***9</td>
     <td><span class="st-badge st-out">球员输球</span></td>
@@ -7824,7 +7825,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>38</td>
     <td>0</td>
     <td>546</td>
-    <td><span class="rank up">+4</span></td>
+    <td><span class="rank up">+3</span></td>
   </tr>
   <tr class="row-out" data-detail="[]">
     <td>492</td>
@@ -8260,19 +8261,19 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>403</td>
     <td><span class="rank down">-1</span></td>
   </tr>
-  <tr class="row-live" data-detail="[&quot;王曦雨&quot;, &quot;巴尔通科娃&quot;, &quot;穆霍娃&quot;]">
-    <td>491</td>
+  <tr class="row-alive" data-detail="[&quot;王曦雨&quot;, &quot;巴尔通科娃&quot;, &quot;穆霍娃&quot;, &quot;希维昂泰克&quot;]">
+    <td>477</td>
     <td>521</td>
     <td>本命草莓百香果</td>
-    <td><span class="st-badge st-live">未完赛</span></td>
-    <td>3</td>
+    <td><span class="st-badge st-alive">存活</span></td>
+    <td>4</td>
     <td></td>
     <td>希维昂泰克</td>
     <td>斯维托丽娜</td>
-    <td>120</td>
+    <td>215</td>
     <td>0</td>
-    <td>508</td>
-    <td><span class="rank up">+30</span></td>
+    <td>603</td>
+    <td><span class="rank up">+44</span></td>
   </tr>
   <tr class="row-out" data-detail="[]">
     <td>526</td>
@@ -8823,7 +8824,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>566</td>
     <td>561</td>
-    <td>Nole_25</td>
+    <td>类胡萝卜素a</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -8837,7 +8838,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>566</td>
     <td>561</td>
-    <td>类胡萝卜素a</td>
+    <td>Nole_25</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -8977,7 +8978,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>579</td>
     <td>572</td>
-    <td>o626015719</td>
+    <td>侯小知Moya</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -8991,7 +8992,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>579</td>
     <td>572</td>
-    <td>侯小知Moya</td>
+    <td>o626015719</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -9324,6 +9325,20 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>205</td>
     <td><span class="rank up">+21</span></td>
   </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>605</td>
+    <td>596</td>
+    <td>Eric_WWong</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>140</td>
+    <td><span class="rank down">-9</span></td>
+  </tr>
   <tr class="row-out" data-detail="[&quot;鲍兹科娃&quot;, &quot;王曦雨&quot;]">
     <td>585</td>
     <td>596</td>
@@ -9339,23 +9354,9 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td><span class="rank up">+11</span></td>
   </tr>
   <tr class="row-out" data-detail="[]">
-    <td>605</td>
-    <td>596</td>
-    <td>Eric_WWong</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>140</td>
-    <td><span class="rank down">-9</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
     <td>606</td>
     <td>599</td>
-    <td>萧***昼</td>
+    <td>Hamburgerrr_苏</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -9369,7 +9370,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>606</td>
     <td>599</td>
-    <td>Hamburgerrr_苏</td>
+    <td>萧***昼</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -9425,35 +9426,21 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>611</td>
     <td>604</td>
-    <td>0***0</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>130</td>
-    <td><span class="rank down">-7</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>611</td>
-    <td>604</td>
-    <td>W有话直说</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>130</td>
-    <td><span class="rank down">-7</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>611</td>
-    <td>604</td>
     <td>Hermes94408</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>130</td>
+    <td><span class="rank down">-7</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>611</td>
+    <td>604</td>
+    <td>Horizon_0416</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -9481,7 +9468,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>611</td>
     <td>604</td>
-    <td>Horizon_0416</td>
+    <td>0***0</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -9493,9 +9480,9 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td><span class="rank down">-7</span></td>
   </tr>
   <tr class="row-out" data-detail="[]">
-    <td>616</td>
-    <td>609</td>
-    <td>翻糖羊毛</td>
+    <td>611</td>
+    <td>604</td>
+    <td>W有话直说</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -9510,6 +9497,20 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>616</td>
     <td>609</td>
     <td>闹闹小德</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>130</td>
+    <td><span class="rank down">-7</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>616</td>
+    <td>609</td>
+    <td>翻糖羊毛</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -9719,7 +9720,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>631</td>
     <td>625</td>
-    <td>melodrrrama</td>
+    <td>全***号</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -9747,7 +9748,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>631</td>
     <td>625</td>
-    <td>Kaveh-Fish</td>
+    <td>melodrrrama</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -9761,21 +9762,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>631</td>
     <td>625</td>
-    <td>全***号</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>100</td>
-    <td><span class="rank down">-6</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>635</td>
-    <td>629</td>
-    <td>L***e</td>
+    <td>Kaveh-Fish</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -9801,9 +9788,9 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td><span class="rank down">-6</span></td>
   </tr>
   <tr class="row-out" data-detail="[]">
-    <td>637</td>
-    <td>631</td>
-    <td>杨***在</td>
+    <td>635</td>
+    <td>629</td>
+    <td>L***e</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -9817,7 +9804,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>637</td>
     <td>631</td>
-    <td>M***i</td>
+    <td>杨***在</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -9841,6 +9828,20 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>0</td>
     <td>220</td>
     <td><span class="rank up">+62</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>637</td>
+    <td>631</td>
+    <td>M***i</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>100</td>
+    <td><span class="rank down">-6</span></td>
   </tr>
   <tr class="row-out" data-detail="[]">
     <td>639</td>
@@ -9943,7 +9944,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>645</td>
     <td>641</td>
-    <td>椰椰椰子ty</td>
+    <td>A***a</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -9957,7 +9958,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>645</td>
     <td>641</td>
-    <td>A***a</td>
+    <td>椰椰椰子ty</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -10052,34 +10053,6 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>82</td>
     <td><span class="rank down">-3</span></td>
   </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>652</td>
-    <td>649</td>
-    <td>永***殇</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>80</td>
-    <td><span class="rank down">-3</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>652</td>
-    <td>649</td>
-    <td>阿Maaay</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>80</td>
-    <td><span class="rank down">-3</span></td>
-  </tr>
   <tr class="row-out" data-detail="[&quot;王曦雨&quot;, &quot;王曦雨&quot;]">
     <td>624</td>
     <td>649</td>
@@ -10098,6 +10071,34 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>652</td>
     <td>649</td>
     <td>w***d</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>80</td>
+    <td><span class="rank down">-3</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>652</td>
+    <td>649</td>
+    <td>永***殇</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>80</td>
+    <td><span class="rank down">-3</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>652</td>
+    <td>649</td>
+    <td>阿Maaay</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -10153,49 +10154,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>658</td>
     <td>656</td>
-    <td>新人逛吧</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>70</td>
-    <td><span class="rank down">-2</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>658</td>
-    <td>656</td>
-    <td>bai xiao</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>70</td>
-    <td><span class="rank down">-2</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>658</td>
-    <td>656</td>
-    <td>多米尼卡_Mino</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>70</td>
-    <td><span class="rank down">-2</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>658</td>
-    <td>656</td>
-    <td>枪手lisa</td>
+    <td>cc的象弟弟</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -10223,63 +10182,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>658</td>
     <td>656</td>
-    <td>幸***额</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>70</td>
-    <td><span class="rank down">-2</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>658</td>
-    <td>656</td>
-    <td>cc的象弟弟</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>70</td>
-    <td><span class="rank down">-2</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>658</td>
-    <td>656</td>
-    <td>10...2@qq.com</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>70</td>
-    <td><span class="rank down">-2</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>658</td>
-    <td>656</td>
-    <td>大大Wolfgang</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>70</td>
-    <td><span class="rank down">-2</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>658</td>
-    <td>656</td>
-    <td>雨雨无瓜</td>
+    <td>枪手lisa</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -10307,7 +10210,105 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>658</td>
     <td>656</td>
+    <td>新人逛吧</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>70</td>
+    <td><span class="rank down">-2</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>658</td>
+    <td>656</td>
+    <td>幸***额</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>70</td>
+    <td><span class="rank down">-2</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>658</td>
+    <td>656</td>
+    <td>bai xiao</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>70</td>
+    <td><span class="rank down">-2</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>658</td>
+    <td>656</td>
+    <td>雨雨无瓜</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>70</td>
+    <td><span class="rank down">-2</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>658</td>
+    <td>656</td>
     <td>用户5571640449</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>70</td>
+    <td><span class="rank down">-2</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>658</td>
+    <td>656</td>
+    <td>大大Wolfgang</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>70</td>
+    <td><span class="rank down">-2</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>658</td>
+    <td>656</td>
+    <td>10...2@qq.com</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>70</td>
+    <td><span class="rank down">-2</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>658</td>
+    <td>656</td>
+    <td>多米尼卡_Mino</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -10349,7 +10350,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>672</td>
     <td>670</td>
-    <td>香鱼不长大</td>
+    <td>冷***z</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -10363,7 +10364,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>672</td>
     <td>670</td>
-    <td>冷***z</td>
+    <td>香鱼不长大</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -10475,7 +10476,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>683</td>
     <td>679</td>
-    <td>182******51</td>
+    <td>清风不知音</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -10489,7 +10490,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>683</td>
     <td>679</td>
-    <td>清风不知音</td>
+    <td>182******51</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -10498,104 +10499,6 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td></td>
     <td>0</td>
     <td>53</td>
-    <td><span class="rank down">-4</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>685</td>
-    <td>681</td>
-    <td>懒奔头</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>50</td>
-    <td><span class="rank down">-4</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>685</td>
-    <td>681</td>
-    <td>pjrzs</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>50</td>
-    <td><span class="rank down">-4</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>685</td>
-    <td>681</td>
-    <td>随风poem</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>50</td>
-    <td><span class="rank down">-4</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>685</td>
-    <td>681</td>
-    <td>漏球小子</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>50</td>
-    <td><span class="rank down">-4</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>685</td>
-    <td>681</td>
-    <td>当初83525</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>50</td>
-    <td><span class="rank down">-4</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>685</td>
-    <td>681</td>
-    <td>L***5</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>50</td>
-    <td><span class="rank down">-4</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>685</td>
-    <td>681</td>
-    <td>132******89</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>50</td>
     <td><span class="rank down">-4</span></td>
   </tr>
   <tr class="row-out" data-detail="[&quot;曾丽美&quot;, &quot;施内德&quot;, &quot;斯维托丽娜&quot;, &quot;伊-约维奇&quot;]">
@@ -10612,38 +10515,24 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>170</td>
     <td><span class="rank up">+93</span></td>
   </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>685</td>
+  <tr class="row-alive" data-detail="[&quot;伊-约维奇&quot;, &quot;赫瓦林斯卡&quot;, &quot;希维昂泰克&quot;, &quot;斯维托丽娜&quot;]">
+    <td>555</td>
     <td>681</td>
-    <td>爱***猫</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
+    <td>我是霍小嘴</td>
+    <td><span class="st-badge st-alive">存活</span></td>
+    <td>4</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>斯维托丽娜</td>
+    <td>萨卡里</td>
+    <td>215</td>
     <td>0</td>
-    <td>50</td>
-    <td><span class="rank down">-4</span></td>
+    <td>265</td>
+    <td><span class="rank up">+126</span></td>
   </tr>
   <tr class="row-out" data-detail="[]">
     <td>685</td>
     <td>681</td>
-    <td>ANi01023</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>50</td>
-    <td><span class="rank down">-4</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>685</td>
-    <td>681</td>
-    <td>用户7900583829</td>
+    <td>Irene Lee</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -10671,7 +10560,105 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>685</td>
     <td>681</td>
-    <td>Irene Lee</td>
+    <td>pjrzs</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>50</td>
+    <td><span class="rank down">-4</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>685</td>
+    <td>681</td>
+    <td>用户7900583829</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>50</td>
+    <td><span class="rank down">-4</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>685</td>
+    <td>681</td>
+    <td>漏球小子</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>50</td>
+    <td><span class="rank down">-4</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>685</td>
+    <td>681</td>
+    <td>L***5</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>50</td>
+    <td><span class="rank down">-4</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>685</td>
+    <td>681</td>
+    <td>当初83525</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>50</td>
+    <td><span class="rank down">-4</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>685</td>
+    <td>681</td>
+    <td>ANi01023</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>50</td>
+    <td><span class="rank down">-4</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>685</td>
+    <td>681</td>
+    <td>卢浮宫的色彩</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>50</td>
+    <td><span class="rank down">-4</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>685</td>
+    <td>681</td>
+    <td>懒奔头</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -10699,7 +10686,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>685</td>
     <td>681</td>
-    <td>卢浮宫的色彩</td>
+    <td>132******89</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -10710,19 +10697,33 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>50</td>
     <td><span class="rank down">-4</span></td>
   </tr>
-  <tr class="row-alive" data-detail="[&quot;伊-约维奇&quot;, &quot;赫瓦林斯卡&quot;, &quot;希维昂泰克&quot;, &quot;斯维托丽娜&quot;]">
-    <td>555</td>
+  <tr class="row-out" data-detail="[]">
+    <td>685</td>
     <td>681</td>
-    <td>我是霍小嘴</td>
-    <td><span class="st-badge st-alive">存活</span></td>
-    <td>4</td>
+    <td>随风poem</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
-    <td>斯维托丽娜</td>
-    <td>萨卡里</td>
-    <td>215</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td>0</td>
-    <td>265</td>
-    <td><span class="rank up">+126</span></td>
+    <td>50</td>
+    <td><span class="rank down">-4</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>685</td>
+    <td>681</td>
+    <td>爱***猫</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>50</td>
+    <td><span class="rank down">-4</span></td>
   </tr>
   <tr class="row-out" data-detail="[]">
     <td>699</td>
@@ -10811,7 +10812,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>705</td>
     <td>703</td>
-    <td>南开生物技艺</td>
+    <td>Ni Yan</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -10839,7 +10840,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>705</td>
     <td>703</td>
-    <td>Ni Yan</td>
+    <td>南开生物技艺</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -10881,49 +10882,21 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>710</td>
     <td>708</td>
-    <td>冰饮去冰三分糖</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>40</td>
-    <td><span class="rank down">-2</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>710</td>
-    <td>708</td>
-    <td>全英爱排球</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>40</td>
-    <td><span class="rank down">-2</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>710</td>
-    <td>708</td>
-    <td>星光鸭鸭_</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>40</td>
-    <td><span class="rank down">-2</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>710</td>
-    <td>708</td>
     <td>春***园</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>40</td>
+    <td><span class="rank down">-2</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>710</td>
+    <td>708</td>
+    <td>冰饮去冰三分糖</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -10951,7 +10924,49 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>710</td>
     <td>708</td>
-    <td>Fatdrew</td>
+    <td>勤奋让失败化成灰</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>40</td>
+    <td><span class="rank down">-2</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>710</td>
+    <td>708</td>
+    <td>的的可乐</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>40</td>
+    <td><span class="rank down">-2</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>710</td>
+    <td>708</td>
+    <td>用户7518062601</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>40</td>
+    <td><span class="rank down">-2</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>710</td>
+    <td>708</td>
+    <td>天***_</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -10979,7 +10994,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>710</td>
     <td>708</td>
-    <td>z***天</td>
+    <td>158******18</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -10993,7 +11008,91 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>710</td>
     <td>708</td>
-    <td>用户7518062601</td>
+    <td>喵***Q</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>40</td>
+    <td><span class="rank down">-2</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>710</td>
+    <td>708</td>
+    <td>星光鸭鸭_</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>40</td>
+    <td><span class="rank down">-2</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>710</td>
+    <td>708</td>
+    <td>呐你是</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>40</td>
+    <td><span class="rank down">-2</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>710</td>
+    <td>708</td>
+    <td>全英爱排球</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>40</td>
+    <td><span class="rank down">-2</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>710</td>
+    <td>708</td>
+    <td>1***n</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>40</td>
+    <td><span class="rank down">-2</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>710</td>
+    <td>708</td>
+    <td>Fatdrew</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>40</td>
+    <td><span class="rank down">-2</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>710</td>
+    <td>708</td>
+    <td>pan yufei</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -11035,105 +11134,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>710</td>
     <td>708</td>
-    <td>pan yufei</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>40</td>
-    <td><span class="rank down">-2</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>710</td>
-    <td>708</td>
-    <td>天***_</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>40</td>
-    <td><span class="rank down">-2</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>710</td>
-    <td>708</td>
-    <td>1***n</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>40</td>
-    <td><span class="rank down">-2</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>710</td>
-    <td>708</td>
-    <td>的的可乐</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>40</td>
-    <td><span class="rank down">-2</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>710</td>
-    <td>708</td>
-    <td>158******18</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>40</td>
-    <td><span class="rank down">-2</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>710</td>
-    <td>708</td>
-    <td>呐你是</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>40</td>
-    <td><span class="rank down">-2</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>710</td>
-    <td>708</td>
-    <td>勤奋让失败化成灰</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>40</td>
-    <td><span class="rank down">-2</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>710</td>
-    <td>708</td>
-    <td>喵***Q</td>
+    <td>z***天</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -11147,7 +11148,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>729</td>
     <td>727</td>
-    <td>用户7736857621</td>
+    <td>大道至远1001</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -11189,21 +11190,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>729</td>
     <td>727</td>
-    <td>k***t</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>40</td>
-    <td><span class="rank down">-2</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>729</td>
-    <td>727</td>
-    <td>大道至远1001</td>
+    <td>用户7736857621</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -11218,6 +11205,20 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>729</td>
     <td>727</td>
     <td>Yilue Qian</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>40</td>
+    <td><span class="rank down">-2</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>729</td>
+    <td>727</td>
+    <td>k***t</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -11245,21 +11246,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>737</td>
     <td>734</td>
-    <td>Susan</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>38</td>
-    <td><span class="rank down">-3</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>737</td>
-    <td>734</td>
-    <td>麻雀热泪盈眶</td>
+    <td>深***泪</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -11287,21 +11274,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>737</td>
     <td>734</td>
-    <td>尛謩</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>38</td>
-    <td><span class="rank down">-3</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>737</td>
-    <td>734</td>
-    <td>机智泡泡糖苏打牛肉米线</td>
+    <td>Susan</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -11329,35 +11302,63 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>737</td>
     <td>734</td>
-    <td>s***i</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>38</td>
-    <td><span class="rank down">-3</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>737</td>
-    <td>734</td>
-    <td>深***泪</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>38</td>
-    <td><span class="rank down">-3</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>737</td>
-    <td>734</td>
     <td>180******16</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>38</td>
+    <td><span class="rank down">-3</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>737</td>
+    <td>734</td>
+    <td>尛謩</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>38</td>
+    <td><span class="rank down">-3</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>737</td>
+    <td>734</td>
+    <td>麻雀热泪盈眶</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>38</td>
+    <td><span class="rank down">-3</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>737</td>
+    <td>734</td>
+    <td>机智泡泡糖苏打牛肉米线</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>38</td>
+    <td><span class="rank down">-3</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>737</td>
+    <td>734</td>
+    <td>s***i</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -11455,329 +11456,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>754</td>
     <td>749</td>
-    <td>_-浩-</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>shuaishuai yang</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>米***笔</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>zyyhhxxy</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>从行达若彪</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>Sharon Li</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[&quot;伊埃拉&quot;]">
-    <td>729</td>
-    <td>749</td>
-    <td>饭炒饭炒饭-</td>
-    <td><span class="st-badge st-out">球员输球</span></td>
-    <td>0</td>
-    <td>伊埃拉</td>
-    <td></td>
-    <td></td>
-    <td>10</td>
-    <td>0</td>
-    <td>40</td>
-    <td><span class="rank up">+20</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>Eric Li</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>153******91</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>頔頔赟赟</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>不如请我喝酒mo</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>Bowen Cao</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>Liebe_JPeg</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>一个人大觉瞓</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>i***m</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>c***7</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>Yibo Han</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>Peng Gao</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>Hans_脆鱼汗</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>H***9</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>134******52</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
     <td>日子真的很难熬</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>用户4094556771</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>seashanghai</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -11805,133 +11484,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>754</td>
     <td>749</td>
-    <td>yuanyuan fu</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>circle山遥</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>Steven Sze</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>w***L</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>136*****843</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>喵***米</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>科绊中的娜世英雄</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>用户7677565081</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>文杜拉进前百就不看网球了</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>30</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>754</td>
-    <td>749</td>
-    <td>WillKris锴</td>
+    <td>seashanghai</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -11973,7 +11526,273 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>754</td>
     <td>749</td>
-    <td>啦啦噜啦噜啦啦噜啦啦啦啦</td>
+    <td>Eric Li</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>c***7</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>Hans_脆鱼汗</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>頔頔赟赟</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>_-浩-</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>zyyhhxxy</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[&quot;伊埃拉&quot;]">
+    <td>729</td>
+    <td>749</td>
+    <td>饭炒饭炒饭-</td>
+    <td><span class="st-badge st-out">球员输球</span></td>
+    <td>0</td>
+    <td>伊埃拉</td>
+    <td></td>
+    <td></td>
+    <td>10</td>
+    <td>0</td>
+    <td>40</td>
+    <td><span class="rank up">+20</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>H***9</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>Bowen Cao</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>w***L</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>Liebe_JPeg</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>i***m</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>用户4094556771</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>134******52</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>一个人大觉瞓</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>科绊中的娜世英雄</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>WillKris锴</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>shuaishuai yang</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>circle山遥</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>用户7677565081</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -12013,6 +11832,188 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td><span class="rank down">-5</span></td>
   </tr>
   <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>文杜拉进前百就不看网球了</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>不如请我喝酒mo</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>Peng Gao</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>Yibo Han</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>Steven Sze</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>从行达若彪</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>Sharon Li</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>米***笔</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>153******91</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>136*****843</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>啦啦噜啦噜啦啦噜啦啦啦啦</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>喵***米</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>754</td>
+    <td>749</td>
+    <td>yuanyuan fu</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>30</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
     <td>793</td>
     <td>789</td>
     <td>旭***风</td>
@@ -12029,7 +12030,21 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>794</td>
     <td>790</td>
-    <td>暖***好</td>
+    <td>用户8449917285</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>23</td>
+    <td><span class="rank down">-4</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>794</td>
+    <td>790</td>
+    <td>冯俊俊111</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -12057,34 +12072,6 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>794</td>
     <td>790</td>
-    <td>log113355</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>23</td>
-    <td><span class="rank down">-4</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>794</td>
-    <td>790</td>
-    <td>Terry_Tiger_</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>23</td>
-    <td><span class="rank down">-4</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>794</td>
-    <td>790</td>
     <td>守时肖</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
@@ -12099,7 +12086,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>794</td>
     <td>790</td>
-    <td>用户8449917285</td>
+    <td>log113355</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -12127,7 +12114,21 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>794</td>
     <td>790</td>
-    <td>冯俊俊111</td>
+    <td>Terry_Tiger_</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>23</td>
+    <td><span class="rank down">-4</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>794</td>
+    <td>790</td>
+    <td>暖***好</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -12155,7 +12156,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>803</td>
     <td>799</td>
-    <td>c***i</td>
+    <td>白白不嘻嘻</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -12169,7 +12170,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>803</td>
     <td>799</td>
-    <td>白白不嘻嘻</td>
+    <td>c***i</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -12197,7 +12198,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>807</td>
     <td>802</td>
-    <td>淘米的queen</td>
+    <td>茜茜Aquamarine</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -12225,7 +12226,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>807</td>
     <td>802</td>
-    <td>茜茜Aquamarine</td>
+    <td>淘米的queen</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -12267,343 +12268,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>812</td>
     <td>807</td>
-    <td>irenelucky_117</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>10</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>812</td>
-    <td>807</td>
-    <td>Eric_Bai_Love</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>10</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>812</td>
-    <td>807</td>
-    <td>180******98</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>10</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>812</td>
-    <td>807</td>
-    <td>南北南南i</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>10</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>812</td>
-    <td>807</td>
-    <td>前途真是一片馄饨呀</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>10</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>812</td>
-    <td>807</td>
-    <td>喵***1</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>10</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[&quot;维基奇&quot;]">
-    <td>803</td>
-    <td>807</td>
-    <td>飞驰乱星海_ee</td>
-    <td><span class="st-badge st-out">球员输球</span></td>
-    <td>0</td>
-    <td>维基奇</td>
-    <td></td>
-    <td></td>
-    <td>10</td>
-    <td>0</td>
-    <td>20</td>
-    <td><span class="rank up">+4</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>812</td>
-    <td>807</td>
-    <td>进***我</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>10</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>812</td>
-    <td>807</td>
-    <td>旅***9</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>10</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>812</td>
-    <td>807</td>
-    <td>海上起飞-</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>10</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>812</td>
-    <td>807</td>
-    <td>逃逸海王星</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>10</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>812</td>
-    <td>807</td>
-    <td>8***8</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>10</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>812</td>
-    <td>807</td>
-    <td>我就想叫momo</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>10</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>812</td>
-    <td>807</td>
     <td>现实或假寐</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>10</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>812</td>
-    <td>807</td>
-    <td>138******61</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>10</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>812</td>
-    <td>807</td>
-    <td>雷***雷</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>10</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>812</td>
-    <td>807</td>
-    <td>爱打毛球的十方</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>10</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>812</td>
-    <td>807</td>
-    <td>斜杠少年00053</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>10</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>812</td>
-    <td>807</td>
-    <td>王彦涵</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>10</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>812</td>
-    <td>807</td>
-    <td>133******06</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>10</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>812</td>
-    <td>807</td>
-    <td>干啥啥不行呗66</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>10</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>812</td>
-    <td>807</td>
-    <td>荣拉法RaphaelCigar</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>10</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>812</td>
-    <td>807</td>
-    <td>theruss44</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>10</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>812</td>
-    <td>807</td>
-    <td>E***k</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>10</td>
-    <td><span class="rank down">-5</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>812</td>
-    <td>807</td>
-    <td>SORA_NORA</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -12631,7 +12296,203 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>812</td>
     <td>807</td>
+    <td>lukethis</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>10</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>812</td>
+    <td>807</td>
+    <td>雷***雷</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>10</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>812</td>
+    <td>807</td>
+    <td>进***我</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>10</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>812</td>
+    <td>807</td>
+    <td>theruss44</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>10</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>812</td>
+    <td>807</td>
     <td>无菌雀</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>10</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>812</td>
+    <td>807</td>
+    <td>133******06</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>10</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>812</td>
+    <td>807</td>
+    <td>斜杠少年00053</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>10</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>812</td>
+    <td>807</td>
+    <td>干啥啥不行呗66</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>10</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>812</td>
+    <td>807</td>
+    <td>E***k</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>10</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>812</td>
+    <td>807</td>
+    <td>王彦涵</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>10</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>812</td>
+    <td>807</td>
+    <td>南北南南i</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>10</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>812</td>
+    <td>807</td>
+    <td>我就想叫momo</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>10</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>812</td>
+    <td>807</td>
+    <td>逃逸海王星</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>10</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>812</td>
+    <td>807</td>
+    <td>荣拉法RaphaelCigar</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>10</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>812</td>
+    <td>807</td>
+    <td>爱打毛球的十方</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -12673,7 +12534,21 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>812</td>
     <td>807</td>
-    <td>lukethis</td>
+    <td>138******61</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>10</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>812</td>
+    <td>807</td>
+    <td>旅***9</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -12698,10 +12573,24 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>10</td>
     <td><span class="rank down">-5</span></td>
   </tr>
+  <tr class="row-out" data-detail="[&quot;维基奇&quot;]">
+    <td>803</td>
+    <td>807</td>
+    <td>飞驰乱星海_ee</td>
+    <td><span class="st-badge st-out">球员输球</span></td>
+    <td>0</td>
+    <td>维基奇</td>
+    <td></td>
+    <td></td>
+    <td>10</td>
+    <td>0</td>
+    <td>20</td>
+    <td><span class="rank up">+4</span></td>
+  </tr>
   <tr class="row-out" data-detail="[]">
-    <td>844</td>
-    <td>838</td>
-    <td>Peter就是Peter陈啦</td>
+    <td>812</td>
+    <td>807</td>
+    <td>180******98</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -12709,8 +12598,106 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td></td>
     <td></td>
     <td>0</td>
-    <td>1</td>
-    <td><span class="rank down">-6</span></td>
+    <td>10</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>812</td>
+    <td>807</td>
+    <td>喵***1</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>10</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>812</td>
+    <td>807</td>
+    <td>Eric_Bai_Love</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>10</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>812</td>
+    <td>807</td>
+    <td>海上起飞-</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>10</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>812</td>
+    <td>807</td>
+    <td>SORA_NORA</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>10</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>812</td>
+    <td>807</td>
+    <td>irenelucky_117</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>10</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>812</td>
+    <td>807</td>
+    <td>8***8</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>10</td>
+    <td><span class="rank down">-5</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>812</td>
+    <td>807</td>
+    <td>前途真是一片馄饨呀</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>10</td>
+    <td><span class="rank down">-5</span></td>
   </tr>
   <tr class="row-out" data-detail="[]">
     <td>844</td>
@@ -12730,6 +12717,48 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>844</td>
     <td>838</td>
     <td>mint1005</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>1</td>
+    <td><span class="rank down">-6</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>844</td>
+    <td>838</td>
+    <td>193******58</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>1</td>
+    <td><span class="rank down">-6</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>844</td>
+    <td>838</td>
+    <td>Peter就是Peter陈啦</td>
+    <td><span class="st-badge st-out">未参赛</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>0</td>
+    <td>1</td>
+    <td><span class="rank down">-6</span></td>
+  </tr>
+  <tr class="row-out" data-detail="[]">
+    <td>844</td>
+    <td>838</td>
+    <td>赵洪胜</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -12771,21 +12800,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>844</td>
     <td>838</td>
-    <td>138******34</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>1</td>
-    <td><span class="rank down">-6</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>844</td>
-    <td>838</td>
-    <td>178******72</td>
+    <td>不会不可能</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -12813,7 +12828,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>844</td>
     <td>838</td>
-    <td>193******58</td>
+    <td>138******34</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
@@ -12827,21 +12842,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
   <tr class="row-out" data-detail="[]">
     <td>844</td>
     <td>838</td>
-    <td>赵洪胜</td>
-    <td><span class="st-badge st-out">未参赛</span></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>0</td>
-    <td>1</td>
-    <td><span class="rank down">-6</span></td>
-  </tr>
-  <tr class="row-out" data-detail="[]">
-    <td>844</td>
-    <td>838</td>
-    <td>不会不可能</td>
+    <td>178******72</td>
     <td><span class="st-badge st-out">未参赛</span></td>
     <td></td>
     <td></td>
