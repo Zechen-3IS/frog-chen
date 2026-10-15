@@ -137,10 +137,28 @@ body.dark .chip-alive .sdot{background:#7dcea0;}
 body.dark .chip-out .sdot{background:#a8adb4;}
 .meta-sep  {font-size:11px;color:var(--faint);}
 .meta-total{font-size:12px;color:var(--ink);font-weight:500;}
+/* early-retirement backup nested under pick rows */
+.tag-bak{background:rgba(184,122,42,.10);color:#8a5a18;border:0.5px solid rgba(184,122,42,.22);}
+.sbar-row.is-bak .sbar-dot{background:#c4892e;opacity:1;box-shadow:0 0 0 2px rgba(196,137,46,.16);}
+.sbar-row.is-bak .sbar-label{color:#7a4e14;font-weight:500;}
+.seg-bak{background:#c4892e;}
+.sbar-track.solo-bak{background:rgba(184,122,42,.12);}
+.sbar-bak{display:flex;align-items:center;gap:8px;padding:2px 14px 4px;
+    font-size:12px;color:var(--muted);}
+.sbar-bak.s-hidden{display:none;}
+.sbar-bak-main{display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px;
+    padding-left:22px;min-width:0;}
+.bak-arrow{color:var(--faint);font-size:12px;flex-shrink:0;}
+.bak-alt{font-size:12px;color:var(--ink);min-width:3.5em;}
+.bak-chips{display:inline-flex;flex-wrap:wrap;gap:4px;}
+body.dark .tag-bak{background:rgba(212,160,72,.14);color:#e0b56a;border-color:rgba(212,160,72,.28);}
+body.dark .sbar-row.is-bak .sbar-dot{background:#e0b56a;box-shadow:0 0 0 2px rgba(224,181,106,.16);}
+body.dark .sbar-row.is-bak .sbar-label{color:#ead0a0;}
+body.dark .seg-bak{background:#e0b56a;}
 /* col header */
 .sum-col-hd{display:flex;align-items:center;gap:8px;padding:5px 14px 3px;}
 .sch-rank{width:16px;flex-shrink:0;}
-.sch-name{width:168px;flex-shrink:0;}
+.sch-name{width:190px;flex-shrink:0;}
 .sch-bar{flex:1;}
 .sch-right{display:flex;align-items:center;gap:3px;flex-shrink:0;}
 .sch-tag{font-size:10px;font-weight:500;padding:1px 6px;border-radius:10px;white-space:nowrap;}
@@ -157,7 +175,7 @@ body.dark .sch-tag-b{color:var(--secondary);border-color:rgba(111,160,224,.28);}
 .sbar-row:hover{background:var(--surface2);}
 .sbar-rank{font-size:11px;color:var(--faint);width:16px;text-align:right;
     flex-shrink:0;font-variant-numeric:tabular-nums;}
-.sbar-name{font-size:13px;color:var(--ink);width:168px;flex-shrink:0;
+.sbar-name{font-size:13px;color:var(--ink);width:190px;flex-shrink:0;
     display:inline-flex;align-items:center;gap:5px;min-width:0;}
 .sbar-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;
     background:var(--faint);opacity:.55;}
@@ -348,7 +366,7 @@ th.sort-desc::after{content:" ▼";font-size:9px;}
 .rank.down{color:#c04830;}.rank.down::before{content:"▼";font-size:9px;}
 .rank.same{color:var(--faint);}.rank.same::before{content:"▶";font-size:9px;}
 
-/* user status: 存活 / 未完赛 / 淘汰(含自杀·球员输球) */
+/* user status: 存活 / 未完赛·未选 / 淘汰(含自杀·球员输球) */
 .st-badge{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;
     border-radius:10px;font-size:11px;font-weight:500;line-height:1.35;
     white-space:nowrap;border:0.5px solid transparent;}
@@ -760,7 +778,7 @@ body.dark .t-type.w1000  {color:var(--primary);}
     ← ATP赛历
   </a>
   <div class="topbar-right">
-    <span class="updated">⏱ 2026年10月15日 00:33:16</span>
+    <span class="updated">⏱ 2026年10月16日 02:55:47</span>
     <button class="theme-btn" id="themeBtn" onclick="toggleTheme()">🌙 暗色</button>
   </div>
 </div>
@@ -2470,12 +2488,17 @@ document.addEventListener('DOMContentLoaded',function(){
 
         if(isNumericCol){
             // ── build slider filter ──────────────────────────────
-            const minVal=Math.min(...parsedNums);
-            const maxVal=Math.max(...parsedNums);
-            const step=(maxVal-minVal)>20 ? 1 : (maxVal-minVal)/100 || 1;
+            const headerText=header.textContent.trim();
+            const forceInt=/天数|排名|周数|参赛|冠军数|亚军|连胜|连败|得分|积分/.test(headerText)
+                && !/率/.test(headerText);
+            const isIntCol=forceInt || parsedNums.every(n=>Number.isInteger(n));
+            let minVal=Math.min(...parsedNums);
+            let maxVal=Math.max(...parsedNums);
+            if(isIntCol){ minVal=Math.floor(minVal); maxVal=Math.ceil(maxVal); }
+            const step=isIntCol ? 1 : ((maxVal-minVal)>20 ? 1 : (maxVal-minVal)/100 || 1);
 
             columnMeta[index]={type:'numeric', min:minVal, max:maxVal,
-                                curMin:minVal, curMax:maxVal};
+                                curMin:minVal, curMax:maxVal, intCol:isIntCol};
 
             const dropdownWrapper=document.createElement('div');
             dropdownWrapper.className='filter-dropdown';
@@ -2489,11 +2512,13 @@ document.addEventListener('DOMContentLoaded',function(){
             const readout=document.createElement('div');
             readout.className='filter-slider-readout';
             const inMin=document.createElement('input');
-            inMin.type='number'; inMin.value=minVal;
+            inMin.type='number'; inMin.value=minVal; inMin.step=step;
+            if(isIntCol){ inMin.step='1'; inMin.setAttribute('inputmode','numeric'); }
             const sep=document.createElement('span');
             sep.className='filter-slider-sep'; sep.textContent='~';
             const inMax=document.createElement('input');
-            inMax.type='number'; inMax.value=maxVal;
+            inMax.type='number'; inMax.value=maxVal; inMax.step=step;
+            if(isIntCol){ inMax.step='1'; inMax.setAttribute('inputmode','numeric'); }
             readout.append(inMin,sep,inMax);
 
             const rangeWrap=document.createElement('div');
@@ -2516,10 +2541,12 @@ document.addEventListener('DOMContentLoaded',function(){
 
             function syncUI(){
                 let lo=parseFloat(rMin.value), hi=parseFloat(rMax.value);
+                if(isIntCol){ lo=Math.round(lo); hi=Math.round(hi); }
                 if(lo>hi){ const t=lo; lo=hi; hi=t; }
                 columnMeta[index].curMin=lo;
                 columnMeta[index].curMax=hi;
-                inMin.value=lo; inMax.value=hi;
+                inMin.value=isIntCol?String(lo):lo; inMax.value=isIntCol?String(hi):hi;
+                rMin.value=lo; rMax.value=hi;
                 const pct=v=>((v-minVal)/(maxVal-minVal||1))*100;
                 fill.style.left=pct(lo)+'%';
                 fill.style.width=(pct(hi)-pct(lo))+'%';
@@ -2529,8 +2556,16 @@ document.addEventListener('DOMContentLoaded',function(){
             }
             rMin.addEventListener('input',()=>{ if(+rMin.value>+rMax.value)rMin.value=rMax.value; syncUI(); });
             rMax.addEventListener('input',()=>{ if(+rMax.value<+rMin.value)rMax.value=rMin.value; syncUI(); });
-            inMin.addEventListener('change',()=>{ rMin.value=inMin.value; syncUI(); });
-            inMax.addEventListener('change',()=>{ rMax.value=inMax.value; syncUI(); });
+            inMin.addEventListener('change',()=>{
+                let v=parseFloat(inMin.value); if(isNaN(v))v=minVal;
+                if(isIntCol) v=Math.round(v);
+                rMin.value=v; syncUI();
+            });
+            inMax.addEventListener('change',()=>{
+                let v=parseFloat(inMax.value); if(isNaN(v))v=maxVal;
+                if(isIntCol) v=Math.round(v);
+                rMax.value=v; syncUI();
+            });
             resetBtn.addEventListener('click',()=>{ rMin.value=minVal; rMax.value=maxVal; syncUI(); });
             syncUI();
 
