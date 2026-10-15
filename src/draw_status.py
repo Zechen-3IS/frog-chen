@@ -397,19 +397,37 @@ def _prefer_elim_score(prev: str, new: str) -> str:
         return b
     if not b:
         return a
-    a_ret = bool(_WO_RE.search(a) or _RET_RE.search(a))
-    b_ret = bool(_WO_RE.search(b) or _RET_RE.search(b))
-    if b_ret and not a_ret:
+    a_tokens = score_tokens(a)
+    b_tokens = score_tokens(b)
+    a_wo = bool(_WO_RE.search(a))
+    b_wo = bool(_WO_RE.search(b))
+    a_ret = bool(_RET_RE.search(a))
+    b_ret = bool(_RET_RE.search(b))
+    # Compact bracket blocks sometimes stamp bare ``W/O`` while the detail
+    # block has the real sets (e.g. Deminar d. Khachanov ``63 64``). Never let
+    # bare W/O override a completed score.
+    a_bare_wo = a_wo and not a_tokens and not a_ret
+    b_bare_wo = b_wo and not b_tokens and not b_ret
+    if a_bare_wo and b_tokens and not b_wo:
         return b
-    if a_ret and not b_ret:
+    if b_bare_wo and a_tokens and not a_wo:
+        return a
+    a_walk_or_ret = a_wo or a_ret
+    b_walk_or_ret = b_wo or b_ret
+    if b_walk_or_ret and not a_walk_or_ret:
+        return b
+    if a_walk_or_ret and not b_walk_or_ret:
         return a
     a_early = retirement_backup_allowed(a)
     b_early = retirement_backup_allowed(b)
-    # Prefer early-retire evidence (e.g. ``52``) over a conflicting full score.
+    # Prefer early-retire evidence (e.g. ``52 Ret.``) over a conflicting full score.
     if b_early and not a_early:
         return b
     if a_early and not b_early:
         return a
+    # Prefer the score with more set tokens when both look finished.
+    if len(b_tokens) > len(a_tokens):
+        return b
     return a
 
 

@@ -460,6 +460,18 @@ def _repair_early_retirement_rows(
                     )
                 repaired += 1
                 continue
+            alt_player = draw.lookup(detail.get("fill_alt"), alt)
+            # Backup already eliminated: official death on primary stands
+            # (e.g. 哈恰诺夫 W/O with 门希克 backup who was already out).
+            # Only revive when backup can still change the outcome.
+            if alt_player is not None and alt_player.eliminated:
+                result.at[index, "fill_status"] = "球员输球"
+                result.at[index, "killer"] = last
+                result.at[index, "players"] = used
+                if "status" in result.columns:
+                    result.at[index, "status"] = FILL_TO_STATUS.get("球员输球", -2)
+                repaired += 1
+                continue
             # Wrongly died on primary despite usable backup — revive for re-settle.
             used = used[:-1]
             death_day = int(detail.get("day") or 0) or (len(used) + 1)
