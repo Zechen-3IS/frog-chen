@@ -709,6 +709,15 @@ body.dark .t-type.w1000  {color:var(--primary);}
 .score-stat-val .sub{display:block;margin-top:4px;font-size:11px;font-weight:500;
     color:var(--faint);font-family:'Space Mono',monospace;}
 .score-stat-val .sub + .sub{margin-top:2px;}
+/* Champion / upset pickers — same chips as homepage 赛况 */
+.score-stat-val .wk-chips{display:flex;flex-wrap:wrap;gap:5px;font-weight:400;}
+.score-stat-val .wk-chip{display:inline-block;max-width:100%;padding:3px 9px;border-radius:999px;
+    background:rgba(42,107,79,.08);border:0.5px solid rgba(42,107,79,.18);
+    color:#1f4f3a;font-size:12px;line-height:1.35;font-weight:500;white-space:nowrap;
+    overflow:hidden;text-overflow:ellipsis;}
+body.dark .score-stat-val .wk-chip{background:rgba(125,206,160,.12);
+    border-color:rgba(125,206,160,.22);color:#b7e0c6;}
+
 
 
 .cal-hub{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;
@@ -778,7 +787,7 @@ body.dark .t-type.w1000  {color:var(--primary);}
     ← WTA赛历
   </a>
   <div class="topbar-right">
-    <span class="updated">⏱ 2026年10月16日 08:00:54</span>
+    <span class="updated">⏱ 2026年10月16日 08:03:33</span>
     <button class="theme-btn" id="themeBtn" onclick="toggleTheme()">🌙 暗色</button>
   </div>
 </div>
@@ -802,7 +811,7 @@ body.dark .t-type.w1000  {color:var(--primary);}
   <div class="score-stats-row solo">
     <div class="score-stat">
       <div class="score-stat-lbl">冠军 · 17人</div>
-      <div class="score-stat-val">Catsickcat_ · E***冰 · IggyAzaleaChina · Ivejoy · LilZao · mini lun <span class="muted">等 17 人</span></div>
+      <div class="score-stat-val"><span class="wk-chips"><span class="wk-chip">Catsickcat_</span><span class="wk-chip">E***冰</span><span class="wk-chip">IggyAzaleaChina</span><span class="wk-chip">Ivejoy</span><span class="wk-chip">LilZao</span><span class="wk-chip">mini lun</span><span class="wk-chip">七个福灵剂</span><span class="wk-chip">刘***喽</span><span class="wk-chip">刘小闹小闹闹呀</span><span class="wk-chip">洋葱葱葱葱葱葱葱啊</span><span class="wk-chip">爱网球的女孩子</span><span class="wk-chip">爱网球的小女孩子</span><span class="wk-chip">用户7424117482</span><span class="wk-chip">用户7817136916</span><span class="wk-chip">白云静水</span><span class="wk-chip">苟***术</span><span class="wk-chip">萨卡外</span></span></div>
     </div>
   </div>
   <div class="score-stats-row pair">
@@ -818,7 +827,7 @@ body.dark .t-type.w1000  {color:var(--primary);}
   <div class="score-stats-row solo">
     <div class="score-stat">
       <div class="score-stat-lbl">最大爆冷</div>
-      <div class="score-stat-val">中网亚军福基纳 · 老***6<span class="sub">米-安德烈耶娃胜希维昂泰克 · 选人 2:33</span></div>
+      <div class="score-stat-val"><span class="wk-chips"><span class="wk-chip">中网亚军福基纳</span><span class="wk-chip">老***6</span></span><span class="sub">米-安德烈耶娃胜希维昂泰克 · 选人 2:33</span></div>
     </div>
   </div>
 </div>

@@ -709,6 +709,15 @@ body.dark .t-type.w1000  {color:var(--primary);}
 .score-stat-val .sub{display:block;margin-top:4px;font-size:11px;font-weight:500;
     color:var(--faint);font-family:'Space Mono',monospace;}
 .score-stat-val .sub + .sub{margin-top:2px;}
+/* Champion / upset pickers — same chips as homepage 赛况 */
+.score-stat-val .wk-chips{display:flex;flex-wrap:wrap;gap:5px;font-weight:400;}
+.score-stat-val .wk-chip{display:inline-block;max-width:100%;padding:3px 9px;border-radius:999px;
+    background:rgba(42,107,79,.08);border:0.5px solid rgba(42,107,79,.18);
+    color:#1f4f3a;font-size:12px;line-height:1.35;font-weight:500;white-space:nowrap;
+    overflow:hidden;text-overflow:ellipsis;}
+body.dark .score-stat-val .wk-chip{background:rgba(125,206,160,.12);
+    border-color:rgba(125,206,160,.22);color:#b7e0c6;}
+
 
 
 .cal-hub{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;
@@ -778,7 +787,7 @@ body.dark .t-type.w1000  {color:var(--primary);}
     ← WTA赛历
   </a>
   <div class="topbar-right">
-    <span class="updated">⏱ 2026年10月16日 08:00:54</span>
+    <span class="updated">⏱ 2026年10月16日 08:03:33</span>
     <button class="theme-btn" id="themeBtn" onclick="toggleTheme()">🌙 暗色</button>
   </div>
 </div>
@@ -802,7 +811,7 @@ body.dark .t-type.w1000  {color:var(--primary);}
   <div class="score-stats-row solo">
     <div class="score-stat">
       <div class="score-stat-lbl">冠军 · 2人</div>
-      <div class="score-stat-val">jian cui · 远***咻</div>
+      <div class="score-stat-val"><span class="wk-chips"><span class="wk-chip">jian cui</span><span class="wk-chip">远***咻</span></span></div>
     </div>
   </div>
   <div class="score-stats-row pair">
@@ -818,7 +827,7 @@ body.dark .t-type.w1000  {color:var(--primary);}
   <div class="score-stats-row solo">
     <div class="score-stat">
       <div class="score-stat-lbl">最大爆冷</div>
-      <div class="score-stat-val">F C · impum · z***7 · 寻感获叹 · 活宝哈u · 精明姐姐的小秘 <span class="muted">等 12 人</span><span class="sub">斯塔罗杜布采娃胜凯斯勒 · 选人 12:86</span></div>
+      <div class="score-stat-val"><span class="wk-chips"><span class="wk-chip">F C</span><span class="wk-chip">impum</span><span class="wk-chip">z***7</span><span class="wk-chip">寻感获叹</span><span class="wk-chip">活宝哈u</span><span class="wk-chip">精明姐姐的小秘</span><span class="wk-chip">黑白_大山</span><span class="wk-chip">Rockylababy</span><span class="wk-chip">Roudric</span><span class="wk-chip">liu8322925</span><span class="wk-chip">人怪黄-</span><span class="wk-chip">弗外外茨</span></span><span class="sub">斯塔罗杜布采娃胜凯斯勒 · 选人 12:86</span></div>
     </div>
   </div>
 </div>
