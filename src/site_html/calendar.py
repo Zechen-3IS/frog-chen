@@ -122,6 +122,15 @@ body.dark .t-type.w1000  {color:var(--primary);}
 .score-stat-val .sub{display:block;margin-top:4px;font-size:11px;font-weight:500;
     color:var(--faint);font-family:'Space Mono',monospace;}
 .score-stat-val .sub + .sub{margin-top:2px;}
+/* Champion / upset pickers — same chips as homepage 赛况 */
+.score-stat-val .wk-chips{display:flex;flex-wrap:wrap;gap:5px;font-weight:400;}
+.score-stat-val .wk-chip{display:inline-block;max-width:100%;padding:3px 9px;border-radius:999px;
+    background:rgba(42,107,79,.08);border:0.5px solid rgba(42,107,79,.18);
+    color:#1f4f3a;font-size:12px;line-height:1.35;font-weight:500;white-space:nowrap;
+    overflow:hidden;text-overflow:ellipsis;}
+body.dark .score-stat-val .wk-chip{background:rgba(125,206,160,.12);
+    border-color:rgba(125,206,160,.22);color:#b7e0c6;}
+
 
 
 .cal-hub{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;
@@ -427,15 +436,13 @@ def render_calendar_hub_page(
 
 
 def _format_champions(names: list[str], *, max_show: int = 6) -> str:
-    clean = [str(x).strip() for x in (names or []) if str(x).strip()]
+    """One chip per name — same look as homepage 赛况 ``wk-chip`` list."""
+    del max_show  # keep call-site compat; never truncate (matches index 赛况)
+    clean = [html.escape(str(x).strip()) for x in (names or []) if str(x).strip()]
     if not clean:
         return '<span class="muted">未产生</span>'
-    shown = clean[:max_show]
-    text = " · ".join(html.escape(x) for x in shown)
-    extra = len(clean) - len(shown)
-    if extra > 0:
-        text += f' <span class="muted">等 {len(clean)} 人</span>'
-    return text
+    chips = "".join(f'<span class="wk-chip">{n}</span>' for n in clean)
+    return f'<span class="wk-chips">{chips}</span>'
 
 
 def render_event_score_page(
