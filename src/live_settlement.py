@@ -375,7 +375,7 @@ def rank_by_id_from_df(rank_df: Optional[pd.DataFrame]) -> dict[str, int]:
 
 
 def clean_player_list(value) -> list:
-    """Drop empty / synthetic bye labels from a players list."""
+    """Drop empty labels. Keep a leading Day1 ``轮空`` so 选人明细 can show it."""
     if isinstance(value, list):
         items = value
     elif value is None or (isinstance(value, float) and pd.isna(value)):
@@ -387,7 +387,24 @@ def clean_player_list(value) -> list:
         except (TypeError, ValueError):
             pass
         items = list(value) if value else []
-    return [p for p in items if str(p).strip() and str(p).strip() != "轮空"]
+    return [p for p in items if str(p).strip()]
+
+
+def _had_day1_bye(value) -> bool:
+    items = value if isinstance(value, list) else []
+    return any(str(p).strip() == "轮空" for p in items)
+
+
+def _players_without_bye(value) -> list:
+    """Settlement copy: Day1 bye is not a picked player."""
+    return [p for p in clean_player_list(value) if str(p).strip() != "轮空"]
+
+
+def _with_day1_bye(players, show_bye: bool) -> list:
+    picks = _players_without_bye(players)
+    if show_bye:
+        return ["轮空", *picks]
+    return picks
 
 
 def _detail_for_pick(
@@ -425,7 +442,7 @@ def _repair_early_retirement_rows(
         status = str(row.get("fill_status") or "").strip()
         if status not in {"球员输球", "自杀(退赛)"}:
             continue
-        used = clean_player_list(row.get("players"))
+        used = _players_without_bye(row.get("players"))
         if not used:
             continue
         last = str(used[-1]).strip()
@@ -649,8 +666,9 @@ def apply_live_settlement(
         result["first_day_bye"] = False
     result["first_day_bye"] = False
 
-    # Normalize players to lists (strip synthetic Day1 bye label)
-    result["players"] = result["players"].apply(clean_player_list)
+    # Remember Day1 bye before settlement works on real picks only.
+    had_day1_bye = result["players"].map(_had_day1_bye)
+    result["players"] = result["players"].apply(_players_without_bye)
     result["fill_status"] = result["fill_status"].fillna("存活")
     result["day"] = pd.to_numeric(result["day"], errors="coerce").fillna(0).astype(int)
     result["score"] = pd.to_numeric(result["score"], errors="coerce").fillna(0).astype(int)
@@ -675,7 +693,7 @@ def apply_live_settlement(
     for index, row in result.iterrows():
         if str(row.get("fill_status") or "") != "存活":
             continue
-        used = list(row.get("players") or [])
+        used = _players_without_bye(row.get("players"))
         official_day = int(
             pd.to_numeric(row.get("day"), errors="coerce") or len(used) or 0
         )
@@ -716,7 +734,7 @@ def apply_live_settlement(
                 result.at[index, "fill_status"] = "存活"
                 result.at[index, "first_day_bye"] = True
                 result.at[index, "killer"] = ""
-                # Do not append "轮空" into选人明细 — bye is status-only.
+                result.at[index, "players"] = _with_day1_bye(used, True)
                 if draw is not None:
                     result.at[index, "score"] = _settled_event_points(
                         draw,
@@ -798,6 +816,13 @@ def apply_live_settlement(
             counts["pending"] += 1
             if uid:
                 pending_users.add(uid)
+
+    result["players"] = [
+        _with_day1_bye(players, bool(marked) or bool(flag))
+        for players, marked, flag in zip(
+            result["players"], had_day1_bye, result["first_day_bye"]
+        )
+    ]
 
     # Sync numeric status codes used by compute_live_ranking
     if "status" in result.columns:
