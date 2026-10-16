@@ -162,57 +162,78 @@ def retirement_backup_allowed(score_text: str) -> bool:
     text = " ".join(str(score_text or "").split())
     if not text:
         return False
-    if _WO_RE.search(text):
-        return True
+    has_wo = bool(_WO_RE.search(text))
     has_ret = bool(_RET_RE.search(text))
     body = _RET_RE.sub(" ", text)
     body = _WO_RE.sub(" ", body)
     body = " ".join(body.split())
     tokens = score_tokens(body)
+    # Bare walkover / retirement, before any set is recorded.
     if not tokens:
-        return has_ret
-    # Any second-set fragment (games or points like ``15`` / ``15:0``) ⇒ no backup.
+        return has_wo or has_ret
+    # Set 2 started or finished (``64 Ret.``, ``63 15``, ``63 64``) → no backup.
     if len(tokens) >= 2:
         return False
     first = _set_token_complete(tokens[0])
     if first is True:
         return False  # first set completed (e.g. ``64 Ret.``)
     if first is False:
-        return True  # incomplete first set (e.g. ``41``, ``52``)
-    return has_ret
+        return True  # incomplete first set (e.g. ``41``, ``52``, ``52 Ret.``)
+    return has_ret or has_wo
 
 
 def _score_candidate_rank(text: str) -> tuple:
-    """Lower tuple wins when choosing among score cells in a match group."""
-    special = 0 if (_WO_RE.search(text) or _RET_RE.search(text)) else 1
-    early = 0 if retirement_backup_allowed(text) else 1
+    """Lower tuple wins when choosing among score cells in one gutter.
+
+    A finished score beats a conflicting Ret. / W/O. Those markers have been
+    copied in from a neighbouring match (哈恰诺夫 ``63 64`` vs ``W/O``,
+    鲁德 ``46 64 63`` vs ``52 Ret.``).
+    """
     tokens = score_tokens(text)
-    return (special, early, len(tokens), len(text))
+    early = retirement_backup_allowed(text)
+    completed = 0 if tokens and not early else 1
+    return (completed, -len(tokens), len(text))
+
+
+def _score_candidates_in_column(
+    group: list[list[dict[str, Any]]], score_col: int
+) -> list[str]:
+    candidates: list[str] = []
+    for cells in group:
+        if score_col >= len(cells):
+            continue
+        cell = cells[score_col]
+        if cell.get("players"):
+            continue
+        text = " ".join(str(cell.get("text") or "").split())
+        if not text:
+            continue
+        # Skip live odds / clock fragments (e.g. ``8:3`` betting lines).
+        if ":" in text and not score_tokens(text) and not _WO_RE.search(text):
+            continue
+        if _WO_RE.search(text) or _RET_RE.search(text) or score_tokens(text):
+            candidates.append(text)
+    return candidates
 
 
 def _score_text_from_match_group(
     group: list[list[dict[str, Any]]], col: int
 ) -> str:
-    """Best score / Ret / W/O text for the match at player column ``col``."""
+    """Best score / Ret / W/O text for the match at player column ``col``.
+
+    The gutter after this round (``col+1``) is this match. Earlier columns in
+    the same block are previous-round scores (e.g. 鲁德 d. 阿利亚西姆 ``52 Ret.``
+    sitting beside 霍达尔 d. 鲁德 ``46 64 63``). Do not let that earlier Ret
+    replace a score already written for this round.
+    """
     candidates: list[str] = []
-    # Prefer the gutter after this round (``col+1``): previous-round scores often
-    # sit at ``col`` inside the same 4-row block (e.g. ``76(4) 64`` vs this-round ``41``).
-    score_cols = [c for c in (col + 1, col, col - 1) if c >= 0]
-    for score_col in score_cols:
-        for cells in group:
-            if score_col >= len(cells):
-                continue
-            cell = cells[score_col]
-            if cell.get("players"):
-                continue
-            text = " ".join(str(cell.get("text") or "").split())
-            if not text:
-                continue
-            # Skip live odds / clock fragments (e.g. ``8:3`` betting lines).
-            if ":" in text and not score_tokens(text) and not _WO_RE.search(text):
-                continue
-            if _WO_RE.search(text) or _RET_RE.search(text) or score_tokens(text):
-                candidates.append(text)
+    for score_col in (col + 1, col, col - 1):
+        if score_col < 0:
+            continue
+        found = _score_candidates_in_column(group, score_col)
+        if found:
+            candidates = found
+            break
     if not candidates:
         return ""
     return sorted(set(candidates), key=_score_candidate_rank)[0]
@@ -399,35 +420,21 @@ def _prefer_elim_score(prev: str, new: str) -> str:
         return a
     a_tokens = score_tokens(a)
     b_tokens = score_tokens(b)
-    a_wo = bool(_WO_RE.search(a))
-    b_wo = bool(_WO_RE.search(b))
-    a_ret = bool(_RET_RE.search(a))
-    b_ret = bool(_RET_RE.search(b))
-    # Compact bracket blocks sometimes stamp bare ``W/O`` while the detail
-    # block has the real sets (e.g. Deminar d. Khachanov ``63 64``). Never let
-    # bare W/O override a completed score.
-    a_bare_wo = a_wo and not a_tokens and not a_ret
-    b_bare_wo = b_wo and not b_tokens and not b_ret
-    if a_bare_wo and b_tokens and not b_wo:
-        return b
-    if b_bare_wo and a_tokens and not a_wo:
-        return a
-    a_walk_or_ret = a_wo or a_ret
-    b_walk_or_ret = b_wo or b_ret
-    if b_walk_or_ret and not a_walk_or_ret:
-        return b
-    if a_walk_or_ret and not b_walk_or_ret:
-        return a
     a_early = retirement_backup_allowed(a)
     b_early = retirement_backup_allowed(b)
-    # Prefer early-retire evidence (e.g. ``52 Ret.``) over a conflicting full score.
-    if b_early and not a_early:
-        return b
-    if a_early and not b_early:
+    a_done = bool(a_tokens) and not a_early
+    b_done = bool(b_tokens) and not b_early
+    # Duplicate blocks sometimes attach another match's Ret. / W/O. A finished
+    # score stays; a real early retirement is kept only when it is the score
+    # this match actually has.
+    if a_done and not b_done:
         return a
-    # Prefer the score with more set tokens when both look finished.
+    if b_done and not a_done:
+        return b
     if len(b_tokens) > len(a_tokens):
         return b
+    if len(a_tokens) > len(b_tokens):
+        return a
     return a
 
 
