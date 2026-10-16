@@ -709,6 +709,15 @@ body.dark .t-type.w1000  {color:var(--primary);}
 .score-stat-val .sub{display:block;margin-top:4px;font-size:11px;font-weight:500;
     color:var(--faint);font-family:'Space Mono',monospace;}
 .score-stat-val .sub + .sub{margin-top:2px;}
+/* Champion / upset pickers — same chips as homepage 赛况 */
+.score-stat-val .wk-chips{display:flex;flex-wrap:wrap;gap:5px;font-weight:400;}
+.score-stat-val .wk-chip{display:inline-block;max-width:100%;padding:3px 9px;border-radius:999px;
+    background:rgba(42,107,79,.08);border:0.5px solid rgba(42,107,79,.18);
+    color:#1f4f3a;font-size:12px;line-height:1.35;font-weight:500;white-space:nowrap;
+    overflow:hidden;text-overflow:ellipsis;}
+body.dark .score-stat-val .wk-chip{background:rgba(125,206,160,.12);
+    border-color:rgba(125,206,160,.22);color:#b7e0c6;}
+
 
 
 .cal-hub{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;
@@ -778,7 +787,7 @@ body.dark .t-type.w1000  {color:var(--primary);}
     ← WTA赛历
   </a>
   <div class="topbar-right">
-    <span class="updated">⏱ 2026年10月16日 02:55:47</span>
+    <span class="updated">⏱ 2026年10月16日 08:02:16</span>
     <button class="theme-btn" id="themeBtn" onclick="toggleTheme()">🌙 暗色</button>
   </div>
 </div>
@@ -802,7 +811,7 @@ body.dark .t-type.w1000  {color:var(--primary);}
   <div class="score-stats-row solo">
     <div class="score-stat">
       <div class="score-stat-lbl">冠军 · 27人</div>
-      <div class="score-stat-val">AllenXiangxy · BucketIvanovic · Change琛子 · Don Li · ForAI83373 · John大师兄 <span class="muted">等 27 人</span></div>
+      <div class="score-stat-val"><span class="wk-chips"><span class="wk-chip">AllenXiangxy</span><span class="wk-chip">BucketIvanovic</span><span class="wk-chip">Change琛子</span><span class="wk-chip">Don Li</span><span class="wk-chip">ForAI83373</span><span class="wk-chip">John大师兄</span><span class="wk-chip">MobiusZH</span><span class="wk-chip">TSKJAR</span><span class="wk-chip">__Novak__</span><span class="wk-chip">bai li</span><span class="wk-chip">octbt</span><span class="wk-chip">y***7</span><span class="wk-chip">yangxiaqing2</span><span class="wk-chip">三满贯科贝尔</span><span class="wk-chip">丨Salvation丨</span><span class="wk-chip">卡尼TT</span><span class="wk-chip">和楼盘规模破破</span><span class="wk-chip">大肚腩老哥哥</span><span class="wk-chip">天邪幻世</span><span class="wk-chip">年终的W</span><span class="wk-chip">我来了你怕了嘛</span><span class="wk-chip">日***岸</span><span class="wk-chip">木的讷</span><span class="wk-chip">没有滑板的张某某</span><span class="wk-chip">湫秋兮如风</span><span class="wk-chip">苟***术</span><span class="wk-chip">贝西卜殿下</span></span></div>
     </div>
   </div>
   <div class="score-stats-row pair">
@@ -818,7 +827,7 @@ body.dark .t-type.w1000  {color:var(--primary);}
   <div class="score-stats-row solo">
     <div class="score-stat">
       <div class="score-stat-lbl">最大爆冷</div>
-      <div class="score-stat-val">freedom_or_death · 懒觉鱼睡不醒 · Elroy ZHANG<span class="sub">萨巴莲卡胜希维昂泰克 · 选人 3:14</span></div>
+      <div class="score-stat-val"><span class="wk-chips"><span class="wk-chip">freedom_or_death</span><span class="wk-chip">懒觉鱼睡不醒</span><span class="wk-chip">Elroy ZHANG</span></span><span class="sub">萨巴莲卡胜希维昂泰克 · 选人 3:14</span></div>
     </div>
   </div>
 </div>

@@ -709,6 +709,15 @@ body.dark .t-type.w1000  {color:var(--primary);}
 .score-stat-val .sub{display:block;margin-top:4px;font-size:11px;font-weight:500;
     color:var(--faint);font-family:'Space Mono',monospace;}
 .score-stat-val .sub + .sub{margin-top:2px;}
+/* Champion / upset pickers — same chips as homepage 赛况 */
+.score-stat-val .wk-chips{display:flex;flex-wrap:wrap;gap:5px;font-weight:400;}
+.score-stat-val .wk-chip{display:inline-block;max-width:100%;padding:3px 9px;border-radius:999px;
+    background:rgba(42,107,79,.08);border:0.5px solid rgba(42,107,79,.18);
+    color:#1f4f3a;font-size:12px;line-height:1.35;font-weight:500;white-space:nowrap;
+    overflow:hidden;text-overflow:ellipsis;}
+body.dark .score-stat-val .wk-chip{background:rgba(125,206,160,.12);
+    border-color:rgba(125,206,160,.22);color:#b7e0c6;}
+
 
 
 .cal-hub{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;
@@ -778,7 +787,7 @@ body.dark .t-type.w1000  {color:var(--primary);}
     ← WTA赛历
   </a>
   <div class="topbar-right">
-    <span class="updated">⏱ 2026年10月16日 02:55:47</span>
+    <span class="updated">⏱ 2026年10月16日 08:02:16</span>
     <button class="theme-btn" id="themeBtn" onclick="toggleTheme()">🌙 暗色</button>
   </div>
 </div>
@@ -802,7 +811,7 @@ body.dark .t-type.w1000  {color:var(--primary);}
   <div class="score-stats-row solo">
     <div class="score-stat">
       <div class="score-stat-lbl">冠军 · 23人</div>
-      <div class="score-stat-val">188******62 · AllenXiangxy · Earth球球 · Jiabei He · Jiakun Yi · KG5Benzema9Jokic15Luka77_Paul3 <span class="muted">等 23 人</span></div>
+      <div class="score-stat-val"><span class="wk-chips"><span class="wk-chip">188******62</span><span class="wk-chip">AllenXiangxy</span><span class="wk-chip">Earth球球</span><span class="wk-chip">Jiabei He</span><span class="wk-chip">Jiakun Yi</span><span class="wk-chip">KG5Benzema9Jokic15Luka77_Paul3</span><span class="wk-chip">Kwan-tennis</span><span class="wk-chip">Pomelo琛</span><span class="wk-chip">__Novak__</span><span class="wk-chip">freedom_or_death</span><span class="wk-chip">silver小小蓝</span><span class="wk-chip">slay全场666</span><span class="wk-chip">wb789005</span><span class="wk-chip">不羁灬的灵魂</span><span class="wk-chip">南北南南i</span><span class="wk-chip">后曹操</span><span class="wk-chip">回破</span><span class="wk-chip">没有滑板的张某某</span><span class="wk-chip">用户7766595336</span><span class="wk-chip">第7路单车</span><span class="wk-chip">荞二皮</span><span class="wk-chip">那不勒斯Jasper</span><span class="wk-chip">麦迪还是洋葱</span></span></div>
     </div>
   </div>
   <div class="score-stats-row pair">
@@ -818,7 +827,7 @@ body.dark .t-type.w1000  {color:var(--primary);}
   <div class="score-stats-row solo">
     <div class="score-stat">
       <div class="score-stat-lbl">最大爆冷</div>
-      <div class="score-stat-val">顶***家<span class="sub">特苏伦科胜博尔特 · 选人 1:25</span></div>
+      <div class="score-stat-val"><span class="wk-chips"><span class="wk-chip">顶***家</span></span><span class="sub">特苏伦科胜博尔特 · 选人 1:25</span></div>
     </div>
   </div>
 </div>
