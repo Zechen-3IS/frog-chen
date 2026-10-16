@@ -22,11 +22,11 @@ def get_bye_status(
 
 
 def _is_repeat_pick(row) -> bool:
-    """True if today's pick was already used on a *prior* day.
+    """True if today's primary was already used on a prior day.
 
     After live settlement, today's pick is appended to ``players`` for both
     wins (存活) and losses (球员输球) / suicides. That trailing entry must not
-    count as 自杀（重复）.
+    count as 自杀（重复）. A backup is not judged unless the primary retired.
     """
     players = row.get("players")
     pick = row.get("player")

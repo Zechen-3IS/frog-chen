@@ -81,21 +81,31 @@ def _backup_is_elim_opponent(
     return bool(opp) and opp == alt
 
 
+def _primary_early_retirement(detail: dict[str, Any], draw: DrawStatus | None) -> bool:
+    """True when 主选退赛/赛前退赛, so 备选 is actually played."""
+    if draw is None or not draw.by_id:
+        return False
+    pick = str(detail.get("player") or "").strip()
+    if not pick or pick == "轮空":
+        return False
+    player = draw.lookup(detail.get("fill"), pick)
+    if player is None or not player.eliminated:
+        return False
+    return retirement_backup_allowed(player.elim_score)
+
+
 def _suicide_reason(
     detail: dict[str, Any],
     used: list[str],
     draw: DrawStatus | None = None,
 ) -> str | None:
     """
-    Suicide checks run *before* backup activation.
-
-    Order: repeat → same-player/fill/match-id conflict → backup-is-elim-opponent.
+    主选未退赛时，备选不参与判定，只保留主备冲突。
+    主选退赛并启用备选后，备选重复才是自杀(重复)。
     """
     pick = str(detail.get("player") or "").strip()
     alt = str(detail.get("player_alt") or "").strip()
     if pick and pick != "轮空" and pick in used:
-        return SUICIDE_REPEAT
-    if alt and alt != "轮空" and alt in used:
         return SUICIDE_REPEAT
     if pick and alt and pick == alt and pick != "轮空":
         return SUICIDE_CONFLICT
@@ -111,6 +121,13 @@ def _suicide_reason(
     # 主选/备选 are still the two sides of the elimination match.
     if _backup_is_elim_opponent(detail, draw):
         return SUICIDE_CONFLICT
+    if (
+        alt
+        and alt != "轮空"
+        and alt in used
+        and _primary_early_retirement(detail, draw)
+    ):
+        return SUICIDE_REPEAT
     return None
 
 
