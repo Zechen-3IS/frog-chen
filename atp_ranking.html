@@ -659,7 +659,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     ← 首页
   </a>
   <div class="topbar-right">
-    <span class="updated">⏱ 2026年10月16日 21:07:08</span>
+    <span class="updated">⏱ 2026年10月16日 21:22:15</span>
     <button class="theme-btn" id="themeBtn" onclick="toggleTheme()">🌙 暗色</button>
   </div>
 </div>
@@ -683,9 +683,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
         </button>
         </div>
         <div class="sum-meta">
-        <span class="meta-chip chip-valid">✓ 0 人已选</span>
+        <span class="meta-chip chip-valid">✓ 3 人已选</span>
     <span class="meta-sep">｜</span>
-    <span class="meta-chip chip-nosel">15 人未选</span>
+    <span class="meta-chip chip-nosel">11 人未选</span>
+    <span class="meta-sep">｜</span>
+    <span class="meta-chip chip-suicide">⚠ 1 人自杀</span>
     <span class="meta-sep">｜</span>
     <span class="meta-total">总计 15 人</span>
         </div>
@@ -699,7 +701,7 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     </div>
         <div class="sum-list" id="sumList"></div>
         <button class="sum-toggle" id="sumToggle" onclick="toggleSumPanel()">
-        <span id="sumToggleTxt">显示全部 0 名球员）</span>
+        <span id="sumToggleTxt">显示全部 4 名球员）</span>
         <span class="sum-ticon" id="sumTicon">▼</span>
         </button>
     </div>
@@ -707,10 +709,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     (function(){
         var TOP_N   = 3;
         var HAS_BYE = false;
-        var ROWS    = [];
-        var TOTALS  = {"normal": 0, "bye": 0, "grand": 1};
+        var ROWS    = [{"name": "亚-兹韦列夫", "normal": 1, "bye": 0, "status": "live"}, {"name": "梅德韦杰夫", "normal": 1, "bye": 0, "status": "live"}, {"name": "达维多维奇", "normal": 1, "bye": 0, "status": "live"}, {"name": "霍达尔", "normal": 0, "bye": 0, "status": "confirmed"}];
+        var TOTALS  = {"normal": 3, "bye": 0, "grand": 3};
         var MAX_VAL = 1;
-        var CLIPBOARD_HEADER = "已选0 未选15";
+        var CLIPBOARD_HEADER = "已选3 未选11 自杀1";
         var expanded = false;
 
         function pct(n){ return ((n / TOTALS.grand) * 100).toFixed(1) + '%'; }
@@ -1265,10 +1267,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>7</td>
     <td>17</td>
     <td>做丞琳永远的歌迷ya</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>10</td>
     <td></td>
-    <td></td>
+    <td>亚-兹韦列夫</td>
     <td></td>
     <td>400</td>
     <td>150</td>
@@ -2353,11 +2355,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>2646</td>
     <td><span class="rank same"></span></td>
   </tr>
-  <tr class="row-live" data-detail="[&quot;轮空&quot;, &quot;博尔热斯&quot;, &quot;门希克&quot;, &quot;阿利亚西姆&quot;, &quot;胡尔卡奇&quot;, &quot;梅德韦杰夫&quot;, &quot;亚-兹韦列夫&quot;, &quot;保罗&quot;, &quot;达维多维奇&quot;, &quot;霍达尔&quot;]">
+  <tr class="row-out" data-detail="[&quot;轮空&quot;, &quot;博尔热斯&quot;, &quot;门希克&quot;, &quot;阿利亚西姆&quot;, &quot;胡尔卡奇&quot;, &quot;梅德韦杰夫&quot;, &quot;亚-兹韦列夫&quot;, &quot;保罗&quot;, &quot;达维多维奇&quot;, &quot;霍达尔&quot;, &quot;霍达尔&quot;]">
     <td>58</td>
     <td>95</td>
     <td>最爱KG的阿杰</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-out">自杀(重复)</span></td>
     <td>10</td>
     <td></td>
     <td></td>
@@ -2693,11 +2695,11 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>78</td>
     <td>119</td>
     <td>公考小皮</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>10</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>梅德韦杰夫</td>
+    <td>亚-兹韦列夫</td>
     <td>400</td>
     <td>0</td>
     <td>2753</td>
@@ -5367,10 +5369,10 @@ body.dark .detail-day{border-color:rgba(232,96,60,.28);}
     <td>244</td>
     <td>310</td>
     <td>李杨科-RM</td>
-    <td><span class="st-badge st-live">未选</span></td>
+    <td><span class="st-badge st-live">未完赛</span></td>
     <td>10</td>
     <td></td>
-    <td></td>
+    <td>达维多维奇</td>
     <td></td>
     <td>400</td>
     <td>0</td>
