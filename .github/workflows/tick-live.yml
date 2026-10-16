@@ -1,0 +1,70 @@
+name: Tick live (15 min)
+
+on:
+  workflow_dispatch:
+    inputs:
+      role:
+        description: "chain keeps going; restart only starts if no tick is already running"
+        required: false
+        default: chain
+        type: choice
+        options:
+          - chain
+          - restart
+  schedule:
+    # If the chain dies (failed runner, cancel), start it again.
+    # GitHub may delay this; it is only a restart, not the 15-minute clock.
+    - cron: "7 * * * *"
+
+concurrency:
+  group: frog-live-tick
+  cancel-in-progress: false
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Skip restart when a tick is already running
+        if: github.event_name == 'schedule' || github.event.inputs.role == 'restart'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          others="$(gh run list -R "${GITHUB_REPOSITORY}" --workflow tick-live.yml \
+            --limit 20 --json databaseId,status \
+            --jq "[.[] | select(.databaseId != ${GITHUB_RUN_ID} and (.status == \"in_progress\" or .status == \"queued\"))] | length")"
+          echo "other ticks: ${others}"
+          if [[ "${others}" != "0" ]]; then
+            echo "chain already alive; skip"
+            echo "skip=true" >> "$GITHUB_ENV"
+          fi
+
+      - name: Dispatch live update, then queue the next tick in 15 min
+        if: env.skip != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          dispatch() {
+            local workflow="$1"
+            shift
+            local attempt
+            for attempt in 1 2 3 4 5; do
+              if gh workflow run "${workflow}" -R "${GITHUB_REPOSITORY}" --ref "${GITHUB_REF_NAME}" "$@"; then
+                return 0
+              fi
+              echo "dispatch ${workflow} failed, retry ${attempt}"
+              sleep $((attempt * 10))
+            done
+            return 1
+          }
+          dispatch update-live.yml
+          echo "live dispatched; sleeping 15 min"
+          sleep 900
+          dispatch tick-live.yml -f role=chain
+          echo "next tick queued"
