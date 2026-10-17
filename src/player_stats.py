@@ -8,6 +8,7 @@ score fetchers for weekly updates.
 from __future__ import annotations
 
 import json
+import re
 from collections import defaultdict
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -20,12 +21,38 @@ from bs4 import BeautifulSoup
 from draw_status import DAY_SCORE_RE, USER_AGENT, beijing_now
 from live_settlement import _as_key
 from logger import get_logger
-from parser import fetch_survivor_calendar_event_df, fetch_table
+from parser import _strip_html, fetch_survivor_calendar_event_df, fetch_table
+from points_calculation import (
+    ATP_MANDATORY,
+    ATP_YEAR_END_FINALS,
+    GRAND_SLAMS,
+    WTA1000_COMBINED,
+    WTA1000_NON_COMBINED,
+    WTA_YEAR_END_FINAL,
+    _calculate_points_atp,
+    _calculate_points_wta,
+    parse_events,
+)
 from tour_rules import TourRules, row_total
 
 logger = get_logger(__name__)
 
+# Montreal and Toronto alternate as the single Canadian 1000.
+CANADA_EVENTS = {"蒙特利尔", "多伦多"}
+
 STATS_CACHE = Path(__file__).resolve().parent.parent / "data" / "player_events.json"
+ROLLING_SCORE_CACHE = Path(__file__).resolve().parent.parent / "data" / "rolling_scores.json"
+# Forced zeros start with 2026 Indian Wells. Rankings update every Monday
+# except the Monday inside a two-week event.
+FORCED_ZERO_START = datetime(2026, 3, 2)
+TWO_WEEK_EVENTS = set(GRAND_SLAMS) | {
+    "印第安维尔斯",
+    "迈阿密",
+    "马德里",
+    "罗马",
+    "辛辛那提",
+    "上海",
+}
 PLAYED_STATUS = {"存活", "球员输球", "自杀(退赛)", "自杀(重复)", "自杀(主备冲突)"}
 # Long free-text details live in the row-click modal (not table columns).
 DISPLAY_COLS = [
@@ -329,6 +356,20 @@ def _fetch_event_day_points(info: dict[str, Any]) -> list[int]:
     return [int(value) for value in DAY_SCORE_RE.findall(html)]
 
 
+def _snapshot_is_final(records: list[dict[str, Any]], day_points: list[int]) -> bool:
+    """True when this score snapshot can be kept.
+
+    The day ladder is published before the last day's results. If someone is
+    still alive and the stored day has not reached that ladder, the score page
+    was saved early and must be fetched again.
+    """
+    if len(day_points) < 2 or not records:
+        return True
+    max_day = max(int(row.get("day") or 0) for row in records)
+    still_alive = any(row.get("champion") for row in records)
+    return not (still_alive and max_day < len(day_points))
+
+
 def _collect_history(
     tennis_type: str,
     current_event: Optional[dict[str, Any]] = None,
@@ -379,9 +420,13 @@ def _collect_history(
                 cached["day_points"] = points
                 cached["event_days"] = len(points)
                 changed = True
-            event_records = _hydrate_records(cached.get("records") or [], points)
-            records.extend(event_records)
-            continue
+            if _snapshot_is_final(cached.get("records") or [], points):
+                event_records = _hydrate_records(cached.get("records") or [], points)
+                records.extend(event_records)
+                continue
+            logger.info(
+                f"refetch unfinished {info.get('year')}-{info.get('name')}"
+            )
         logger.info(
             f"incremental {tennis_type.upper()} {index}/{len(catalog)} "
             f"{info.get('year')}-{info.get('name')}"
@@ -413,6 +458,299 @@ def _collect_history(
     return records
 
 
+def _at_midnight(value: Any) -> datetime:
+    if isinstance(value, datetime):
+        stamp = value
+    else:
+        stamp = pd.Timestamp(value).to_pydatetime()
+    return stamp.replace(hour=0, minute=0, second=0, microsecond=0)
+
+
+def _is_two_week(name: str, start: datetime, nxt: Optional[datetime], tour: str) -> bool:
+    if name in TWO_WEEK_EVENTS:
+        return True
+    if tour == "wta" and name == "北京":
+        return True
+    return nxt is not None and (nxt - start).days == 14
+
+
+def _event_end(name: str, start: datetime, nxt: Optional[datetime], tour: str) -> datetime:
+    days = 13 if _is_two_week(name, start, nxt, tour) else 6
+    return start + timedelta(days=days)
+
+
+def _load_calendar_rows(tour: str) -> list[dict[str, Any]]:
+    code = "MS" if tour == "atp" else "WS"
+    root = Path(__file__).resolve().parent.parent / "data"
+    rows: list[dict[str, Any]] = []
+    for path in sorted(root.glob("calendar_*.json")):
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        for item in payload.get("data") or []:
+            if item.get("tour") != code or not item.get("week_start_date"):
+                continue
+            rows.append(item)
+    rows.sort(key=lambda item: (item["week_start_date"], str(item.get("event_id"))))
+    return rows
+
+
+def _catalog_events(tour: str) -> list[dict[str, Any]]:
+    """Calendar rows, collapsing a split week of the same event id."""
+    pending: list[dict[str, Any]] = []
+    for item in _load_calendar_rows(tour):
+        start = datetime.strptime(item["week_start_date"][:10], "%Y-%m-%d")
+        row = {
+            "id": str(item.get("event_id") or ""),
+            "year": str(item.get("event_year") or start.year),
+            "name": str(item.get("city") or ""),
+            "start": start,
+        }
+        if (
+            pending
+            and row["id"]
+            and pending[-1]["id"] == row["id"]
+            and 0 < (start - pending[-1]["start"]).days <= 14
+        ):
+            pending[-1] = row
+            continue
+        pending.append(row)
+    events = sorted(pending, key=lambda item: (item["start"], item["name"], item["id"]))
+    for index, event in enumerate(events):
+        nxt = events[index + 1]["start"] if index + 1 < len(events) else None
+        event["end"] = _event_end(event["name"], event["start"], nxt, tour)
+        event["two_week"] = _is_two_week(event["name"], event["start"], nxt, tour)
+    return events
+
+
+def _official_board(tour: str) -> tuple[dict[str, set[str]], dict[str, int], Optional[datetime]]:
+    """Current official zeros, scores, and the board's Monday."""
+    table = "MS" if tour == "atp" else "WS"
+    frame, _ = fetch_table(option="rank", tour=table, year=str(beijing_now().year))
+    zeros: dict[str, set[str]] = {}
+    scores: dict[str, int] = {}
+    board_monday: Optional[datetime] = None
+    if frame is None or frame.empty or "details" not in frame.columns:
+        return zeros, scores, board_monday
+    for row in frame.itertuples(index=False):
+        raw = getattr(row, "details", None) or ""
+        deleted_html = re.findall(r"<del\b[^>]*>(.*?)</del>", raw, flags=re.I | re.S)
+        kept_html = re.sub(r"<del\b[^>]*>.*?</del>", " ", raw, flags=re.I | re.S)
+        merged = parse_events(_strip_html(" ".join(deleted_html)))
+        merged.update(parse_events(_strip_html(kept_html)))
+        uid = _as_key(getattr(row, "user_id", ""))
+        names = {name for name, points in merged.items() if points == 0}
+        if names:
+            zeros[uid] = names
+        score = getattr(row, "score", None)
+        if uid and score is not None and not (isinstance(score, float) and pd.isna(score)):
+            scores[uid] = int(score)
+        if board_monday is None and getattr(row, "monday", None):
+            board_monday = _at_midnight(getattr(row, "monday"))
+    return zeros, scores, board_monday
+
+
+def _points_cache() -> dict[str, Any]:
+    if not ROLLING_SCORE_CACHE.exists():
+        return {"atp": {}, "wta": {}}
+    try:
+        payload = json.loads(ROLLING_SCORE_CACHE.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {"atp": {}, "wta": {}}
+    payload.setdefault("atp", {})
+    payload.setdefault("wta", {})
+    return payload
+
+
+def _score_rows(tour: str, event: dict[str, Any], cache: dict[str, Any]) -> list[tuple[str, int]]:
+    key = f"{event['year']}:{event['id']}"
+    stored = (cache.get(tour) or {}).get(key)
+    if stored and stored.get("rows") is not None:
+        return [(str(item["uid"]), int(item["score"])) for item in stored["rows"]]
+    table = "MS" if tour == "atp" else "WS"
+    frame, _ = fetch_table(
+        option="score",
+        tour=table,
+        event_id=event["id"],
+        year=event["year"],
+    )
+    rows: list[tuple[str, int]] = []
+    if frame is not None and not frame.empty:
+        for item in frame.itertuples(index=False):
+            uid = _as_key(getattr(item, "user_id", ""))
+            score = getattr(item, "score", None)
+            if not uid or score is None or (isinstance(score, float) and pd.isna(score)):
+                continue
+            rows.append((uid, int(score)))
+    if rows:
+        cache.setdefault(tour, {})[key] = {
+            "name": event["name"],
+            "rows": [{"uid": uid, "score": score} for uid, score in rows],
+        }
+    return rows
+
+
+def _counts_in_points(name: str, score: int, tour: str) -> bool:
+    if score > 0:
+        return True
+    if name in GRAND_SLAMS:
+        return True
+    if tour == "atp":
+        return name in ATP_MANDATORY
+    return name in WTA1000_COMBINED or name in WTA1000_NON_COMBINED
+
+
+def _player_total(scores: dict[str, int], tour: str) -> tuple[int, int]:
+    raw = {
+        name: score
+        for name, score in scores.items()
+        if _counts_in_points(name, score, tour)
+    }
+    finals = ATP_YEAR_END_FINALS if tour == "atp" else WTA_YEAR_END_FINAL
+    for name in finals:
+        if raw.get(name) == 0:
+            raw.pop(name, None)
+    if not raw:
+        return 0, 0
+    calc = _calculate_points_atp if tour == "atp" else _calculate_points_wta
+    result = calc(raw)
+    counted = result.get("counted_tournaments") or {}
+    return int(result["total_points"]), len(counted)
+
+
+def _rolling_peaks(
+    history: pd.DataFrame,
+    tour: str,
+    this_monday: datetime,
+) -> tuple[dict[str, int], dict[str, int], dict[str, int]]:
+    """Best rank, best score, and weeks at No.1 from the end-date 52-week window.
+
+    From Indian Wells 2026 onward, a 0 already on the current official board
+    stays in that edition until it expires. Which equal-score event is kept
+    is left to the existing points formula.
+    """
+    events = _catalog_events(tour)
+    if not events:
+        return {}, {}, {}
+    zero_names, official_scores, board_monday = _official_board(tour)
+    edition = {}
+    for event in events:
+        if event["end"] < this_monday:
+            edition[event["name"]] = event
+    score_cache = _points_cache()
+    by_event: dict[tuple[str, datetime], list[tuple[str, int]]] = {}
+    if not history.empty:
+        for name, monday, uid, score in history[["name", "monday", "主键", "score"]].itertuples(index=False):
+            by_event.setdefault((str(name), _at_midnight(monday)), []).append(
+                (_as_key(uid), int(score))
+            )
+    fetch_from = FORCED_ZERO_START - timedelta(weeks=52)
+    fetched = 0
+    for event in events:
+        if event["end"] < fetch_from or event["start"] >= this_monday or not event["id"]:
+            continue
+        key = f"{event['year']}:{event['id']}"
+        had = key in (score_cache.get(tour) or {})
+        rows = _score_rows(tour, event, score_cache)
+        if rows:
+            by_event[(event["name"], event["start"])] = rows
+        if rows and not had:
+            fetched += 1
+            try:
+                ROLLING_SCORE_CACHE.write_text(
+                    json.dumps(score_cache, ensure_ascii=False),
+                    encoding="utf-8",
+                )
+            except OSError as exc:
+                logger.warning(f"Could not save rolling score cache: {exc}")
+    if fetched:
+        logger.info(f"{tour} fetched {fetched} score pages for the rolling window")
+
+    # The Monday a two-week event starts still updates. The Monday inside it does not.
+    inside = {event["start"] + timedelta(days=7) for event in events if event["two_week"]}
+    first = min(event["end"] for event in events) + timedelta(days=1)
+    first_monday = first - timedelta(days=first.weekday())
+    mondays: list[datetime] = []
+    cursor = first_monday
+    while cursor <= this_monday:
+        if cursor not in inside:
+            mondays.append(cursor)
+        cursor += timedelta(weeks=1)
+    if this_monday not in inside and this_monday not in mondays:
+        mondays.append(this_monday)
+
+    best_rank: dict[str, int] = {}
+    best_score: dict[str, int] = {}
+    weeks_at_one: dict[str, int] = defaultdict(int)
+    board_totals: dict[str, int] = {}
+    for index, monday in enumerate(mondays):
+        if monday < FORCED_ZERO_START:
+            continue
+        active: dict[str, dict[str, tuple[datetime, int]]] = defaultdict(dict)
+        for event in events:
+            if not (event["end"] < monday <= event["end"] + timedelta(weeks=52)):
+                continue
+            for uid, score in by_event.get((event["name"], event["start"]), []):
+                held = active[uid].get(event["name"])
+                if held is None or event["end"] >= held[0]:
+                    active[uid][event["name"]] = (event["end"], score)
+        if monday >= FORCED_ZERO_START:
+            for uid, names in zero_names.items():
+                bucket = active[uid]
+                for name in names:
+                    event = edition.get(name)
+                    if event is None or not (event["end"] < monday <= event["end"] + timedelta(weeks=52)):
+                        continue
+                    if name in bucket:
+                        continue
+                    if name in CANADA_EVENTS and any(city in bucket for city in CANADA_EVENTS):
+                        continue
+                    bucket[name] = (event["end"], 0)
+        totals: dict[str, int] = {}
+        for uid, bucket in active.items():
+            chosen = dict(bucket)
+            canada = [city for city in CANADA_EVENTS if city in chosen]
+            if len(canada) == 2:
+                drop = min(canada, key=lambda city: chosen[city][0])
+                chosen.pop(drop, None)
+            scores = {name: score for name, (_end, score) in chosen.items()}
+            total, _counted = _player_total(scores, tour)
+            if total > 0 or scores:
+                totals[uid] = total
+        if not totals:
+            continue
+        ordered = sorted(totals.items(), key=lambda item: (-item[1], item[0]))
+        rank = 0
+        last_score = None
+        for place, (uid, total) in enumerate(ordered, start=1):
+            if total != last_score:
+                rank = place
+                last_score = total
+            best_rank[uid] = min(best_rank.get(uid, rank), rank)
+            best_score[uid] = max(best_score.get(uid, total), total)
+            if rank == 1:
+                nxt = mondays[index + 1] if index + 1 < len(mondays) else monday + timedelta(weeks=1)
+                weeks_at_one[uid] += max(1, (nxt - monday).days // 7)
+        if board_monday is not None and monday == board_monday:
+            board_totals = totals
+    if official_scores and board_totals:
+        matched = sum(
+            1
+            for uid, score in official_scores.items()
+            if board_totals.get(uid) == score
+        )
+        logger.info(
+            f"{tour} rolling score vs official {board_monday.date() if board_monday else ''}: "
+            f"{matched}/{len(official_scores)}"
+        )
+    logger.info(
+        f"{tour} rolling ranks from {FORCED_ZERO_START.date()}: "
+        f"{len(best_rank)} players, {len([m for m in mondays if m >= FORCED_ZERO_START])} Mondays"
+    )
+    return best_rank, best_score, dict(weeks_at_one)
+
+
 def build_player_stats(
     tennis_type: str,
     current_event: Optional[dict[str, Any]] = None,
@@ -423,6 +761,21 @@ def build_player_stats(
     """Build the career-stats table for ``atp`` or ``wta``."""
     tennis_type = tennis_type.strip().lower()
     rules = TourRules.for_tour(tennis_type)
+    forced: list[str] = []
+    for name in rules.forced:
+        name = "加拿大" if name in CANADA_EVENTS else name
+        if name not in forced:
+            forced.append(name)
+    rules = TourRules(
+        tennis_type=rules.tennis_type,
+        slams=rules.slams,
+        forced=forced,
+        uncombined=rules.uncombined,
+        finals=rules.finals,
+        forced_keep=rules.forced_keep,
+        uncombined_keep=rules.uncombined_keep,
+        other_keep=rules.other_keep,
+    )
     this_monday = beijing_now().replace(hour=0, minute=0, second=0, microsecond=0)
     this_monday = this_monday - timedelta(days=this_monday.weekday())
     season_year = this_monday.year
@@ -458,19 +811,35 @@ def build_player_stats(
         rank_points = sorted(
             {
                 value
-                for value in event_mondays
-                + [value + timedelta(weeks=52) for value in event_mondays]
-                + [this_monday]
-                if event_mondays[0] <= value <= this_monday
+                for start in event_mondays
+                for value in (
+                    start,
+                    start + timedelta(weeks=1),
+                    start + timedelta(weeks=53),
+                    start + timedelta(weeks=54),
+                )
+                if event_mondays[0] < value <= this_monday
             }
+            | {this_monday}
         )
     for index, monday in enumerate(rank_points):
+        if monday >= FORCED_ZERO_START:
+            continue
+        # Before Indian Wells, keep the previous start-date window.
         window = completed[
-            (completed["monday"] > monday - timedelta(weeks=52))
-            & (completed["monday"] <= monday)
+            (completed["monday"] >= monday - timedelta(weeks=53))
+            & (completed["monday"] < monday)
         ]
         if window.empty:
             continue
+        canada = window[window["name"].isin(CANADA_EVENTS)]
+        if not canada.empty:
+            latest = canada.loc[canada.groupby("主键")["monday"].idxmax()].copy()
+            latest["name"] = "加拿大"
+            window = pd.concat(
+                [window[~window["name"].isin(CANADA_EVENTS)], latest],
+                ignore_index=True,
+            )
         used_names: set[str] = set()
         rename: dict[tuple[str, str], str] = {}
         for _, event in window[["name", "year"]].drop_duplicates().iterrows():
@@ -503,6 +872,16 @@ def build_player_stats(
                 best_rank[uid] = rank_int
             if rank_int == 1:
                 weeks_at_one[uid] += nweeks
+
+    rolled_rank, rolled_score, rolled_weeks = _rolling_peaks(
+        completed, tennis_type, this_monday
+    )
+    for uid, rank_int in rolled_rank.items():
+        best_rank[uid] = min(best_rank.get(uid, rank_int), rank_int)
+    for uid, total_int in rolled_score.items():
+        best_score[uid] = max(best_score.get(uid, total_int), total_int)
+    for uid, nweeks in rolled_weeks.items():
+        weeks_at_one[uid] += nweeks
 
     rows_out: list[dict[str, Any]] = []
     for uid, meta in users.iterrows():

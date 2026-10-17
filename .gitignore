@@ -31,3 +31,4 @@ data/breakdown_*.json
 data/players.json
 data/weather_cards_cache.json
 data/player_events.json
+data/rolling_scores.json
